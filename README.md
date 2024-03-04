@@ -4,9 +4,11 @@ Research and capstone project
 
 # Topic
 
-A Simulation-based comparison of the predictive accuracy:
+A
 
-1. of the random survival forest
-2. and the lasso-regularized Cox Model
+1. Simulation-based comparison
+2. of the predictive accuracy:
+3. of the random survival forest
+4. and the lasso-regularized Cox Model
 
 in Survival Analysis
