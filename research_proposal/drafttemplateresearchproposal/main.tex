@@ -1,0 +1,367 @@
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% Research project proposal template
+% Based on:
+%
+% LaTeX Template
+% Version 2.5 (27/8/17)
+%
+% This template was downloaded from:
+% http://www.LaTeXTemplates.com
+%
+% Version 2.x major modifications by: 
+% Helen Robertson
+%
+% With thanks to:
+% Matthew Woolway and Terence Van Zyl for help with coding and content.
+%
+% This template is based on a template by:
+% Steve Gunn (http://users.ecs.soton.ac.uk/srg/softwaretools/document/templates/)
+% Sunil Patel (http://www.sunilpatel.co.uk/thesis-template/)
+%
+% Template license:
+% CC BY-NC-SA 3.0 (http://creativecommons.org/licenses/by-nc-sa/3.0/)
+% 
+% This template has been constructed in accordance with the requirements and conventions of the School of Computer Science and Applied Mathematics and of the Faculty of Science at the University of the Witwatersrand.
+%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+%----------------------------------------------------------------------------------------
+%	PACKAGES AND OTHER DOCUMENT CONFIGURATIONS
+%----------------------------------------------------------------------------------------
+
+\documentclass[
+12pt, % The default document font size, options: 10pt, 11pt, 12pt
+oneside, % Two side (alternating margins) for binding by default, uncomment to switch to one side
+english, % ngerman for German
+onehalfspacing, % One-and-a-half line spacing, alternatives: singlespacing or doublespacing
+%draft, % Uncomment to enable draft mode (no pictures, no links, overfull hboxes indicated)
+nolistspacing, % If the document is onehalfspacing or doublespacing, uncomment this to set spacing in lists to single
+liststotoc, % Uncomment to add the list of figures/tables/etc to the table of contents
+%toctotoc, % Uncomment to add the main table of contents to the table of contents
+%parskip, % Uncomment to add space between paragraphs
+%nohyperref, % Uncomment to not load the hyperref package
+headsepline, % Uncomment to get a line under the header
+%chapterinoneline, % Uncomment to place the chapter title next to the number on one line
+%consistentlayout, % Uncomment to change the layout of the declaration, abstract and acknowledgements pages to match the default layout
+]{ProposalAndThesis} % The class file specifying the document structure
+
+\usepackage[utf8]{inputenc} % Required for inputting international characters
+\usepackage[T1]{fontenc} % Output font encoding for international characters
+
+\usepackage{mathpazo} % Use the Palatino font by default
+
+\usepackage[backend=bibtex,style=numeric,natbib=true]{biblatex} % Use the bibtex backend with the numeric citation style
+
+\addbibresource{example.bib} % The filename of the bibliography
+
+\usepackage[autostyle=true]{csquotes} % Required to generate language-dependent quotes in the bibliography
+
+\usepackage[cleanlook, english]{isodate} % Required for UK date formatting
+
+\usepackage{fancybox} % Required for boxed text sections
+\usepackage{xcolor} % Required for coloured text
+
+\usepackage{pgfgantt}
+
+\definecolor{ShadowColor}{RGB}{0,103,165} % Required for coloured shadow in boxed text sections
+\makeatletter
+\newcommand\Cshadowbox{\VerbBox\@Cshadowbox}
+\def\@Cshadowbox#1{%
+	\setbox\@fancybox\hbox{\fbox{#1}}%
+	\leavevmode\vbox{%
+		\offinterlineskip
+		\dimen@=\shadowsize
+		\advance\dimen@ .5\fboxrule
+		\hbox{\copy\@fancybox\kern.5\fboxrule\lower\shadowsize\hbox{%
+				\color{ShadowColor}\vrule \@height\ht\@fancybox \@depth\dp\@fancybox \@width\dimen@}}%
+		\vskip\dimexpr-\dimen@+0.5\fboxrule\relax
+		\moveright\shadowsize\vbox{%
+			\color{ShadowColor}\hrule \@width\wd\@fancybox \@height\dimen@}}}
+\makeatother
+
+%----------------------------------------------------------------------------------------
+%	MARGIN SETTINGS
+%----------------------------------------------------------------------------------------
+
+\geometry{
+	paper=a4paper, % Change to letterpaper for US letter
+	inner=2.8cm, % Inner margin
+	outer=2.8cm, % Outer margin
+	bindingoffset=0.0cm, % Binding offset
+	top=2.8cm, % Top margin
+	bottom=2.8cm, % Bottom margin
+	%showframe, % Uncomment to show how the type block is set on the page
+}
+
+%----------------------------------------------------------------------------------------
+%	THESIS INFORMATION
+%----------------------------------------------------------------------------------------
+
+\thesistitle{Working Title Here} % Your thesis title, this is used in the title and abstract, print it elsewhere with \ttitle
+\supervisor{Name of Supervisor Here} % Your supervisor's name, this is used in the title page, print it elsewhere with \supname
+\cosupervisor{Name of Co-supervisor Here (or Delete)} % Your co-supervisor's name, this is used in the title page, print it elsewhere with \cosupname
+%\examiner{} % Your examiner's name, this is not currently used anywhere in the template, print it elsewhere with \examname
+\degree{Degree Name Here} % Your degree name, this is used in the title page and abstract, print it elsewhere with \degreename
+\author{Your Name Here} % Your name, this is used in the title page and abstract, print it elsewhere with \authorname
+%\addresses{} % Your address, this is not currently used anywhere in the template, print it elsewhere with \addressname
+%\subject{} % Your subject area, this is not currently used anywhere in the template, print it elsewhere with \subjectname
+%\keywords{} % Keywords for your thesis, this is not currently used anywhere in the template, print it elsewhere with \keywordnames
+\university{University of the Witwatersrand, Johannesburg} % Your university's name, this is used in the title page and abstract, print it elsewhere with \univname
+\department{Name of School or Department Here} % Your department's name, this is used in the title page and abstract, print it elsewhere with \deptname
+%\group{\href{http://research group.com}{Research Group Name}} % Your research group's name and URL, this is not currently used anywhere in the template, print it elsewhere with \groupname
+%\faculty{\href{http://faculty.university.com}{Faculty Name}} % Your faculty's name and URL, this is not currently used anywhere in the template, print it elsewhere with \facname
+
+\def\keywordnames{Appendices; Chapters; Figures; example.bib; main.pdf; main.tex; main.bbl; main.aux; main.blg; main.lof; main.log; main.lot; main.out; MastersDoctoralThesis.cls}
+
+\newcommand{\keyword}[1]{\textbf{#1}}
+\newcommand{\tabhead}[1]{\textbf{#1}}
+\newcommand{\code}[1]{\texttt{#1}}
+\newcommand{\file}[1]{\texttt{\bfseries#1}}
+\newcommand{\option}[1]{\texttt{\itshape#1}}
+
+
+
+\AtBeginDocument{
+\hypersetup{pdftitle=\ttitle} % Set the PDF's title to your title
+\hypersetup{pdfauthor=\authorname} % Set the PDF's author to your name
+\hypersetup{pdfkeywords=\keywordnames} % Set the PDF's keywords to your keywords
+}
+
+\begin{document}
+
+\frontmatter % Use roman page numbering style (i, ii, iii, iv...) for the pre-content pages
+
+\pagestyle{plain} % Default to the plain heading style until the thesis style is called for the body content
+
+%----------------------------------------------------------------------------------------
+%	TITLE PAGE
+%----------------------------------------------------------------------------------------
+
+\begin{titlepage}
+\begin{center}
+
+{\huge \bfseries \ttitle}\par\vspace{0.4cm} % Thesis title
+\HRule\par\vspace{1.5cm}
+\authorname\par\vspace{1cm}
+\emph{Supervisor(s):}\par
+{\supname}\par % Name of supervisor
+{\cosupname} % Name of co-supervisor
+\par\vspace{0.5cm}
+
+\includegraphics[width=80mm]{Figures/logoWitsstackedcolourtransparent.png} % University crest
+\vfill
+
+A research proposal submitted in partial fulfillment of the requirements for the degree of \degreename\par\vspace{0.3cm}
+in the\par\vspace{0.4cm}
+\deptname\par\vspace{0.1cm} % Name of department
+\univname\par\vspace{0.4cm} % Name of university
+\cleanlookdateon
+\today % Date
+
+\end{center}
+
+\end{titlepage}
+
+%---------------------------------------------------------------------------------------
+%	USING THIS TEMPLATE
+%---------------------------------------------------------------------------------------
+
+\par\vspace{0.5cm}
+\noindent \Cshadowbox{
+	\begin{minipage}{15cm}
+		\medskip
+		\color[rgb]{0.0,0.4,0.65} 
+		\begin{center} 
+			\medskip \textbf{Using this template} \par 
+			\end{center}
+			\medskip The template below has been constructed in line with the Faculty of Science requirements as well as the conventions of the School. Guidance on each section can be found in the blue boxes at the start of the section. Note that conventions and preferences for structuring a research proposal can vary from discipline to discipline and supervisor to supervisor. Both the template and the guidance on the different sections are suggestions for structuring the proposal. If your supervisor has a different preferred convention or template, it is recommended that you consult with them regarding the differences. \par \medskip
+			Further details on using the template can be found in Appendix B. \par \medskip
+			You should ensure that you either delete or comment out the blue boxes before submission of the proposal. \par
+		\medskip 
+\end{minipage}}\\ 
+
+%----------------------------------------------------------------------------------------
+%	DECLARATION PAGE
+%----------------------------------------------------------------------------------------
+
+\begin{declaration}
+\addchaptertocentry{\authorshipname} % Add the declaration to the table of contents
+\vspace{0.5cm}
+\noindent I, \authorname, declare that this proposal is my own, unaided work. It is being submitted for the degree of {\degreename} at the \univname. It has not been submitted for any degree or examination at any other university.
+
+\par\vspace{2cm}
+\begin{flushright}
+\includegraphics[width=30mm]{Figures/SignatureSample.png}\par 
+\authorname\par\vspace{0.1cm}
+\today
+\end{flushright}
+
+\par\vspace{0.5cm}
+\noindent \Cshadowbox{
+	\begin{minipage}{15cm}
+		\medskip
+		\color[rgb]{0.0,0.4,0.65} 
+		\medskip The declaration is an important formal requirement. Ensure that you upload an
+		image of your signature and that you change the file name in the main.tex file to include it.
+		\medskip 
+\end{minipage}}\\ 
+
+\end{declaration}
+\vfill
+\pagebreak
+
+%----------------------------------------------------------------------------------------
+%	QUOTATION PAGE
+%----------------------------------------------------------------------------------------
+
+%\vspace*{0.2\textheight}
+
+%\noindent\enquote{\itshape Thanks to my solid academic training, today I can write hundreds of words on virtually any topic without possessing a shred of information, which is how I got a good job in journalism.}\bigbreak
+
+%\hfill Dave Barry
+
+%----------------------------------------------------------------------------------------
+%	ABSTRACT PAGE
+%----------------------------------------------------------------------------------------
+
+\begin{abstract}
+\addchaptertocentry{\abstractname} % Add the abstract to the table of contents
+\begin{quote}
+Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam ultricies lacinia euismod. Nam tempus risus in dolor rhoncus in interdum enim tincidunt. Donec vel nunc neque. In condimentum ullamcorper quam non consequat. Fusce sagittis tempor feugiat. Fusce magna erat, molestie eu convallis ut, tempus sed arcu. Quisque molestie, ante a tincidunt ullamcorper, sapien enim dignissim lacus, in semper nibh erat lobortis purus. Integer dapibus ligula ac risus convallis pellentesque.
+\end{quote}
+
+\par\vspace{0.5cm}
+\noindent \Cshadowbox{
+    \begin{minipage}{15cm}
+    \bigskip
+    \color[rgb]{0.0,0.4,0.65}The abstract is a brief informative summary of the proposed research. It can be read independently and should 
+    	\begin{itemize}
+    		\item locate the proposed research within the background relevant to it,
+    		\item state the research question or aim,
+    		\item briefly describe the proposed methods for answering the question or achieving the aim, and,
+    		\item emphasise the contribution that the proposed research will make to current research in the field.
+    	\end{itemize}
+    	It is recommended that your abstract is no more than 300 words.
+    \medskip
+	\end{minipage}}
+
+\end{abstract}
+
+%----------------------------------------------------------------------------------------
+%	ACKNOWLEDGEMENTS
+%----------------------------------------------------------------------------------------
+
+\begin{acknowledgements}
+\addchaptertocentry{\acknowledgementname} % Add the acknowledgements to the table of contents
+\vspace{0.5cm}
+\noindent{Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam ultricies lacinia euismod. Nam tempus risus in dolor rhoncus in interdum enim tincidunt. Donec vel nunc neque.}
+
+\par\vspace{0.5cm}
+\noindent \Cshadowbox{
+	\begin{minipage}{15cm}
+		\medskip
+		\color[rgb]{0.0,0.4,0.65} 
+		\medskip The acknowledgements section allows you to thank those who contributed to the
+		preparation of the proposal. It is usual to acknowledge supervision, financial
+		assistance or funders, and any special facilities provided for the research.		
+		\medskip 
+\end{minipage}}\\ 
+
+
+
+\end{acknowledgements}
+
+%----------------------------------------------------------------------------------------
+%	LIST OF CONTENTS/FIGURES/TABLES PAGES
+%----------------------------------------------------------------------------------------
+
+\tableofcontents % Prints the main table of contents
+
+\listoffigures % Prints the list of figures
+
+\listoftables % Prints the list of tables
+
+%----------------------------------------------------------------------------------------
+%	ABBREVIATIONS
+%----------------------------------------------------------------------------------------
+
+%\begin{abbreviations}{ll} % Include a list of abbreviations (a table of two columns)
+
+%\textbf{LAH} & \textbf{L}ist \textbf{A}bbreviations \textbf{H}ere\\
+%\textbf{WSF} & \textbf{W}hat (it) \textbf{S}tands \textbf{F}or\\
+
+%\end{abbreviations}
+
+%----------------------------------------------------------------------------------------
+%	PHYSICAL CONSTANTS/OTHER DEFINITIONS
+%----------------------------------------------------------------------------------------
+
+%\begin{constants}{lr@{${}={}$}l} % The list of physical constants is a three column table
+
+% The \SI{}{} command is provided by the siunitx package, see its documentation for instructions on how to use it
+
+%Speed of Light & $c_{0}$ & \SI{2.99792458e8}{\meter\per\second} (exact)\\
+%Constant Name & $Symbol$ & $Constant Value$ with units\\
+
+%\end{constants}
+
+%----------------------------------------------------------------------------------------
+%	SYMBOLS
+%----------------------------------------------------------------------------------------
+
+%\begin{symbols}{lll} % Include a list of Symbols (a three column table)
+
+%$a$ & distance & \si{\meter} \\
+%$P$ & power & \si{\watt} (\si{\joule\per\second}) \\
+%Symbol & Name & Unit \\
+
+%\addlinespace % Gap to separate the Roman symbols from the Greek
+
+%$\omega$ & angular frequency & \si{\radian} \\
+
+%\end{symbols}
+
+%----------------------------------------------------------------------------------------
+%	DEDICATION
+%----------------------------------------------------------------------------------------
+
+%\dedicatory{For/Dedicated to/To my\ldots} 
+
+%----------------------------------------------------------------------------------------
+%	THESIS CONTENT - CHAPTERS
+%----------------------------------------------------------------------------------------
+
+\mainmatter % Begin numeric (1,2,3...) page numbering
+
+%\pagestyle{thesis} % Return the page headers back to the "thesis" style
+
+% Include the chapters of the thesis as separate files from the Chapters folder
+% Uncomment the lines as you write the chapters
+
+\include{Chapters/Introduction}
+\include{Chapters/ResearchMethodology}
+\include{Chapters/ScheduleOfWork}
+\include{Chapters/Conclusion}
+
+%----------------------------------------------------------------------------------------
+%	THESIS CONTENT - APPENDICES
+%----------------------------------------------------------------------------------------
+
+\appendix % Cue to tell LaTeX that the following "chapters" are Appendices
+
+% Include the appendices of the thesis as separate files from the Appendices folder
+% Uncomment the lines as you write the Appendices
+
+\include{Appendices/AppendixA}
+\include{Appendices/AppendixB}
+%\include{Appendices/AppendixC}
+
+%----------------------------------------------------------------------------------------
+%	BIBLIOGRAPHY
+%----------------------------------------------------------------------------------------
+
+\printbibliography[heading=bibintoc]
+
+%----------------------------------------------------------------------------------------
+
+\end{document}  
