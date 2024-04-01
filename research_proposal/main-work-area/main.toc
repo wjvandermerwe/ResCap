@@ -1,6 +1,5 @@
-\boolfalse {citerequest}\boolfalse {citetracker}\boolfalse {pagetracker}\boolfalse {backtracker}\relax 
-\babel@toc {english}{}
-\babel@toc {english}{}
+\babel@toc {english}{}\relax 
+\babel@toc {english}{}\relax 
 \contentsline {chapter}{Declaration}{ii}{section*.1}%
 \contentsline {chapter}{Abstract}{iii}{section*.2}%
 \contentsline {chapter}{Acknowledgements}{iv}{section*.3}%
@@ -38,3 +37,4 @@
 \contentsline {subsection}{\numberline {B.3.2}Tables}{18}{subsection.37}%
 \contentsline {subsection}{\numberline {B.3.3}Figures}{19}{subsection.39}%
 \contentsline {subsection}{\numberline {B.3.4}Typesetting mathematics}{20}{subsection.41}%
+\contentsline {chapter}{Bibliography}{22}{appendix*.43}%
