@@ -14,27 +14,28 @@
 \contentsline {subsection}{\numberline {1.4.1}Research Aims}{4}{subsection.13}%
 \contentsline {subsection}{\numberline {1.4.2}Objectives}{5}{subsection.14}%
 \contentsline {section}{\numberline {1.5}Limitations}{5}{section.15}%
-\contentsline {section}{\numberline {1.6}Overview}{5}{section.16}%
-\contentsline {chapter}{\numberline {2}Research Methodology}{7}{chapter.17}%
-\contentsline {section}{\numberline {2.1}Research design}{7}{section.18}%
-\contentsline {section}{\numberline {2.2}Methods}{8}{section.19}%
-\contentsline {section}{\numberline {2.3}Limitations}{9}{section.20}%
-\contentsline {section}{\numberline {2.4}Ethical Considerations}{9}{section.21}%
-\contentsline {chapter}{\numberline {3}Schedule of Work}{10}{chapter.22}%
-\contentsline {section}{\numberline {3.1}Schedule of Work}{10}{section.23}%
-\contentsline {section}{\numberline {3.2}Potential Difficulties}{11}{section.24}%
-\contentsline {chapter}{\numberline {4}Conclusion}{12}{chapter.25}%
-\contentsline {chapter}{\numberline {A}Appendix Title}{13}{appendix.26}%
-\contentsline {section}{\numberline {A.1}Main Section}{13}{section.27}%
-\contentsline {chapter}{\numberline {B}Using this Template}{14}{appendix.28}%
-\contentsline {section}{\numberline {B.1}What this Template Includes}{14}{section.29}%
-\contentsline {subsection}{\numberline {B.1.1}Folders}{14}{subsection.30}%
-\contentsline {subsection}{\numberline {B.1.2}Files}{15}{subsection.31}%
-\contentsline {section}{\numberline {B.2}Filling in Your Information in the \texttt {\bfseries main.tex} File}{16}{section.32}%
-\contentsline {section}{\numberline {B.3}Thesis Features and Conventions}{17}{section.33}%
-\contentsline {subsection}{\numberline {B.3.1}References}{17}{subsection.34}%
-\contentsline {subsubsection}{A Note on bibtex}{18}{section*.36}%
-\contentsline {subsection}{\numberline {B.3.2}Tables}{18}{subsection.37}%
-\contentsline {subsection}{\numberline {B.3.3}Figures}{19}{subsection.39}%
-\contentsline {subsection}{\numberline {B.3.4}Typesetting mathematics}{20}{subsection.41}%
-\contentsline {chapter}{Bibliography}{22}{appendix*.43}%
+\contentsline {section}{\numberline {1.6}Assumptions and Definitions}{5}{section.16}%
+\contentsline {section}{\numberline {1.7}Overview}{6}{section.17}%
+\contentsline {chapter}{\numberline {2}Research Methodology}{7}{chapter.18}%
+\contentsline {section}{\numberline {2.1}Research design}{7}{section.19}%
+\contentsline {section}{\numberline {2.2}Methods}{8}{section.20}%
+\contentsline {section}{\numberline {2.3}Limitations}{9}{section.21}%
+\contentsline {section}{\numberline {2.4}Ethical Considerations}{9}{section.22}%
+\contentsline {chapter}{\numberline {3}Schedule of Work}{10}{chapter.23}%
+\contentsline {section}{\numberline {3.1}Schedule of Work}{10}{section.24}%
+\contentsline {section}{\numberline {3.2}Potential Difficulties}{11}{section.25}%
+\contentsline {chapter}{\numberline {4}Conclusion}{12}{chapter.26}%
+\contentsline {chapter}{\numberline {A}Appendix Title}{13}{appendix.27}%
+\contentsline {section}{\numberline {A.1}Main Section}{13}{section.28}%
+\contentsline {chapter}{\numberline {B}Using this Template}{14}{appendix.29}%
+\contentsline {section}{\numberline {B.1}What this Template Includes}{14}{section.30}%
+\contentsline {subsection}{\numberline {B.1.1}Folders}{14}{subsection.31}%
+\contentsline {subsection}{\numberline {B.1.2}Files}{15}{subsection.32}%
+\contentsline {section}{\numberline {B.2}Filling in Your Information in the \texttt {\bfseries main.tex} File}{16}{section.33}%
+\contentsline {section}{\numberline {B.3}Thesis Features and Conventions}{17}{section.34}%
+\contentsline {subsection}{\numberline {B.3.1}References}{17}{subsection.35}%
+\contentsline {subsubsection}{A Note on bibtex}{18}{section*.37}%
+\contentsline {subsection}{\numberline {B.3.2}Tables}{18}{subsection.38}%
+\contentsline {subsection}{\numberline {B.3.3}Figures}{19}{subsection.40}%
+\contentsline {subsection}{\numberline {B.3.4}Typesetting mathematics}{20}{subsection.42}%
+\contentsline {chapter}{Bibliography}{22}{appendix*.44}%

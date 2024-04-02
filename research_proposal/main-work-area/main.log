@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.26 (TeX Live 2024) (preloaded format=pdflatex 2024.3.29)  30 MAR 2024 09:54
+This is pdfTeX, Version 3.141592653-2.6-1.40.26 (TeX Live 2024) (preloaded format=pdflatex 2024.3.29)  1 APR 2024 21:14
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -1008,7 +1008,7 @@ Package hyperref Info: Link coloring ON on input line 130.
 
 
 1: section
-<Figures/logoWitsstackedcolourtransparent.png, id=159, 1581.91pt x 1648.1575pt>
+<Figures/logoWitsstackedcolourtransparent.png, id=163, 1581.91pt x 1648.1575pt>
 File: Figures/logoWitsstackedcolourtransparent.png Graphic file (type png)
 <use Figures/logoWitsstackedcolourtransparent.png>
 Package pdftex.def Info: Figures/logoWitsstackedcolourtransparent.png  used on input line 151.
@@ -1018,26 +1018,26 @@ Package pdftex.def Info: Figures/logoWitsstackedcolourtransparent.png  used on i
 
 
 {/usr/local/texlive/2024/texmf-var/fonts/map/pdftex/updmap/pdftex.map}{/usr/local/texlive/2024/texmf-dist/fonts/enc/dvips/base/8r.enc} <./Figures/logoWitsstackedcolourtransparent.png>]
-LaTeX Font Info:    Trying to load font information for OT1+ppl on input line 181.
+LaTeX Font Info:    Trying to load font information for OT1+ppl on input line 163.
  (/usr/local/texlive/2024/texmf-dist/tex/latex/psnfss/ot1ppl.fd
 File: ot1ppl.fd 2001/06/04 font definitions for OT1/ppl.
 )
-LaTeX Font Info:    Trying to load font information for OML+zplm on input line 181.
+LaTeX Font Info:    Trying to load font information for OML+zplm on input line 163.
  (/usr/local/texlive/2024/texmf-dist/tex/latex/psnfss/omlzplm.fd
 File: omlzplm.fd 2002/09/08 Fontinst v1.914 font definitions for OML/zplm.
 )
-LaTeX Font Info:    Trying to load font information for OMS+zplm on input line 181.
+LaTeX Font Info:    Trying to load font information for OMS+zplm on input line 163.
  (/usr/local/texlive/2024/texmf-dist/tex/latex/psnfss/omszplm.fd
 File: omszplm.fd 2002/09/08 Fontinst v1.914 font definitions for OMS/zplm.
 )
-LaTeX Font Info:    Trying to load font information for OMX+zplm on input line 181.
+LaTeX Font Info:    Trying to load font information for OMX+zplm on input line 163.
  (/usr/local/texlive/2024/texmf-dist/tex/latex/psnfss/omxzplm.fd
 File: omxzplm.fd 2002/09/08 Fontinst v1.914 font definitions for OMX/zplm.
 )
-LaTeX Font Info:    Trying to load font information for OT1+zplm on input line 181.
+LaTeX Font Info:    Trying to load font information for OT1+zplm on input line 163.
  (/usr/local/texlive/2024/texmf-dist/tex/latex/psnfss/ot1zplm.fd
 File: ot1zplm.fd 2002/09/08 Fontinst v1.914 font definitions for OT1/zplm.
-)
+) [2]
 Overfull \hbox (2.81905pt too wide) in paragraph at lines 170--182
 [] 
  []
@@ -1051,7 +1051,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 170--182
 --------------------
  Declaration
 --------------------
-<Figures/SignatureSample.png, id=174, 531.9875pt x 184.69pt>
+<Figures/SignatureSample.png, id=182, 531.9875pt x 184.69pt>
 File: Figures/SignatureSample.png Graphic file (type png)
 <use Figures/SignatureSample.png>
 Package pdftex.def Info: Figures/SignatureSample.png  used on input line 194.
@@ -1106,12 +1106,12 @@ Underfull \hbox (badness 10000) in paragraph at lines 260--269
 [5
 
 ]
-LaTeX Font Info:    Trying to load font information for T1+cmtt on input line 33.
+LaTeX Font Info:    Trying to load font information for T1+cmtt on input line 34.
  (/usr/local/texlive/2024/texmf-dist/tex/latex/base/t1cmtt.fd
 File: t1cmtt.fd 2023/04/13 v2.5m Standard LaTeX font definitions
 )
 LaTeX Font Info:    Font shape `T1/cmtt/bx/n' in size <12> not available
-(Font)              Font shape `T1/cmtt/m/n' tried instead on input line 33.
+(Font)              Font shape `T1/cmtt/m/n' tried instead on input line 34.
 )
 \tf@toc=\write7
 \openout7 = `main.toc'.
@@ -1138,7 +1138,7 @@ LaTeX Font Info:    Font shape `T1/cmtt/bx/n' in size <12> not available
  (./Chapters/Introduction.tex
 Chapter 1.
 
-Overfull \hbox (2.81905pt too wide) in paragraph at lines 7--20
+Overfull \hbox (2.81905pt too wide) in paragraph at lines 9--22
 [] 
  []
 
@@ -1148,52 +1148,62 @@ Overfull \hbox (2.81905pt too wide) in paragraph at lines 7--20
 
 
 ]
-Overfull \hbox (2.81905pt too wide) in paragraph at lines 26--40
+Overfull \hbox (2.81905pt too wide) in paragraph at lines 28--42
 [] 
  []
 
 [2]
-Overfull \hbox (2.81905pt too wide) in paragraph at lines 50--58
+Overfull \hbox (2.81905pt too wide) in paragraph at lines 52--60
 [] 
  []
 
 
-Overfull \hbox (2.81905pt too wide) in paragraph at lines 64--72
+Overfull \hbox (2.81905pt too wide) in paragraph at lines 66--74
 [] 
  []
 
 [3]
-Overfull \hbox (2.81905pt too wide) in paragraph at lines 83--93
+Overfull \hbox (2.81905pt too wide) in paragraph at lines 85--95
 [] 
  []
 
 [4]
-Overfull \hbox (2.81905pt too wide) in paragraph at lines 101--107
+Overfull \hbox (2.81905pt too wide) in paragraph at lines 103--109
 [] 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 101--107
+Underfull \hbox (badness 10000) in paragraph at lines 103--109
 
  []
 
 
-Overfull \hbox (2.81905pt too wide) in paragraph at lines 113--119
+Overfull \hbox (2.81905pt too wide) in paragraph at lines 115--121
 [] 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 113--119
+Underfull \hbox (badness 10000) in paragraph at lines 115--121
+
+ []
+
+
+Overfull \hbox (2.81905pt too wide) in paragraph at lines 127--137
+[] 
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 127--137
 
  []
 
 [5])
-Overfull \hbox (2.81905pt too wide) in paragraph at lines 141--341
+Overfull \hbox (2.81905pt too wide) in paragraph at lines 143--341
 [] 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 141--341
+Underfull \hbox (badness 10000) in paragraph at lines 143--341
 
  []
 
@@ -1361,7 +1371,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 15--16
 LaTeX Font Info:    Font shape `T1/cmtt/bx/n' in size <17.28> not available
 (Font)              Font shape `T1/cmtt/m/n' tried instead on input line 61.
  [16] [17] [18]
-<Figures/Electron.pdf, id=340, 398.3386pt x 284.52756pt>
+<Figures/Electron.pdf, id=349, 398.3386pt x 284.52756pt>
 File: Figures/Electron.pdf Graphic file (type pdf)
 <use Figures/Electron.pdf>
 Package pdftex.def Info: Figures/Electron.pdf  used on input line 149.
@@ -1378,24 +1388,24 @@ LaTeX2e <2023-11-01> patch level 1
 L3 programming layer <2020/03/25>
  ***********
 Package rerunfilecheck Info: File `main.out' has not changed.
-(rerunfilecheck)             Checksum: F7D89282A213604304040A0DE11C7AF5;5025.
+(rerunfilecheck)             Checksum: CEB3C72E8016A11F7C38CD527F6A141B;5220.
 Package logreq Info: Writing requests to 'main.run.xml'.
 \openout1 = `main.run.xml'.
 
  ) 
 Here is how much of TeX's memory you used:
- 41690 strings out of 474116
- 924731 string characters out of 5743682
+ 41695 strings out of 474116
+ 924826 string characters out of 5743682
  1958187 words of memory out of 5000000
- 63359 multiletter control sequences out of 15000+600000
+ 63362 multiletter control sequences out of 15000+600000
  603262 words of font info for 113 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 100i,20n,101p,1930b,2707s stack positions out of 10000i,1000n,20000p,200000b,200000s
+ 100i,21n,101p,1930b,2725s stack positions out of 10000i,1000n,20000p,200000b,200000s
 </usr/local/texlive/2024/texmf-dist/fonts/type1/public/amsfonts/cm/cmr10.pfb></usr/local/texlive/2024/texmf-dist/fonts/type1/public/cm-super/sfit1200.pfb></usr/local/texlive/2024/texmf-dist/fonts/type1/public/cm-super/sftt1095.pfb></usr/local/texlive/2024/texmf-dist/fonts/type1/public/cm-super/sftt1200.pfb></usr/local/texlive/2024/texmf-dist/fonts/type1/public/cm-super/sftt1728.pfb></usr/local/texlive/2024/texmf-dist/fonts/type1/urw/palatino/uplb8a.pfb></usr/local/texlive/2024/texmf-dist/fonts/type1/urw/palatino/uplr8a.pfb></usr/local/texlive/2024/texmf-dist/fonts/type1/urw/palatino/uplri8a.pfb>
-Output written on main.pdf (31 pages, 775577 bytes).
+Output written on main.pdf (32 pages, 777330 bytes).
 PDF statistics:
- 487 PDF objects out of 1000 (max. 8388607)
- 420 compressed objects within 5 object streams
- 78 named destinations out of 1000 (max. 500000)
- 332 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 497 PDF objects out of 1000 (max. 8388607)
+ 429 compressed objects within 5 object streams
+ 80 named destinations out of 1000 (max. 500000)
+ 340 words of extra memory for PDF output out of 10000 (max. 10000000)
 
