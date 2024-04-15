@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.26 (TeX Live 2024) (preloaded format=pdflatex 2024.3.29)  13 APR 2024 11:49
+This is pdfTeX, Version 3.141592653-2.6-1.40.26 (TeX Live 2024) (preloaded format=pdflatex 2024.3.29)  15 APR 2024 05:51
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -1137,6 +1137,11 @@ LaTeX Font Info:    Font shape `T1/cmtt/bx/n' in size <12> not available
 
  (./Chapters/Introduction.tex
 Chapter 1.
+
+Overfull \hbox (1.88318pt too wide) in paragraph at lines 6--7
+[]\T1/ppl/m/n/12 Lorem ip-sum do-lor sit amet, con-secte-tur adip-isc-ing elit. Ali-quam ul-tricies lacinia
+ []
+
 
 Overfull \hbox (2.81905pt too wide) in paragraph at lines 9--22
 [] 
