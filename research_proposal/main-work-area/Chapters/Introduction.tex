@@ -106,7 +106,35 @@ The various approaches to the Cox model handle data ties and time-dependent cova
 \subsection{Methods For Model Execution And Computation}
 
 \subsection{Methods For Model Evaluation And Result Interpretation}
+In evaluating the performance of survival prediction models, it is crucial to employ metrics that not only assess accuracy but also ensure fairness by minimising bias. This involves selecting evaluation measures that effectively balance calibration (the agreement between predicted and observed outcomes) and discrimination (the model's ability to distinguish between different outcomes). (1…) (2….) provides a guidelines and comprehensive framework for assessing model performance against true event times, ensuring that the models are both fair and accurate across different scenarios. These are essential for advancing survival analysis in ethically sensitive domains, thereby supporting more reliable and equitable outcomes.
 
+\subsubsection{C-Index}
+\noindent The C-index, or concordance index, is a vital statistical tool used to evaluate the predictive accuracy of survival models, quantifying their ability to correctly rank the order of patient outcomes based on their predicted risks. It is formally defined as the proportion of all "comparable" pairs of subjects where the predictions and actual outcomes are in agreement. A pair is considered comparable if it is possible to determine the order of their events, that is, who experienced the event first.
+\[C\text{-index} = \frac{\sum_{i,j} \mathbf{1}(t_i < t_j) \cdot \mathbf{1}(\eta_i > \eta_j) \cdot \delta_i}{\sum_{i,j} \mathbf{1}(t_i < t_j) \cdot \delta_i}\]
+\noindent Where, \(\mu_{i}\) is the risk score of subject \(i\), \(\delta_{i}\) is the event indicator being 1 in case of occurance
+\noindent Variants of the C-index include; time-independent C-index (Cti) which Uses the negative of predicted time or survival probability at a specified time. It assesses if the sequence of actual event times matches the predicted times, time-dependent C-index (Ctd) introduced by Antolini et al. (2005), this version accounts for varying amounts of censoring over time, attempting to provide a more accurate assessment by being a weighted average of time-dependent area under the curve (AUC) scores. The C-index can be biassed upwards with a high level of censoring in the data. This issue is discussed by Antolini et al. (2005) and addressed through the Ctd rule, although it is not a proper scoring rule (Rindt et al., 2022). The C-index, while useful, does not always align with other metrics such as the Mean Absolute Error (MAE). It is possible for a model to have a high C-index (accurately ranking the order of events) while still having large discrepancies in the actual predicted times of those events.
+
+\subsubsection{Brier Score and Integrated Brier Score}
+The \textbf{Brier Score} and the Integrated Brier score (IBS) are essential metrics used to evaluate the accuracy and reliability of survival models. Both scores measure the calibration and discrimination capabilities of a model, which are crucial for producing unbiased and precise predictions in survival analysis. Below is a detailed explanation of both metrics. The Brier score is a measure used to evaluate the accuracy of probabilistic predictions. It is essentially the mean squared error between the observed outcomes and the predicted probabilities at a specific time \(t^{*}\).
+\[BS_{t^*}(VU, \hat{S}(t^* | \cdot)) = \frac{1}{|VU|} \sum_{[\tilde{x}_i, d_i] \in VU} (I[d_i \leq t^*] - \hat{S}(t^* | \tilde{x}_i))^2\]
+\noindent Where, \(VU\) is the validation set, \(\hat{S}(t^* | \cdot))\) is the predicted survival probability at \(t^{*}\) and \(I[d_i \leq t^*]\) is the event indicator.
+\noindent A perfect model, which perfectly predicts whether events happen by time t* (predicting 1s and 0s accurately), would have a Brier score of 0. A model that always predicts a 50% chance of survival regardless of the actual outcome will have a Brier score of 0.25, representing poor predictive accuracy. The Integrated Brier Score (IBS) extends the concept of the Brier score across a range of times, providing a measure of model accuracy over time. In other words it is the expectation of the Brier scores calculated at each time point within a specified interval.
+\[IBS(\tau, VU, \hat{S}(\cdot | \cdot)) = \frac{1}{\tau} \int_0^{\tau} BS_t(VU, \hat{S}(t | \cdot)) \, dt\]
+\noindent Where, \(\tau\) is the maximum event time, \(BS_{t}\) is the brier score at time t.
+\noindent IBS is particularly useful for survival prediction models where it is important to assess model performance comprehensively across time rather than at a single time point. It gives an average score that reflects the overall performance of the model across the specified time interval. For censored data, the Inverse Probability Censoring Weight (IPCW) technique is often used in conjunction with IBS to adjust the contributions of censored subjects. This method helps to ensure that the model's performance is not unduly biassed by the censoring. IBS is considered a proper scoring rule if the censoring distribution is estimated correctly, meaning it incentivizes truthful forecasting and accurately reflects the model's predictive capabilities. IBS can be particularly impactful in clinical settings where decisions might depend on accurate, time-specific survival probabilities, such as deciding on conservative treatments based on predicted long-term survival chances.
+
+\subsubsection{Hosmer-Lemeshow Calibration (1-Calibration) and D-Calibration}
+\noindent 1-Calibration, also known as Hosmer-Lemeshow calibration, is a statistical test used to evaluate the calibration of a model at a specific time point t*. It measures how well the predicted probabilities of an event (e.g., failure, death) occurring by t* match the actual proportion of those events in the dataset. This test is particularly useful in contexts where predictions need to be reliable at specific critical thresholds. It works by sorting all subjects for the predicted probabilities at time t*. These probabilities are then grouped into a predefined number of groups or bins (typically 10). For each bin, the expected number of events is calculated based on the predicted probabilities, and this is compared to the actual number of events that occurred.
+\[\text{HL}(VU, \hat{S}(t^* | \cdot)) = \sum_{j=1}^B \frac{(O_j - n_j \bar{p}_j)^2}{n_j \bar{p}_j (1 - \bar{p}_j)}\]
+\noindent Where, \(B\) is the number of bins, \(O_{j}\) is the observed number of events in bin j, \(\hat{p}_{j}\) is the average predicted probability in bin j.
+\noindent A low value of the Hosmer-Lemeshow statistic suggests that the model's predictions are well-calibrated — i.e., the predicted probabilities of survival match the actual rates observed. The statistic follows a chi-squared distribution, allowing for the derivation of a p-value to assess the significance of the results. A model is considered well-calibrated at the chosen significance level if the p-value is greater than 0.05.
+
+\subsubsection{D-Calibration}
+\noindent D-Calibration extends the concept of 1-calibration over a range of time points or across different distributions of time points, providing a more comprehensive measure of a model's accuracy. It measures the consistency of predicted probabilities across a range of outcomes within a dataset. It assesses whether the distribution of predicted probabilities (over time or across conditions) matches the observed distribution of outcomes. Predicted probabilities are checked across a range of values. For each interval [a,b] within the probability range [0,1], the proportion of subjects with predicted probabilities within this range is compared to the actual proportion of events occurring in this interval.
+\[D_{\Theta}([a, b]) = \{[x_i, d_i, \delta_i = 1] \in D | \hat{S}_{\Theta}(d_i) \in [a, b]\}\]
+\noindent The proportion of subjects in each interval is expected to match the width of the interval \(b-a\). For instance, for the interval [0.1, 0.2], approximately 10% of the subjects should ideally have their predicted probabilities fall within this range if the model is perfectly D-Calibrated. A chi-squared test can be used to assess the uniformity of the distribution of predictions across the intervals, providing a statistical measure of calibration.
+
+\subsubsection{Mean Absolute Error}
 
 
 \section{Problem Statement}
@@ -136,32 +164,31 @@ Perform a comparative analysis of survival models using both simulated and real 
 \end{enumerate}
  
 \section{Limitations}
+\begin{enumerate}
+	\item \textbf{Scope and Focus:} This study primarily focuses on the application and evaluation of established survival analysis methods and their existing extensions as documented in the literature. The comparative aspect of our study does not aim to modify the foundational algorithms of these methods; rather, it seeks to implement and test these pre-existing models in a new dataset context with established frameworks.
+	\item \textbf{Redundancy in Literature:} Furthermore, comprehensive comparative studies like those conducted. please add source have already evaluated these methods extensively. These studies provide a solid foundation of knowledge regarding the performance and limitations of traditional and modified survival analysis models across various types of data.
+	\item \textbf{Innovation vs. Application:} Consequently, this proposal does not venture to innovate on the algorithmic core of these methods. Instead, it is designed to apply these well-established techniques to derive insights from specific datasets, thereby contributing to empirical evidence and practical applications rather than theoretical advancements.
+\end{enumerate}
 
-Sed ullamcorper quam eu nisl interdum at interdum enim egestas. Aliquam placerat justo sed lectus lobortis ut porta nisl porttitor. Vestibulum mi dolor, lacinia molestie gravida at, tempus vitae ligula. Donec eget quam sapien, in viverra eros.
 
-\par\vspace{0.5cm}
-\noindent \Cshadowbox{
-	\begin{minipage}{15cm}
-		\medskip
-		\color[rgb]{0.0,0.4,0.65}This section of the chapter addresses the scope of the research by identifying and discussing its limitations. These limitations might have a number of sources. For example, the size and extent of the data set used for the research could limit its generalisability. In this section, you should identify and discuss any such limitations that are foreseeable at the time of proposal.
-		\medskip 
-\end{minipage}}\\
 
-\section{Assumptions and Definitions}
 
-Morbi rutrum odio eget arcu adipiscing sodales. Aenean et purus a est pulvinar pellentesque.Cras in elit neque,  quis varius elit. Phasellus fringilla,  nibh eu tempus venenatis,  dolor elitposuere quam, quis adipiscing urna leo nec orci.  
 
-\par\vspace{0.5cm}
-\noindent \Cshadowbox{
-	\begin{minipage}{15cm}
-		\bigskip
-		\color[rgb]{0.0,0.4,0.65} Like the section above, this section addresses the scope of the research, along with providing any relevant technical definitions from the literature. It should include the following.
-			\begin{description}
-				\item[Assumptions] Identify and discuss any notable assumptions of the research.
-				\item[Definitions] Define any important technical terms appearing in the research.
-			\end{description}
-		\medskip 
-\end{minipage}}\\
+% \section{Assumptions and Definitions}
+
+% Morbi rutrum odio eget arcu adipiscing sodales. Aenean et purus a est pulvinar pellentesque.Cras in elit neque,  quis varius elit. Phasellus fringilla,  nibh eu tempus venenatis,  dolor elitposuere quam, quis adipiscing urna leo nec orci.  
+
+% \par\vspace{0.5cm}
+% \noindent \Cshadowbox{
+% 	\begin{minipage}{15cm}
+% 		\bigskip
+% 		\color[rgb]{0.0,0.4,0.65} Like the section above, this section addresses the scope of the research, along with providing any relevant technical definitions from the literature. It should include the following.
+% 			\begin{description}
+% 				\item[Assumptions] Identify and discuss any notable assumptions of the research.
+% 				\item[Definitions] Define any important technical terms appearing in the research.
+% 			\end{description}
+% 		\medskip 
+% \end{minipage}}\\
 
 \section{Overview}
 \noindent
