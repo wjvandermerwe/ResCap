@@ -16,5 +16,2170 @@
   {}
 \endgroup
 
+
+\refsection{0}
+  \datalist[entry]{nty/global//global/global}
+    \entry{burzykowski_survival_2024}{article}{}
+      \name{author}{1}{}{%
+        {{hash=be11bd2fc43878930a2256e1f92c854a}{%
+           family={Burzykowski},
+           familyi={B\bibinitperiod},
+           given={Tomasz},
+           giveni={T\bibinitperiod}}}%
+      }
+      \list{language}{1}{%
+        {en}%
+      }
+      \strng{namehash}{be11bd2fc43878930a2256e1f92c854a}
+      \strng{fullhash}{be11bd2fc43878930a2256e1f92c854a}
+      \strng{bibnamehash}{be11bd2fc43878930a2256e1f92c854a}
+      \strng{authorbibnamehash}{be11bd2fc43878930a2256e1f92c854a}
+      \strng{authornamehash}{be11bd2fc43878930a2256e1f92c854a}
+      \strng{authorfullhash}{be11bd2fc43878930a2256e1f92c854a}
+      \field{sortinit}{B}
+      \field{sortinithash}{d7095fff47cda75ca2589920aae98399}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{shorttitle}
+      \field{issn}{10738746}
+      \field{journaltitle}{Seminars in Orthodontics}
+      \field{month}{2}
+      \field{number}{1}
+      \field{shorttitle}{Survival analysis}
+      \field{title}{Survival analysis: {Methods} for analyzing data with censored observations}
+      \field{urlday}{16}
+      \field{urlmonth}{4}
+      \field{urlyear}{2024}
+      \field{volume}{30}
+      \field{year}{2024}
+      \field{urldateera}{ce}
+      \field{pages}{29\bibrangedash 36}
+      \range{pages}{8}
+      \verb{doi}
+      \verb 10.1053/j.sodo.2024.01.008
+      \endverb
+      \verb{file}
+      \verb Full Text:/Users/johan/Zotero/storage/TWXT56GP/Burzykowski - 2024 - Survival analysis Methods for analyzing data with.pdf:application/pdf
+      \endverb
+      \verb{urlraw}
+      \verb https://linkinghub.elsevier.com/retrieve/pii/S1073874624000094
+      \endverb
+      \verb{url}
+      \verb https://linkinghub.elsevier.com/retrieve/pii/S1073874624000094
+      \endverb
+    \endentry
+    \entry{cox_regression_1972}{article}{}
+      \name{author}{1}{}{%
+        {{hash=2d4d0b24655232a7821096d23c2354b5}{%
+           family={Cox},
+           familyi={C\bibinitperiod},
+           given={D.\bibnamedelimi R.},
+           giveni={D\bibinitperiod\bibinitdelim R\bibinitperiod}}}%
+      }
+      \strng{namehash}{2d4d0b24655232a7821096d23c2354b5}
+      \strng{fullhash}{2d4d0b24655232a7821096d23c2354b5}
+      \strng{bibnamehash}{2d4d0b24655232a7821096d23c2354b5}
+      \strng{authorbibnamehash}{2d4d0b24655232a7821096d23c2354b5}
+      \strng{authornamehash}{2d4d0b24655232a7821096d23c2354b5}
+      \strng{authorfullhash}{2d4d0b24655232a7821096d23c2354b5}
+      \field{sortinit}{C}
+      \field{sortinithash}{4d103a86280481745c9c897c925753c0}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{abstract}{[The analysis of censored failure times is considered. It is assumed that on each individual are available values of one or more explanatory variables. The hazard function (age-specific failure rate) is taken to be a function of the explanatory variables and unknown regression coefficients multiplied by an arbitrary and unknown function of time. A conditional likelihood is obtained, leading to inferences about the unknown regression coefficients. Some generalizations are outlined.]}
+      \field{issn}{00359246}
+      \field{journaltitle}{Journal of the Royal Statistical Society. Series B (Methodological)}
+      \field{note}{Publisher: [Royal Statistical Society, Wiley]}
+      \field{number}{2}
+      \field{title}{Regression {Models} and {Life}-{Tables}}
+      \field{urlday}{16}
+      \field{urlmonth}{4}
+      \field{urlyear}{2024}
+      \field{volume}{34}
+      \field{year}{1972}
+      \field{urldateera}{ce}
+      \field{pages}{187\bibrangedash 220}
+      \range{pages}{34}
+      \verb{urlraw}
+      \verb http://www.jstor.org/stable/2985181
+      \endverb
+      \verb{url}
+      \verb http://www.jstor.org/stable/2985181
+      \endverb
+    \endentry
+    \entry{cygu_pcoxtime_2021}{misc}{}
+      \name{author}{3}{}{%
+        {{hash=513d80ef441a3486fe780543c6b6875e}{%
+           family={Cygu},
+           familyi={C\bibinitperiod},
+           given={Steve},
+           giveni={S\bibinitperiod}}}%
+        {{hash=c2a8e631a88f3202dac9537521758960}{%
+           family={Dushoff},
+           familyi={D\bibinitperiod},
+           given={Jonathan},
+           giveni={J\bibinitperiod}}}%
+        {{hash=40205f70df6ea0642144adebc2fe5ccb}{%
+           family={Bolker},
+           familyi={B\bibinitperiod},
+           given={Benjamin\bibnamedelima M.},
+           giveni={B\bibinitperiod\bibinitdelim M\bibinitperiod}}}%
+      }
+      \list{publisher}{1}{%
+        {arXiv}%
+      }
+      \strng{namehash}{6377feb888a0ff60cb7f2b2160886ced}
+      \strng{fullhash}{6377feb888a0ff60cb7f2b2160886ced}
+      \strng{bibnamehash}{6377feb888a0ff60cb7f2b2160886ced}
+      \strng{authorbibnamehash}{6377feb888a0ff60cb7f2b2160886ced}
+      \strng{authornamehash}{6377feb888a0ff60cb7f2b2160886ced}
+      \strng{authorfullhash}{6377feb888a0ff60cb7f2b2160886ced}
+      \field{sortinit}{C}
+      \field{sortinithash}{4d103a86280481745c9c897c925753c0}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{shorttitle}
+      \field{abstract}{The penalized Cox proportional hazard model is a popular analytical approach for survival data with a large number of covariates. Such problems are especially challenging when covariates vary over follow-up time (i.e., the covariates are time-dependent). The standard R packages for fully penalized Cox models cannot currently incorporate time-dependent covariates. To address this gap, we implement a variant of gradient descent algorithm (proximal gradient descent) for fitting penalized Cox models. We apply our implementation to real and simulated data sets.}
+      \field{annotation}{Comment: Submitted to Journal of Statistical Software}
+      \field{month}{6}
+      \field{note}{arXiv:2102.02297 [stat]}
+      \field{shorttitle}{pcoxtime}
+      \field{title}{pcoxtime: {Penalized} {Cox} {Proportional} {Hazard} {Model} for {Time}-dependent {Covariates}}
+      \field{urlday}{16}
+      \field{urlmonth}{4}
+      \field{urlyear}{2024}
+      \field{year}{2021}
+      \field{urldateera}{ce}
+      \verb{file}
+      \verb arXiv Fulltext PDF:/Users/johan/Zotero/storage/DEGX7LEL/Cygu et al. - 2021 - pcoxtime Penalized Cox Proportional Hazard Model .pdf:application/pdf;arXiv.org Snapshot:/Users/johan/Zotero/storage/6M5XGNTM/2102.html:text/html
+      \endverb
+      \verb{urlraw}
+      \verb http://arxiv.org/abs/2102.02297
+      \endverb
+      \verb{url}
+      \verb http://arxiv.org/abs/2102.02297
+      \endverb
+      \keyw{Statistics - Computation,Statistics - Methodology,14J60}
+    \endentry
+    \entry{davidson-pilon_lifelines_2024}{misc}{}
+      \name{author}{1}{}{%
+        {{hash=ddd01661d7160cb48e55f66fe978576e}{%
+           family={Davidson-Pilon},
+           familyi={D\bibinithyphendelim P\bibinitperiod},
+           given={Cameron},
+           giveni={C\bibinitperiod}}}%
+      }
+      \list{publisher}{1}{%
+        {[object Object]}%
+      }
+      \strng{namehash}{ddd01661d7160cb48e55f66fe978576e}
+      \strng{fullhash}{ddd01661d7160cb48e55f66fe978576e}
+      \strng{bibnamehash}{ddd01661d7160cb48e55f66fe978576e}
+      \strng{authorbibnamehash}{ddd01661d7160cb48e55f66fe978576e}
+      \strng{authornamehash}{ddd01661d7160cb48e55f66fe978576e}
+      \strng{authorfullhash}{ddd01661d7160cb48e55f66fe978576e}
+      \field{sortinit}{D}
+      \field{sortinithash}{6f385f66841fb5e82009dc833c761848}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{abstract}{0.28.0 - 2023-01-03 Fixes bins that are far into the future with using survival\_table\_from\_events, see \#1587 Removed sklean\_adaptor. It was a terrible hack, and causing more confusion and support debt than I want. This cleans up our API and simplifies the library. ✨ There's no replacement, and I doubt I'll introduce one ✨ Fix pandas{>}=2.0 compatibility. Fix overflow issue in NelsonAalenfitter, \#1585 officially drop support for {<} py3.9 update some dependencies (pandas {>}= 1.2)}
+      \field{annotation}{Other If you use this software, please cite it using these metadata.}
+      \field{month}{1}
+      \field{title}{lifelines, survival analysis in {Python}}
+      \field{urlday}{21}
+      \field{urlmonth}{4}
+      \field{urlyear}{2024}
+      \field{year}{2024}
+      \field{urldateera}{ce}
+      \verb{doi}
+      \verb 10.5281/ZENODO.805993
+      \endverb
+      \verb{urlraw}
+      \verb https://zenodo.org/doi/10.5281/zenodo.805993
+      \endverb
+      \verb{url}
+      \verb https://zenodo.org/doi/10.5281/zenodo.805993
+      \endverb
+    \endentry
+    \entry{freijeirogonzalez_critical_2022}{article}{}
+      \name{author}{3}{}{%
+        {{hash=f9ccd2567d3ae010354b69a014b0ecd2}{%
+           family={Freijeiro‐González},
+           familyi={F\bibinithyphendelim G\bibinitperiod},
+           given={Laura},
+           giveni={L\bibinitperiod}}}%
+        {{hash=9af090321a46ea808c075426fcceb929}{%
+           family={Febrero‐Bande},
+           familyi={F\bibinithyphendelim B\bibinitperiod},
+           given={Manuel},
+           giveni={M\bibinitperiod}}}%
+        {{hash=8832c3a32ee46db09c7bc1e4a3e22141}{%
+           family={González‐Manteiga},
+           familyi={G\bibinithyphendelim M\bibinitperiod},
+           given={Wenceslao},
+           giveni={W\bibinitperiod}}}%
+      }
+      \list{language}{1}{%
+        {en}%
+      }
+      \strng{namehash}{a1a4ef049bf8a5146e5ada9f6f23fe10}
+      \strng{fullhash}{a1a4ef049bf8a5146e5ada9f6f23fe10}
+      \strng{bibnamehash}{a1a4ef049bf8a5146e5ada9f6f23fe10}
+      \strng{authorbibnamehash}{a1a4ef049bf8a5146e5ada9f6f23fe10}
+      \strng{authornamehash}{a1a4ef049bf8a5146e5ada9f6f23fe10}
+      \strng{authorfullhash}{a1a4ef049bf8a5146e5ada9f6f23fe10}
+      \field{sortinit}{F}
+      \field{sortinithash}{2638baaa20439f1b5a8f80c6c08a13b4}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{abstract}{Summary The limitations of the well‐known LASSO regression as a variable selector are tested when there exists dependence structures among covariates. We analyse both the classic situation with n ≥ p and the high dimensional framework with p  {>}  n . Known restrictive properties of this methodology to guarantee optimality, as well as inconveniences in practice, are analysed and tested by means of an extensive simulation study. Examples of these drawbacks are showed making use of different dependence scenarios. In order to search for improvements, a broad comparison with LASSO derivatives and alternatives is carried out. Eventually, we give some guidance about what procedures work best in terms of the considered data nature.}
+      \field{issn}{0306-7734, 1751-5823}
+      \field{journaltitle}{International Statistical Review}
+      \field{month}{4}
+      \field{number}{1}
+      \field{title}{A {Critical} {Review} of {LASSO} and {Its} {Derivatives} for {Variable} {Selection} {Under} {Dependence} {Among} {Covariates}}
+      \field{urlday}{21}
+      \field{urlmonth}{4}
+      \field{urlyear}{2024}
+      \field{volume}{90}
+      \field{year}{2022}
+      \field{urldateera}{ce}
+      \field{pages}{118\bibrangedash 145}
+      \range{pages}{28}
+      \verb{doi}
+      \verb 10.1111/insr.12469
+      \endverb
+      \verb{file}
+      \verb Full Text:/Users/johan/Zotero/storage/DB3MWMRA/Freijeiro‐González et al. - 2022 - A Critical Review of LASSO and Its Derivatives for.pdf:application/pdf
+      \endverb
+      \verb{urlraw}
+      \verb https://onlinelibrary.wiley.com/doi/10.1111/insr.12469
+      \endverb
+      \verb{url}
+      \verb https://onlinelibrary.wiley.com/doi/10.1111/insr.12469
+      \endverb
+    \endentry
+    \entry{haider_effective_2018}{misc}{}
+      \name{author}{4}{}{%
+        {{hash=5dff59419d49c1081e77d66234354873}{%
+           family={Haider},
+           familyi={H\bibinitperiod},
+           given={Humza},
+           giveni={H\bibinitperiod}}}%
+        {{hash=e312f21da7e0bede5dccac0e52e1a55f}{%
+           family={Hoehn},
+           familyi={H\bibinitperiod},
+           given={Bret},
+           giveni={B\bibinitperiod}}}%
+        {{hash=11504de971b60bf4c8fb719b012959d3}{%
+           family={Davis},
+           familyi={D\bibinitperiod},
+           given={Sarah},
+           giveni={S\bibinitperiod}}}%
+        {{hash=4a770d3fea9e460171ec3bbb23b8fceb}{%
+           family={Greiner},
+           familyi={G\bibinitperiod},
+           given={Russell},
+           giveni={R\bibinitperiod}}}%
+      }
+      \list{publisher}{1}{%
+        {arXiv}%
+      }
+      \strng{namehash}{52d92a2291184f87b238f9692ec3ab2a}
+      \strng{fullhash}{117a76e3a66a4460f016228ba6c92e17}
+      \strng{bibnamehash}{52d92a2291184f87b238f9692ec3ab2a}
+      \strng{authorbibnamehash}{52d92a2291184f87b238f9692ec3ab2a}
+      \strng{authornamehash}{52d92a2291184f87b238f9692ec3ab2a}
+      \strng{authorfullhash}{117a76e3a66a4460f016228ba6c92e17}
+      \field{sortinit}{H}
+      \field{sortinithash}{23a3aa7c24e56cfa16945d55545109b5}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{abstract}{An accurate model of a patient's individual survival distribution can help determine the appropriate treatment for terminal patients. Unfortunately, risk scores (e.g., from Cox Proportional Hazard models) do not provide survival probabilities, single-time probability models (e.g., the Gail model, predicting 5 year probability) only provide for a single time point, and standard Kaplan-Meier survival curves provide only population averages for a large class of patients meaning they are not specific to individual patients. This motivates an alternative class of tools that can learn a model which provides an individual survival distribution which gives survival probabilities across all times - such as extensions to the Cox model, Accelerated Failure Time, an extension to Random Survival Forests, and Multi-Task Logistic Regression. This paper first motivates such "individual survival distribution" (ISD) models, and explains how they differ from standard models. It then discusses ways to evaluate such models - namely Concordance, 1-Calibration, Brier score, and various versions of L1-loss - and then motivates and defines a novel approach "D-Calibration", which determines whether a model's probability estimates are meaningful. We also discuss how these measures differ, and use them to evaluate several ISD prediction tools, over a range of survival datasets.}
+      \field{annotation}{Comment: 34 pages (main text), 12 figures}
+      \field{month}{11}
+      \field{note}{arXiv:1811.11347 [cs, stat]}
+      \field{title}{Effective {Ways} to {Build} and {Evaluate} {Individual} {Survival} {Distributions}}
+      \field{urlday}{28}
+      \field{urlmonth}{4}
+      \field{urlyear}{2024}
+      \field{year}{2018}
+      \field{urldateera}{ce}
+      \verb{file}
+      \verb arXiv Fulltext PDF:/Users/johan/Zotero/storage/XKGTA7ZX/Haider et al. - 2018 - Effective Ways to Build and Evaluate Individual Su.pdf:application/pdf;arXiv.org Snapshot:/Users/johan/Zotero/storage/WLG9L2WL/1811.html:text/html
+      \endverb
+      \verb{urlraw}
+      \verb http://arxiv.org/abs/1811.11347
+      \endverb
+      \verb{url}
+      \verb http://arxiv.org/abs/1811.11347
+      \endverb
+      \keyw{Statistics - Machine Learning,Computer Science - Machine Learning}
+    \endentry
+    \entry{ishwaran_random_2008}{article}{}
+      \name{author}{4}{}{%
+        {{hash=87b2e79f8f2ab0a4040e84b52fbe2710}{%
+           family={Ishwaran},
+           familyi={I\bibinitperiod},
+           given={Hemant},
+           giveni={H\bibinitperiod}}}%
+        {{hash=92f6dd777823fa5a8d1d363897767e15}{%
+           family={Kogalur},
+           familyi={K\bibinitperiod},
+           given={Udaya\bibnamedelima B.},
+           giveni={U\bibinitperiod\bibinitdelim B\bibinitperiod}}}%
+        {{hash=1460149f56116fb0da52109dbae605c9}{%
+           family={Blackstone},
+           familyi={B\bibinitperiod},
+           given={Eugene\bibnamedelima H.},
+           giveni={E\bibinitperiod\bibinitdelim H\bibinitperiod}}}%
+        {{hash=cb1f012de543f3389545279a3a75e0e0}{%
+           family={Lauer},
+           familyi={L\bibinitperiod},
+           given={Michael\bibnamedelima S.},
+           giveni={M\bibinitperiod\bibinitdelim S\bibinitperiod}}}%
+      }
+      \strng{namehash}{d5ed18c6858d0afbb29689256bccf9b0}
+      \strng{fullhash}{ddc0a5f97c2ed352568e00596a350f1a}
+      \strng{bibnamehash}{d5ed18c6858d0afbb29689256bccf9b0}
+      \strng{authorbibnamehash}{d5ed18c6858d0afbb29689256bccf9b0}
+      \strng{authornamehash}{d5ed18c6858d0afbb29689256bccf9b0}
+      \strng{authorfullhash}{ddc0a5f97c2ed352568e00596a350f1a}
+      \field{sortinit}{I}
+      \field{sortinithash}{8d291c51ee89b6cd86bf5379f0b151d8}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{abstract}{We introduce random survival forests, a random forests method for the analysis of right-censored survival data. New survival splitting rules for growing survival trees are introduced, as is a new missing data algorithm for imputing missing data. A conservation-of-events principle for survival forests is introduced and used to define ensemble mortality, a simple interpretable measure of mortality that can be used as a predicted outcome. Several illustrative examples are given, including a case study of the prognostic implications of body mass for individuals with coronary artery disease. Computations for all examples were implemented using the freely available R-software package, randomSurvivalForest.}
+      \field{annotation}{Comment: Published in at http://dx.doi.org/10.1214/08-AOAS169 the Annals of Applied Statistics (http://www.imstat.org/aoas/) by the Institute of Mathematical Statistics (http://www.imstat.org)}
+      \field{issn}{1932-6157}
+      \field{journaltitle}{The Annals of Applied Statistics}
+      \field{month}{9}
+      \field{note}{arXiv:0811.1645 [stat]}
+      \field{number}{3}
+      \field{title}{Random survival forests}
+      \field{urlday}{16}
+      \field{urlmonth}{4}
+      \field{urlyear}{2024}
+      \field{volume}{2}
+      \field{year}{2008}
+      \field{urldateera}{ce}
+      \verb{doi}
+      \verb 10.1214/08-AOAS169
+      \endverb
+      \verb{file}
+      \verb arXiv Fulltext PDF:/Users/johan/Zotero/storage/3WQJ6PZB/Ishwaran et al. - 2008 - Random survival forests.pdf:application/pdf;arXiv.org Snapshot:/Users/johan/Zotero/storage/F24NGKM8/0811.html:text/html
+      \endverb
+      \verb{urlraw}
+      \verb http://arxiv.org/abs/0811.1645
+      \endverb
+      \verb{url}
+      \verb http://arxiv.org/abs/0811.1645
+      \endverb
+      \keyw{Statistics - Applications}
+    \endentry
+    \entry{jaeger_accelerated_2022}{misc}{}
+      \name{author}{7}{}{%
+        {{hash=aca9ab9625e1495903071fdd526cc2ed}{%
+           family={Jaeger},
+           familyi={J\bibinitperiod},
+           given={Byron\bibnamedelima C.},
+           giveni={B\bibinitperiod\bibinitdelim C\bibinitperiod}}}%
+        {{hash=83044bdae50be2826137635a6658164b}{%
+           family={Welden},
+           familyi={W\bibinitperiod},
+           given={Sawyer},
+           giveni={S\bibinitperiod}}}%
+        {{hash=f60db09b527dbb772e34193a3896d2a8}{%
+           family={Lenoir},
+           familyi={L\bibinitperiod},
+           given={Kristin},
+           giveni={K\bibinitperiod}}}%
+        {{hash=3b3e9e7d1f9276226ac005faee395b32}{%
+           family={Speiser},
+           familyi={S\bibinitperiod},
+           given={Jaime\bibnamedelima L.},
+           giveni={J\bibinitperiod\bibinitdelim L\bibinitperiod}}}%
+        {{hash=8da9a4ea2a7fdf228218c12059ca97f0}{%
+           family={Segar},
+           familyi={S\bibinitperiod},
+           given={Matthew\bibnamedelima W.},
+           giveni={M\bibinitperiod\bibinitdelim W\bibinitperiod}}}%
+        {{hash=ad3d2dc740c4faf44ccfce4db2329b12}{%
+           family={Pandey},
+           familyi={P\bibinitperiod},
+           given={Ambarish},
+           giveni={A\bibinitperiod}}}%
+        {{hash=bbbdbdadf085505ba7c4ec93208219b0}{%
+           family={Pajewski},
+           familyi={P\bibinitperiod},
+           given={Nicholas\bibnamedelima M.},
+           giveni={N\bibinitperiod\bibinitdelim M\bibinitperiod}}}%
+      }
+      \list{publisher}{1}{%
+        {arXiv}%
+      }
+      \strng{namehash}{60f71db8e53b030aaf1cd5ada23504e7}
+      \strng{fullhash}{d2c8113c714633824e198d5a11bd5673}
+      \strng{bibnamehash}{60f71db8e53b030aaf1cd5ada23504e7}
+      \strng{authorbibnamehash}{60f71db8e53b030aaf1cd5ada23504e7}
+      \strng{authornamehash}{60f71db8e53b030aaf1cd5ada23504e7}
+      \strng{authorfullhash}{d2c8113c714633824e198d5a11bd5673}
+      \field{sortinit}{J}
+      \field{sortinithash}{b2f54a9081ace9966a7cb9413811edb4}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{abstract}{The oblique random survival forest (RSF) is an ensemble supervised learning method for right-censored outcomes. Trees in the oblique RSF are grown using linear combinations of predictors to create branches, whereas in the standard RSF, a single predictor is used. Oblique RSF ensembles often have higher prediction accuracy than standard RSF ensembles. However, assessing all possible linear combinations of predictors induces significant computational overhead that limits applications to large-scale data sets. In addition, few methods have been developed for interpretation of oblique RSF ensembles, and they remain more difficult to interpret compared to their axis-based counterparts. We introduce a method to increase computational efficiency of the oblique RSF and a method to estimate importance of individual predictor variables with the oblique RSF. Our strategy to reduce computational overhead makes use of Newton-Raphson scoring, a classical optimization technique that we apply to the Cox partial likelihood function within each non-leaf node of decision trees. We estimate the importance of individual predictors for the oblique RSF by negating each coefficient used for the given predictor in linear combinations, and then computing the reduction in out-of-bag accuracy. In general benchmarking experiments, we find that our implementation of the oblique RSF is approximately 450 times faster with equivalent discrimination and superior Brier score compared to existing software for oblique RSFs. We find in simulation studies that 'negation importance' discriminates between relevant and irrelevant predictors more reliably than permutation importance, Shapley additive explanations, and a previously introduced technique to measure variable importance with oblique RSFs based on analysis of variance. Methods introduced in the current study are available in the aorsf R package.}
+      \field{annotation}{Comment: 40 pages, 6 figures}
+      \field{month}{8}
+      \field{note}{arXiv:2208.01129 [stat]}
+      \field{title}{Accelerated and interpretable oblique random survival forests}
+      \field{urlday}{16}
+      \field{urlmonth}{4}
+      \field{urlyear}{2024}
+      \field{year}{2022}
+      \field{urldateera}{ce}
+      \verb{file}
+      \verb arXiv Fulltext PDF:/Users/johan/Zotero/storage/9TUTVJFH/Jaeger et al. - 2022 - Accelerated and interpretable oblique random survi.pdf:application/pdf;arXiv.org Snapshot:/Users/johan/Zotero/storage/M3YRVGUH/2208.html:text/html
+      \endverb
+      \verb{urlraw}
+      \verb http://arxiv.org/abs/2208.01129
+      \endverb
+      \verb{url}
+      \verb http://arxiv.org/abs/2208.01129
+      \endverb
+      \keyw{Statistics - Methodology,Statistics - Machine Learning}
+    \endentry
+    \entry{jin_imputation_2024}{article}{}
+      \name{author}{1}{}{%
+        {{hash=11c170c272345e146953ff1ebceec9c7}{%
+           family={Jin},
+           familyi={J\bibinitperiod},
+           given={Man},
+           giveni={M\bibinitperiod}}}%
+      }
+      \list{language}{1}{%
+        {en}%
+      }
+      \strng{namehash}{11c170c272345e146953ff1ebceec9c7}
+      \strng{fullhash}{11c170c272345e146953ff1ebceec9c7}
+      \strng{bibnamehash}{11c170c272345e146953ff1ebceec9c7}
+      \strng{authorbibnamehash}{11c170c272345e146953ff1ebceec9c7}
+      \strng{authornamehash}{11c170c272345e146953ff1ebceec9c7}
+      \strng{authorfullhash}{11c170c272345e146953ff1ebceec9c7}
+      \field{sortinit}{J}
+      \field{sortinithash}{b2f54a9081ace9966a7cb9413811edb4}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{issn}{15517144}
+      \field{journaltitle}{Contemporary Clinical Trials}
+      \field{month}{1}
+      \field{title}{Imputation methods for informative censoring in survival analysis with time dependent covariates}
+      \field{urlday}{16}
+      \field{urlmonth}{4}
+      \field{urlyear}{2024}
+      \field{volume}{136}
+      \field{year}{2024}
+      \field{urldateera}{ce}
+      \field{pages}{107401}
+      \range{pages}{1}
+      \verb{doi}
+      \verb 10.1016/j.cct.2023.107401
+      \endverb
+      \verb{urlraw}
+      \verb https://linkinghub.elsevier.com/retrieve/pii/S1551714423003245
+      \endverb
+      \verb{url}
+      \verb https://linkinghub.elsevier.com/retrieve/pii/S1551714423003245
+      \endverb
+    \endentry
+    \entry{joshi_beginning_2016}{book}{}
+      \name{author}{1}{}{%
+        {{hash=a900e96f0bd036f1ecd5f3ad69d37306}{%
+           family={Joshi},
+           familyi={J\bibinitperiod},
+           given={Bipin},
+           giveni={B\bibinitperiod}}}%
+      }
+      \list{language}{1}{%
+        {en}%
+      }
+      \list{location}{1}{%
+        {Berkeley, CA}%
+      }
+      \list{publisher}{1}{%
+        {Apress}%
+      }
+      \strng{namehash}{a900e96f0bd036f1ecd5f3ad69d37306}
+      \strng{fullhash}{a900e96f0bd036f1ecd5f3ad69d37306}
+      \strng{bibnamehash}{a900e96f0bd036f1ecd5f3ad69d37306}
+      \strng{authorbibnamehash}{a900e96f0bd036f1ecd5f3ad69d37306}
+      \strng{authornamehash}{a900e96f0bd036f1ecd5f3ad69d37306}
+      \strng{authorfullhash}{a900e96f0bd036f1ecd5f3ad69d37306}
+      \field{sortinit}{J}
+      \field{sortinithash}{b2f54a9081ace9966a7cb9413811edb4}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{isbn}{978-1-4842-1847-1 978-1-4842-1848-8}
+      \field{title}{Beginning {SOLID} {Principles} and {Design} {Patterns} for {ASP}.{NET} {Developers}}
+      \field{urlday}{28}
+      \field{urlmonth}{4}
+      \field{urlyear}{2024}
+      \field{year}{2016}
+      \field{urldateera}{ce}
+      \verb{doi}
+      \verb 10.1007/978-1-4842-1848-8
+      \endverb
+      \verb{urlraw}
+      \verb http://link.springer.com/10.1007/978-1-4842-1848-8
+      \endverb
+      \verb{url}
+      \verb http://link.springer.com/10.1007/978-1-4842-1848-8
+      \endverb
+    \endentry
+    \entry{kalbfleisch_fifty_2023}{article}{}
+      \name{author}{2}{}{%
+        {{hash=2a496d9f8d73c13b5d08b7efbceb3370}{%
+           family={Kalbfleisch},
+           familyi={K\bibinitperiod},
+           given={John\bibnamedelima D.},
+           giveni={J\bibinitperiod\bibinitdelim D\bibinitperiod}}}%
+        {{hash=91cb9339ad5983061bf3aedbdd960fcf}{%
+           family={Schaubel},
+           familyi={S\bibinitperiod},
+           given={Douglas\bibnamedelima E.},
+           giveni={D\bibinitperiod\bibinitdelim E\bibinitperiod}}}%
+      }
+      \list{language}{1}{%
+        {en}%
+      }
+      \strng{namehash}{45772492c74badd410598bd1dc122687}
+      \strng{fullhash}{45772492c74badd410598bd1dc122687}
+      \strng{bibnamehash}{45772492c74badd410598bd1dc122687}
+      \strng{authorbibnamehash}{45772492c74badd410598bd1dc122687}
+      \strng{authornamehash}{45772492c74badd410598bd1dc122687}
+      \strng{authorfullhash}{45772492c74badd410598bd1dc122687}
+      \field{sortinit}{K}
+      \field{sortinithash}{c02bf6bff1c488450c352b40f5d853ab}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{abstract}{The Cox model is now 50 years old. The seminal paper of Sir David Cox has had an immeasurable impact on the analysis of censored survival data, with applications in many different disciplines. This work has also stimulated much additional research in diverse areas and led to important theoretical and practical advances. These include semiparametric models, nonparametric efficiency, and partial likelihood. In addition to quickly becoming the go-to method for estimating covariate effects, Cox regression has been extended to a vast number of complex data structures, to all of which the central idea of sampling from the set of individuals at risk at time t can be applied. In this article, we review the Cox paper and the evolution of the ideas surrounding it. We then highlight its extensions to competing risks, with attention to models based on cause-specific hazards, and to hazards associated with the subdistribution or cumulative incidence function. We discuss their relative merits and domains of application. The analysis of recurrent events is another major topic of discussion, including an introduction to martingales and complete intensity models as well as the more practical marginal rate models. We include several worked examples to illustrate the main ideas.}
+      \field{issn}{2326-8298, 2326-831X}
+      \field{journaltitle}{Annual Review of Statistics and Its Application}
+      \field{month}{3}
+      \field{number}{1}
+      \field{title}{Fifty {Years} of the {Cox} {Model}}
+      \field{urlday}{21}
+      \field{urlmonth}{4}
+      \field{urlyear}{2024}
+      \field{volume}{10}
+      \field{year}{2023}
+      \field{urldateera}{ce}
+      \field{pages}{1\bibrangedash 23}
+      \range{pages}{23}
+      \verb{doi}
+      \verb 10.1146/annurev-statistics-033021-014043
+      \endverb
+      \verb{file}
+      \verb Full Text:/Users/johan/Zotero/storage/XELPVAYG/Kalbfleisch and Schaubel - 2023 - Fifty Years of the Cox Model.pdf:application/pdf
+      \endverb
+      \verb{urlraw}
+      \verb https://www.annualreviews.org/doi/10.1146/annurev-statistics-033021-014043
+      \endverb
+      \verb{url}
+      \verb https://www.annualreviews.org/doi/10.1146/annurev-statistics-033021-014043
+      \endverb
+    \endentry
+    \entry{kantidakis_simulation_2021}{article}{}
+      \name{author}{4}{}{%
+        {{hash=63317fe3e8293cfbf316373af91f70ac}{%
+           family={Kantidakis},
+           familyi={K\bibinitperiod},
+           given={Georgios},
+           giveni={G\bibinitperiod}}}%
+        {{hash=de57da299f947f8399aee20d9786c394}{%
+           family={Biganzoli},
+           familyi={B\bibinitperiod},
+           given={Elia},
+           giveni={E\bibinitperiod}}}%
+        {{hash=209ba3715be4923f373249a14855a168}{%
+           family={Putter},
+           familyi={P\bibinitperiod},
+           given={Hein},
+           giveni={H\bibinitperiod}}}%
+        {{hash=a0a2f1c58c621b12e8d0ca5ac7e717b0}{%
+           family={Fiocco},
+           familyi={F\bibinitperiod},
+           given={Marta},
+           giveni={M\bibinitperiod}}}%
+      }
+      \name{editor}{1}{}{%
+        {{hash=293204dd3694f0475b874318a13bc8ca}{%
+           family={Bursac},
+           familyi={B\bibinitperiod},
+           given={Zoran},
+           giveni={Z\bibinitperiod}}}%
+      }
+      \list{language}{1}{%
+        {en}%
+      }
+      \strng{namehash}{767cb06d322c8aead956405832adad63}
+      \strng{fullhash}{047cdf4367a0e5325b518418d05fb2dc}
+      \strng{bibnamehash}{767cb06d322c8aead956405832adad63}
+      \strng{authorbibnamehash}{767cb06d322c8aead956405832adad63}
+      \strng{authornamehash}{767cb06d322c8aead956405832adad63}
+      \strng{authorfullhash}{047cdf4367a0e5325b518418d05fb2dc}
+      \strng{editorbibnamehash}{293204dd3694f0475b874318a13bc8ca}
+      \strng{editornamehash}{293204dd3694f0475b874318a13bc8ca}
+      \strng{editorfullhash}{293204dd3694f0475b874318a13bc8ca}
+      \field{sortinit}{K}
+      \field{sortinithash}{c02bf6bff1c488450c352b40f5d853ab}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{abstract}{Background. Studies focusing on prediction models are widespread in medicine. There is a trend in applying machine learning (ML) by medical researchers and clinicians. Over the years, multiple ML algorithms have been adapted to censored data. However, the choice of methodology should be motivated by the real-life data and their complexity. Here, the predictive performance of ML techniques is compared with statistical models in a simple clinical setting (small/moderate sample size and small number of predictors) with Monte-Carlo simulations. Methods. Synthetic data (250 or 1000 patients) were generated that closely resembled 5 prognostic factors preselected based on a European Osteosarcoma Intergroup study (MRC BO06/EORTC 80931). Comparison was performed between 2 partial logistic artificial neural networks (PLANNs) and Cox models for 20, 40, 61, and 80\% censoring. Survival times were generated from a log-normal distribution. Models were contrasted in terms of the C-index, Brier score at 0-5 years, integrated Brier score (IBS) at 5 years, and miscalibration at 2 and 5 years (usually neglected). The endpoint of interest was overall survival. Results. PLANNs original/extended were tuned based on the IBS at 5 years and the C-index, achieving a slightly better performance with the IBS. Comparison with Cox models showed that PLANNs can reach similar predictive performance on simulated data for most scenarios with respect to the C-index, Brier score, or IBS. However, Cox models were frequently less miscalibrated. Performance was robust in scenario data where censored patients were removed before 2 years or curtailing at 5 years was performed (on training data). Conclusion. Survival neural networks reached a comparable predictive performance with Cox models but were generally less well calibrated. All in all, researchers should be aware of burdensome aspects of ML techniques such as data preprocessing, tuning of hyperparameters, and computational intensity that render them disadvantageous against conventional regression models in a simple clinical setting.}
+      \field{issn}{1748-6718, 1748-670X}
+      \field{journaltitle}{Computational and Mathematical Methods in Medicine}
+      \field{month}{11}
+      \field{title}{A {Simulation} {Study} to {Compare} the {Predictive} {Performance} of {Survival} {Neural} {Networks} with {Cox} {Models} for {Clinical} {Trial} {Data}}
+      \field{urlday}{16}
+      \field{urlmonth}{4}
+      \field{urlyear}{2024}
+      \field{volume}{2021}
+      \field{year}{2021}
+      \field{urldateera}{ce}
+      \field{pages}{1\bibrangedash 15}
+      \range{pages}{15}
+      \verb{doi}
+      \verb 10.1155/2021/2160322
+      \endverb
+      \verb{file}
+      \verb Full Text:/Users/johan/Zotero/storage/68AAIM2T/Kantidakis et al. - 2021 - A Simulation Study to Compare the Predictive Perfo.pdf:application/pdf
+      \endverb
+      \verb{urlraw}
+      \verb https://www.hindawi.com/journals/cmmm/2021/2160322/
+      \endverb
+      \verb{url}
+      \verb https://www.hindawi.com/journals/cmmm/2021/2160322/
+      \endverb
+    \endentry
+    \entry{kurt_omurlu_comparisons_2009}{article}{}
+      \name{author}{3}{}{%
+        {{hash=21a20bc62962dc3a98dd7f311cc49fcf}{%
+           family={Kurt\bibnamedelima Omurlu},
+           familyi={K\bibinitperiod\bibinitdelim O\bibinitperiod},
+           given={Imran},
+           giveni={I\bibinitperiod}}}%
+        {{hash=df8be6354d06e2f67f9e03d3a5c369af}{%
+           family={Ture},
+           familyi={T\bibinitperiod},
+           given={Mevlut},
+           giveni={M\bibinitperiod}}}%
+        {{hash=4308ac945ba38f592dc74996a920732c}{%
+           family={Tokatli},
+           familyi={T\bibinitperiod},
+           given={Füsun},
+           giveni={F\bibinitperiod}}}%
+      }
+      \list{language}{1}{%
+        {en}%
+      }
+      \strng{namehash}{2ed9fe47042cdbf8c15657b46f635bb7}
+      \strng{fullhash}{2ed9fe47042cdbf8c15657b46f635bb7}
+      \strng{bibnamehash}{2ed9fe47042cdbf8c15657b46f635bb7}
+      \strng{authorbibnamehash}{2ed9fe47042cdbf8c15657b46f635bb7}
+      \strng{authornamehash}{2ed9fe47042cdbf8c15657b46f635bb7}
+      \strng{authorfullhash}{2ed9fe47042cdbf8c15657b46f635bb7}
+      \field{sortinit}{K}
+      \field{sortinithash}{c02bf6bff1c488450c352b40f5d853ab}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{issn}{09574174}
+      \field{journaltitle}{Expert Systems with Applications}
+      \field{month}{5}
+      \field{number}{4}
+      \field{title}{The comparisons of random survival forests and {Cox} regression analysis with simulation and an application related to breast cancer}
+      \field{urlday}{16}
+      \field{urlmonth}{4}
+      \field{urlyear}{2024}
+      \field{volume}{36}
+      \field{year}{2009}
+      \field{urldateera}{ce}
+      \field{pages}{8582\bibrangedash 8588}
+      \range{pages}{7}
+      \verb{doi}
+      \verb 10.1016/j.eswa.2008.10.023
+      \endverb
+      \verb{urlraw}
+      \verb https://linkinghub.elsevier.com/retrieve/pii/S0957417408007343
+      \endverb
+      \verb{url}
+      \verb https://linkinghub.elsevier.com/retrieve/pii/S0957417408007343
+      \endverb
+    \endentry
+    \entry{meng_simulating_2023}{article}{}
+      \name{author}{9}{}{%
+        {{hash=c7368250f0117bc2c041e2e833ea4043}{%
+           family={Meng},
+           familyi={M\bibinitperiod},
+           given={Can},
+           giveni={C\bibinitperiod}}}%
+        {{hash=9a21a24c4ef9f886cb7cebaffbcd6189}{%
+           family={Esserman},
+           familyi={E\bibinitperiod},
+           given={Denise},
+           giveni={D\bibinitperiod}}}%
+        {{hash=99b3b2e56c8f5ffeb95b882b3da68136}{%
+           family={Li},
+           familyi={L\bibinitperiod},
+           given={Fan},
+           giveni={F\bibinitperiod}}}%
+        {{hash=1010b411ade3c22ec36bdd2c624c30e5}{%
+           family={Zhao},
+           familyi={Z\bibinitperiod},
+           given={Yize},
+           giveni={Y\bibinitperiod}}}%
+        {{hash=0e26931fc25bc0eda78840ce645df8d6}{%
+           family={Blaha},
+           familyi={B\bibinitperiod},
+           given={Ondrej},
+           giveni={O\bibinitperiod}}}%
+        {{hash=b2f8b126b7437adc51b8e805d638709b}{%
+           family={Lu},
+           familyi={L\bibinitperiod},
+           given={Wenhan},
+           giveni={W\bibinitperiod}}}%
+        {{hash=fc399f85ccdd18f7c16d2cd99a42d132}{%
+           family={Wang},
+           familyi={W\bibinitperiod},
+           given={Yuxuan},
+           giveni={Y\bibinitperiod}}}%
+        {{hash=ef98c6c7e7e1f2dc9a5b42a00b399f19}{%
+           family={Peduzzi},
+           familyi={P\bibinitperiod},
+           given={Peter},
+           giveni={P\bibinitperiod}}}%
+        {{hash=32c263f5c3687dd315a04c24b0660bbd}{%
+           family={Greene},
+           familyi={G\bibinitperiod},
+           given={Erich\bibnamedelima J.},
+           giveni={E\bibinitperiod\bibinitdelim J\bibinitperiod}}}%
+      }
+      \list{language}{1}{%
+        {en}%
+      }
+      \strng{namehash}{b1079c75d0e0ee94695babbf33dea716}
+      \strng{fullhash}{0df10e5a34aa7439364c56d2a2b2c9f9}
+      \strng{bibnamehash}{b1079c75d0e0ee94695babbf33dea716}
+      \strng{authorbibnamehash}{b1079c75d0e0ee94695babbf33dea716}
+      \strng{authornamehash}{b1079c75d0e0ee94695babbf33dea716}
+      \strng{authorfullhash}{0df10e5a34aa7439364c56d2a2b2c9f9}
+      \field{sortinit}{M}
+      \field{sortinithash}{4625c616857f13d17ce56f7d4f97d451}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{shorttitle}
+      \field{abstract}{Simulation studies play an important role in evaluating the performance of statistical models developed for analyzing complex survival data such as those with competing risks and clustering. This article aims to provide researchers with a basic understanding of competing risks data generation, techniques for inducing cluster-level correlation, and ways to combine them together in simulation studies, in the context of randomized clinical trials with a binary exposure or treatment. We review data generation with competing and semi-competing risks and three approaches of inducing cluster-level correlation for time-to-event data: the frailty model framework, the probability transform, and Moran’s algorithm. Using exponentially distributed event times as an example, we discuss how to introduce cluster-level correlation into generating complex survival outcomes, and illustrate multiple ways of combining these methods to simulate clustered, competing and semi-competing risks data with pre-specified correlation values or degree of clustering.}
+      \field{issn}{0962-2802, 1477-0334}
+      \field{journaltitle}{Statistical Methods in Medical Research}
+      \field{month}{2}
+      \field{number}{2}
+      \field{shorttitle}{Simulating time-to-event data subject to competing risks and clustering}
+      \field{title}{Simulating time-to-event data subject to competing risks and clustering: {A} review and synthesis}
+      \field{urlday}{16}
+      \field{urlmonth}{4}
+      \field{urlyear}{2024}
+      \field{volume}{32}
+      \field{year}{2023}
+      \field{urldateera}{ce}
+      \field{pages}{305\bibrangedash 333}
+      \range{pages}{29}
+      \verb{doi}
+      \verb 10.1177/09622802221136067
+      \endverb
+      \verb{urlraw}
+      \verb http://journals.sagepub.com/doi/10.1177/09622802221136067
+      \endverb
+      \verb{url}
+      \verb http://journals.sagepub.com/doi/10.1177/09622802221136067
+      \endverb
+    \endentry
+    \entry{morris_using_2019}{article}{}
+      \name{author}{3}{}{%
+        {{hash=eadb4ae07082f09545a098561fb755a8}{%
+           family={Morris},
+           familyi={M\bibinitperiod},
+           given={Tim\bibnamedelima P.},
+           giveni={T\bibinitperiod\bibinitdelim P\bibinitperiod}}}%
+        {{hash=024ff9dd7531a289f92473b1f7ce2e2c}{%
+           family={White},
+           familyi={W\bibinitperiod},
+           given={Ian\bibnamedelima R.},
+           giveni={I\bibinitperiod\bibinitdelim R\bibinitperiod}}}%
+        {{hash=e5050b089ab6f5c063e753ce7792eec5}{%
+           family={Crowther},
+           familyi={C\bibinitperiod},
+           given={Michael\bibnamedelima J.},
+           giveni={M\bibinitperiod\bibinitdelim J\bibinitperiod}}}%
+      }
+      \strng{namehash}{b11853bbe565cceb99e477d646566605}
+      \strng{fullhash}{b11853bbe565cceb99e477d646566605}
+      \strng{bibnamehash}{b11853bbe565cceb99e477d646566605}
+      \strng{authorbibnamehash}{b11853bbe565cceb99e477d646566605}
+      \strng{authornamehash}{b11853bbe565cceb99e477d646566605}
+      \strng{authorfullhash}{b11853bbe565cceb99e477d646566605}
+      \field{sortinit}{M}
+      \field{sortinithash}{4625c616857f13d17ce56f7d4f97d451}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{abstract}{Simulation studies are computer experiments that involve creating data by pseudorandom sampling. The key strength of simulation studies is the ability to understand the behaviour of statistical methods because some 'truth' (usually some parameter/s of interest) is known from the process of generating the data. This allows us to consider properties of methods, such as bias. While widely used, simulation studies are often poorly designed, analysed and reported. This tutorial outlines the rationale for using simulation studies and offers guidance for design, execution, analysis, reporting and presentation. In particular, this tutorial provides: a structured approach for planning and reporting simulation studies, which involves defining aims, data-generating mechanisms, estimands, methods and performance measures ('ADEMP'); coherent terminology for simulation studies; guidance on coding simulation studies; a critical discussion of key performance measures and their estimation; guidance on structuring tabular and graphical presentation of results; and new graphical presentations. With a view to describing recent practice, we review 100 articles taken from Volume 34 of Statistics in Medicine that included at least one simulation study and identify areas for improvement.}
+      \field{annotation}{Comment: 31 pages, 9 figures (2 in appendix), 8 tables (1 in appendix)}
+      \field{issn}{0277-6715, 1097-0258}
+      \field{journaltitle}{Statistics in Medicine}
+      \field{month}{5}
+      \field{note}{arXiv:1712.03198 [stat]}
+      \field{number}{11}
+      \field{title}{Using simulation studies to evaluate statistical methods}
+      \field{urlday}{16}
+      \field{urlmonth}{4}
+      \field{urlyear}{2024}
+      \field{volume}{38}
+      \field{year}{2019}
+      \field{urldateera}{ce}
+      \field{pages}{2074\bibrangedash 2102}
+      \range{pages}{29}
+      \verb{doi}
+      \verb 10.1002/sim.8086
+      \endverb
+      \verb{file}
+      \verb arXiv Fulltext PDF:/Users/johan/Zotero/storage/JAW3BGRL/Morris et al. - 2019 - Using simulation studies to evaluate statistical m.pdf:application/pdf;arXiv.org Snapshot:/Users/johan/Zotero/storage/YIBPZQYM/1712.html:text/html
+      \endverb
+      \verb{urlraw}
+      \verb http://arxiv.org/abs/1712.03198
+      \endverb
+      \verb{url}
+      \verb http://arxiv.org/abs/1712.03198
+      \endverb
+      \keyw{Statistics - Methodology}
+    \endentry
+    \entry{nagpal_auton-survival_2022}{misc}{}
+      \name{author}{3}{}{%
+        {{hash=e9b1df1a7f8b1085bfb911ea993b2a82}{%
+           family={Nagpal},
+           familyi={N\bibinitperiod},
+           given={Chirag},
+           giveni={C\bibinitperiod}}}%
+        {{hash=01064f386290bfbf5df69121497a193b}{%
+           family={Potosnak},
+           familyi={P\bibinitperiod},
+           given={Willa},
+           giveni={W\bibinitperiod}}}%
+        {{hash=b9bf2f57175122ccd8ede698750624e9}{%
+           family={Dubrawski},
+           familyi={D\bibinitperiod},
+           given={Artur},
+           giveni={A\bibinitperiod}}}%
+      }
+      \list{publisher}{1}{%
+        {arXiv}%
+      }
+      \strng{namehash}{5deb2b3bff898a68cadd4366278a7598}
+      \strng{fullhash}{5deb2b3bff898a68cadd4366278a7598}
+      \strng{bibnamehash}{5deb2b3bff898a68cadd4366278a7598}
+      \strng{authorbibnamehash}{5deb2b3bff898a68cadd4366278a7598}
+      \strng{authornamehash}{5deb2b3bff898a68cadd4366278a7598}
+      \strng{authorfullhash}{5deb2b3bff898a68cadd4366278a7598}
+      \field{sortinit}{N}
+      \field{sortinithash}{22369a73d5f88983a108b63f07f37084}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{shorttitle}
+      \field{abstract}{Applications of machine learning in healthcare often require working with time-to-event prediction tasks including prognostication of an adverse event, re-hospitalization or death. Such outcomes are typically subject to censoring due to loss of follow up. Standard machine learning methods cannot be applied in a straightforward manner to datasets with censored outcomes. In this paper, we present auton-survival, an open-source repository of tools to streamline working with censored time-to-event or survival data. auton-survival includes tools for survival regression, adjustment in the presence of domain shift, counterfactual estimation, phenotyping for risk stratification, evaluation, as well as estimation of treatment effects. Through real world case studies employing a large subset of the SEER oncology incidence data, we demonstrate the ability of auton-survival to rapidly support data scientists in answering complex health and epidemiological questions.}
+      \field{month}{8}
+      \field{note}{arXiv:2204.07276 [cs, stat]}
+      \field{shorttitle}{auton-survival}
+      \field{title}{auton-survival: an {Open}-{Source} {Package} for {Regression}, {Counterfactual} {Estimation}, {Evaluation} and {Phenotyping} with {Censored} {Time}-to-{Event} {Data}}
+      \field{urlday}{16}
+      \field{urlmonth}{4}
+      \field{urlyear}{2024}
+      \field{year}{2022}
+      \field{urldateera}{ce}
+      \verb{file}
+      \verb arXiv Fulltext PDF:/Users/johan/Zotero/storage/CG83JYFS/Nagpal et al. - 2022 - auton-survival an Open-Source Package for Regress.pdf:application/pdf;arXiv.org Snapshot:/Users/johan/Zotero/storage/YRVFCS2X/2204.html:text/html
+      \endverb
+      \verb{urlraw}
+      \verb http://arxiv.org/abs/2204.07276
+      \endverb
+      \verb{url}
+      \verb http://arxiv.org/abs/2204.07276
+      \endverb
+      \keyw{Statistics - Machine Learning,Computer Science - Machine Learning,Computer Science - Mathematical Software}
+    \endentry
+    \entry{norcliffe_survivalgan_2023}{misc}{}
+      \name{author}{5}{}{%
+        {{hash=0d7902675b9592dc08c1b6391350682a}{%
+           family={Norcliffe},
+           familyi={N\bibinitperiod},
+           given={Alexander},
+           giveni={A\bibinitperiod}}}%
+        {{hash=ebbe01e6563e567efb54f744859539b7}{%
+           family={Cebere},
+           familyi={C\bibinitperiod},
+           given={Bogdan},
+           giveni={B\bibinitperiod}}}%
+        {{hash=17787df2685601fc98669213d6186984}{%
+           family={Imrie},
+           familyi={I\bibinitperiod},
+           given={Fergus},
+           giveni={F\bibinitperiod}}}%
+        {{hash=428d424e2bc446d7420e2cf047380cf0}{%
+           family={Lio},
+           familyi={L\bibinitperiod},
+           given={Pietro},
+           giveni={P\bibinitperiod}}}%
+        {{hash=44c5ebc1d90d166c1418c35650bdd2ef}{%
+           family={Schaar},
+           familyi={S\bibinitperiod},
+           given={Mihaela},
+           giveni={M\bibinitperiod},
+           prefix={van\bibnamedelima der},
+           prefixi={v\bibinitperiod\bibinitdelim d\bibinitperiod}}}%
+      }
+      \list{publisher}{1}{%
+        {arXiv}%
+      }
+      \strng{namehash}{b38f866609180ad4e3e3f9185bf57be5}
+      \strng{fullhash}{a68937fe6ac54b86af94bfff67603db2}
+      \strng{bibnamehash}{b38f866609180ad4e3e3f9185bf57be5}
+      \strng{authorbibnamehash}{b38f866609180ad4e3e3f9185bf57be5}
+      \strng{authornamehash}{b38f866609180ad4e3e3f9185bf57be5}
+      \strng{authorfullhash}{a68937fe6ac54b86af94bfff67603db2}
+      \field{sortinit}{N}
+      \field{sortinithash}{22369a73d5f88983a108b63f07f37084}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{shorttitle}
+      \field{abstract}{Synthetic data is becoming an increasingly promising technology, and successful applications can improve privacy, fairness, and data democratization. While there are many methods for generating synthetic tabular data, the task remains non-trivial and unexplored for specific scenarios. One such scenario is survival data. Here, the key difficulty is censoring: for some instances, we are not aware of the time of event, or if one even occurred. Imbalances in censoring and time horizons cause generative models to experience three new failure modes specific to survival analysis: (1) generating too few at-risk members; (2) generating too many at-risk members; and (3) censoring too early. We formalize these failure modes and provide three new generative metrics to quantify them. Following this, we propose SurvivalGAN, a generative model that handles survival data firstly by addressing the imbalance in the censoring and event horizons, and secondly by using a dedicated mechanism for approximating time-to-event/censoring. We evaluate this method via extensive experiments on medical datasets. SurvivalGAN outperforms multiple baselines at generating survival data, and in particular addresses the failure modes as measured by the new metrics, in addition to improving downstream performance of survival models trained on the synthetic data.}
+      \field{month}{2}
+      \field{note}{arXiv:2302.12749 [cs]}
+      \field{shorttitle}{{SurvivalGAN}}
+      \field{title}{{SurvivalGAN}: {Generating} {Time}-to-{Event} {Data} for {Survival} {Analysis}}
+      \field{urlday}{16}
+      \field{urlmonth}{4}
+      \field{urlyear}{2024}
+      \field{year}{2023}
+      \field{urldateera}{ce}
+      \verb{file}
+      \verb arXiv Fulltext PDF:/Users/johan/Zotero/storage/UUT8BXPL/Norcliffe et al. - 2023 - SurvivalGAN Generating Time-to-Event Data for Sur.pdf:application/pdf;arXiv.org Snapshot:/Users/johan/Zotero/storage/GAAHRMYM/2302.html:text/html
+      \endverb
+      \verb{urlraw}
+      \verb http://arxiv.org/abs/2302.12749
+      \endverb
+      \verb{url}
+      \verb http://arxiv.org/abs/2302.12749
+      \endverb
+      \keyw{Computer Science - Machine Learning}
+    \endentry
+    \entry{pawel_pitfalls_2024}{article}{}
+      \name{author}{3}{}{%
+        {{hash=25cf55dca8b2cd4b56d965e9fa2d667e}{%
+           family={Pawel},
+           familyi={P\bibinitperiod},
+           given={Samuel},
+           giveni={S\bibinitperiod}}}%
+        {{hash=9b14a3b08c85897fff1655ab90f5fa5e}{%
+           family={Kook},
+           familyi={K\bibinitperiod},
+           given={Lucas},
+           giveni={L\bibinitperiod}}}%
+        {{hash=04560f36819ed519cebf361ac9200632}{%
+           family={Reeve},
+           familyi={R\bibinitperiod},
+           given={Kelly},
+           giveni={K\bibinitperiod}}}%
+      }
+      \strng{namehash}{99cd50c8394c990a531e3a57ff170974}
+      \strng{fullhash}{99cd50c8394c990a531e3a57ff170974}
+      \strng{bibnamehash}{99cd50c8394c990a531e3a57ff170974}
+      \strng{authorbibnamehash}{99cd50c8394c990a531e3a57ff170974}
+      \strng{authornamehash}{99cd50c8394c990a531e3a57ff170974}
+      \strng{authorfullhash}{99cd50c8394c990a531e3a57ff170974}
+      \field{sortinit}{P}
+      \field{sortinithash}{ff3bcf24f47321b42cb156c2cc8a8422}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{shorttitle}
+      \field{abstract}{Comparative simulation studies are workhorse tools for benchmarking statistical methods. As with other empirical studies, the success of simulation studies hinges on the quality of their design, execution and reporting. If not conducted carefully and transparently, their conclusions may be misleading. In this paper we discuss various questionable research practices which may impact the validity of simulation studies, some of which cannot be detected or prevented by the current publication process in statistics journals. To illustrate our point, we invent a novel prediction method with no expected performance gain and benchmark it in a pre-registered comparative simulation study. We show how easy it is to make the method appear superior over well-established competitor methods if questionable research practices are employed. Finally, we provide concrete suggestions for researchers, reviewers and other academic stakeholders for improving the methodological quality of comparative simulation studies, such as pre-registering simulation protocols, incentivizing neutral simulation studies and code and data sharing.}
+      \field{issn}{0323-3847, 1521-4036}
+      \field{journaltitle}{Biometrical Journal}
+      \field{month}{1}
+      \field{note}{arXiv:2203.13076 [stat]}
+      \field{number}{1}
+      \field{shorttitle}{Pitfalls and potentials in simulation studies}
+      \field{title}{Pitfalls and potentials in simulation studies: {Questionable} research practices in comparative simulation studies allow for spurious claims of superiority of any method}
+      \field{urlday}{16}
+      \field{urlmonth}{4}
+      \field{urlyear}{2024}
+      \field{volume}{66}
+      \field{year}{2024}
+      \field{urldateera}{ce}
+      \field{pages}{2200091}
+      \range{pages}{1}
+      \verb{doi}
+      \verb 10.1002/bimj.202200091
+      \endverb
+      \verb{file}
+      \verb arXiv Fulltext PDF:/Users/johan/Zotero/storage/VIKVRGJI/Pawel et al. - 2024 - Pitfalls and potentials in simulation studies Que.pdf:application/pdf;arXiv.org Snapshot:/Users/johan/Zotero/storage/9Q9IYNRD/2203.html:text/html
+      \endverb
+      \verb{urlraw}
+      \verb http://arxiv.org/abs/2203.13076
+      \endverb
+      \verb{url}
+      \verb http://arxiv.org/abs/2203.13076
+      \endverb
+      \keyw{Statistics - Computation,Statistics - Methodology}
+    \endentry
+    \entry{scikit-learn}{article}{}
+      \name{author}{16}{}{%
+        {{hash=6e96fec0d63277626bb324bd28cdecb7}{%
+           family={Pedregosa},
+           familyi={P\bibinitperiod},
+           given={F.},
+           giveni={F\bibinitperiod}}}%
+        {{hash=b99c2df2144dc5ee09317a7833dea42d}{%
+           family={Varoquaux},
+           familyi={V\bibinitperiod},
+           given={G.},
+           giveni={G\bibinitperiod}}}%
+        {{hash=955f19cea89ae97bb7936078898e6255}{%
+           family={Gramfort},
+           familyi={G\bibinitperiod},
+           given={A.},
+           giveni={A\bibinitperiod}}}%
+        {{hash=2787869c9954c1d4e9891098995feb75}{%
+           family={Michel},
+           familyi={M\bibinitperiod},
+           given={V.},
+           giveni={V\bibinitperiod}}}%
+        {{hash=86d47ab9ca1a9dae108b4d4a0418c679}{%
+           family={Thirion},
+           familyi={T\bibinitperiod},
+           given={B.},
+           giveni={B\bibinitperiod}}}%
+        {{hash=d42f9e9cec95da1dad2232eac74982ab}{%
+           family={Grisel},
+           familyi={G\bibinitperiod},
+           given={O.},
+           giveni={O\bibinitperiod}}}%
+        {{hash=8bd8ef25258dd2311f92df23fe71ecf7}{%
+           family={Blondel},
+           familyi={B\bibinitperiod},
+           given={M.},
+           giveni={M\bibinitperiod}}}%
+        {{hash=a5ee41fa92b9e425806e1773853f1932}{%
+           family={Prettenhofer},
+           familyi={P\bibinitperiod},
+           given={P.},
+           giveni={P\bibinitperiod}}}%
+        {{hash=0c808557734e8929976d1f06f99c4ff2}{%
+           family={Weiss},
+           familyi={W\bibinitperiod},
+           given={R.},
+           giveni={R\bibinitperiod}}}%
+        {{hash=9662a6ea01596c6dd450817ccac81c4a}{%
+           family={Dubourg},
+           familyi={D\bibinitperiod},
+           given={V.},
+           giveni={V\bibinitperiod}}}%
+        {{hash=39e81a3e2193b954680a0ab847a0bb55}{%
+           family={Vanderplas},
+           familyi={V\bibinitperiod},
+           given={J.},
+           giveni={J\bibinitperiod}}}%
+        {{hash=14c4a498c032f77d0b83f86c710dd50e}{%
+           family={Passos},
+           familyi={P\bibinitperiod},
+           given={A.},
+           giveni={A\bibinitperiod}}}%
+        {{hash=dc075b18fb4710a1a37b258804c57efe}{%
+           family={Cournapeau},
+           familyi={C\bibinitperiod},
+           given={D.},
+           giveni={D\bibinitperiod}}}%
+        {{hash=67ec0e8add781665a43010c9559111e9}{%
+           family={Brucher},
+           familyi={B\bibinitperiod},
+           given={M.},
+           giveni={M\bibinitperiod}}}%
+        {{hash=dcb3918f09eb8785e6b212a907cc37cf}{%
+           family={Perrot},
+           familyi={P\bibinitperiod},
+           given={M.},
+           giveni={M\bibinitperiod}}}%
+        {{hash=ab20fcf381cd45daa82417c6fc595051}{%
+           family={Duchesnay},
+           familyi={D\bibinitperiod},
+           given={E.},
+           giveni={E\bibinitperiod}}}%
+      }
+      \strng{namehash}{3a097aa3ebf2b8c2acf988341dde9710}
+      \strng{fullhash}{7a67607c66e4af944b5f16461d6d0a87}
+      \strng{bibnamehash}{3a097aa3ebf2b8c2acf988341dde9710}
+      \strng{authorbibnamehash}{3a097aa3ebf2b8c2acf988341dde9710}
+      \strng{authornamehash}{3a097aa3ebf2b8c2acf988341dde9710}
+      \strng{authorfullhash}{7a67607c66e4af944b5f16461d6d0a87}
+      \field{sortinit}{P}
+      \field{sortinithash}{ff3bcf24f47321b42cb156c2cc8a8422}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{Journal of Machine Learning Research}
+      \field{title}{Scikit-learn: Machine Learning in {P}ython}
+      \field{volume}{12}
+      \field{year}{2011}
+      \field{pages}{2825\bibrangedash 2830}
+      \range{pages}{6}
+    \endentry
+    \entry{pham_springer_2023}{book}{}
+      \name{editor}{1}{}{%
+        {{hash=f1cacd0a51fe343b269c5b8b6123071f}{%
+           family={Pham},
+           familyi={P\bibinitperiod},
+           given={Hoang},
+           giveni={H\bibinitperiod}}}%
+      }
+      \list{language}{1}{%
+        {en}%
+      }
+      \list{location}{1}{%
+        {London}%
+      }
+      \list{publisher}{1}{%
+        {Springer London}%
+      }
+      \strng{namehash}{f1cacd0a51fe343b269c5b8b6123071f}
+      \strng{fullhash}{f1cacd0a51fe343b269c5b8b6123071f}
+      \strng{bibnamehash}{f1cacd0a51fe343b269c5b8b6123071f}
+      \strng{editorbibnamehash}{f1cacd0a51fe343b269c5b8b6123071f}
+      \strng{editornamehash}{f1cacd0a51fe343b269c5b8b6123071f}
+      \strng{editorfullhash}{f1cacd0a51fe343b269c5b8b6123071f}
+      \field{sortinit}{P}
+      \field{sortinithash}{ff3bcf24f47321b42cb156c2cc8a8422}
+      \field{labelnamesource}{editor}
+      \field{labeltitlesource}{title}
+      \field{isbn}{978-1-4471-7502-5 978-1-4471-7503-2}
+      \field{series}{Springer {Handbooks}}
+      \field{title}{Springer {Handbook} of {Engineering} {Statistics}}
+      \field{urlday}{16}
+      \field{urlmonth}{4}
+      \field{urlyear}{2024}
+      \field{year}{2023}
+      \field{urldateera}{ce}
+      \verb{doi}
+      \verb 10.1007/978-1-4471-7503-2
+      \endverb
+      \verb{file}
+      \verb Submitted Version:/Users/johan/Zotero/storage/UZTDRQIU/Pham - 2023 - Springer Handbook of Engineering Statistics.pdf:application/pdf
+      \endverb
+      \verb{urlraw}
+      \verb https://link.springer.com/10.1007/978-1-4471-7503-2
+      \endverb
+      \verb{url}
+      \verb https://link.springer.com/10.1007/978-1-4471-7503-2
+      \endverb
+    \endentry
+    \entry{polce_guide_2023}{article}{}
+      \name{author}{2}{}{%
+        {{hash=b7cee7db2fca0f84ccc9438711a9d2c9}{%
+           family={Polce},
+           familyi={P\bibinitperiod},
+           given={Evan\bibnamedelima M.},
+           giveni={E\bibinitperiod\bibinitdelim M\bibinitperiod}}}%
+        {{hash=2508db5c47ac3d12c90f082d74021403}{%
+           family={Kunze},
+           familyi={K\bibinitperiod},
+           given={Kyle\bibnamedelima N.},
+           giveni={K\bibinitperiod\bibinitdelim N\bibinitperiod}}}%
+      }
+      \list{language}{1}{%
+        {en}%
+      }
+      \strng{namehash}{ff0c6c7ed8361d5ad371c7ef23e0f213}
+      \strng{fullhash}{ff0c6c7ed8361d5ad371c7ef23e0f213}
+      \strng{bibnamehash}{ff0c6c7ed8361d5ad371c7ef23e0f213}
+      \strng{authorbibnamehash}{ff0c6c7ed8361d5ad371c7ef23e0f213}
+      \strng{authornamehash}{ff0c6c7ed8361d5ad371c7ef23e0f213}
+      \strng{authorfullhash}{ff0c6c7ed8361d5ad371c7ef23e0f213}
+      \field{sortinit}{P}
+      \field{sortinithash}{ff3bcf24f47321b42cb156c2cc8a8422}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{issn}{07498063}
+      \field{journaltitle}{Arthroscopy: The Journal of Arthroscopic \& Related Surgery}
+      \field{month}{2}
+      \field{number}{2}
+      \field{title}{A {Guide} for the {Application} of {Statistics} in {Biomedical} {Studies} {Concerning} {Machine} {Learning} and {Artificial} {Intelligence}}
+      \field{urlday}{16}
+      \field{urlmonth}{4}
+      \field{urlyear}{2024}
+      \field{volume}{39}
+      \field{year}{2023}
+      \field{urldateera}{ce}
+      \field{pages}{151\bibrangedash 158}
+      \range{pages}{8}
+      \verb{doi}
+      \verb 10.1016/j.arthro.2022.04.016
+      \endverb
+      \verb{urlraw}
+      \verb https://linkinghub.elsevier.com/retrieve/pii/S0749806322002821
+      \endverb
+      \verb{url}
+      \verb https://linkinghub.elsevier.com/retrieve/pii/S0749806322002821
+      \endverb
+    \endentry
+    \entry{sebastian_polsterl_scikit-survival_2023}{misc}{}
+      \name{author}{1}{}{%
+        {{hash=51d79244ea36d6875a86ef2113ba5bad}{%
+           family={Pölsterl},
+           familyi={P\bibinitperiod},
+           given={Sebastian},
+           giveni={S\bibinitperiod}}}%
+      }
+      \list{publisher}{1}{%
+        {[object Object]}%
+      }
+      \strng{namehash}{51d79244ea36d6875a86ef2113ba5bad}
+      \strng{fullhash}{51d79244ea36d6875a86ef2113ba5bad}
+      \strng{bibnamehash}{51d79244ea36d6875a86ef2113ba5bad}
+      \strng{authorbibnamehash}{51d79244ea36d6875a86ef2113ba5bad}
+      \strng{authornamehash}{51d79244ea36d6875a86ef2113ba5bad}
+      \strng{authorfullhash}{51d79244ea36d6875a86ef2113ba5bad}
+      \field{sortinit}{P}
+      \field{sortinithash}{ff3bcf24f47321b42cb156c2cc8a8422}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{abstract}{This release adds support for Python 3.12. Bug fixes Fix invalid escape sequence in Introduction of user guide. Enhancements Mark Cython functions as noexcept (\#418). Add support for Python 3.12 (\#422). Do not use deprecated is\_categorical\_dtype() of Pandas API. Documentation Add section Building Cython Code to contributing guidelines (\#379). Improve the description of the estimate parameter in sksurv.metrics.brier\_score() and sksurv.metrics.integrated\_brier\_score() (\#424).}
+      \field{month}{12}
+      \field{title}{scikit-survival}
+      \field{urlday}{21}
+      \field{urlmonth}{4}
+      \field{urlyear}{2024}
+      \field{year}{2023}
+      \field{urldateera}{ce}
+      \verb{doi}
+      \verb 10.5281/ZENODO.3352342
+      \endverb
+      \verb{urlraw}
+      \verb https://zenodo.org/doi/10.5281/zenodo.3352342
+      \endverb
+      \verb{url}
+      \verb https://zenodo.org/doi/10.5281/zenodo.3352342
+      \endverb
+      \keyw{machine-learning,python,scikit-learn,survival-analysis}
+    \endentry
+    \entry{qi_effective_2023}{misc}{}
+      \name{author}{8}{}{%
+        {{hash=8d4b0586a1d9fe56dd2c06392fc36ad4}{%
+           family={Qi},
+           familyi={Q\bibinitperiod},
+           given={Shi-ang},
+           giveni={S\bibinithyphendelim a\bibinitperiod}}}%
+        {{hash=505a5bc5aa4cbf853994707d99f52dee}{%
+           family={Kumar},
+           familyi={K\bibinitperiod},
+           given={Neeraj},
+           giveni={N\bibinitperiod}}}%
+        {{hash=2b79a81e376e3a38c0da840a7fa03431}{%
+           family={Farrokh},
+           familyi={F\bibinitperiod},
+           given={Mahtab},
+           giveni={M\bibinitperiod}}}%
+        {{hash=52be7dfbaba24373003f2d2c11a0bdc9}{%
+           family={Sun},
+           familyi={S\bibinitperiod},
+           given={Weijie},
+           giveni={W\bibinitperiod}}}%
+        {{hash=ea1ec85f4eb70fc9a61ee8e8d0a07cc9}{%
+           family={Kuan},
+           familyi={K\bibinitperiod},
+           given={Li-Hao},
+           giveni={L\bibinithyphendelim H\bibinitperiod}}}%
+        {{hash=bb5c273638bcd68f168fefeca29f69c1}{%
+           family={Ranganath},
+           familyi={R\bibinitperiod},
+           given={Rajesh},
+           giveni={R\bibinitperiod}}}%
+        {{hash=b6e1a1577283255ff7909b653dac3111}{%
+           family={Henao},
+           familyi={H\bibinitperiod},
+           given={Ricardo},
+           giveni={R\bibinitperiod}}}%
+        {{hash=4a770d3fea9e460171ec3bbb23b8fceb}{%
+           family={Greiner},
+           familyi={G\bibinitperiod},
+           given={Russell},
+           giveni={R\bibinitperiod}}}%
+      }
+      \list{publisher}{1}{%
+        {arXiv}%
+      }
+      \strng{namehash}{13fc2739657594cb8420b49d1e0eb645}
+      \strng{fullhash}{3ea7eea5fed43f41ea6d8cbb4a2bfa4b}
+      \strng{bibnamehash}{13fc2739657594cb8420b49d1e0eb645}
+      \strng{authorbibnamehash}{13fc2739657594cb8420b49d1e0eb645}
+      \strng{authornamehash}{13fc2739657594cb8420b49d1e0eb645}
+      \strng{authorfullhash}{3ea7eea5fed43f41ea6d8cbb4a2bfa4b}
+      \field{sortinit}{Q}
+      \field{sortinithash}{ce69a400a872ddd02ee7fdb3b38c6abd}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{abstract}{One straightforward metric to evaluate a survival prediction model is based on the Mean Absolute Error (MAE) -- the average of the absolute difference between the time predicted by the model and the true event time, over all subjects. Unfortunately, this is challenging because, in practice, the test set includes (right) censored individuals, meaning we do not know when a censored individual actually experienced the event. In this paper, we explore various metrics to estimate MAE for survival datasets that include (many) censored individuals. Moreover, we introduce a novel and effective approach for generating realistic semi-synthetic survival datasets to facilitate the evaluation of metrics. Our findings, based on the analysis of the semi-synthetic datasets, reveal that our proposed metric (MAE using pseudo-observations) is able to rank models accurately based on their performance, and often closely matches the true MAE -- in particular, is better than several alternative methods.}
+      \field{annotation}{Comment: Accepted to ICML 2023}
+      \field{month}{6}
+      \field{note}{arXiv:2306.01196 [cs, stat]}
+      \field{title}{An {Effective} {Meaningful} {Way} to {Evaluate} {Survival} {Models}}
+      \field{urlday}{16}
+      \field{urlmonth}{4}
+      \field{urlyear}{2024}
+      \field{year}{2023}
+      \field{urldateera}{ce}
+      \verb{file}
+      \verb arXiv Fulltext PDF:/Users/johan/Zotero/storage/XW723V3X/Qi et al. - 2023 - An Effective Meaningful Way to Evaluate Survival M.pdf:application/pdf;arXiv.org Snapshot:/Users/johan/Zotero/storage/9LITXLTM/2306.html:text/html
+      \endverb
+      \verb{urlraw}
+      \verb http://arxiv.org/abs/2306.01196
+      \endverb
+      \verb{url}
+      \verb http://arxiv.org/abs/2306.01196
+      \endverb
+      \keyw{Statistics - Machine Learning,Computer Science - Machine Learning,Computer Science - Artificial Intelligence}
+    \endentry
+    \entry{shortreed_outcome-adaptive_2017}{article}{}
+      \name{author}{2}{}{%
+        {{hash=b81601cda81fdff22aa9bf749391491b}{%
+           family={Shortreed},
+           familyi={S\bibinitperiod},
+           given={Susan\bibnamedelima M.},
+           giveni={S\bibinitperiod\bibinitdelim M\bibinitperiod}}}%
+        {{hash=b4b0e41d37895fe48e73f6e7e5b8883a}{%
+           family={Ertefaie},
+           familyi={E\bibinitperiod},
+           given={Ashkan},
+           giveni={A\bibinitperiod}}}%
+      }
+      \list{language}{1}{%
+        {en}%
+      }
+      \strng{namehash}{d92f0ff8fa567bcb7c8a4b1c372f32c6}
+      \strng{fullhash}{d92f0ff8fa567bcb7c8a4b1c372f32c6}
+      \strng{bibnamehash}{d92f0ff8fa567bcb7c8a4b1c372f32c6}
+      \strng{authorbibnamehash}{d92f0ff8fa567bcb7c8a4b1c372f32c6}
+      \strng{authornamehash}{d92f0ff8fa567bcb7c8a4b1c372f32c6}
+      \strng{authorfullhash}{d92f0ff8fa567bcb7c8a4b1c372f32c6}
+      \field{sortinit}{S}
+      \field{sortinithash}{b164b07b29984b41daf1e85279fbc5ab}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{shorttitle}
+      \field{abstract}{Summary Methodological advancements, including propensity score methods, have resulted in improved unbiased estimation of treatment effects from observational data. Traditionally, a “throw in the kitchen sink” approach has been used to select covariates for inclusion into the propensity score, but recent work shows including unnecessary covariates can impact both the bias and statistical efficiency of propensity score estimators. In particular, the inclusion of covariates that impact exposure but not the outcome, can inflate standard errors without improving bias, while the inclusion of covariates associated with the outcome but unrelated to exposure can improve precision. We propose the outcome-adaptive lasso for selecting appropriate covariates for inclusion in propensity score models to account for confounding bias and maintaining statistical efficiency. This proposed approach can perform variable selection in the presence of a large number of spurious covariates, that is, covariates unrelated to outcome or exposure. We present theoretical and simulation results indicating that the outcome-adaptive lasso selects the propensity score model that includes all true confounders and predictors of outcome, while excluding other covariates. We illustrate covariate selection using the outcome-adaptive lasso, including comparison to alternative approaches, using simulated data and in a survey of patients using opioid therapy to manage chronic pain.}
+      \field{issn}{0006-341X, 1541-0420}
+      \field{journaltitle}{Biometrics}
+      \field{month}{12}
+      \field{number}{4}
+      \field{shorttitle}{Outcome-{Adaptive} {Lasso}}
+      \field{title}{Outcome-{Adaptive} {Lasso}: {Variable} {Selection} for {Causal} {Inference}}
+      \field{urlday}{16}
+      \field{urlmonth}{4}
+      \field{urlyear}{2024}
+      \field{volume}{73}
+      \field{year}{2017}
+      \field{urldateera}{ce}
+      \field{pages}{1111\bibrangedash 1122}
+      \range{pages}{12}
+      \verb{doi}
+      \verb 10.1111/biom.12679
+      \endverb
+      \verb{file}
+      \verb Accepted Version:/Users/johan/Zotero/storage/E32SCUKX/Shortreed and Ertefaie - 2017 - Outcome-Adaptive Lasso Variable Selection for Cau.pdf:application/pdf
+      \endverb
+      \verb{urlraw}
+      \verb https://academic.oup.com/biometrics/article/73/4/1111-1122/7537777
+      \endverb
+      \verb{url}
+      \verb https://academic.oup.com/biometrics/article/73/4/1111-1122/7537777
+      \endverb
+    \endentry
+    \entry{smith_scoping_2022}{article}{}
+      \name{author}{4}{}{%
+        {{hash=6b39ba430b427d5f01a77a745d2be201}{%
+           family={Smith},
+           familyi={S\bibinitperiod},
+           given={Hayley},
+           giveni={H\bibinitperiod}}}%
+        {{hash=44b792bc8f5cb7038513f28841da9fe9}{%
+           family={Sweeting},
+           familyi={S\bibinitperiod},
+           given={Michael},
+           giveni={M\bibinitperiod}}}%
+        {{hash=0cfc8ea71e0768917053416e726e89bd}{%
+           family={Morris},
+           familyi={M\bibinitperiod},
+           given={Tim},
+           giveni={T\bibinitperiod}}}%
+        {{hash=e5050b089ab6f5c063e753ce7792eec5}{%
+           family={Crowther},
+           familyi={C\bibinitperiod},
+           given={Michael\bibnamedelima J.},
+           giveni={M\bibinitperiod\bibinitdelim J\bibinitperiod}}}%
+      }
+      \list{language}{1}{%
+        {en}%
+      }
+      \strng{namehash}{4844db60d9a194429024b82c29b26537}
+      \strng{fullhash}{f929ef60dcb6d0fd66ba729bf4b7a276}
+      \strng{bibnamehash}{4844db60d9a194429024b82c29b26537}
+      \strng{authorbibnamehash}{4844db60d9a194429024b82c29b26537}
+      \strng{authornamehash}{4844db60d9a194429024b82c29b26537}
+      \strng{authorfullhash}{f929ef60dcb6d0fd66ba729bf4b7a276}
+      \field{sortinit}{S}
+      \field{sortinithash}{b164b07b29984b41daf1e85279fbc5ab}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{abstract}{Abstract Background There is substantial interest in the adaptation and application of so-called machine learning approaches to prognostic modelling of censored time-to-event data. These methods must be compared and evaluated against existing methods in a variety of scenarios to determine their predictive performance. A scoping review of how machine learning methods have been compared to traditional survival models is important to identify the comparisons that have been made and issues where they are lacking, biased towards one approach or misleading. Methods We conducted a scoping review of research articles published between 1 January 2000 and 2 December 2020 using PubMed. Eligible articles were those that used simulation studies to compare statistical and machine learning methods for risk prediction with a time-to-event outcome in a medical/healthcare setting. We focus on data-generating mechanisms (DGMs), the methods that have been compared, the estimands of the simulation studies, and the performance measures used to evaluate them. Results A total of ten articles were identified as eligible for the review. Six of the articles evaluated a method that was developed by the authors, four of which were machine learning methods, and the results almost always stated that this developed method’s performance was equivalent to or better than the other methods compared. Comparisons were often biased towards the novel approach, with the majority only comparing against a basic Cox proportional hazards model, and in scenarios where it is clear it would not perform well. In many of the articles reviewed, key information was unclear, such as the number of simulation repetitions and how performance measures were calculated. Conclusion It is vital that method comparisons are unbiased and comprehensive, and this should be the goal even if realising it is difficult. Fully assessing how newly developed methods perform and how they compare to a variety of traditional statistical methods for prognostic modelling is imperative as these methods are already being applied in clinical contexts. Evaluations of the performance and usefulness of recently developed methods for risk prediction should be continued and reporting standards improved as these methods become increasingly popular.}
+      \field{issn}{2397-7523}
+      \field{journaltitle}{Diagnostic and Prognostic Research}
+      \field{month}{6}
+      \field{number}{1}
+      \field{title}{A scoping methodological review of simulation studies comparing statistical and machine learning approaches to risk prediction for time-to-event data}
+      \field{urlday}{16}
+      \field{urlmonth}{4}
+      \field{urlyear}{2024}
+      \field{volume}{6}
+      \field{year}{2022}
+      \field{urldateera}{ce}
+      \field{pages}{10}
+      \range{pages}{1}
+      \verb{doi}
+      \verb 10.1186/s41512-022-00124-y
+      \endverb
+      \verb{file}
+      \verb Full Text:/Users/johan/Zotero/storage/5236RNKE/Smith et al. - 2022 - A scoping methodological review of simulation stud.pdf:application/pdf
+      \endverb
+      \verb{urlraw}
+      \verb https://diagnprognres.biomedcentral.com/articles/10.1186/s41512-022-00124-y
+      \endverb
+      \verb{url}
+      \verb https://diagnprognres.biomedcentral.com/articles/10.1186/s41512-022-00124-y
+      \endverb
+    \endentry
+    \entry{sonabend_flexible_2022}{misc}{}
+      \name{author}{7}{}{%
+        {{hash=2db4d382d99a2d9177badfb9a18d85d5}{%
+           family={Sonabend},
+           familyi={S\bibinitperiod},
+           given={Raphael},
+           giveni={R\bibinitperiod}}}%
+        {{hash=c2fc2334f775f39d53c050871c587dc4}{%
+           family={Pfisterer},
+           familyi={P\bibinitperiod},
+           given={Florian},
+           giveni={F\bibinitperiod}}}%
+        {{hash=68b32c6ad707269b18e2f6694afeee33}{%
+           family={Mishler},
+           familyi={M\bibinitperiod},
+           given={Alan},
+           giveni={A\bibinitperiod}}}%
+        {{hash=a671555cbdaa145cdde292476dafd76b}{%
+           family={Schauer},
+           familyi={S\bibinitperiod},
+           given={Moritz},
+           giveni={M\bibinitperiod}}}%
+        {{hash=6afee66bf70d1d6534ba70fc925ea832}{%
+           family={Burk},
+           familyi={B\bibinitperiod},
+           given={Lukas},
+           giveni={L\bibinitperiod}}}%
+        {{hash=bd8dbd88ab37ebcf2111f9438fd2534f}{%
+           family={Mukherjee},
+           familyi={M\bibinitperiod},
+           given={Sumantrak},
+           giveni={S\bibinitperiod}}}%
+        {{hash=1958a4e6bffdf3655347ce9942d0e844}{%
+           family={Vollmer},
+           familyi={V\bibinitperiod},
+           given={Sebastian},
+           giveni={S\bibinitperiod}}}%
+      }
+      \list{publisher}{1}{%
+        {arXiv}%
+      }
+      \strng{namehash}{cd2f246324f06c8d4ad218619a6ef3a4}
+      \strng{fullhash}{024b263ecfc8420eb0a4459b890d91cd}
+      \strng{bibnamehash}{cd2f246324f06c8d4ad218619a6ef3a4}
+      \strng{authorbibnamehash}{cd2f246324f06c8d4ad218619a6ef3a4}
+      \strng{authornamehash}{cd2f246324f06c8d4ad218619a6ef3a4}
+      \strng{authorfullhash}{024b263ecfc8420eb0a4459b890d91cd}
+      \field{sortinit}{S}
+      \field{sortinithash}{b164b07b29984b41daf1e85279fbc5ab}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{abstract}{Algorithmic fairness is an increasingly important field concerned with detecting and mitigating biases in machine learning models. There has been a wealth of literature for algorithmic fairness in regression and classification however there has been little exploration of the field for survival analysis. Survival analysis is the prediction task in which one attempts to predict the probability of an event occurring over time. Survival predictions are particularly important in sensitive settings such as when utilising machine learning for diagnosis and prognosis of patients. In this paper we explore how to utilise existing survival metrics to measure bias with group fairness metrics. We explore this in an empirical experiment with 29 survival datasets and 8 measures. We find that measures of discrimination are able to capture bias well whereas there is less clarity with measures of calibration and scoring rules. We suggest further areas for research including prediction-based fairness metrics for distribution predictions.}
+      \field{annotation}{Comment: Accepted in DSHealth 2022 (Workshop on Applied Data Science for Healthcare)}
+      \field{month}{7}
+      \field{note}{arXiv:2206.03256 [cs, stat]}
+      \field{title}{Flexible {Group} {Fairness} {Metrics} for {Survival} {Analysis}}
+      \field{urlday}{16}
+      \field{urlmonth}{4}
+      \field{urlyear}{2024}
+      \field{year}{2022}
+      \field{urldateera}{ce}
+      \verb{file}
+      \verb arXiv Fulltext PDF:/Users/johan/Zotero/storage/YWNJCA3L/Sonabend et al. - 2022 - Flexible Group Fairness Metrics for Survival Analy.pdf:application/pdf;arXiv.org Snapshot:/Users/johan/Zotero/storage/5YX77H5S/2206.html:text/html
+      \endverb
+      \verb{urlraw}
+      \verb http://arxiv.org/abs/2206.03256
+      \endverb
+      \verb{url}
+      \verb http://arxiv.org/abs/2206.03256
+      \endverb
+      \keyw{Statistics - Methodology,Statistics - Applications,Computer Science - Machine Learning,Computer Science - Computers and Society}
+    \endentry
+    \entry{spath_julianspaethrandom-survival-forest_2021}{misc}{}
+      \name{author}{1}{}{%
+        {{hash=38c7cdd85513e21f5d0fce450dcf8f4c}{%
+           family={Späth},
+           familyi={S\bibinitperiod},
+           given={Julian},
+           giveni={J\bibinitperiod}}}%
+      }
+      \list{publisher}{1}{%
+        {[object Object]}%
+      }
+      \strng{namehash}{38c7cdd85513e21f5d0fce450dcf8f4c}
+      \strng{fullhash}{38c7cdd85513e21f5d0fce450dcf8f4c}
+      \strng{bibnamehash}{38c7cdd85513e21f5d0fce450dcf8f4c}
+      \strng{authorbibnamehash}{38c7cdd85513e21f5d0fce450dcf8f4c}
+      \strng{authornamehash}{38c7cdd85513e21f5d0fce450dcf8f4c}
+      \strng{authorfullhash}{38c7cdd85513e21f5d0fce450dcf8f4c}
+      \field{sortinit}{S}
+      \field{sortinithash}{b164b07b29984b41daf1e85279fbc5ab}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{shorttitle}
+      \field{abstract}{A Random Survival Forest implementation for python inspired by Ishwaran et al. - Easily understandable, adaptable and extendable.}
+      \field{month}{7}
+      \field{shorttitle}{julianspaeth/random-survival-forest}
+      \field{title}{julianspaeth/random-survival-forest: {Create} doi}
+      \field{urlday}{21}
+      \field{urlmonth}{4}
+      \field{urlyear}{2024}
+      \field{year}{2021}
+      \field{urldateera}{ce}
+      \verb{doi}
+      \verb 10.5281/ZENODO.5146375
+      \endverb
+      \verb{urlraw}
+      \verb https://zenodo.org/record/5146375
+      \endverb
+      \verb{url}
+      \verb https://zenodo.org/record/5146375
+      \endverb
+    \endentry
+    \entry{thurow_how_2023}{misc}{}
+      \name{author}{5}{}{%
+        {{hash=96095392054739ce95e6e647f96fe64b}{%
+           family={Thurow},
+           familyi={T\bibinitperiod},
+           given={Maria},
+           giveni={M\bibinitperiod}}}%
+        {{hash=f46a7b415860dccee2b88bcdbe6a5f25}{%
+           family={Dormuth},
+           familyi={D\bibinitperiod},
+           given={Ina},
+           giveni={I\bibinitperiod}}}%
+        {{hash=b07dd505f91f57f8da77aa63e343fbdd}{%
+           family={Sauer},
+           familyi={S\bibinitperiod},
+           given={Christina},
+           giveni={C\bibinitperiod}}}%
+        {{hash=f3c9d2f2cdc61198765c000b3f478740}{%
+           family={Ditzhaus},
+           familyi={D\bibinitperiod},
+           given={Marc},
+           giveni={M\bibinitperiod}}}%
+        {{hash=114eaa37c73557d8284b82040cebba84}{%
+           family={Pauly},
+           familyi={P\bibinitperiod},
+           given={Markus},
+           giveni={M\bibinitperiod}}}%
+      }
+      \list{publisher}{1}{%
+        {arXiv}%
+      }
+      \strng{namehash}{c6414c24ca4b3a6b808ff032ab500a9c}
+      \strng{fullhash}{ffa773268c84c6413728b394cd47a7b3}
+      \strng{bibnamehash}{c6414c24ca4b3a6b808ff032ab500a9c}
+      \strng{authorbibnamehash}{c6414c24ca4b3a6b808ff032ab500a9c}
+      \strng{authornamehash}{c6414c24ca4b3a6b808ff032ab500a9c}
+      \strng{authorfullhash}{ffa773268c84c6413728b394cd47a7b3}
+      \field{sortinit}{T}
+      \field{sortinithash}{9af77f0292593c26bde9a56e688eaee9}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{shorttitle}
+      \field{abstract}{In statistics, it is important to have realistic data sets available for a particular context to allow an appropriate and objective method comparison. For many use cases, benchmark data sets for method comparison are already available online. However, in most medical applications and especially for clinical trials in oncology, there is a lack of adequate benchmark data sets, as patient data can be sensitive and therefore cannot be published. A potential solution for this are simulation studies. However, it is sometimes not clear, which simulation models are suitable for generating realistic data. A challenge is that potentially unrealistic assumptions have to be made about the distributions. Our approach is to use reconstructed benchmark data sets \%can be used as a basis for the simulations, which has the following advantages: the actual properties are known and more realistic data can be simulated. There are several possibilities to simulate realistic data from benchmark data sets. We investigate simulation models based upon kernel density estimation, fitted distributions, case resampling and conditional bootstrapping. In order to make recommendations on which models are best suited for a specific survival setting, we conducted a comparative simulation study. Since it is not possible to provide recommendations for all possible survival settings in a single paper, we focus on providing realistic simulation models for two-armed phase III lung cancer studies. To this end we reconstructed benchmark data sets from recent studies. We used the runtime and different accuracy measures (effect sizes and p-values) as criteria for comparison.}
+      \field{month}{8}
+      \field{note}{arXiv:2308.07842 [stat]}
+      \field{shorttitle}{How to {Simulate} {Realistic} {Survival} {Data}?}
+      \field{title}{How to {Simulate} {Realistic} {Survival} {Data}? {A} {Simulation} {Study} to {Compare} {Realistic} {Simulation} {Models}}
+      \field{urlday}{16}
+      \field{urlmonth}{4}
+      \field{urlyear}{2024}
+      \field{year}{2023}
+      \field{urldateera}{ce}
+      \verb{file}
+      \verb arXiv Fulltext PDF:/Users/johan/Zotero/storage/YHL8YGUN/Thurow et al. - 2023 - How to Simulate Realistic Survival Data A Simulat.pdf:application/pdf;arXiv.org Snapshot:/Users/johan/Zotero/storage/LVMI28MG/2308.html:text/html
+      \endverb
+      \verb{urlraw}
+      \verb http://arxiv.org/abs/2308.07842
+      \endverb
+      \verb{url}
+      \verb http://arxiv.org/abs/2308.07842
+      \endverb
+      \keyw{Statistics - Applications}
+    \endentry
+    \entry{tibshirani_regression_1996}{article}{}
+      \name{author}{1}{}{%
+        {{hash=88eea600247d798f8b2ce0b2dc614492}{%
+           family={Tibshirani},
+           familyi={T\bibinitperiod},
+           given={Robert},
+           giveni={R\bibinitperiod}}}%
+      }
+      \strng{namehash}{88eea600247d798f8b2ce0b2dc614492}
+      \strng{fullhash}{88eea600247d798f8b2ce0b2dc614492}
+      \strng{bibnamehash}{88eea600247d798f8b2ce0b2dc614492}
+      \strng{authorbibnamehash}{88eea600247d798f8b2ce0b2dc614492}
+      \strng{authornamehash}{88eea600247d798f8b2ce0b2dc614492}
+      \strng{authorfullhash}{88eea600247d798f8b2ce0b2dc614492}
+      \field{sortinit}{T}
+      \field{sortinithash}{9af77f0292593c26bde9a56e688eaee9}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{abstract}{[We propose a new method for estimation in linear models. The `lasso' minimizes the residual sum of squares subject to the sum of the absolute value of the coefficients being less than a constant. Because of the nature of this constraint it tends to produce some coefficients that are exactly 0 and hence gives interpretable models. Our simulation studies suggest that the lasso enjoys some of the favourable properties of both subset selection and ridge regression. It produces interpretable models like subset selection and exhibits the stability of ridge regression. There is also an interesting relationship with recent work in adaptive function estimation by Donoho and Johnstone. The lasso idea is quite general and can be applied in a variety of statistical models: extensions to generalized regression models and tree-based models are briefly described.]}
+      \field{issn}{00359246}
+      \field{journaltitle}{Journal of the Royal Statistical Society. Series B (Methodological)}
+      \field{note}{Publisher: [Royal Statistical Society, Wiley]}
+      \field{number}{1}
+      \field{title}{Regression {Shrinkage} and {Selection} via the {Lasso}}
+      \field{urlday}{26}
+      \field{urlmonth}{4}
+      \field{urlyear}{2024}
+      \field{volume}{58}
+      \field{year}{1996}
+      \field{urldateera}{ce}
+      \field{pages}{267\bibrangedash 288}
+      \range{pages}{22}
+      \verb{urlraw}
+      \verb http://www.jstor.org/stable/2346178
+      \endverb
+      \verb{url}
+      \verb http://www.jstor.org/stable/2346178
+      \endverb
+    \endentry
+    \entry{wilkinson_fair_2016}{article}{}
+      \name{author}{53}{}{%
+        {{hash=e88185c2eca4405ce11cb8920f485660}{%
+           family={Wilkinson},
+           familyi={W\bibinitperiod},
+           given={Mark\bibnamedelima D.},
+           giveni={M\bibinitperiod\bibinitdelim D\bibinitperiod}}}%
+        {{hash=93badcbcd9ff0747849763affb474199}{%
+           family={Dumontier},
+           familyi={D\bibinitperiod},
+           given={Michel},
+           giveni={M\bibinitperiod}}}%
+        {{hash=cda28834d0f69262ef00bb56bd87a0c0}{%
+           family={Aalbersberg},
+           familyi={A\bibinitperiod},
+           given={IJsbrand\bibnamedelima Jan},
+           giveni={I\bibinitperiod\bibinitdelim J\bibinitperiod}}}%
+        {{hash=c8bd3ce56531164a76d2447bea864837}{%
+           family={Appleton},
+           familyi={A\bibinitperiod},
+           given={Gabrielle},
+           giveni={G\bibinitperiod}}}%
+        {{hash=f12336d71cec892ed279b160d6fcd07d}{%
+           family={Axton},
+           familyi={A\bibinitperiod},
+           given={Myles},
+           giveni={M\bibinitperiod}}}%
+        {{hash=24f9e2bf2d8c89090eef143a51d01653}{%
+           family={Baak},
+           familyi={B\bibinitperiod},
+           given={Arie},
+           giveni={A\bibinitperiod}}}%
+        {{hash=372112f8c145373974f902b8035baa7f}{%
+           family={Blomberg},
+           familyi={B\bibinitperiod},
+           given={Niklas},
+           giveni={N\bibinitperiod}}}%
+        {{hash=311117127e85a09450298e1cb378cc6d}{%
+           family={Boiten},
+           familyi={B\bibinitperiod},
+           given={Jan-Willem},
+           giveni={J\bibinithyphendelim W\bibinitperiod}}}%
+        {{hash=f129ce02ba4ebee20af2cd4b3f869092}{%
+           family={Da\bibnamedelima Silva\bibnamedelima Santos},
+           familyi={D\bibinitperiod\bibinitdelim S\bibinitperiod\bibinitdelim S\bibinitperiod},
+           given={Luiz\bibnamedelima Bonino},
+           giveni={L\bibinitperiod\bibinitdelim B\bibinitperiod}}}%
+        {{hash=e8f011b361a44c99e0b3cd105b7553dc}{%
+           family={Bourne},
+           familyi={B\bibinitperiod},
+           given={Philip\bibnamedelima E.},
+           giveni={P\bibinitperiod\bibinitdelim E\bibinitperiod}}}%
+        {{hash=f9488da8da5659df63bf99117fa2f9ee}{%
+           family={Bouwman},
+           familyi={B\bibinitperiod},
+           given={Jildau},
+           giveni={J\bibinitperiod}}}%
+        {{hash=4e180982f46493f6cb439a7bbd53f1af}{%
+           family={Brookes},
+           familyi={B\bibinitperiod},
+           given={Anthony\bibnamedelima J.},
+           giveni={A\bibinitperiod\bibinitdelim J\bibinitperiod}}}%
+        {{hash=4bba4464ec5239427fac65cbdc01ac51}{%
+           family={Clark},
+           familyi={C\bibinitperiod},
+           given={Tim},
+           giveni={T\bibinitperiod}}}%
+        {{hash=7a865493d8d32c6c8389526ac3db1094}{%
+           family={Crosas},
+           familyi={C\bibinitperiod},
+           given={Mercè},
+           giveni={M\bibinitperiod}}}%
+        {{hash=fb366b6058a04fe1ea1c863ef8c4dfad}{%
+           family={Dillo},
+           familyi={D\bibinitperiod},
+           given={Ingrid},
+           giveni={I\bibinitperiod}}}%
+        {{hash=5564ab842d98ada0438556f362c580d0}{%
+           family={Dumon},
+           familyi={D\bibinitperiod},
+           given={Olivier},
+           giveni={O\bibinitperiod}}}%
+        {{hash=db3d00c1b751ab8f17377a6bf2efaa58}{%
+           family={Edmunds},
+           familyi={E\bibinitperiod},
+           given={Scott},
+           giveni={S\bibinitperiod}}}%
+        {{hash=d6fb79f1c7b2c722d8da4e7a3722ff95}{%
+           family={Evelo},
+           familyi={E\bibinitperiod},
+           given={Chris\bibnamedelima T.},
+           giveni={C\bibinitperiod\bibinitdelim T\bibinitperiod}}}%
+        {{hash=a453f75d20f5c037ff3fd7b51bfaa4e6}{%
+           family={Finkers},
+           familyi={F\bibinitperiod},
+           given={Richard},
+           giveni={R\bibinitperiod}}}%
+        {{hash=dc4c620883ee689cae65514ada231031}{%
+           family={Gonzalez-Beltran},
+           familyi={G\bibinithyphendelim B\bibinitperiod},
+           given={Alejandra},
+           giveni={A\bibinitperiod}}}%
+        {{hash=469caa523876395d326def24d8bdac8d}{%
+           family={Gray},
+           familyi={G\bibinitperiod},
+           given={Alasdair\bibnamedelima J.G.},
+           giveni={A\bibinitperiod\bibinitdelim J\bibinitperiod}}}%
+        {{hash=b2d7e1f159093aa2ea8379d9b6bc6911}{%
+           family={Groth},
+           familyi={G\bibinitperiod},
+           given={Paul},
+           giveni={P\bibinitperiod}}}%
+        {{hash=fae216475918e7d5a3fd11e334229e70}{%
+           family={Goble},
+           familyi={G\bibinitperiod},
+           given={Carole},
+           giveni={C\bibinitperiod}}}%
+        {{hash=9925b6a1596ccb7afcbbb01088b03876}{%
+           family={Grethe},
+           familyi={G\bibinitperiod},
+           given={Jeffrey\bibnamedelima S.},
+           giveni={J\bibinitperiod\bibinitdelim S\bibinitperiod}}}%
+        {{hash=a0f707f5c85369ff12d6de8401c06be8}{%
+           family={Heringa},
+           familyi={H\bibinitperiod},
+           given={Jaap},
+           giveni={J\bibinitperiod}}}%
+        {{hash=074c5e88fe405597a1dd04f3ebfa3091}{%
+           family={’T\bibnamedelima Hoen},
+           familyi={’\bibinitperiod\bibinitdelim H\bibinitperiod},
+           given={Peter\bibnamedelima A.C},
+           giveni={P\bibinitperiod\bibinitdelim A\bibinitperiod}}}%
+        {{hash=9dd97174300b10ac2034b39183863158}{%
+           family={Hooft},
+           familyi={H\bibinitperiod},
+           given={Rob},
+           giveni={R\bibinitperiod}}}%
+        {{hash=74d3522e91542051f26a4f98e94e2dc2}{%
+           family={Kuhn},
+           familyi={K\bibinitperiod},
+           given={Tobias},
+           giveni={T\bibinitperiod}}}%
+        {{hash=dc80a1a1784786b7fda18de16a5e8ae0}{%
+           family={Kok},
+           familyi={K\bibinitperiod},
+           given={Ruben},
+           giveni={R\bibinitperiod}}}%
+        {{hash=3309ce5cd9060784c66cdc407cda4727}{%
+           family={Kok},
+           familyi={K\bibinitperiod},
+           given={Joost},
+           giveni={J\bibinitperiod}}}%
+        {{hash=b41307e9ec9e7a7330d83c3ada394f22}{%
+           family={Lusher},
+           familyi={L\bibinitperiod},
+           given={Scott\bibnamedelima J.},
+           giveni={S\bibinitperiod\bibinitdelim J\bibinitperiod}}}%
+        {{hash=9981013b5d636d7d01a6c304a9987904}{%
+           family={Martone},
+           familyi={M\bibinitperiod},
+           given={Maryann\bibnamedelima E.},
+           giveni={M\bibinitperiod\bibinitdelim E\bibinitperiod}}}%
+        {{hash=5428e75345796ac8e0bfe94e02203521}{%
+           family={Mons},
+           familyi={M\bibinitperiod},
+           given={Albert},
+           giveni={A\bibinitperiod}}}%
+        {{hash=0820d0abfb09b8a8d078b1d62c4cbca9}{%
+           family={Packer},
+           familyi={P\bibinitperiod},
+           given={Abel\bibnamedelima L.},
+           giveni={A\bibinitperiod\bibinitdelim L\bibinitperiod}}}%
+        {{hash=f5e0b4d9215464126ab0ea279dcd42ca}{%
+           family={Persson},
+           familyi={P\bibinitperiod},
+           given={Bengt},
+           giveni={B\bibinitperiod}}}%
+        {{hash=a5b9fa79dbb410a262d0944983ad71df}{%
+           family={Rocca-Serra},
+           familyi={R\bibinithyphendelim S\bibinitperiod},
+           given={Philippe},
+           giveni={P\bibinitperiod}}}%
+        {{hash=2344e24f2e1e899651e65b125b76751e}{%
+           family={Roos},
+           familyi={R\bibinitperiod},
+           given={Marco},
+           giveni={M\bibinitperiod}}}%
+        {{hash=316b714b7565eb727a8e04f4d7410187}{%
+           family={Van\bibnamedelima Schaik},
+           familyi={V\bibinitperiod\bibinitdelim S\bibinitperiod},
+           given={Rene},
+           giveni={R\bibinitperiod}}}%
+        {{hash=1547ffdade7927d77c2e093fa8e4a751}{%
+           family={Sansone},
+           familyi={S\bibinitperiod},
+           given={Susanna-Assunta},
+           giveni={S\bibinithyphendelim A\bibinitperiod}}}%
+        {{hash=50211e54acbb1f0a8b95712201e8e5c5}{%
+           family={Schultes},
+           familyi={S\bibinitperiod},
+           given={Erik},
+           giveni={E\bibinitperiod}}}%
+        {{hash=a2c7d4bcdecd1b3de24af9fff656ad59}{%
+           family={Sengstag},
+           familyi={S\bibinitperiod},
+           given={Thierry},
+           giveni={T\bibinitperiod}}}%
+        {{hash=b94dcda5ebae27c0012282aa255271d6}{%
+           family={Slater},
+           familyi={S\bibinitperiod},
+           given={Ted},
+           giveni={T\bibinitperiod}}}%
+        {{hash=b4e243341e196cfc3361dbce9bd32d5e}{%
+           family={Strawn},
+           familyi={S\bibinitperiod},
+           given={George},
+           giveni={G\bibinitperiod}}}%
+        {{hash=44a68b189975ed6286a098d883dda6ef}{%
+           family={Swertz},
+           familyi={S\bibinitperiod},
+           given={Morris\bibnamedelima A.},
+           giveni={M\bibinitperiod\bibinitdelim A\bibinitperiod}}}%
+        {{hash=6d16b02cf7ec69e3e95adecbb4e27cba}{%
+           family={Thompson},
+           familyi={T\bibinitperiod},
+           given={Mark},
+           giveni={M\bibinitperiod}}}%
+        {{hash=5dbd2cddb3f7916132278d8feea78529}{%
+           family={Van\bibnamedelimb Der\bibnamedelima Lei},
+           familyi={V\bibinitperiod\bibinitdelim D\bibinitperiod\bibinitdelim L\bibinitperiod},
+           given={Johan},
+           giveni={J\bibinitperiod}}}%
+        {{hash=50b81f0b8a94812f6d020763ebc033ef}{%
+           family={Van\bibnamedelima Mulligen},
+           familyi={V\bibinitperiod\bibinitdelim M\bibinitperiod},
+           given={Erik},
+           giveni={E\bibinitperiod}}}%
+        {{hash=34ae9ef8db900714e7a946ad3b1e482a}{%
+           family={Velterop},
+           familyi={V\bibinitperiod},
+           given={Jan},
+           giveni={J\bibinitperiod}}}%
+        {{hash=2cbf23b7864d72cafcd29753f1ffa48d}{%
+           family={Waagmeester},
+           familyi={W\bibinitperiod},
+           given={Andra},
+           giveni={A\bibinitperiod}}}%
+        {{hash=acf94d0e2887f580cae18ae08141005d}{%
+           family={Wittenburg},
+           familyi={W\bibinitperiod},
+           given={Peter},
+           giveni={P\bibinitperiod}}}%
+        {{hash=7166c9ffe9aea2997923b3e54f99d253}{%
+           family={Wolstencroft},
+           familyi={W\bibinitperiod},
+           given={Katherine},
+           giveni={K\bibinitperiod}}}%
+        {{hash=3313b0fb30c52802abe615a883198713}{%
+           family={Zhao},
+           familyi={Z\bibinitperiod},
+           given={Jun},
+           giveni={J\bibinitperiod}}}%
+        {{hash=086ef7669a7dc6d647b7a650d7da0a15}{%
+           family={Mons},
+           familyi={M\bibinitperiod},
+           given={Barend},
+           giveni={B\bibinitperiod}}}%
+      }
+      \list{language}{1}{%
+        {en}%
+      }
+      \strng{namehash}{f324cd0f485d0aaf63321d014f1f638f}
+      \strng{fullhash}{f7b66cfc420fca59fcc1597d66da36f7}
+      \strng{bibnamehash}{f324cd0f485d0aaf63321d014f1f638f}
+      \strng{authorbibnamehash}{f324cd0f485d0aaf63321d014f1f638f}
+      \strng{authornamehash}{f324cd0f485d0aaf63321d014f1f638f}
+      \strng{authorfullhash}{f7b66cfc420fca59fcc1597d66da36f7}
+      \field{sortinit}{W}
+      \field{sortinithash}{4315d78024d0cea9b57a0c6f0e35ed0d}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{abstract}{Abstract There is an urgent need to improve the infrastructure supporting the reuse of scholarly data. A diverse set of stakeholders—representing academia, industry, funding agencies, and scholarly publishers—have come together to design and jointly endorse a concise and measureable set of principles that we refer to as the FAIR Data Principles. The intent is that these may act as a guideline for those wishing to enhance the reusability of their data holdings. Distinct from peer initiatives that focus on the human scholar, the FAIR Principles put specific emphasis on enhancing the ability of machines to automatically find and use the data, in addition to supporting its reuse by individuals. This Comment is the first formal publication of the FAIR Principles, and includes the rationale behind them, and some exemplar implementations in the community.}
+      \field{issn}{2052-4463}
+      \field{journaltitle}{Scientific Data}
+      \field{month}{3}
+      \field{number}{1}
+      \field{title}{The {FAIR} {Guiding} {Principles} for scientific data management and stewardship}
+      \field{urlday}{20}
+      \field{urlmonth}{4}
+      \field{urlyear}{2024}
+      \field{volume}{3}
+      \field{year}{2016}
+      \field{urldateera}{ce}
+      \field{pages}{160018}
+      \range{pages}{1}
+      \verb{doi}
+      \verb 10.1038/sdata.2016.18
+      \endverb
+      \verb{file}
+      \verb Full Text:/Users/johan/Zotero/storage/MSEH3TDF/Wilkinson et al. - 2016 - The FAIR Guiding Principles for scientific data ma.pdf:application/pdf
+      \endverb
+      \verb{urlraw}
+      \verb https://www.nature.com/articles/sdata201618
+      \endverb
+      \verb{url}
+      \verb https://www.nature.com/articles/sdata201618
+      \endverb
+    \endentry
+    \entry{woo_time_2023}{article}{}
+      \name{author}{3}{}{%
+        {{hash=103562fa102d7baf81e193f29c9d48ef}{%
+           family={Woo},
+           familyi={W\bibinitperiod},
+           given={Hyun-Soo},
+           giveni={H\bibinithyphendelim S\bibinitperiod}}}%
+        {{hash=e44b55d5870b10a6d2565dc09ff86167}{%
+           family={Kim},
+           familyi={K\bibinitperiod},
+           given={Jisun},
+           giveni={J\bibinitperiod}}}%
+        {{hash=771841419bb236fc7cba84eba72fa2cf}{%
+           family={Cannella},
+           familyi={C\bibinitperiod},
+           given={Albert\bibnamedelima A.},
+           giveni={A\bibinitperiod\bibinitdelim A\bibinitperiod}}}%
+      }
+      \list{language}{1}{%
+        {en}%
+      }
+      \strng{namehash}{e6d81c26cb2a765d9b0c2bc7056d7ba4}
+      \strng{fullhash}{e6d81c26cb2a765d9b0c2bc7056d7ba4}
+      \strng{bibnamehash}{e6d81c26cb2a765d9b0c2bc7056d7ba4}
+      \strng{authorbibnamehash}{e6d81c26cb2a765d9b0c2bc7056d7ba4}
+      \strng{authornamehash}{e6d81c26cb2a765d9b0c2bc7056d7ba4}
+      \strng{authorfullhash}{e6d81c26cb2a765d9b0c2bc7056d7ba4}
+      \field{sortinit}{W}
+      \field{sortinithash}{4315d78024d0cea9b57a0c6f0e35ed0d}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{shorttitle}
+      \field{abstract}{The Cox proportional hazard model has often been used for survival analysis in organizational research. The Cox model needs to satisfy one critical assumption—time independence—that the effects of independent variables are constant over survival time (also known as the proportional hazard assumption). However, organizational research often encounters time dependence in the Cox model. Organizational studies have traditionally seemed to view time dependence as an empirical nuisance, but we highlight that it is also a theory-development opportunity. Indeed, from our review of AMJ and SMJ papers published in a recent 10-year period, we found that researchers rarely considered time dependence as a theory-development opportunity, and worse, many of them did not test for (or report tests for) time dependence. The purpose of our study is to change this pattern. To this end, we provide a step-by-step guide to facilitate testing for time dependence and using time dependence as a theory development opportunity. We also demonstrate our step-by-step guide with an empirical example.}
+      \field{issn}{1094-4281, 1552-7425}
+      \field{journaltitle}{Organizational Research Methods}
+      \field{month}{10}
+      \field{shorttitle}{Time {Dependence} in the {Cox} {Proportional} {Hazard} {Model} as a {Theory} {Development} {Opportunity}}
+      \field{title}{Time {Dependence} in the {Cox} {Proportional} {Hazard} {Model} as a {Theory} {Development} {Opportunity}: {A} {Step}-by-{Step} {Guide}}
+      \field{urlday}{21}
+      \field{urlmonth}{4}
+      \field{urlyear}{2024}
+      \field{year}{2023}
+      \field{urldateera}{ce}
+      \field{pages}{10944281231205027}
+      \range{pages}{1}
+      \verb{doi}
+      \verb 10.1177/10944281231205027
+      \endverb
+      \verb{urlraw}
+      \verb http://journals.sagepub.com/doi/10.1177/10944281231205027
+      \endverb
+      \verb{url}
+      \verb http://journals.sagepub.com/doi/10.1177/10944281231205027
+      \endverb
+    \endentry
+    \entry{yanagisawa_proper_2023}{misc}{}
+      \name{author}{1}{}{%
+        {{hash=4cff39bad1ce44fa4d451cfc43e94873}{%
+           family={Yanagisawa},
+           familyi={Y\bibinitperiod},
+           given={Hiroki},
+           giveni={H\bibinitperiod}}}%
+      }
+      \list{publisher}{1}{%
+        {arXiv}%
+      }
+      \strng{namehash}{4cff39bad1ce44fa4d451cfc43e94873}
+      \strng{fullhash}{4cff39bad1ce44fa4d451cfc43e94873}
+      \strng{bibnamehash}{4cff39bad1ce44fa4d451cfc43e94873}
+      \strng{authorbibnamehash}{4cff39bad1ce44fa4d451cfc43e94873}
+      \strng{authornamehash}{4cff39bad1ce44fa4d451cfc43e94873}
+      \strng{authorfullhash}{4cff39bad1ce44fa4d451cfc43e94873}
+      \field{sortinit}{Y}
+      \field{sortinithash}{fd67ad5a9ef0f7456bdd9aab10fe1495}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{abstract}{Survival analysis is the problem of estimating probability distributions for future event times, which can be seen as a problem in uncertainty quantification. Although there are fundamental theories on strictly proper scoring rules for uncertainty quantification, little is known about those for survival analysis. In this paper, we investigate extensions of four major strictly proper scoring rules for survival analysis and we prove that these extensions are proper under certain conditions, which arise from the discretization of the estimation of probability distributions. We also compare the estimation performances of these extended scoring rules by using real datasets, and the extensions of the logarithmic score and the Brier score performed the best.}
+      \field{annotation}{Comment: Accepted at ICML 2023}
+      \field{month}{6}
+      \field{note}{arXiv:2305.00621 [cs, stat]}
+      \field{title}{Proper {Scoring} {Rules} for {Survival} {Analysis}}
+      \field{urlday}{16}
+      \field{urlmonth}{4}
+      \field{urlyear}{2024}
+      \field{year}{2023}
+      \field{urldateera}{ce}
+      \verb{file}
+      \verb arXiv Fulltext PDF:/Users/johan/Zotero/storage/WBU5D4Z9/Yanagisawa - 2023 - Proper Scoring Rules for Survival Analysis.pdf:application/pdf;arXiv.org Snapshot:/Users/johan/Zotero/storage/PIZWDFCE/2305.html:text/html
+      \endverb
+      \verb{urlraw}
+      \verb http://arxiv.org/abs/2305.00621
+      \endverb
+      \verb{url}
+      \verb http://arxiv.org/abs/2305.00621
+      \endverb
+      \keyw{Statistics - Methodology,Computer Science - Machine Learning}
+    \endentry
+    \entry{yao_ensemble_2022}{misc}{}
+      \name{author}{4}{}{%
+        {{hash=ed835e372f48c6b7c18e05163cd02a05}{%
+           family={Yao},
+           familyi={Y\bibinitperiod},
+           given={Weichi},
+           giveni={W\bibinitperiod}}}%
+        {{hash=5d42f016d8806496f48703c4051ad9df}{%
+           family={Frydman},
+           familyi={F\bibinitperiod},
+           given={Halina},
+           giveni={H\bibinitperiod}}}%
+        {{hash=88982a5043d546df81aba8e560afcb29}{%
+           family={Larocque},
+           familyi={L\bibinitperiod},
+           given={Denis},
+           giveni={D\bibinitperiod}}}%
+        {{hash=9e21165ed60edc482fca410a83054165}{%
+           family={Simonoff},
+           familyi={S\bibinitperiod},
+           given={Jeffrey\bibnamedelima S.},
+           giveni={J\bibinitperiod\bibinitdelim S\bibinitperiod}}}%
+      }
+      \list{publisher}{1}{%
+        {arXiv}%
+      }
+      \strng{namehash}{6387bf1a1f0d17446b7d82c733361eb7}
+      \strng{fullhash}{35ae52a563ed1763f4ab114b7a4ef5ad}
+      \strng{bibnamehash}{6387bf1a1f0d17446b7d82c733361eb7}
+      \strng{authorbibnamehash}{6387bf1a1f0d17446b7d82c733361eb7}
+      \strng{authornamehash}{6387bf1a1f0d17446b7d82c733361eb7}
+      \strng{authorfullhash}{35ae52a563ed1763f4ab114b7a4ef5ad}
+      \field{sortinit}{Y}
+      \field{sortinithash}{fd67ad5a9ef0f7456bdd9aab10fe1495}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{abstract}{Survival data with time-varying covariates are common in practice. If relevant, they can improve on the estimation of survival function. However, the traditional survival forests - conditional inference forest, relative risk forest and random survival forest - have accommodated only time-invariant covariates. We generalize the conditional inference and relative risk forests to allow time-varying covariates. We also propose a general framework for estimation of a survival function in the presence of time-varying covariates. We compare their performance with that of the Cox model and transformation forest, adapted here to accommodate time-varying covariates, through a comprehensive simulation study in which the Kaplan-Meier estimate serves as a benchmark, and performance is compared using the integrated L2 difference between the true and estimated survival functions. In general, the performance of the two proposed forests substantially improves over the Kaplan-Meier estimate. Taking into account all other factors, under the proportional hazard (PH) setting, the best method is always one of the two proposed forests, while under the non-PH setting, it is the adapted transformation forest. K-fold cross-validation is used as an effective tool to choose between the methods in practice.}
+      \field{month}{6}
+      \field{note}{arXiv:2006.00567 [stat]}
+      \field{title}{Ensemble methods for survival function estimation with time-varying covariates}
+      \field{urlday}{16}
+      \field{urlmonth}{4}
+      \field{urlyear}{2024}
+      \field{year}{2022}
+      \field{urldateera}{ce}
+      \verb{file}
+      \verb arXiv Fulltext PDF:/Users/johan/Zotero/storage/VMYVSKR9/Yao et al. - 2022 - Ensemble methods for survival function estimation .pdf:application/pdf;arXiv.org Snapshot:/Users/johan/Zotero/storage/TPULP75U/2006.html:text/html
+      \endverb
+      \verb{urlraw}
+      \verb http://arxiv.org/abs/2006.00567
+      \endverb
+      \verb{url}
+      \verb http://arxiv.org/abs/2006.00567
+      \endverb
+      \keyw{Statistics - Methodology,Statistics - Machine Learning,Statistics - Applications}
+    \endentry
+    \entry{zhang_adaptive_2007}{article}{}
+      \name{author}{2}{}{%
+        {{hash=f51f47aa985aebe882c62b77214d8f2a}{%
+           family={Zhang},
+           familyi={Z\bibinitperiod},
+           given={Hao\bibnamedelima Helen},
+           giveni={H\bibinitperiod\bibinitdelim H\bibinitperiod}}}%
+        {{hash=a205db9c436a2ef1be4fd90e48aeb0a7}{%
+           family={Lu},
+           familyi={L\bibinitperiod},
+           given={Wenbin},
+           giveni={W\bibinitperiod}}}%
+      }
+      \strng{namehash}{033358a523891142f1fff904f2162ccb}
+      \strng{fullhash}{033358a523891142f1fff904f2162ccb}
+      \strng{bibnamehash}{033358a523891142f1fff904f2162ccb}
+      \strng{authorbibnamehash}{033358a523891142f1fff904f2162ccb}
+      \strng{authornamehash}{033358a523891142f1fff904f2162ccb}
+      \strng{authorfullhash}{033358a523891142f1fff904f2162ccb}
+      \field{sortinit}{Z}
+      \field{sortinithash}{96892c0b0a36bb8557c40c49813d48b3}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{abstract}{[We investigate the variable selection problem for Cox's proportional hazards model, and propose a unified model selection and estimation procedure with desired theoretical properties and computational convenience. The new method is based on a penalized log partial likelihood with the adaptively weighted L₁ penalty on regression coefficients, providing what we call the adaptive Lasso estimator. The method incorporates different penalties for different coefficients: unimportant variables receive larger penalties than important ones, so that important variables tend to be retained in the selection process, whereas unimportant variables are more likely to be dropped. Theoretical properties, such as consistency and rate of convergence of the estimator, are studied. We also show that, with proper choice of regularization parameters, the proposed estimator has the oracle properties. The convex optimization nature of the method leads to an efficient algorithm. Both simulated and real examples show that the method performs competitively.]}
+      \field{issn}{00063444, 14643510}
+      \field{journaltitle}{Biometrika}
+      \field{note}{Publisher: [Oxford University Press, Biometrika Trust]}
+      \field{number}{3}
+      \field{title}{Adaptive {Lasso} for {Cox}'s {Proportional} {Hazards} {Model}}
+      \field{urlday}{16}
+      \field{urlmonth}{4}
+      \field{urlyear}{2024}
+      \field{volume}{94}
+      \field{year}{2007}
+      \field{urldateera}{ce}
+      \field{pages}{691\bibrangedash 703}
+      \range{pages}{13}
+      \verb{urlraw}
+      \verb http://www.jstor.org/stable/20441405
+      \endverb
+      \verb{url}
+      \verb http://www.jstor.org/stable/20441405
+      \endverb
+    \endentry
+  \enddatalist
+\endrefsection
 \endinput
 

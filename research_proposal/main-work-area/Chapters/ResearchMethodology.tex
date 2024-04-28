@@ -1,113 +1,80 @@
 \chapter{Research Methodology}
 \label{Chapter2} % For referencing this chapter elsewhere, use \ref{Chapter3}
 
-\noindent Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam ultricies lacinia euismod. Nam tempus risus in dolor rhoncus in interdum enim tincidunt. Donec vel nunc neque. In condimentum ullamcorper quam non consequat. Fusce sagittis tempor feugiat.
-\par\vspace{0.5cm}
-\noindent \Cshadowbox{
-    \begin{minipage}{15cm}
-    	\bigskip
-    	\color[rgb]{0.0,0.4,0.65}The methodology chapter provides an overview and description of all the important elements of \emph{how} the research will be carried out. It differs from the methodology chapter of the final report insofar as it includes discussion 
-    		\begin{itemize}
-    			\item both of available and chosen methods, and,
-    			\item of any foreseeable limitations of the methods. 
-    		\end{itemize}
-    	\medskip
-    \end{minipage}}\\
+\section{Research design} \label{design}
+For the prososed research, a rigorous framework has been formalised by \parencite{morris_using_2019} and will be referred to as (ADMEP). As \parencite{morris_using_2019} states, "Simulation studies are used to obtain empirical results about the behaviour of statistical methods in certain scenarios, as opposed to analytic results", which is at the foundation of the objectives of this research. In essence this study aims to produce results that accuratly represent the efficacy of the Random Survival Forest \parencite{ishwaran_random_2008} and the Cox proporional hazards model \parencite{cox_regression_1972}. 
 
-\section{Research design}
+\begin{figure}[h]
+	\centering
+	\includegraphics[scale=0.48]{Figures/METHOD_GRAPH.png}
+	\caption{\parencite{pawel_pitfalls_2024} showing a common example of a simulation study.}
+\end{figure}
 
-\noindent Morbi rutrum odio eget arcu adipiscing sodales. Aenean et purus a est pulvinar pellentesque.Cras in elit neque,  quis varius elit.   Phasellus fringilla,  nibh eu tempus venenatis,  dolor elitposuere quam, quis adipiscing urna leo nec orci.  
-\par Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam ultricies lacinia euismod. Nam tempus risus in dolor rhoncus in interdum enim tincidunt. Donec vel nunc neque. In condimentum ullamcorper quam non consequat. Fusce sagittis tempor feugiat. Fusce magna erat, molestie eu convallis ut, tempus sed arcu. Quisque molestie, ante a tincidunt ullamcorper, sapien enim dignissim lacus, in semper nibh erat lobortis purus. 
+\noindent Taking insperation from the the application of ADMEP by \parencite{pawel_pitfalls_2024}, the following sections define the research broadly:
 
-\par\vspace{0.5cm}
-\noindent \Cshadowbox{
-	\begin{minipage}{15cm}
-		\bigskip
-		\color[rgb]{0.0,0.4,0.65}This section provides a brief, high-level description of the broad research method to be used in carrying out the research. This research method will vary from field to field. The section should 
-			\begin{itemize}
-				\item identify the broad research method, and,
-				\item provide a brief description of the method.
-		\end{itemize} 
-		\medskip
-\end{minipage}}\\
+\subsection{Aims}
+\begin{itemize}	
+\item To evaluate how effectively the Random Survival Forest and Lasso-Cox models predict survival outcomes.
+\item To understand model behavior under varying conditions of data complexity and censoring rates.
+\end{itemize}
 
-%\section{Data}
+\subsection{Data-generating mechanisms}
+\begin{itemize}
+\item Simulate datasets with packages like \parencite{davidson-pilon_lifelines_2024} to introduce complexities like varying censoring rates and non-linear effects.
+\item Introduce multicollinearity and various interaction effects to challenge the models' assumptions and robustness.
+\item In case of spare time and ahead of schedule succesful implementation, explore induvidual survival distributions \parencite{haider_effective_2018}, as well as competing risk data \parencite{meng_simulating_2023}.
+\end{itemize}
 
-%\noindent Sed ullamcorper quam eu nisl interdum at interdum enim egestas. Aliquam placerat justo sed lectus lobortis ut porta nisl porttitor. Vestibulum mi dolor, lacinia molestie gravida at, tempus vitae ligula. Donec eget quam sapien, in viverra eros.
+\subsection{Methods}
+\begin{itemize}
+\item Random Survival Forest: Implement using a combination of proposed pacakges in \ref{methods}, tuning tree-related parameters.
+\item Lasso-Cox Model: Use a combination of the proposed packages in \ref{methods} for implementing Cox regression with Lasso regularization, optimizing the regularization strength and model complexity. 
+\item Explore integrations effects from the different packages.
+\item In case of spare time and ahead of schedule succesful implementation, explore adaptations of core methods.
+\end{itemize}
 
-%\par\vspace{0.5cm}
-%\noindent \Cshadowbox{
-%	\begin{minipage}{15cm}
-%		\bigskip
-%		\color[rgb]{0.0,0.4,0.65}This section deals with the data set(s) to be used in the research. It provides a description of these and discusses the pre-processing of the data set(s) that will be carried out for the research. It should include the following.
-%			\begin{description}
-%				\item[Source] Identify and describe the source of the data set(s).
-%				\item[Data] Identify and describe the data set(s) themselves (features, records, etc.).
-%				\item[Pre-processing] Identify and describe the pre-processing steps to be taken. 
-%		\end{description} 
-%		If your research does not involve data, this section can be omitted.
-		\medskip
-%end{minipage}}\\
+\subsection{Estimands}
+\begin{itemize}
+\item Focus on estimations, like survival functions, hazard ratios, etc. for both models and survival probabilities at specified time points.
+\item Analyze feature importance in RSF and assess how Lasso regularization affects the selection of covariates in the Cox model.
+\item Bootstrap samples to build confidence intervals for key estimands, ensuring robustness of the findings.
+\end{itemize}
 
-\section{Methods}
+\subsection{Performance measures}
+\begin{itemize}
+\item Use statistical tests, like the C-index, and integrated Brier score as proposed in \ref{eval} to compare the RSF and Lasso-Cox model's performance metrics, like predictive accuracy and calibration accross time.
+\item Apply graphical methods like Kaplan-Meier curves to visualize survival estimates against actual outcomes.
+\item Conduct sensitivity analysis to explore the impact of model parameters on their performance.
+\end{itemize}
 
-\noindent Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam ultricies lacinia euismod. Nam tempus risus in dolor rhoncus in interdum enim tincidunt. Donec vel nunc neque. In condimentum ullamcorper quam non consequat. Fusce sagittis tempor feugiat. 
+\section{Data}
+\noindent The process of finding a dataset suitable for the study forms part of research execution. I will focus on sourcing data from reputable, well-established libraries such as UCI Machine Learning Repository, Kaggle, and available software libraries examples being, \parencite{nagpal_auton-survival_2022} \parencite{davidson-pilon_lifelines_2024} \parencite{sebastian_polsterl_scikit-survival_2023}. This approach guarantees access to a diverse array of datasets that are well-documented, ensuring both reliability and reproducibility of the results. It is important to note that the selection of data generation mechanisms (DGM), is indrectly dependant on the dataset chosen, so it is important to incorporate, and accomodate the selection process torwards ease of implementation of the DGM. Furthermore, when selecting the dataset censoring levels, FAIR principles \parencite{wilkinson_fair_2016}, reproduciblelity by assessing data simulation accuracy similar to the KM-Divergence mertic used by \parencite{norcliffe_survivalgan_2023} are all important considerations. By utilizing this approach it voids the need to carefully assess the ethical implications of using the datasets as these datasets should be under public licensed availablility. Lastly, I don't forsee data preprocessing steps, being neccecary, as DGM for simulation are commonly categorized as postprocessing \parencite{jin_imputation_2024}. 
 
-\par\vspace{0.4cm}
-\noindent \Cshadowbox{
-	\begin{minipage}{15cm}
-		\medskip
-		\color[rgb]{0.0,0.4,0.65}This section describes and \emph{motivates} the instruments and procedure to be used in carrying out the research. These should not be discussed in a chronological way (e.g. first, this step will be taken, and then this step will be taken, etc.), but should instead be grouped together systematically. A more detailed discussion of the relevant algorithms or models should be included here. The discussion should show an understanding of the \emph(available) methods and put forward a \emph{motivation for those chosen}. 
-		
-		%The section should include the following.
-		%	\begin{description}
-		%		\item[Instruments] Identify, e.g., software, architecture, algorithms, models, etc.
-		%		\item[Decisions] Identify, e.g., training/test split, class imbalance, feature selection, etc.
-		%		\item[Procedure] Identify, e.g., number of runs, prevention of data leakage, etc.
-		%		\item[Data] Describe the data that will be generated by the methods.
-		%\end{description} 
-		\medskip
-\end{minipage}}\\
-
-%\section{Analysis}
-
-%Morbi rutrum odio eget arcu adipiscing sodales. Aenean et purus a est pulvinar pellentesque.Cras in elit neque,  quis varius elit.   Phasellus fringilla,  nibh eu tempus venenatis,  dolor elitposuere quam, quis adipiscing urna leo nec orci.
-
-%\par\vspace{0.4cm}
-%\noindent \Cshadowbox{
-%	\begin{minipage}{15cm}
-%		\medskip
-%		\color[rgb]{0.0,0.4,0.65}This section describes the analysis of the data that will be generated in carrying out the research. It should describe how you will determine the significance of your results. The section should include the following.
-%			\begin{description}
-%				\item[Descriptive Statistics] Identify, e.g., Mean, Standard Deviations, etc.
-%				\item[Metrics] Identify, e.g., Mean Average Precision, Recall, etc.
-%				\item[Baselines] Identify the relevant baselines in the literature.
-%				\item[Comparisons] Identify, e.g., confusion matrices, AUC-ROC curve, etc. 
-%		\end{description}
-%		\medskip
-%\end{minipage}}\\
+\section{Methods} \label{methods}
+I show a few widely used libraries within the field of survival analysis. The popularity of these libraries is qualitatively assessed based on metrics such as the number of GitHub stars, which serve as a proxy for community approval and usage frequency. Additionally, the maintenance history of these libraries is evaluated by examining the date of the most recent commit, providing insight into their current relevance and reliability. A detailed overview of these libraries is presented in the accompanying table, illustrating their prominence and role in both historical and contemporary research within the survival analysis space. To ensure robustness and interoperability in my research, I aim to adopt common software standards across different execution libraries. A notable example is the use of the pandas DataFrame object which is a very popular datastructure. This will allow integration of various libraries, allowing for options accross research phases (evaluation, model execution etc.) and by standardizing data structures across different tools, I can minimize compatibility issues and streamline the process of switching between different analytical methods and environments.
+\\\\
+\noindent \begin{tabularx}{\textwidth}{|X|X|}
+\hline
+Library/Method & Description \\
+\hline
+Auton-survival \parencite{nagpal_auton-survival_2022} & Provides tools for survival analysis including implementations of advanced machine learning models like DeepSurv and Cox-Time. \\
+\hline
+scikit-survival \parencite{sebastian_polsterl_scikit-survival_2023} & Extends scikit-learn \parencite{scikit-learn} to handle survival analysis, enabling use of Cox regression models with extensions such as Lasso. \\
+\hline
+lifelines \parencite{davidson-pilon_lifelines_2024} & Popular library for survival analysis that includes Kaplan-Meier, Nelson-Aalen, and Cox models, among others. \\
+\hline
+pcoxtime \parencite{cygu_pcoxtime_2021} & Implements penalized Cox models with time-varying covariates in Python. \\
+\hline
+random-survival-forest \parencite{spath_julianspaethrandom-survival-forest_2021} & Implementation of Random Survival Forests that allows for detailed configuration and robust analysis. \\
+\hline
+\end{tabularx}
+\\\\
+\noindent I plan to use the above packages, or packages that might gain more popularity that was not investigated at the time of writing this document, to preform the comparitave study between a random survival forest implementation and the lasso regularized cox proportional hazards model, using simulated data according to the ADMEP research design proposal in \ref{design}
 
 \section{Limitations}
-
-\noindent Sed ullamcorper quam eu nisl interdum at interdum enim egestas. Aliquam placerat justo sed lectus lobortis ut porta nisl porttitor. Vestibulum mi dolor, lacinia molestie gravida at, tempus vitae ligula. Donec eget quam sapien, in viverra eros. 
-
-\par\vspace{0.4cm}
-\noindent \Cshadowbox{
-	\begin{minipage}{15cm}
-		\medskip
-		\color[rgb]{0.0,0.4,0.65}This section identifies limitations with the methodology. These limitations might have a number of sources. For example, constraints on time and/or computational power could limit the number of methods or models tested. In this section, you should identify and discuss any such limitations that are foreseeable at the time of proposal.
-		\medskip
-\end{minipage}}\\
+A massive limitation is that the research is tightly coupled, meaning the phases are strictly dependant on eachother. This is a antipattern, \parencite{joshi_beginning_2016}, which should be planned for to accomadate any failures during any of the research phases. In cases where results does not converge, or interpretation is wrong, the tightly coupled nature of the research will also affect the preceeding stages. Lastly the computation time, within the modern setting should not be a hinderance but the combination of multiple computational components like the DGM and the model execution and results evaluation, is important to take caution. 
 
 \section{Ethical Considerations}
+Ethical clearance would not be a component for this study, as the only real data that would be used, will only be selected from open source, or publicly available (public licencing) sources. Due to the nature of the topic, being closly related to sensitive information, it will be a important point of order to note in the case that results indicate or underscore ethical implications.
 
-\noindent Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam ultricies lacinia euismod. Nam tempus risus in dolor rhoncus in interdum enim tincidunt. Donec vel nunc neque. In condimentum ullamcorper quam non consequat. Fusce sagittis tempor feugiat. Fusce magna erat, molestie eu convallis ut, tempus sed arcu. Quisque molestie, ante a tincidunt ullamcorper, sapien enim dignissim lacus, in semper nibh erat lobortis purus. Integer dapibus ligula ac risus convallis pellentesque.
-
-\par\vspace{0.4cm}
-\noindent \Cshadowbox{
-	\begin{minipage}{15cm}
-		\medskip
-		\color[rgb]{0.0,0.4,0.65}This section assesses the need for ethical clearance for the proposed research.In cases in which no ethical clearance is required, the section will indicate as such and include a brief motivation for this. In cases in which ethical clearance is required, the section will indicate as such, include a brief motivation for this, and describe the procedure that will be followed for obtaining clearance.
-		\medskip
-\end{minipage}}\\
 

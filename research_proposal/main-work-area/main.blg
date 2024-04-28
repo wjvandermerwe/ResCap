@@ -1,19 +1,18 @@
 [0] Config.pm:307> INFO - This is Biber 2.19
 [0] Config.pm:310> INFO - Logfile is 'main.blg'
-[35] biber-darwin:340> INFO - === Wed Apr 24, 2024, 23:07:34
+[35] biber-darwin:340> INFO - === Sun Apr 28, 2024, 19:46:39
 [43] Biber.pm:419> INFO - Reading 'main.bcf'
-[88] Biber.pm:979> INFO - Found 3 citekeys in bib section 0
-[95] Biber.pm:4419> INFO - Processing section 0
-[100] Biber.pm:4610> INFO - Looking for bibtex file 'main.bib' for section 0
-[104] bibtex.pm:1713> INFO - LaTeX decoding ...
-[138] bibtex.pm:1519> INFO - Found BibTeX data source 'main.bib'
-[144] UCollate.pm:68> INFO - Overriding locale 'en-US' defaults 'normalization = NFD' with 'normalization = prenormalized'
-[144] UCollate.pm:68> INFO - Overriding locale 'en-US' defaults 'variable = shifted' with 'variable = non-ignorable'
-[144] Biber.pm:4239> INFO - Sorting list 'nty/global//global/global' of type 'entry' with template 'nty' and locale 'en-US'
-[144] Biber.pm:4245> INFO - No sort tailoring available for locale 'en-US'
-[144] bbl.pm:660> INFO - Writing 'main.bbl' with encoding 'UTF-8'
-[144] bbl.pm:763> INFO - Output to main.bbl
-[144] Biber.pm:131> WARN - I didn't find a database entry for 'Reference1' (section 0)
-[144] Biber.pm:131> WARN - I didn't find a database entry for 'Reference2' (section 0)
-[144] Biber.pm:131> WARN - I didn't find a database entry for 'Reference3' (section 0)
-[144] Biber.pm:133> INFO - WARNINGS: 3
+[102] Biber.pm:979> INFO - Found 34 citekeys in bib section 0
+[110] Biber.pm:4419> INFO - Processing section 0
+[115] Biber.pm:4610> INFO - Looking for bibtex file 'main.bib' for section 0
+[119] bibtex.pm:1713> INFO - LaTeX decoding ...
+[156] bibtex.pm:1519> INFO - Found BibTeX data source 'main.bib'
+[328] UCollate.pm:68> INFO - Overriding locale 'en-US' defaults 'normalization = NFD' with 'normalization = prenormalized'
+[329] UCollate.pm:68> INFO - Overriding locale 'en-US' defaults 'variable = shifted' with 'variable = non-ignorable'
+[329] Biber.pm:4239> INFO - Sorting list 'nty/global//global/global' of type 'entry' with template 'nty' and locale 'en-US'
+[329] Biber.pm:4245> INFO - No sort tailoring available for locale 'en-US'
+[351] bbl.pm:660> INFO - Writing 'main.bbl' with encoding 'UTF-8'
+[386] bbl.pm:763> INFO - Output to main.bbl
+[386] Biber.pm:131> WARN - ISBN '978-1-4471-7502-5 978-1-4471-7503-2' in entry 'pham_springer_2023' is invalid - run biber with '--validate_datamodel' for details.
+[386] Biber.pm:131> WARN - ISBN '978-1-4842-1847-1 978-1-4842-1848-8' in entry 'joshi_beginning_2016' is invalid - run biber with '--validate_datamodel' for details.
+[386] Biber.pm:133> INFO - WARNINGS: 2

@@ -44,20 +44,21 @@ headsepline, % Uncomment to get a line under the header
 %chapterinoneline, % Uncomment to place the chapter title next to the number on one line
 %consistentlayout, % Uncomment to change the layout of the declaration, abstract and acknowledgements pages to match the default layout
 ]{ProposalAndThesis} % The class file specifying the document structure
+\usepackage{tabularx}
 
 \usepackage[utf8]{inputenc} % Required for inputting international characters
 \usepackage[T1]{fontenc} % Output font encoding for international characters
-
 \usepackage{mathpazo} % Use the Palatino font by default
-
+\usepackage{amsmath}
 \usepackage[backend=biber,style=numeric,natbib=true]{biblatex} % Use the bibtex backend with the numeric citation style
+\hfuzz=2pt % Ignores all overfull hbox warnings less than 2pt long
+
 
 \addbibresource{main.bib} % The filename of the bibliography
 
 \usepackage[autostyle=true]{csquotes} % Required to generate language-dependent quotes in the bibliography
 
 \usepackage[cleanlook, english]{isodate} % Required for UK date formatting
-
 \usepackage{fancybox} % Required for boxed text sections
 \usepackage{xcolor} % Required for coloured text
 
@@ -140,7 +141,7 @@ headsepline, % Uncomment to get a line under the header
 \begin{titlepage}
 \begin{center}
 
-{\huge \bfseries \ttitle}\par\vspace{0.4cm} % Thesis title
+{\large \bfseries \ttitle}\par\vspace{0.4cm} % Thesis title
 \HRule\par\vspace{1.5cm}
 \authorname\par\vspace{1cm}
 \emph{Supervisor(s):}\par
@@ -166,19 +167,19 @@ in the\par\vspace{0.4cm}
 %	USING THIS TEMPLATE
 %---------------------------------------------------------------------------------------
 
-\par\vspace{0.5cm}
-\noindent \Cshadowbox{
-	\begin{minipage}{15cm}
-		\medskip
-		\color[rgb]{0.0,0.4,0.65} 
-		\begin{center} 
-			\medskip \textbf{Using this template} \par 
-			\end{center}
-			\medskip The template below has been constructed in line with the Faculty of Science requirements as well as the conventions of the School. Guidance on each section can be found in the blue boxes at the start of the section. Note that conventions and preferences for structuring a research proposal can vary from discipline to discipline and supervisor to supervisor. Both the template and the guidance on the different sections are suggestions for structuring the proposal. If your supervisor has a different preferred convention or template, it is recommended that you consult with them regarding the differences. \par \medskip
-			Further details on using the template can be found in Appendix B. \par \medskip
-			You should ensure that you either delete or comment out the blue boxes before submission of the proposal. \par
-		\medskip 
-\end{minipage}}\\ 
+% \par\vspace{0.5cm}
+% \noindent \Cshadowbox{
+% 	\begin{minipage}{15cm}
+% 		\medskip
+% 		\color[rgb]{0.0,0.4,0.65} 
+% 		\begin{center} 
+% 			\medskip \textbf{Using this template} \par 
+% 			\end{center}
+% 			\medskip The template below has been constructed in line with the Faculty of Science requirements as well as the conventions of the School. Guidance on each section can be found in the blue boxes at the start of the section. Note that conventions and preferences for structuring a research proposal can vary from discipline to discipline and supervisor to supervisor. Both the template and the guidance on the different sections are suggestions for structuring the proposal. If your supervisor has a different preferred convention or template, it is recommended that you consult with them regarding the differences. \par \medskip
+% 			Further details on using the template can be found in Appendix B. \par \medskip
+% 			You should ensure that you either delete or comment out the blue boxes before submission of the proposal. \par
+% 		\medskip 
+% \end{minipage}}\\ 
 
 %----------------------------------------------------------------------------------------
 %	DECLARATION PAGE
@@ -191,20 +192,20 @@ in the\par\vspace{0.4cm}
 
 \par\vspace{2cm}
 \begin{flushright}
-\includegraphics[width=30mm]{Figures/SignatureSample.png}\par 
+\includegraphics[width=30mm]{Figures/sign.png}\par 
 \authorname\par\vspace{0.1cm}
 \today
 \end{flushright}
 
-\par\vspace{0.5cm}
-\noindent \Cshadowbox{
-	\begin{minipage}{15cm}
-		\medskip
-		\color[rgb]{0.0,0.4,0.65} 
-		\medskip The declaration is an important formal requirement. Ensure that you upload an
-		image of your signature and that you change the file name in the main.tex file to include it.
-		\medskip 
-\end{minipage}}\\ 
+% \par\vspace{0.5cm}
+% \noindent \Cshadowbox{
+% 	\begin{minipage}{15cm}
+% 		\medskip
+% 		\color[rgb]{0.0,0.4,0.65} 
+% 		\medskip The declaration is an important formal requirement. Ensure that you upload an
+% 		image of your signature and that you change the file name in the main.tex file to include it.
+% 		\medskip 
+% \end{minipage}}\\ 
 
 \end{declaration}
 \vfill
@@ -227,23 +228,23 @@ in the\par\vspace{0.4cm}
 \begin{abstract}
 \addchaptertocentry{\abstractname} % Add the abstract to the table of contents
 \begin{quote}
-Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam ultricies lacinia euismod. Nam tempus risus in dolor rhoncus in interdum enim tincidunt. Donec vel nunc neque. In condimentum ullamcorper quam non consequat. Fusce sagittis tempor feugiat. Fusce magna erat, molestie eu convallis ut, tempus sed arcu. Quisque molestie, ante a tincidunt ullamcorper, sapien enim dignissim lacus, in semper nibh erat lobortis purus. Integer dapibus ligula ac risus convallis pellentesque.
+TO BE COMPLETED
 \end{quote}
 
-\par\vspace{0.5cm}
-\noindent \Cshadowbox{
-    \begin{minipage}{15cm}
-    \bigskip
-    \color[rgb]{0.0,0.4,0.65}The abstract is a brief informative summary of the proposed research. It can be read independently and should 
-    	\begin{itemize}
-    		\item locate the proposed research within the background relevant to it,
-    		\item state the research question or aim,
-    		\item briefly describe the proposed methods for answering the question or achieving the aim, and,
-    		\item emphasise the contribution that the proposed research will make to current research in the field.
-    	\end{itemize}
-    	It is recommended that your abstract is no more than 300 words.
-    \medskip
-	\end{minipage}}
+% \par\vspace{0.5cm}
+% \noindent \Cshadowbox{
+%     \begin{minipage}{15cm}
+%     \bigskip
+%     \color[rgb]{0.0,0.4,0.65}The abstract is a brief informative summary of the proposed research. It can be read independently and should 
+%     	\begin{itemize}
+%     		\item locate the proposed research within the background relevant to it,
+%     		\item state the research question or aim,
+%     		\item briefly describe the proposed methods for answering the question or achieving the aim, and,
+%     		\item emphasise the contribution that the proposed research will make to current research in the field.
+%     	\end{itemize}
+%     	It is recommended that your abstract is no more than 300 words.
+%     \medskip
+% 	\end{minipage}}
 
 \end{abstract}
 
@@ -251,25 +252,25 @@ Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam ultricies lacin
 %	ACKNOWLEDGEMENTS
 %----------------------------------------------------------------------------------------
 
-\begin{acknowledgements}
-\addchaptertocentry{\acknowledgementname} % Add the acknowledgements to the table of contents
-\vspace{0.5cm}
-\noindent{Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam ultricies lacinia euismod. Nam tempus risus in dolor rhoncus in interdum enim tincidunt. Donec vel nunc neque.}
+% \begin{acknowledgements}
+% \addchaptertocentry{\acknowledgementname} % Add the acknowledgements to the table of contents
+% \vspace{0.5cm}
+% \noindent{Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam ultricies lacinia euismod. Nam tempus risus in dolor rhoncus in interdum enim tincidunt. Donec vel nunc neque.}
 
-\par\vspace{0.5cm}
-\noindent \Cshadowbox{
-	\begin{minipage}{15cm}
-		\medskip
-		\color[rgb]{0.0,0.4,0.65} 
-		\medskip The acknowledgements section allows you to thank those who contributed to the
-		preparation of the proposal. It is usual to acknowledge supervision, financial
-		assistance or funders, and any special facilities provided for the research.		
-		\medskip 
-\end{minipage}}\\ 
+% \par\vspace{0.5cm}
+% \noindent \Cshadowbox{
+% 	\begin{minipage}{15cm}
+% 		\medskip
+% 		\color[rgb]{0.0,0.4,0.65} 
+% 		\medskip The acknowledgements section allows you to thank those who contributed to the
+% 		preparation of the proposal. It is usual to acknowledge supervision, financial
+% 		assistance or funders, and any special facilities provided for the research.		
+% 		\medskip 
+% \end{minipage}}\\ 
 
 
 
-\end{acknowledgements}
+% \end{acknowledgements}
 
 %----------------------------------------------------------------------------------------
 %	LIST OF CONTENTS/FIGURES/TABLES PAGES
@@ -340,20 +341,20 @@ Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam ultricies lacin
 
 \include{Chapters/Introduction}
 \include{Chapters/ResearchMethodology}
-\include{Chapters/ScheduleOfWork}
-\include{Chapters/Conclusion}
+% \include{Chapters/ScheduleOfWork}
+% \include{Chapters/Conclusion}
 
 %----------------------------------------------------------------------------------------
 %	THESIS CONTENT - APPENDICES
 %----------------------------------------------------------------------------------------
 
-\appendix % Cue to tell LaTeX that the following "chapters" are Appendices
+% \appendix % Cue to tell LaTeX that the following "chapters" are Appendices
 
 % Include the appendices of the thesis as separate files from the Appendices folder
 % Uncomment the lines as you write the Appendices
 
-\include{Appendices/AppendixA}
-\include{Appendices/AppendixB}
+% \include{Appendices/AppendixA}
+% \include{Appendices/AppendixB} 
 %\include{Appendices/AppendixC}
 
 %----------------------------------------------------------------------------------------
