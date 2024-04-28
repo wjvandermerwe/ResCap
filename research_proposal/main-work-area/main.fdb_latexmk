@@ -1,12 +1,12 @@
 # Fdb version 4
-["biber main"] 1714326397.6271 "main.bcf" "main.bbl" "main" 1714326403.40868 0
-  "main.bcf" 1714326403.29497 119321 2e9fb2debd49b65fa7f9691309659779 "pdflatex"
+["biber main"] 1714326397.6271 "main.bcf" "main.bbl" "main" 1714327995.87028 0
+  "main.bcf" 1714327995.75156 119321 2e9fb2debd49b65fa7f9691309659779 "pdflatex"
   "main.bib" 1714325470.67813 61538 12bbd87b3cfdce06be14d8ccf44a23d6 ""
   (generated)
   "main.bbl"
   "main.blg"
   (rewritten before read)
-["pdflatex"] 1714326400.07914 "/Users/johan/Documents/personal/studies/ResCap/research_proposal/main-work-area/main.tex" "main.pdf" "main" 1714326403.40902 0
+["pdflatex"] 1714327992.38322 "/Users/johan/Documents/personal/studies/ResCap/research_proposal/main-work-area/main.tex" "main.pdf" "main" 1714327995.87062 0
   "/Users/johan/Documents/personal/studies/ResCap/research_proposal/main-work-area/main.tex" 1714326178.31112 16561 0428ec49eb6ab8268681267d175bf308 ""
   "/usr/local/texlive/2024/texmf-dist/fonts/enc/dvips/base/8r.enc" 1165713224 4850 80dc9bab7f31fb78a000ccfed0e27cab ""
   "/usr/local/texlive/2024/texmf-dist/fonts/enc/dvips/cm-super/cm-super-t1.enc" 1136849721 2971 def0b6c1f0b107b3b936def894055589 ""
@@ -247,10 +247,10 @@
   "/usr/local/texlive/2024/texmf-var/fonts/map/pdftex/updmap/pdftex.map" 1711718467.09352 5467645 128b85b7cde5f5edc5cb7f1dd7ff8736 ""
   "/usr/local/texlive/2024/texmf-var/web2c/pdftex/pdflatex.fmt" 1711718428 8221427 4940e6e1000f9b02bdbc702679f13cfd ""
   "/usr/local/texlive/2024/texmf.cnf" 1710266656 577 e590dabc9e28c5b61546e15f63eebcdf ""
-  "Chapters/Introduction.aux" 1714326402.89285 14289 2f7d940b9cf088f2b713e93849941f79 "pdflatex"
-  "Chapters/Introduction.tex" 1714326394.02615 78656 8f4b18dfe112d942dca1224f1e3babcf ""
-  "Chapters/ResearchMethodology.aux" 1714326403.12226 6025 8726ae21779103eac063c26846ec4fbd "pdflatex"
-  "Chapters/ResearchMethodology.tex" 1714325981.29851 8594 751b99422559a92407c7d2d17b0167d8 ""
+  "Chapters/Introduction.aux" 1714327995.33157 14289 2f7d940b9cf088f2b713e93849941f79 "pdflatex"
+  "Chapters/Introduction.tex" 1714327992.16817 78613 5d0c807ba7677879cca0859a6a9bf0b4 ""
+  "Chapters/ResearchMethodology.aux" 1714327995.56903 6025 8726ae21779103eac063c26846ec4fbd "pdflatex"
+  "Chapters/ResearchMethodology.tex" 1714327748.6184 8585 dfd6832864da035c032a4574c6a9533a ""
   "Figures/COMPETING1.png" 1714143214.54517 94270 1a4f7f42cc1fb8c8d45f509914b1ac92 ""
   "Figures/COMPETING2.png" 1714143280.1023 87611 f2f294ac59ba371b0f9c149a6dacb077 ""
   "Figures/FAIR_PRINCIPLES.png" 1714126113.57441 58524 17d49d12fafb0e1f7d4a63c909eebf74 ""
@@ -262,14 +262,14 @@
   "Figures/logoWitsstackedcolourtransparent.png" 1714325932.24651 611396 193e7f548b93c2eab3dfd6f1d948afd2 ""
   "Figures/sign.png" 1714325804.63567 11601 d3de8ac180e1c2b565c7fecc6c2c2ed1 ""
   "ProposalAndThesis.cls" 1711717023.40737 17874 c6a0b6eddfdc71be7c9a8b87228073e2 ""
-  "main.aux" 1714326403.28158 16181 465cd0ae75435541044dd1320673aa34 "pdflatex"
+  "main.aux" 1714327995.73635 16181 465cd0ae75435541044dd1320673aa34 "pdflatex"
   "main.bbl" 1714326400.06149 115435 ce70415a1fe2df06b102501fc409c489 "biber main"
-  "main.lof" 1714326403.29571 1743 f7441cd29e2e4a7bc3da0fc8c422931e "pdflatex"
-  "main.lot" 1714326403.29574 100 fafb8d5171ae750ae4e5e7da74531e0b "pdflatex"
-  "main.out" 1714326403.29398 8487 c5083a5b63abb4eafc7e41d73da3de07 "pdflatex"
-  "main.run.xml" 1714326403.29563 2333 269acff7b90ffdeba4ebcc0628505b74 "pdflatex"
+  "main.lof" 1714327995.75244 1743 f7441cd29e2e4a7bc3da0fc8c422931e "pdflatex"
+  "main.lot" 1714327995.75247 100 fafb8d5171ae750ae4e5e7da74531e0b "pdflatex"
+  "main.out" 1714327995.7503 8487 c5083a5b63abb4eafc7e41d73da3de07 "pdflatex"
+  "main.run.xml" 1714327995.75233 2333 269acff7b90ffdeba4ebcc0628505b74 "pdflatex"
   "main.tex" 1714326178.31112 16561 0428ec49eb6ab8268681267d175bf308 ""
-  "main.toc" 1714326403.29569 3964 50f66bc4493d359eff6f2d92129fd387 "pdflatex"
+  "main.toc" 1714327995.75241 3964 50f66bc4493d359eff6f2d92129fd387 "pdflatex"
   (generated)
   "Chapters/Introduction.aux"
   "Chapters/ResearchMethodology.aux"
