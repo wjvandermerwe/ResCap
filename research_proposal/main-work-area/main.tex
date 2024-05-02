@@ -52,8 +52,8 @@ headsepline, % Uncomment to get a line under the header
 \usepackage{amsmath}
 \usepackage[backend=biber,style=numeric,natbib=true]{biblatex} % Use the bibtex backend with the numeric citation style
 \hfuzz=2pt % Ignores all overfull hbox warnings less than 2pt long
-
-
+\usepackage{pdflscape}
+\usepackage{multirow}
 \addbibresource{main.bib} % The filename of the bibliography
 
 \usepackage[autostyle=true]{csquotes} % Required to generate language-dependent quotes in the bibliography
@@ -341,8 +341,8 @@ TO BE COMPLETED
 
 \include{Chapters/Introduction}
 \include{Chapters/ResearchMethodology}
-% \include{Chapters/ScheduleOfWork}
-% \include{Chapters/Conclusion}
+\include{Chapters/ScheduleOfWork}
+\include{Chapters/Conclusion}
 
 %----------------------------------------------------------------------------------------
 %	THESIS CONTENT - APPENDICES
