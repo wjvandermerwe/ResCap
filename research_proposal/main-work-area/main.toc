@@ -8,53 +8,56 @@
 \contentsline {section}{\numberline {1.1}Background}{1}{section.7}%
 \contentsline {section}{\numberline {1.2}Literature review}{2}{section.8}%
 \contentsline {subsection}{\numberline {1.2.1}Important issues in comparative simulation studies}{2}{subsection.9}%
-\contentsline {subsubsection}{Applied examples of simulation studies}{6}{section*.12}%
-\contentsline {subsection}{\numberline {1.2.2}Cox's Proportional Hazards Model}{7}{subsection.13}%
-\contentsline {subsubsection}{Discrete vs Continuous Models}{7}{section*.14}%
-\contentsline {subsubsection}{Time-Dependant Covariates}{7}{section*.15}%
-\contentsline {subsubsection}{Likelihood Function}{9}{section*.16}%
-\contentsline {subsubsection}{Competing Risks}{10}{section*.17}%
-\contentsline {subsection}{\numberline {1.2.3}Lasso Regularisation And Variable Selection}{10}{subsection.19}%
-\contentsline {subsubsection}{Extensions}{12}{section*.20}%
-\contentsline {subsection}{\numberline {1.2.4}Random Surivival Forest}{14}{subsection.25}%
-\contentsline {subsubsection}{Extensions}{15}{section*.28}%
-\contentsline {subsection}{\numberline {1.2.5}Methods For Data Generating Mechanisms For Simulation}{17}{subsection.30}%
-\contentsline {subsubsection}{Data Imputation Methods}{17}{section*.31}%
-\contentsline {subsubsection}{Data Simulation Methods}{20}{section*.37}%
-\contentsline {subsubsection}{Synthetic Data Generation Methods}{20}{section*.39}%
-\contentsline {subsubsection}{Simulation for competing risks and clustering}{21}{section*.41}%
-\contentsline {subsection}{\numberline {1.2.6}Methods For Model Evaluation And Result Interpretation}{22}{subsection.44}%
-\contentsline {subsubsection}{C-Index}{23}{section*.45}%
-\contentsline {subsubsection}{Brier Score and Integrated Brier Score}{25}{section*.47}%
-\contentsline {subsubsection}{Hosmer-Lemeshow Calibration (1-Calibration)}{26}{section*.50}%
-\contentsline {subsubsection}{D-Calibration}{26}{section*.52}%
-\contentsline {subsubsection}{Mean Absolute Error}{27}{section*.54}%
-\contentsline {subsubsection}{Scoring Theory}{28}{section*.61}%
-\contentsline {section}{\numberline {1.3}Problem Statement}{30}{section.67}%
-\contentsline {section}{\numberline {1.4}Research Aims and Objectives}{30}{section.68}%
-\contentsline {subsection}{\numberline {1.4.1}Research Aims}{30}{subsection.69}%
-\contentsline {subsection}{\numberline {1.4.2}Objectives}{30}{subsection.70}%
-\contentsline {section}{\numberline {1.5}Limitations}{31}{section.78}%
-\contentsline {section}{\numberline {1.6}Overview}{31}{section.82}%
-\contentsline {chapter}{\numberline {2}Research Methodology}{33}{chapter.83}%
-\contentsline {section}{\numberline {2.1}Research design}{33}{section.84}%
-\contentsline {subsection}{\numberline {2.1.1}Aims}{34}{subsection.86}%
-\contentsline {subsection}{\numberline {2.1.2}Data-generating mechanisms}{34}{subsection.87}%
-\contentsline {subsubsection}{Missing Data Imputation}{34}{section*.88}%
-\contentsline {subsubsection}{Data Simulation}{34}{section*.89}%
-\contentsline {subsubsection}{Synthetic Data Generation}{35}{section*.91}%
-\contentsline {subsection}{\numberline {2.1.3}Methods}{36}{subsection.95}%
-\contentsline {subsubsection}{Cox Proportional Hazards Model}{37}{section*.96}%
-\contentsline {subsubsection}{Lasso Regularisation}{37}{section*.100}%
-\contentsline {subsubsection}{Random Survival Forest}{38}{section*.104}%
-\contentsline {subsection}{\numberline {2.1.4}Estimands}{39}{subsection.108}%
-\contentsline {subsection}{\numberline {2.1.5}Performance measures}{39}{subsection.109}%
-\contentsline {section}{\numberline {2.2}Data}{40}{section.110}%
-\contentsline {section}{\numberline {2.3}Methods}{40}{section.111}%
-\contentsline {section}{\numberline {2.4}Limitations}{42}{section.112}%
-\contentsline {section}{\numberline {2.5}Ethical Considerations}{42}{section.113}%
-\contentsline {chapter}{\numberline {3}Schedule of Work}{43}{chapter.114}%
-\contentsline {section}{\numberline {3.1}Schedule of Work}{43}{section.115}%
-\contentsline {section}{\numberline {3.2}Potential Difficulties}{46}{section.116}%
-\contentsline {chapter}{\numberline {4}Conclusion}{47}{chapter.117}%
-\contentsline {chapter}{Bibliography}{48}{chapter*.118}%
+\contentsline {subsubsection}{Applied examples of simulation studies}{5}{section*.12}%
+\contentsline {subsection}{\numberline {1.2.2}Models}{7}{subsection.13}%
+\contentsline {subsubsection}{Cox's Proportional Hazards Model}{7}{section*.14}%
+\contentsline {subsubsection}{Lasso Regularisation For Variable Selection }{10}{section*.16}%
+\contentsline {subsubsection}{Random Surivival Forest}{13}{section*.21}%
+\contentsline {subsection}{\numberline {1.2.3}Data Generating Mechanisms For Simulation}{16}{subsection.23}%
+\contentsline {subsubsection}{Data Simulation Methods}{16}{section*.24}%
+\contentsline {subsubsection}{Data Imputation Methods}{17}{section*.26}%
+\contentsline {subsubsection}{Synthetic Data Generation Methods}{18}{section*.27}%
+\contentsline {subsubsection}{Simulation for competing risks and clustering}{20}{section*.29}%
+\contentsline {subsection}{\numberline {1.2.4}Model Evaluation And Result Interpretation}{20}{subsection.31}%
+\contentsline {subsubsection}{C-Index}{21}{section*.32}%
+\contentsline {subsubsection}{Brier Score and Integrated Brier Score}{22}{section*.33}%
+\contentsline {subsubsection}{Hosmer-Lemeshow Calibration (1-Calibration)}{22}{section*.34}%
+\contentsline {subsubsection}{D-Calibration}{23}{section*.35}%
+\contentsline {subsubsection}{Scoring Theory}{23}{section*.36}%
+\contentsline {section}{\numberline {1.3}Problem Statement}{24}{section.39}%
+\contentsline {section}{\numberline {1.4}Research Aims and Objectives}{24}{section.40}%
+\contentsline {subsection}{\numberline {1.4.1}Research Aims}{24}{subsection.41}%
+\contentsline {subsection}{\numberline {1.4.2}Objectives}{24}{subsection.42}%
+\contentsline {section}{\numberline {1.5}Limitations}{25}{section.50}%
+\contentsline {section}{\numberline {1.6}Overview}{25}{section.53}%
+\contentsline {chapter}{\numberline {2}Research Methodology}{26}{chapter.54}%
+\contentsline {section}{\numberline {2.1}Research design}{26}{section.55}%
+\contentsline {subsection}{\numberline {2.1.1}Aims}{27}{subsection.57}%
+\contentsline {subsection}{\numberline {2.1.2}Data-generating mechanisms}{27}{subsection.58}%
+\contentsline {subsubsection}{Missing Data Imputation}{27}{section*.59}%
+\contentsline {subsubsection}{Data Simulation}{28}{section*.65}%
+\contentsline {subsubsection}{Synthetic Data Generation}{30}{section*.67}%
+\contentsline {subsection}{\numberline {2.1.3}Methods}{31}{subsection.71}%
+\contentsline {subsubsection}{Cox Proportional Hazards Model}{31}{section*.72}%
+\contentsline {subsubsection}{Lasso Regularisation}{32}{section*.76}%
+\contentsline {subsubsection}{Random Survival Forest}{33}{section*.80}%
+\contentsline {subsection}{\numberline {2.1.4}Estimands}{34}{subsection.82}%
+\contentsline {subsubsection}{Lasso Penalised Cox Proportional Hazards}{34}{section*.83}%
+\contentsline {subsubsection}{Random Survival Forests}{34}{section*.85}%
+\contentsline {subsection}{\numberline {2.1.5}Performance measures}{35}{subsection.90}%
+\contentsline {subsubsection}{C-Index}{35}{section*.91}%
+\contentsline {subsubsection}{Brier Score and Integrated Brier Score}{36}{section*.93}%
+\contentsline {subsubsection}{1-Calibration}{36}{section*.96}%
+\contentsline {subsubsection}{D-Calibration}{37}{section*.98}%
+\contentsline {subsubsection}{Mean Absolute Error}{37}{section*.100}%
+\contentsline {subsubsection}{Ranked Probability Score}{38}{section*.107}%
+\contentsline {subsubsection}{Logarithmic Score}{38}{section*.109}%
+\contentsline {section}{\numberline {2.2}Data}{39}{section.111}%
+\contentsline {section}{\numberline {2.3}Methods}{39}{section.112}%
+\contentsline {section}{\numberline {2.4}Limitations}{41}{section.114}%
+\contentsline {section}{\numberline {2.5}Ethical Considerations}{41}{section.115}%
+\contentsline {chapter}{\numberline {3}Schedule of Work}{42}{chapter.116}%
+\contentsline {section}{\numberline {3.1}Schedule of Work}{42}{section.117}%
+\contentsline {section}{\numberline {3.2}Potential Difficulties}{45}{section.118}%
+\contentsline {chapter}{\numberline {4}Conclusion}{46}{chapter.119}%
+\contentsline {chapter}{Bibliography}{47}{chapter*.120}%

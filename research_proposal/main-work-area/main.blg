@@ -1,18 +1,18 @@
 [0] Config.pm:307> INFO - This is Biber 2.19
 [0] Config.pm:310> INFO - Logfile is 'main.blg'
-[35] biber-darwin:340> INFO - === Thu May  2, 2024, 22:06:52
-[43] Biber.pm:419> INFO - Reading 'main.bcf'
-[101] Biber.pm:979> INFO - Found 34 citekeys in bib section 0
-[108] Biber.pm:4419> INFO - Processing section 0
-[113] Biber.pm:4610> INFO - Looking for bibtex file 'main.bib' for section 0
-[117] bibtex.pm:1713> INFO - LaTeX decoding ...
-[154] bibtex.pm:1519> INFO - Found BibTeX data source 'main.bib'
-[323] UCollate.pm:68> INFO - Overriding locale 'en-US' defaults 'variable = shifted' with 'variable = non-ignorable'
-[323] UCollate.pm:68> INFO - Overriding locale 'en-US' defaults 'normalization = NFD' with 'normalization = prenormalized'
-[323] Biber.pm:4239> INFO - Sorting list 'nty/global//global/global' of type 'entry' with template 'nty' and locale 'en-US'
-[323] Biber.pm:4245> INFO - No sort tailoring available for locale 'en-US'
-[345] bbl.pm:660> INFO - Writing 'main.bbl' with encoding 'UTF-8'
-[379] bbl.pm:763> INFO - Output to main.bbl
-[379] Biber.pm:131> WARN - ISBN '978-1-4471-7502-5 978-1-4471-7503-2' in entry 'pham_springer_2023' is invalid - run biber with '--validate_datamodel' for details.
-[379] Biber.pm:131> WARN - ISBN '978-1-4842-1847-1 978-1-4842-1848-8' in entry 'joshi_beginning_2016' is invalid - run biber with '--validate_datamodel' for details.
-[379] Biber.pm:133> INFO - WARNINGS: 2
+[36] biber-darwin:340> INFO - === Fri May  3, 2024, 18:52:43
+[44] Biber.pm:419> INFO - Reading 'main.bcf'
+[104] Biber.pm:979> INFO - Found 34 citekeys in bib section 0
+[111] Biber.pm:4419> INFO - Processing section 0
+[116] Biber.pm:4610> INFO - Looking for bibtex file 'main.bib' for section 0
+[120] bibtex.pm:1713> INFO - LaTeX decoding ...
+[158] bibtex.pm:1519> INFO - Found BibTeX data source 'main.bib'
+[330] UCollate.pm:68> INFO - Overriding locale 'en-US' defaults 'normalization = NFD' with 'normalization = prenormalized'
+[330] UCollate.pm:68> INFO - Overriding locale 'en-US' defaults 'variable = shifted' with 'variable = non-ignorable'
+[330] Biber.pm:4239> INFO - Sorting list 'nty/global//global/global' of type 'entry' with template 'nty' and locale 'en-US'
+[330] Biber.pm:4245> INFO - No sort tailoring available for locale 'en-US'
+[351] bbl.pm:660> INFO - Writing 'main.bbl' with encoding 'UTF-8'
+[386] bbl.pm:763> INFO - Output to main.bbl
+[386] Biber.pm:131> WARN - ISBN '978-1-4471-7502-5 978-1-4471-7503-2' in entry 'pham_springer_2023' is invalid - run biber with '--validate_datamodel' for details.
+[386] Biber.pm:131> WARN - ISBN '978-1-4842-1847-1 978-1-4842-1848-8' in entry 'joshi_beginning_2016' is invalid - run biber with '--validate_datamodel' for details.
+[386] Biber.pm:133> INFO - WARNINGS: 2
