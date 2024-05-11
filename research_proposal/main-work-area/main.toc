@@ -49,15 +49,15 @@
 \contentsline {subsubsection}{Brier Score and Integrated Brier Score}{36}{section*.92}%
 \contentsline {subsubsection}{1-Calibration}{36}{section*.95}%
 \contentsline {subsubsection}{D-Calibration}{37}{section*.97}%
-\contentsline {subsubsection}{Mean Absolute Error}{37}{section*.99}%
-\contentsline {subsubsection}{Ranked Probability Score}{38}{section*.106}%
-\contentsline {subsubsection}{Logarithmic Score}{38}{section*.108}%
-\contentsline {section}{\numberline {2.2}Data}{39}{section.110}%
-\contentsline {section}{\numberline {2.3}Methods}{39}{section.111}%
-\contentsline {section}{\numberline {2.4}Limitations}{41}{section.113}%
-\contentsline {section}{\numberline {2.5}Ethical Considerations}{41}{section.114}%
-\contentsline {chapter}{\numberline {3}Schedule of Work}{42}{chapter.115}%
-\contentsline {section}{\numberline {3.1}Schedule of Work}{42}{section.116}%
-\contentsline {section}{\numberline {3.2}Potential Difficulties}{45}{section.117}%
-\contentsline {chapter}{\numberline {4}Conclusion}{46}{chapter.118}%
-\contentsline {chapter}{Bibliography}{47}{chapter*.119}%
+\contentsline {subsubsection}{Mean Absolute Error}{37}{section*.98}%
+\contentsline {subsubsection}{Ranked Probability Score}{38}{section*.102}%
+\contentsline {subsubsection}{Logarithmic Score}{38}{section*.104}%
+\contentsline {section}{\numberline {2.2}Data}{38}{section.106}%
+\contentsline {section}{\numberline {2.3}Methods}{39}{section.107}%
+\contentsline {section}{\numberline {2.4}Limitations}{40}{section.109}%
+\contentsline {section}{\numberline {2.5}Ethical Considerations}{41}{section.110}%
+\contentsline {chapter}{\numberline {3}Schedule of Work}{42}{chapter.111}%
+\contentsline {section}{\numberline {3.1}Schedule of Work}{42}{section.112}%
+\contentsline {section}{\numberline {3.2}Potential Difficulties}{45}{section.113}%
+\contentsline {chapter}{\numberline {4}Conclusion}{46}{chapter.114}%
+\contentsline {chapter}{Bibliography}{47}{chapter*.115}%

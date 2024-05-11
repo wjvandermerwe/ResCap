@@ -1,12 +1,12 @@
 # Fdb version 4
-["biber main"] 1714812047.73152 "main.bcf" "main.bbl" "main" 1714915955.45258 0
-  "main.bcf" 1714915955.32563 120325 a763dd890019f8ef69ad1b7711b55ed3 "pdflatex"
+["biber main"] 1714812047.73152 "main.bcf" "main.bbl" "main" 1714928965.31998 0
+  "main.bcf" 1714928965.194 120325 a763dd890019f8ef69ad1b7711b55ed3 "pdflatex"
   "main.bib" 1714325470.67813 61538 12bbd87b3cfdce06be14d8ccf44a23d6 ""
   (generated)
   "main.bbl"
   "main.blg"
   (rewritten before read)
-["pdflatex"] 1714915951.23868 "/Users/johan/Documents/personal/studies/ResCap/research_proposal/main-work-area/main.tex" "main.pdf" "main" 1714915955.4529 0
+["pdflatex"] 1714928961.2123 "/Users/johan/Documents/personal/studies/ResCap/research_proposal/main-work-area/main.tex" "main.pdf" "main" 1714928965.32031 0
   "/Users/johan/Documents/personal/studies/ResCap/research_proposal/main-work-area/main.tex" 1714754417.55452 17688 fe5ca469b18ca1585b68b95d0a1f6366 ""
   "/usr/local/texlive/2024/texmf-dist/fonts/enc/dvips/base/8r.enc" 1165713224 4850 80dc9bab7f31fb78a000ccfed0e27cab ""
   "/usr/local/texlive/2024/texmf-dist/fonts/enc/dvips/cm-super/cm-super-t1.enc" 1136849721 2971 def0b6c1f0b107b3b936def894055589 ""
@@ -252,13 +252,13 @@
   "/usr/local/texlive/2024/texmf-var/fonts/map/pdftex/updmap/pdftex.map" 1711718467.09352 5467645 128b85b7cde5f5edc5cb7f1dd7ff8736 ""
   "/usr/local/texlive/2024/texmf-var/web2c/pdftex/pdflatex.fmt" 1711718428 8221427 4940e6e1000f9b02bdbc702679f13cfd ""
   "/usr/local/texlive/2024/texmf.cnf" 1710266656 577 e590dabc9e28c5b61546e15f63eebcdf ""
-  "Chapters/Conclusion.aux" 1714915955.14351 4468 72c55127a0e3dfbb2071808a04d210f7 "pdflatex"
+  "Chapters/Conclusion.aux" 1714928965.01781 4468 8b647bb409f0b1235be72a3593419d63 "pdflatex"
   "Chapters/Conclusion.tex" 1714900209.33338 1424 dfdf913bc12b2fab6aa04f5f6125404b ""
-  "Chapters/Introduction.aux" 1714915953.91948 10211 e8c74997e2a77f5a98a5e4adfb8fca12 "pdflatex"
-  "Chapters/Introduction.tex" 1714900959.20734 53639 04829f75fd066b9b67dba1863bd31661 ""
-  "Chapters/ResearchMethodology.aux" 1714915954.34482 10522 12ab7f0d6b48f2790da61a267dadfed5 "pdflatex"
-  "Chapters/ResearchMethodology.tex" 1714915951.01777 31824 cbefc8d1b5efb44269a0b524b1b486ce ""
-  "Chapters/ScheduleOfWork.aux" 1714915955.13715 4796 53e19fc1969879455e8174867779dfd3 "pdflatex"
+  "Chapters/Introduction.aux" 1714928963.78203 10211 e8c74997e2a77f5a98a5e4adfb8fca12 "pdflatex"
+  "Chapters/Introduction.tex" 1714928617.0981 53638 bbed01a28ca955c3409207910c507114 ""
+  "Chapters/ResearchMethodology.aux" 1714928964.1933 10252 fe0f763f4af7aeb4c65ac6a9732508e9 "pdflatex"
+  "Chapters/ResearchMethodology.tex" 1714928961.00598 31188 75353d45ca4e07594c184aaeb1028fc6 ""
+  "Chapters/ScheduleOfWork.aux" 1714928965.00835 4796 8264d751972723d833b3c3a6402ae583 "pdflatex"
   "Chapters/ScheduleOfWork.tex" 1714900186.76929 5121 24753800dd5a5c569df1ad6ae86b10aa ""
   "Figures/COMPETING1.png" 1714143214.54517 94270 1a4f7f42cc1fb8c8d45f509914b1ac92 ""
   "Figures/FAIR_PRINCIPLES.png" 1714126113.57441 58524 17d49d12fafb0e1f7d4a63c909eebf74 ""
@@ -269,14 +269,14 @@
   "Figures/logoWitsstackedcolourtransparent.png" 1714325932.24651 611396 193e7f548b93c2eab3dfd6f1d948afd2 ""
   "Figures/sign.png" 1714325804.63567 11601 d3de8ac180e1c2b565c7fecc6c2c2ed1 ""
   "ProposalAndThesis.cls" 1711717023.40737 17874 c6a0b6eddfdc71be7c9a8b87228073e2 ""
-  "main.aux" 1714915955.31 17316 2f9c754354ac37e521f2bdc26b6446de "pdflatex"
+  "main.aux" 1714928965.17848 17316 efa94e9f00d450dde1d3171268d6b267 "pdflatex"
   "main.bbl" 1714812050.15453 115435 ce70415a1fe2df06b102501fc409c489 "biber main"
-  "main.lof" 1714915955.32661 1400 8900ce4886853c316bdd13212dd5b1c0 "pdflatex"
-  "main.lot" 1714915955.32665 450 3db6f1e4c693b31ad04124399a1e261a "pdflatex"
-  "main.out" 1714915955.32461 9880 a7c1d84dd4548b14536ee5beea1aff53 "pdflatex"
-  "main.run.xml" 1714915955.32637 2333 269acff7b90ffdeba4ebcc0628505b74 "pdflatex"
+  "main.lof" 1714928965.19481 1400 8900ce4886853c316bdd13212dd5b1c0 "pdflatex"
+  "main.lot" 1714928965.19483 450 577b49c6092d8d62f5a7a3a4a2eae3e0 "pdflatex"
+  "main.out" 1714928965.193 9880 b4503fd55201d05b74b5f82c89376b60 "pdflatex"
+  "main.run.xml" 1714928965.19469 2333 269acff7b90ffdeba4ebcc0628505b74 "pdflatex"
   "main.tex" 1714754417.55452 17688 fe5ca469b18ca1585b68b95d0a1f6366 ""
-  "main.toc" 1714915955.32644 4675 800e5af4b52b77057ae991a1a606f4b7 "pdflatex"
+  "main.toc" 1714928965.19476 4675 e2c4d17cec89dd8f4fa553d7bdd8e3c5 "pdflatex"
   (generated)
   "Chapters/Conclusion.aux"
   "Chapters/Introduction.aux"

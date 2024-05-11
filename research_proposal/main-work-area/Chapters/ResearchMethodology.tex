@@ -154,20 +154,20 @@ VI(j) = \frac{1}{B}\sum_{b=1}^{B}(\frac{Err(j)_{b}}{Err_{b}}-1)
 \end{itemize}
 
 \subsubsection{C-Index}
-\noindent The C-index \parencite{qi_effective_2023}, or concordance index, is a vital statistical tool used to evaluate the predictive accuracy of survival models, quantifying their ability to correctly rank the order of patient outcomes based on their predicted risks. It is formally defined as the proportion of all "comparable" pairs of subjects where the estimates and true targets are in agreement. A pair is comparable if it is possible to determine the order of their events, that is, who experienced the event first.
+\noindent The C-index \parencite{qi_effective_2023}, serves as a crucial statistical measure in evaluating the effectiveness of survival models. This index assesses how well these models predict the sequence of patient outcomes based on their respective risk assessments. It is defined as the ratio of pairs of subjects (deemed "comparable") for which the model's predictions and actual outcomes are consistent in terms of event sequence. "Comparable" refers to pairs where the event sequence, i.e., who encountered the event first, can be established.
 \begin{equation} \label{eq:cindex}C\text{-index} = \frac{\sum_{i,j} \mathbf{1}(t_i < t_j) \cdot \mathbf{1}(\eta_i > \eta_j) \cdot \delta_i}{\sum_{i,j} \mathbf{1}(t_i < t_j) \cdot \delta_i}\end{equation}
-\noindent In this formula, \(\mu_{i}\) represents the risk score of subject i, and \(\delta_{i}\) indicates whether an event occurred (1 if it did, 0 otherwise)
+\noindent In this formula, \(\mu_{i}\) is the risk score for unit i, and \(\delta_{i}\) indicates whether an event occurred (1 if it did, 0 otherwise)
 \subsubsection{Brier Score and Integrated Brier Score}
-\textit{The Brier score} is a measure used to evaluate the accuracy of probabilistic predictions. It is essentially the mean squared error \parencite{qi_effective_2023} between the observed outcomes and the predicted probabilities at a specific time \(t^{*}\).
+\textit{Brier score} is a measure used to evaluate the accuracy of probabilistic predictions. It is essentially the mean squared error \parencite{qi_effective_2023} between the observed outcomes and the predicted probabilities at a specific time \(t^{*}\).
 \begin{equation} \label{eq:bs}BS_{t^*}(VU, \hat{S}(t^* | \cdot)) = \frac{1}{|VU|} \sum_{[\tilde{x}_i, d_i] \in VU} (I[d_i \leq t^*] - \hat{S}(t^* | \tilde{x}_i))^2\end{equation}
 \noindent Where, \(VU\) is the validation set, \(\hat{S}(t^* | \cdot))\) is the predicted survival probability at \(t^{*}\) and \(I[d_i \leq t^*]\) is the event indicator.
 \\\\
-\noindent \textit{The Integrated Brier Score (IBS)} extends the concept of the Brier score across a range of times, providing a measure of model accuracy over time. In other words, it is the expectation of the Brier scores calculated at each time point within a specified interval.
+\noindent \textit{Integrated Brier Score (IBS)} extends the Brier score across a range of times, providing a measure of model accuracy over time. In other words, it is the expectation of the Brier scores calculated at each time point within a specified interval.
 \begin{equation} \label{eq:ibs}IBS(\tau, VU, \hat{S}(\cdot | \cdot)) = \frac{1}{\tau} \int_0^{\tau} BS_t(VU, \hat{S}(t | \cdot)) \, dt\end{equation}
-\noindent Where, \(\tau\) is the maximum event time, \(BS_{t}\) is the brier score at time t.
+\noindent Where, \(\tau\) is the biggest event period, \(BS_{t}\) is the brier score at time t.
 \subsubsection{1-Calibration}
-\noindent 1-Calibration, also known as Hosmer-Lemeshow calibration, is a statistical test used to evaluate the calibration of a model at a specific time point \(t^{*}\) \parencite{haider_effective_2018}.
-It works by sorting all subjects for the predicted probabilities at time \(t^{*}\). These probabilities are then grouped into a predefined number of groups or bins (typically 10). For each bin, the expected number of events is calculated based on the predicted probabilities, and this is compared to the actual number of events that occurred \parencite{qi_effective_2023}.
+\noindent 1-Calibration, also known as Hosmer-Lemeshow calibration, is a test used to evaluate model calibration at a specific time point \(t^{*}\) \parencite{haider_effective_2018}.
+It works by sorting all subjects for the predicted probabilities at time \(t^{*}\). These probabilities are then grouped into a predefined number of groups or bins (typically 10). For each bin, number of events is determined based on the predicted probabilities, and this is compared to the actual number of events that occurred \parencite{qi_effective_2023}.
 
 \begin{equation} \label{eq:c1}\text{HL}(VU, \hat{S}(t^* | \cdot)) = \sum_{j=1}^B \frac{(O_j - n_j \bar{p}_j)^2}{n_j \bar{p}_j (1 - \bar{p}_j)}\end{equation}
 \noindent Where, \(B\) is the number of bins, \(O_{j}\) is the observed number of events in bin j, \(\hat{p}_{j}\) is the average predicted probability in bin j. 
@@ -175,27 +175,24 @@ It works by sorting all subjects for the predicted probabilities at time \(t^{*}
 \subsubsection{D-Calibration}
 \noindent D-Calibration \parencite{haider_effective_2018} extends the concept of 1-calibration over a range of time points or across different distributions of time points, providing a more comprehensive measure of a model's accuracy.
 
-\begin{equation} \label{eq:dc}D_{\Theta}([a, b]) = \{[x_i, d_i, \delta_i = 1] \in D | \hat{S}_{\Theta}(d_i) \in [a, b]\}\end{equation}
+% \begin{equation} \label{eq:dc}D_{\Theta}([a, b]) = \{[x_i, d_i, \delta_i = 1] \in D | \hat{S}_{\Theta}(d_i) \in [a, b]\}\end{equation}
 
 \subsubsection{Mean Absolute Error}
-\par \noindent \textit{Mean Absolute Error} (MAE) (Uncensored) is the simplest form of MAE variants indicated by \parencite{qi_effective_2023}, it is calculated by taking the absolute difference between the predicted and actual event times for uncensored subjects only. It does not consider censored data, which may introduce bias if the censoring rate is high.
+\par \noindent \textit{Mean Absolute Error} (MAE) (Uncensored) is the simplest form of MAE variants indicated by \parencite{qi_effective_2023}, it is calculated by taking the non negative value difference between the predicted and actual event times for uncensored subjects only. It does not consider censored data, which may introduce bias when censoring rate is frequent.
 \begin{equation} \label{eq:rmae}
 RMAE (\hat{t}_i, t_i, \delta_i = 1) = |t_i - \hat{t}_i|
 \end{equation}
-\par \noindent \textit{The MAE-Hinge} variant \parencite{qi_effective_2023} considers only the cases where the predicted time is earlier than the actual censored time. It is somewhat optimistic as it assigns zero error to predictions that are later than or equal to the censoring time. Applied when the actual event time is censored \(\delta (i =0)\)
-\begin{equation} \label{eq:maehinge}
-RMAE\text{-hinge}(\hat{t}_i, t_i, \delta_i = 0) = \max(t_i - \hat{t}_i, 0)
-\end{equation}
-\par \noindent \textit{MAE-Margin} \parencite{qi_effective_2023} uses a "margin time" for each censored subject, estimated using a non-parametric method (Kaplan-Meier estimator). This margin time is treated as an adjusted event time, creating a more informed guess for censored individuals.
+\par \noindent \textit{MAE-Hinge} variant \parencite{qi_effective_2023} considers only the cases where the estimated time is sooner than the actual cesonsoring time. It is somewhat optimistic as it assigns zero error to predictions that are later than or equal to the censoring time. Applied when the actual event time is censored \(\delta (i =0)\)
+% \begin{equation} \label{eq:maehinge}
+% RMAE\text{-hinge}(\hat{t}_i, t_i, \delta_i = 0) = \max(t_i - \hat{t}_i, 0)
+% \end{equation}
+\par \noindent \textit{"MAE-Margin"} \parencite{qi_effective_2023} uses a "margin time" for induvivual censored units, estimated using a non-parametric method (Kaplan-Meier estimator). This "margin time" is treated as an adjusted event time, creating a more informed guess for censored individuals.
 \begin{equation} \label{eq:maemargin}
 \text{Error for censored subjects:} \quad \omega_i[(1 - \delta_i) \cdot \text{emargin}(t_i) + \delta_i \cdot t_i] - \hat{t}_i
 \end{equation}
 \noindent \parencite{qi_effective_2023} shows that \(w_{i} = 1-S_{KM}(t_{i})\) confidence weight based on the Kaplan-Meier estimator \(emargin(t_{i})=t_{i}+\int_{t_{i}}^{\infty} S_{KM}(D)(t)/S_{KM}(D)(t_{i})\) margin time.
 \\\\
-\noindent \textit{MAE-IPCW-D} (Inverse Probability Censoring Weight - Difference) adapts the IPCW method to MAE by re-allocating the weights of censored subjects to those with known outcomes, using the estimated time of the event for calculations.
-\begin{equation} \label{eq:mae}E_i \sim D [RMAE\text{-IPCW-D}(\hat{t}_i, t_i, \delta_i)] = \frac{1}{N} \sum_{i=1}^N |t_i - \hat{t}_i| \cdot 1_{\delta_i=1} \cdot \frac{1}{G(t_i)}\end{equation}
-\noindent Where \(G(t_{i})\) is the probability of not being censored at time \(t_{i}\). MAE-IPCW-T (Time) is similar to MAE-IPCW-D but includes an estimation of the event time for censored subjects by averaging the times of all subsequent uncensored subjects.
-\begin{equation} \label{eq:maeipcw}e_{IPCW}(t_i, D) = \frac{\sum_{j=1}^N 1_{t_i<t_j} \cdot 1_{\delta_j=1} \cdot t_j}{\sum_{j=1}^N 1_{t_i<t_j} \cdot 1_{\delta_j=1}}\end{equation}
+\noindent \textit{"MAE-IPCW-D"} ("Inverse Probability Censoring Weight" - Difference) adapts the "IPCW" method to MAE by re-allocating the weights of censored subjects to those with known outcomes, using the estimated time of the event for calculations.
 \par \noindent Then, \textit{RMAE-IPCW-T} is calculated similarly to RMAE-IPCW-D, but using eIPCW  for censored subjects. MAE-PO (Pseudo-Observation) utilizes pseudo-observations that estimate the impact of each data point on the overall survival time estimate. 
 \begin{equation} \label{eq:maepsuedo}e_{pseudo-obs}(t_i, D) = N \cdot \hat{\theta} - (N - 1) \cdot \hat{\theta}_{-i}\end{equation}
 \par \noindent \(\theta\) and \(\hat{\theta}\) are unbiased survival time estimators with and without the ii-th subject. The pseudo-observation is treated as an observed event time for MAE calculations.
