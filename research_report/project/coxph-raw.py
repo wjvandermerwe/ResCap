@@ -1,5 +1,6 @@
 import numpy as np
 from sklearn.linear_model import Lasso
+
 class CoxPHModel:
     def __init__(self, lr=0.01, iterations=1000, lasso_penalty=0.1):
         self.lr = lr
