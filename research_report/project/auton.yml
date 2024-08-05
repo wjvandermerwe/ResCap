@@ -1,0 +1,12 @@
+name: auton
+channels:
+  - conda-forge
+  - defaults
+dependencies:
+  - python=3.12
+  - pip
+  - pip:
+    - torch==1.8.0
+    - torchvision==0.10.0
+    - https://github.com/autonlab/auton-survival.git
+

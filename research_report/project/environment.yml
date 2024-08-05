@@ -1,0 +1,23 @@
+name: reseach_project
+channels:
+  - bcg_gamma
+  - conda-forge
+  - pytorch
+  - nvidia
+  - defaults
+dependencies:
+  - python=3.12
+  - numpy
+  - pandas
+  - sklearndf
+  - scikit-survival
+  - torchvision
+  - torchaudio
+  - plotnine
+  - pytorch
+  - pytorch-cuda=12.4
+  - pip
+  - pip:
+    - synthcity
+    - SurvSet
+

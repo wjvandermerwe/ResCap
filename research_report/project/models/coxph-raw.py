@@ -50,18 +50,3 @@ class CoxPHModel:
 
     def predict(self, X):
         return np.dot(X, self.beta)
-
-# Example data
-X = np.array([[0.5, 1.2], [1.3, 0.7], [2.1, 1.9]])
-T = np.array([5, 10, 15])  # Survival times
-E = np.array([1, 0, 1])    # Event occurred or censored
-
-# Create and fit the CoxPHModel
-cox_model = CoxPHModel(lr=0.01, iterations=1000)
-beta = cox_model.fit(X, T, E)
-print("Estimated coefficients without Lasso:", beta)
-
-# Fit the Lasso-regularized CoxPHModel
-cox_lasso_model = CoxPHModel(lr=0.01, iterations=1000, lasso_penalty=0.1)
-beta_lasso = cox_lasso_model.fit_lasso(X, T, E)
-print("Estimated coefficients with Lasso:", beta_lasso)
