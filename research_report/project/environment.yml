@@ -9,12 +9,15 @@ dependencies:
   - python=3.12
   - numpy
   - pandas
+  - scikit-learn=1.3.2
   - sklearndf
   - scikit-survival
   - torchvision
   - torchaudio
   - plotnine
   - pytorch
+  - statsmodels
+  - seaborn
   - pytorch-cuda=12.4
   - pip
   - pip:

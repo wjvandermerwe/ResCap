@@ -1,5 +1,5 @@
 % $ biblatex auxiliary file $
-% $ biblatex bbl format version 3.2 $
+% $ biblatex bbl format version 3.3 $
 % Do not modify the above lines!
 %
 % This is an auxiliary file used by the 'biblatex' package.
@@ -18,8 +18,8 @@
 
 
 \refsection{0}
-  \datalist[entry]{nty/global//global/global}
-    \entry{burzykowski_survival_2024}{article}{}
+  \datalist[entry]{nty/global//global/global/global}
+    \entry{burzykowski_survival_2024}{article}{}{}
       \name{author}{1}{}{%
         {{hash=be11bd2fc43878930a2256e1f92c854a}{%
            family={Burzykowski},
@@ -32,10 +32,12 @@
       }
       \strng{namehash}{be11bd2fc43878930a2256e1f92c854a}
       \strng{fullhash}{be11bd2fc43878930a2256e1f92c854a}
+      \strng{fullhashraw}{be11bd2fc43878930a2256e1f92c854a}
       \strng{bibnamehash}{be11bd2fc43878930a2256e1f92c854a}
       \strng{authorbibnamehash}{be11bd2fc43878930a2256e1f92c854a}
       \strng{authornamehash}{be11bd2fc43878930a2256e1f92c854a}
       \strng{authorfullhash}{be11bd2fc43878930a2256e1f92c854a}
+      \strng{authorfullhashraw}{be11bd2fc43878930a2256e1f92c854a}
       \field{sortinit}{B}
       \field{sortinithash}{d7095fff47cda75ca2589920aae98399}
       \field{labelnamesource}{author}
@@ -67,7 +69,7 @@
       \verb https://linkinghub.elsevier.com/retrieve/pii/S1073874624000094
       \endverb
     \endentry
-    \entry{cox_regression_1972}{article}{}
+    \entry{cox_regression_1972}{article}{}{}
       \name{author}{1}{}{%
         {{hash=2d4d0b24655232a7821096d23c2354b5}{%
            family={Cox},
@@ -77,10 +79,12 @@
       }
       \strng{namehash}{2d4d0b24655232a7821096d23c2354b5}
       \strng{fullhash}{2d4d0b24655232a7821096d23c2354b5}
+      \strng{fullhashraw}{2d4d0b24655232a7821096d23c2354b5}
       \strng{bibnamehash}{2d4d0b24655232a7821096d23c2354b5}
       \strng{authorbibnamehash}{2d4d0b24655232a7821096d23c2354b5}
       \strng{authornamehash}{2d4d0b24655232a7821096d23c2354b5}
       \strng{authorfullhash}{2d4d0b24655232a7821096d23c2354b5}
+      \strng{authorfullhashraw}{2d4d0b24655232a7821096d23c2354b5}
       \field{sortinit}{C}
       \field{sortinithash}{4d103a86280481745c9c897c925753c0}
       \field{labelnamesource}{author}
@@ -106,7 +110,7 @@
       \verb http://www.jstor.org/stable/2985181
       \endverb
     \endentry
-    \entry{cygu_pcoxtime_2021}{misc}{}
+    \entry{cygu_pcoxtime_2021}{misc}{}{}
       \name{author}{3}{}{%
         {{hash=513d80ef441a3486fe780543c6b6875e}{%
            family={Cygu},
@@ -129,10 +133,12 @@
       }
       \strng{namehash}{6377feb888a0ff60cb7f2b2160886ced}
       \strng{fullhash}{6377feb888a0ff60cb7f2b2160886ced}
+      \strng{fullhashraw}{6377feb888a0ff60cb7f2b2160886ced}
       \strng{bibnamehash}{6377feb888a0ff60cb7f2b2160886ced}
       \strng{authorbibnamehash}{6377feb888a0ff60cb7f2b2160886ced}
       \strng{authornamehash}{6377feb888a0ff60cb7f2b2160886ced}
       \strng{authorfullhash}{6377feb888a0ff60cb7f2b2160886ced}
+      \strng{authorfullhashraw}{6377feb888a0ff60cb7f2b2160886ced}
       \field{sortinit}{C}
       \field{sortinithash}{4d103a86280481745c9c897c925753c0}
       \field{labelnamesource}{author}
@@ -159,7 +165,7 @@
       \endverb
       \keyw{Statistics - Computation,Statistics - Methodology,14J60}
     \endentry
-    \entry{davidson-pilon_lifelines_2024}{misc}{}
+    \entry{davidson-pilon_lifelines_2024}{misc}{}{}
       \name{author}{1}{}{%
         {{hash=ddd01661d7160cb48e55f66fe978576e}{%
            family={Davidson-Pilon},
@@ -172,10 +178,12 @@
       }
       \strng{namehash}{ddd01661d7160cb48e55f66fe978576e}
       \strng{fullhash}{ddd01661d7160cb48e55f66fe978576e}
+      \strng{fullhashraw}{ddd01661d7160cb48e55f66fe978576e}
       \strng{bibnamehash}{ddd01661d7160cb48e55f66fe978576e}
       \strng{authorbibnamehash}{ddd01661d7160cb48e55f66fe978576e}
       \strng{authornamehash}{ddd01661d7160cb48e55f66fe978576e}
       \strng{authorfullhash}{ddd01661d7160cb48e55f66fe978576e}
+      \strng{authorfullhashraw}{ddd01661d7160cb48e55f66fe978576e}
       \field{sortinit}{D}
       \field{sortinithash}{6f385f66841fb5e82009dc833c761848}
       \field{labelnamesource}{author}
@@ -199,7 +207,7 @@
       \verb https://zenodo.org/doi/10.5281/zenodo.805993
       \endverb
     \endentry
-    \entry{freijeirogonzalez_critical_2022}{article}{}
+    \entry{freijeirogonzalez_critical_2022}{article}{}{}
       \name{author}{3}{}{%
         {{hash=f9ccd2567d3ae010354b69a014b0ecd2}{%
            family={Freijeiro‐González},
@@ -222,10 +230,12 @@
       }
       \strng{namehash}{a1a4ef049bf8a5146e5ada9f6f23fe10}
       \strng{fullhash}{a1a4ef049bf8a5146e5ada9f6f23fe10}
+      \strng{fullhashraw}{a1a4ef049bf8a5146e5ada9f6f23fe10}
       \strng{bibnamehash}{a1a4ef049bf8a5146e5ada9f6f23fe10}
       \strng{authorbibnamehash}{a1a4ef049bf8a5146e5ada9f6f23fe10}
       \strng{authornamehash}{a1a4ef049bf8a5146e5ada9f6f23fe10}
       \strng{authorfullhash}{a1a4ef049bf8a5146e5ada9f6f23fe10}
+      \strng{authorfullhashraw}{a1a4ef049bf8a5146e5ada9f6f23fe10}
       \field{sortinit}{F}
       \field{sortinithash}{2638baaa20439f1b5a8f80c6c08a13b4}
       \field{labelnamesource}{author}
@@ -257,7 +267,7 @@
       \verb https://onlinelibrary.wiley.com/doi/10.1111/insr.12469
       \endverb
     \endentry
-    \entry{haider_effective_2018}{misc}{}
+    \entry{haider_effective_2018}{misc}{}{}
       \name{author}{4}{}{%
         {{hash=5dff59419d49c1081e77d66234354873}{%
            family={Haider},
@@ -285,10 +295,12 @@
       }
       \strng{namehash}{52d92a2291184f87b238f9692ec3ab2a}
       \strng{fullhash}{117a76e3a66a4460f016228ba6c92e17}
+      \strng{fullhashraw}{117a76e3a66a4460f016228ba6c92e17}
       \strng{bibnamehash}{52d92a2291184f87b238f9692ec3ab2a}
       \strng{authorbibnamehash}{52d92a2291184f87b238f9692ec3ab2a}
       \strng{authornamehash}{52d92a2291184f87b238f9692ec3ab2a}
       \strng{authorfullhash}{117a76e3a66a4460f016228ba6c92e17}
+      \strng{authorfullhashraw}{117a76e3a66a4460f016228ba6c92e17}
       \field{sortinit}{H}
       \field{sortinithash}{23a3aa7c24e56cfa16945d55545109b5}
       \field{labelnamesource}{author}
@@ -314,7 +326,7 @@
       \endverb
       \keyw{Statistics - Machine Learning,Computer Science - Machine Learning}
     \endentry
-    \entry{ishwaran_random_2008}{article}{}
+    \entry{ishwaran_random_2008}{article}{}{}
       \name{author}{4}{}{%
         {{hash=87b2e79f8f2ab0a4040e84b52fbe2710}{%
            family={Ishwaran},
@@ -339,10 +351,12 @@
       }
       \strng{namehash}{d5ed18c6858d0afbb29689256bccf9b0}
       \strng{fullhash}{ddc0a5f97c2ed352568e00596a350f1a}
+      \strng{fullhashraw}{ddc0a5f97c2ed352568e00596a350f1a}
       \strng{bibnamehash}{d5ed18c6858d0afbb29689256bccf9b0}
       \strng{authorbibnamehash}{d5ed18c6858d0afbb29689256bccf9b0}
       \strng{authornamehash}{d5ed18c6858d0afbb29689256bccf9b0}
       \strng{authorfullhash}{ddc0a5f97c2ed352568e00596a350f1a}
+      \strng{authorfullhashraw}{ddc0a5f97c2ed352568e00596a350f1a}
       \field{sortinit}{I}
       \field{sortinithash}{8d291c51ee89b6cd86bf5379f0b151d8}
       \field{labelnamesource}{author}
@@ -375,7 +389,7 @@
       \endverb
       \keyw{Statistics - Applications}
     \endentry
-    \entry{jaeger_accelerated_2022}{misc}{}
+    \entry{jaeger_accelerated_2022}{misc}{}{}
       \name{author}{7}{}{%
         {{hash=aca9ab9625e1495903071fdd526cc2ed}{%
            family={Jaeger},
@@ -418,10 +432,12 @@
       }
       \strng{namehash}{60f71db8e53b030aaf1cd5ada23504e7}
       \strng{fullhash}{d2c8113c714633824e198d5a11bd5673}
+      \strng{fullhashraw}{d2c8113c714633824e198d5a11bd5673}
       \strng{bibnamehash}{60f71db8e53b030aaf1cd5ada23504e7}
       \strng{authorbibnamehash}{60f71db8e53b030aaf1cd5ada23504e7}
       \strng{authornamehash}{60f71db8e53b030aaf1cd5ada23504e7}
       \strng{authorfullhash}{d2c8113c714633824e198d5a11bd5673}
+      \strng{authorfullhashraw}{d2c8113c714633824e198d5a11bd5673}
       \field{sortinit}{J}
       \field{sortinithash}{b2f54a9081ace9966a7cb9413811edb4}
       \field{labelnamesource}{author}
@@ -447,7 +463,7 @@
       \endverb
       \keyw{Statistics - Methodology,Statistics - Machine Learning}
     \endentry
-    \entry{jin_imputation_2024}{article}{}
+    \entry{jin_imputation_2024}{article}{}{}
       \name{author}{1}{}{%
         {{hash=11c170c272345e146953ff1ebceec9c7}{%
            family={Jin},
@@ -460,10 +476,12 @@
       }
       \strng{namehash}{11c170c272345e146953ff1ebceec9c7}
       \strng{fullhash}{11c170c272345e146953ff1ebceec9c7}
+      \strng{fullhashraw}{11c170c272345e146953ff1ebceec9c7}
       \strng{bibnamehash}{11c170c272345e146953ff1ebceec9c7}
       \strng{authorbibnamehash}{11c170c272345e146953ff1ebceec9c7}
       \strng{authornamehash}{11c170c272345e146953ff1ebceec9c7}
       \strng{authorfullhash}{11c170c272345e146953ff1ebceec9c7}
+      \strng{authorfullhashraw}{11c170c272345e146953ff1ebceec9c7}
       \field{sortinit}{J}
       \field{sortinithash}{b2f54a9081ace9966a7cb9413811edb4}
       \field{labelnamesource}{author}
@@ -490,7 +508,7 @@
       \verb https://linkinghub.elsevier.com/retrieve/pii/S1551714423003245
       \endverb
     \endentry
-    \entry{joshi_beginning_2016}{book}{}
+    \entry{joshi_beginning_2016}{book}{}{}
       \name{author}{1}{}{%
         {{hash=a900e96f0bd036f1ecd5f3ad69d37306}{%
            family={Joshi},
@@ -509,10 +527,12 @@
       }
       \strng{namehash}{a900e96f0bd036f1ecd5f3ad69d37306}
       \strng{fullhash}{a900e96f0bd036f1ecd5f3ad69d37306}
+      \strng{fullhashraw}{a900e96f0bd036f1ecd5f3ad69d37306}
       \strng{bibnamehash}{a900e96f0bd036f1ecd5f3ad69d37306}
       \strng{authorbibnamehash}{a900e96f0bd036f1ecd5f3ad69d37306}
       \strng{authornamehash}{a900e96f0bd036f1ecd5f3ad69d37306}
       \strng{authorfullhash}{a900e96f0bd036f1ecd5f3ad69d37306}
+      \strng{authorfullhashraw}{a900e96f0bd036f1ecd5f3ad69d37306}
       \field{sortinit}{J}
       \field{sortinithash}{b2f54a9081ace9966a7cb9413811edb4}
       \field{labelnamesource}{author}
@@ -534,7 +554,7 @@
       \verb http://link.springer.com/10.1007/978-1-4842-1848-8
       \endverb
     \endentry
-    \entry{kalbfleisch_fifty_2023}{article}{}
+    \entry{kalbfleisch_fifty_2023}{article}{}{}
       \name{author}{2}{}{%
         {{hash=2a496d9f8d73c13b5d08b7efbceb3370}{%
            family={Kalbfleisch},
@@ -552,10 +572,12 @@
       }
       \strng{namehash}{45772492c74badd410598bd1dc122687}
       \strng{fullhash}{45772492c74badd410598bd1dc122687}
+      \strng{fullhashraw}{45772492c74badd410598bd1dc122687}
       \strng{bibnamehash}{45772492c74badd410598bd1dc122687}
       \strng{authorbibnamehash}{45772492c74badd410598bd1dc122687}
       \strng{authornamehash}{45772492c74badd410598bd1dc122687}
       \strng{authorfullhash}{45772492c74badd410598bd1dc122687}
+      \strng{authorfullhashraw}{45772492c74badd410598bd1dc122687}
       \field{sortinit}{K}
       \field{sortinithash}{c02bf6bff1c488450c352b40f5d853ab}
       \field{labelnamesource}{author}
@@ -587,7 +609,7 @@
       \verb https://www.annualreviews.org/doi/10.1146/annurev-statistics-033021-014043
       \endverb
     \endentry
-    \entry{kantidakis_simulation_2021}{article}{}
+    \entry{kantidakis_simulation_2021}{article}{}{}
       \name{author}{4}{}{%
         {{hash=63317fe3e8293cfbf316373af91f70ac}{%
            family={Kantidakis},
@@ -622,13 +644,16 @@
       }
       \strng{namehash}{767cb06d322c8aead956405832adad63}
       \strng{fullhash}{047cdf4367a0e5325b518418d05fb2dc}
+      \strng{fullhashraw}{047cdf4367a0e5325b518418d05fb2dc}
       \strng{bibnamehash}{767cb06d322c8aead956405832adad63}
       \strng{authorbibnamehash}{767cb06d322c8aead956405832adad63}
       \strng{authornamehash}{767cb06d322c8aead956405832adad63}
       \strng{authorfullhash}{047cdf4367a0e5325b518418d05fb2dc}
+      \strng{authorfullhashraw}{047cdf4367a0e5325b518418d05fb2dc}
       \strng{editorbibnamehash}{293204dd3694f0475b874318a13bc8ca}
       \strng{editornamehash}{293204dd3694f0475b874318a13bc8ca}
       \strng{editorfullhash}{293204dd3694f0475b874318a13bc8ca}
+      \strng{editorfullhashraw}{293204dd3694f0475b874318a13bc8ca}
       \field{sortinit}{K}
       \field{sortinithash}{c02bf6bff1c488450c352b40f5d853ab}
       \field{labelnamesource}{author}
@@ -659,7 +684,7 @@
       \verb https://www.hindawi.com/journals/cmmm/2021/2160322/
       \endverb
     \endentry
-    \entry{kurt_omurlu_comparisons_2009}{article}{}
+    \entry{kurt_omurlu_comparisons_2009}{article}{}{}
       \name{author}{3}{}{%
         {{hash=21a20bc62962dc3a98dd7f311cc49fcf}{%
            family={Kurt\bibnamedelima Omurlu},
@@ -682,10 +707,12 @@
       }
       \strng{namehash}{2ed9fe47042cdbf8c15657b46f635bb7}
       \strng{fullhash}{2ed9fe47042cdbf8c15657b46f635bb7}
+      \strng{fullhashraw}{2ed9fe47042cdbf8c15657b46f635bb7}
       \strng{bibnamehash}{2ed9fe47042cdbf8c15657b46f635bb7}
       \strng{authorbibnamehash}{2ed9fe47042cdbf8c15657b46f635bb7}
       \strng{authornamehash}{2ed9fe47042cdbf8c15657b46f635bb7}
       \strng{authorfullhash}{2ed9fe47042cdbf8c15657b46f635bb7}
+      \strng{authorfullhashraw}{2ed9fe47042cdbf8c15657b46f635bb7}
       \field{sortinit}{K}
       \field{sortinithash}{c02bf6bff1c488450c352b40f5d853ab}
       \field{labelnamesource}{author}
@@ -713,7 +740,7 @@
       \verb https://linkinghub.elsevier.com/retrieve/pii/S0957417408007343
       \endverb
     \endentry
-    \entry{meng_simulating_2023}{article}{}
+    \entry{meng_simulating_2023}{article}{}{}
       \name{author}{9}{}{%
         {{hash=c7368250f0117bc2c041e2e833ea4043}{%
            family={Meng},
@@ -766,10 +793,12 @@
       }
       \strng{namehash}{b1079c75d0e0ee94695babbf33dea716}
       \strng{fullhash}{0df10e5a34aa7439364c56d2a2b2c9f9}
+      \strng{fullhashraw}{0df10e5a34aa7439364c56d2a2b2c9f9}
       \strng{bibnamehash}{b1079c75d0e0ee94695babbf33dea716}
       \strng{authorbibnamehash}{b1079c75d0e0ee94695babbf33dea716}
       \strng{authornamehash}{b1079c75d0e0ee94695babbf33dea716}
       \strng{authorfullhash}{0df10e5a34aa7439364c56d2a2b2c9f9}
+      \strng{authorfullhashraw}{0df10e5a34aa7439364c56d2a2b2c9f9}
       \field{sortinit}{M}
       \field{sortinithash}{4625c616857f13d17ce56f7d4f97d451}
       \field{labelnamesource}{author}
@@ -799,7 +828,7 @@
       \verb http://journals.sagepub.com/doi/10.1177/09622802221136067
       \endverb
     \endentry
-    \entry{morris_using_2019}{article}{}
+    \entry{morris_using_2019}{article}{}{}
       \name{author}{3}{}{%
         {{hash=eadb4ae07082f09545a098561fb755a8}{%
            family={Morris},
@@ -819,10 +848,12 @@
       }
       \strng{namehash}{b11853bbe565cceb99e477d646566605}
       \strng{fullhash}{b11853bbe565cceb99e477d646566605}
+      \strng{fullhashraw}{b11853bbe565cceb99e477d646566605}
       \strng{bibnamehash}{b11853bbe565cceb99e477d646566605}
       \strng{authorbibnamehash}{b11853bbe565cceb99e477d646566605}
       \strng{authornamehash}{b11853bbe565cceb99e477d646566605}
       \strng{authorfullhash}{b11853bbe565cceb99e477d646566605}
+      \strng{authorfullhashraw}{b11853bbe565cceb99e477d646566605}
       \field{sortinit}{M}
       \field{sortinithash}{4625c616857f13d17ce56f7d4f97d451}
       \field{labelnamesource}{author}
@@ -857,7 +888,7 @@
       \endverb
       \keyw{Statistics - Methodology}
     \endentry
-    \entry{nagpal_auton-survival_2022}{misc}{}
+    \entry{nagpal_auton-survival_2022}{misc}{}{}
       \name{author}{3}{}{%
         {{hash=e9b1df1a7f8b1085bfb911ea993b2a82}{%
            family={Nagpal},
@@ -880,10 +911,12 @@
       }
       \strng{namehash}{5deb2b3bff898a68cadd4366278a7598}
       \strng{fullhash}{5deb2b3bff898a68cadd4366278a7598}
+      \strng{fullhashraw}{5deb2b3bff898a68cadd4366278a7598}
       \strng{bibnamehash}{5deb2b3bff898a68cadd4366278a7598}
       \strng{authorbibnamehash}{5deb2b3bff898a68cadd4366278a7598}
       \strng{authornamehash}{5deb2b3bff898a68cadd4366278a7598}
       \strng{authorfullhash}{5deb2b3bff898a68cadd4366278a7598}
+      \strng{authorfullhashraw}{5deb2b3bff898a68cadd4366278a7598}
       \field{sortinit}{N}
       \field{sortinithash}{22369a73d5f88983a108b63f07f37084}
       \field{labelnamesource}{author}
@@ -909,7 +942,7 @@
       \endverb
       \keyw{Statistics - Machine Learning,Computer Science - Machine Learning,Computer Science - Mathematical Software}
     \endentry
-    \entry{norcliffe_survivalgan_2023}{misc}{}
+    \entry{norcliffe_survivalgan_2023}{misc}{}{}
       \name{author}{5}{}{%
         {{hash=0d7902675b9592dc08c1b6391350682a}{%
            family={Norcliffe},
@@ -944,10 +977,12 @@
       }
       \strng{namehash}{b38f866609180ad4e3e3f9185bf57be5}
       \strng{fullhash}{a68937fe6ac54b86af94bfff67603db2}
+      \strng{fullhashraw}{a68937fe6ac54b86af94bfff67603db2}
       \strng{bibnamehash}{b38f866609180ad4e3e3f9185bf57be5}
       \strng{authorbibnamehash}{b38f866609180ad4e3e3f9185bf57be5}
       \strng{authornamehash}{b38f866609180ad4e3e3f9185bf57be5}
       \strng{authorfullhash}{a68937fe6ac54b86af94bfff67603db2}
+      \strng{authorfullhashraw}{a68937fe6ac54b86af94bfff67603db2}
       \field{sortinit}{N}
       \field{sortinithash}{22369a73d5f88983a108b63f07f37084}
       \field{labelnamesource}{author}
@@ -973,7 +1008,7 @@
       \endverb
       \keyw{Computer Science - Machine Learning}
     \endentry
-    \entry{pawel_pitfalls_2024}{article}{}
+    \entry{pawel_pitfalls_2024}{article}{}{}
       \name{author}{3}{}{%
         {{hash=25cf55dca8b2cd4b56d965e9fa2d667e}{%
            family={Pawel},
@@ -993,10 +1028,12 @@
       }
       \strng{namehash}{99cd50c8394c990a531e3a57ff170974}
       \strng{fullhash}{99cd50c8394c990a531e3a57ff170974}
+      \strng{fullhashraw}{99cd50c8394c990a531e3a57ff170974}
       \strng{bibnamehash}{99cd50c8394c990a531e3a57ff170974}
       \strng{authorbibnamehash}{99cd50c8394c990a531e3a57ff170974}
       \strng{authornamehash}{99cd50c8394c990a531e3a57ff170974}
       \strng{authorfullhash}{99cd50c8394c990a531e3a57ff170974}
+      \strng{authorfullhashraw}{99cd50c8394c990a531e3a57ff170974}
       \field{sortinit}{P}
       \field{sortinithash}{ff3bcf24f47321b42cb156c2cc8a8422}
       \field{labelnamesource}{author}
@@ -1031,7 +1068,7 @@
       \endverb
       \keyw{Statistics - Computation,Statistics - Methodology}
     \endentry
-    \entry{scikit-learn}{article}{}
+    \entry{scikit-learn}{article}{}{}
       \name{author}{16}{}{%
         {{hash=6e96fec0d63277626bb324bd28cdecb7}{%
            family={Pedregosa},
@@ -1116,10 +1153,12 @@
       }
       \strng{namehash}{3a097aa3ebf2b8c2acf988341dde9710}
       \strng{fullhash}{7a67607c66e4af944b5f16461d6d0a87}
+      \strng{fullhashraw}{7a67607c66e4af944b5f16461d6d0a87}
       \strng{bibnamehash}{3a097aa3ebf2b8c2acf988341dde9710}
       \strng{authorbibnamehash}{3a097aa3ebf2b8c2acf988341dde9710}
       \strng{authornamehash}{3a097aa3ebf2b8c2acf988341dde9710}
       \strng{authorfullhash}{7a67607c66e4af944b5f16461d6d0a87}
+      \strng{authorfullhashraw}{7a67607c66e4af944b5f16461d6d0a87}
       \field{sortinit}{P}
       \field{sortinithash}{ff3bcf24f47321b42cb156c2cc8a8422}
       \field{labelnamesource}{author}
@@ -1131,7 +1170,7 @@
       \field{pages}{2825\bibrangedash 2830}
       \range{pages}{6}
     \endentry
-    \entry{pham_springer_2023}{book}{}
+    \entry{pham_springer_2023}{book}{}{}
       \name{editor}{1}{}{%
         {{hash=f1cacd0a51fe343b269c5b8b6123071f}{%
            family={Pham},
@@ -1150,10 +1189,12 @@
       }
       \strng{namehash}{f1cacd0a51fe343b269c5b8b6123071f}
       \strng{fullhash}{f1cacd0a51fe343b269c5b8b6123071f}
+      \strng{fullhashraw}{f1cacd0a51fe343b269c5b8b6123071f}
       \strng{bibnamehash}{f1cacd0a51fe343b269c5b8b6123071f}
       \strng{editorbibnamehash}{f1cacd0a51fe343b269c5b8b6123071f}
       \strng{editornamehash}{f1cacd0a51fe343b269c5b8b6123071f}
       \strng{editorfullhash}{f1cacd0a51fe343b269c5b8b6123071f}
+      \strng{editorfullhashraw}{f1cacd0a51fe343b269c5b8b6123071f}
       \field{sortinit}{P}
       \field{sortinithash}{ff3bcf24f47321b42cb156c2cc8a8422}
       \field{labelnamesource}{editor}
@@ -1179,7 +1220,7 @@
       \verb https://link.springer.com/10.1007/978-1-4471-7503-2
       \endverb
     \endentry
-    \entry{polce_guide_2023}{article}{}
+    \entry{polce_guide_2023}{article}{}{}
       \name{author}{2}{}{%
         {{hash=b7cee7db2fca0f84ccc9438711a9d2c9}{%
            family={Polce},
@@ -1197,10 +1238,12 @@
       }
       \strng{namehash}{ff0c6c7ed8361d5ad371c7ef23e0f213}
       \strng{fullhash}{ff0c6c7ed8361d5ad371c7ef23e0f213}
+      \strng{fullhashraw}{ff0c6c7ed8361d5ad371c7ef23e0f213}
       \strng{bibnamehash}{ff0c6c7ed8361d5ad371c7ef23e0f213}
       \strng{authorbibnamehash}{ff0c6c7ed8361d5ad371c7ef23e0f213}
       \strng{authornamehash}{ff0c6c7ed8361d5ad371c7ef23e0f213}
       \strng{authorfullhash}{ff0c6c7ed8361d5ad371c7ef23e0f213}
+      \strng{authorfullhashraw}{ff0c6c7ed8361d5ad371c7ef23e0f213}
       \field{sortinit}{P}
       \field{sortinithash}{ff3bcf24f47321b42cb156c2cc8a8422}
       \field{labelnamesource}{author}
@@ -1228,7 +1271,7 @@
       \verb https://linkinghub.elsevier.com/retrieve/pii/S0749806322002821
       \endverb
     \endentry
-    \entry{sebastian_polsterl_scikit-survival_2023}{misc}{}
+    \entry{sebastian_polsterl_scikit-survival_2023}{misc}{}{}
       \name{author}{1}{}{%
         {{hash=51d79244ea36d6875a86ef2113ba5bad}{%
            family={Pölsterl},
@@ -1241,10 +1284,12 @@
       }
       \strng{namehash}{51d79244ea36d6875a86ef2113ba5bad}
       \strng{fullhash}{51d79244ea36d6875a86ef2113ba5bad}
+      \strng{fullhashraw}{51d79244ea36d6875a86ef2113ba5bad}
       \strng{bibnamehash}{51d79244ea36d6875a86ef2113ba5bad}
       \strng{authorbibnamehash}{51d79244ea36d6875a86ef2113ba5bad}
       \strng{authornamehash}{51d79244ea36d6875a86ef2113ba5bad}
       \strng{authorfullhash}{51d79244ea36d6875a86ef2113ba5bad}
+      \strng{authorfullhashraw}{51d79244ea36d6875a86ef2113ba5bad}
       \field{sortinit}{P}
       \field{sortinithash}{ff3bcf24f47321b42cb156c2cc8a8422}
       \field{labelnamesource}{author}
@@ -1268,7 +1313,7 @@
       \endverb
       \keyw{machine-learning,python,scikit-learn,survival-analysis}
     \endentry
-    \entry{qi_effective_2023}{misc}{}
+    \entry{qi_effective_2023}{misc}{}{}
       \name{author}{8}{}{%
         {{hash=8d4b0586a1d9fe56dd2c06392fc36ad4}{%
            family={Qi},
@@ -1316,10 +1361,12 @@
       }
       \strng{namehash}{13fc2739657594cb8420b49d1e0eb645}
       \strng{fullhash}{3ea7eea5fed43f41ea6d8cbb4a2bfa4b}
+      \strng{fullhashraw}{3ea7eea5fed43f41ea6d8cbb4a2bfa4b}
       \strng{bibnamehash}{13fc2739657594cb8420b49d1e0eb645}
       \strng{authorbibnamehash}{13fc2739657594cb8420b49d1e0eb645}
       \strng{authornamehash}{13fc2739657594cb8420b49d1e0eb645}
       \strng{authorfullhash}{3ea7eea5fed43f41ea6d8cbb4a2bfa4b}
+      \strng{authorfullhashraw}{3ea7eea5fed43f41ea6d8cbb4a2bfa4b}
       \field{sortinit}{Q}
       \field{sortinithash}{ce69a400a872ddd02ee7fdb3b38c6abd}
       \field{labelnamesource}{author}
@@ -1345,7 +1392,7 @@
       \endverb
       \keyw{Statistics - Machine Learning,Computer Science - Machine Learning,Computer Science - Artificial Intelligence}
     \endentry
-    \entry{shortreed_outcome-adaptive_2017}{article}{}
+    \entry{shortreed_outcome-adaptive_2017}{article}{}{}
       \name{author}{2}{}{%
         {{hash=b81601cda81fdff22aa9bf749391491b}{%
            family={Shortreed},
@@ -1363,10 +1410,12 @@
       }
       \strng{namehash}{d92f0ff8fa567bcb7c8a4b1c372f32c6}
       \strng{fullhash}{d92f0ff8fa567bcb7c8a4b1c372f32c6}
+      \strng{fullhashraw}{d92f0ff8fa567bcb7c8a4b1c372f32c6}
       \strng{bibnamehash}{d92f0ff8fa567bcb7c8a4b1c372f32c6}
       \strng{authorbibnamehash}{d92f0ff8fa567bcb7c8a4b1c372f32c6}
       \strng{authornamehash}{d92f0ff8fa567bcb7c8a4b1c372f32c6}
       \strng{authorfullhash}{d92f0ff8fa567bcb7c8a4b1c372f32c6}
+      \strng{authorfullhashraw}{d92f0ff8fa567bcb7c8a4b1c372f32c6}
       \field{sortinit}{S}
       \field{sortinithash}{b164b07b29984b41daf1e85279fbc5ab}
       \field{labelnamesource}{author}
@@ -1399,7 +1448,7 @@
       \verb https://academic.oup.com/biometrics/article/73/4/1111-1122/7537777
       \endverb
     \endentry
-    \entry{smith_scoping_2022}{article}{}
+    \entry{smith_scoping_2022}{article}{}{}
       \name{author}{4}{}{%
         {{hash=6b39ba430b427d5f01a77a745d2be201}{%
            family={Smith},
@@ -1427,10 +1476,12 @@
       }
       \strng{namehash}{4844db60d9a194429024b82c29b26537}
       \strng{fullhash}{f929ef60dcb6d0fd66ba729bf4b7a276}
+      \strng{fullhashraw}{f929ef60dcb6d0fd66ba729bf4b7a276}
       \strng{bibnamehash}{4844db60d9a194429024b82c29b26537}
       \strng{authorbibnamehash}{4844db60d9a194429024b82c29b26537}
       \strng{authornamehash}{4844db60d9a194429024b82c29b26537}
       \strng{authorfullhash}{f929ef60dcb6d0fd66ba729bf4b7a276}
+      \strng{authorfullhashraw}{f929ef60dcb6d0fd66ba729bf4b7a276}
       \field{sortinit}{S}
       \field{sortinithash}{b164b07b29984b41daf1e85279fbc5ab}
       \field{labelnamesource}{author}
@@ -1462,7 +1513,7 @@
       \verb https://diagnprognres.biomedcentral.com/articles/10.1186/s41512-022-00124-y
       \endverb
     \endentry
-    \entry{sonabend_flexible_2022}{misc}{}
+    \entry{sonabend_flexible_2022}{misc}{}{}
       \name{author}{7}{}{%
         {{hash=2db4d382d99a2d9177badfb9a18d85d5}{%
            family={Sonabend},
@@ -1505,10 +1556,12 @@
       }
       \strng{namehash}{cd2f246324f06c8d4ad218619a6ef3a4}
       \strng{fullhash}{024b263ecfc8420eb0a4459b890d91cd}
+      \strng{fullhashraw}{024b263ecfc8420eb0a4459b890d91cd}
       \strng{bibnamehash}{cd2f246324f06c8d4ad218619a6ef3a4}
       \strng{authorbibnamehash}{cd2f246324f06c8d4ad218619a6ef3a4}
       \strng{authornamehash}{cd2f246324f06c8d4ad218619a6ef3a4}
       \strng{authorfullhash}{024b263ecfc8420eb0a4459b890d91cd}
+      \strng{authorfullhashraw}{024b263ecfc8420eb0a4459b890d91cd}
       \field{sortinit}{S}
       \field{sortinithash}{b164b07b29984b41daf1e85279fbc5ab}
       \field{labelnamesource}{author}
@@ -1534,7 +1587,7 @@
       \endverb
       \keyw{Statistics - Methodology,Statistics - Applications,Computer Science - Machine Learning,Computer Science - Computers and Society}
     \endentry
-    \entry{spath_julianspaethrandom-survival-forest_2021}{misc}{}
+    \entry{spath_julianspaethrandom-survival-forest_2021}{misc}{}{}
       \name{author}{1}{}{%
         {{hash=38c7cdd85513e21f5d0fce450dcf8f4c}{%
            family={Späth},
@@ -1547,10 +1600,12 @@
       }
       \strng{namehash}{38c7cdd85513e21f5d0fce450dcf8f4c}
       \strng{fullhash}{38c7cdd85513e21f5d0fce450dcf8f4c}
+      \strng{fullhashraw}{38c7cdd85513e21f5d0fce450dcf8f4c}
       \strng{bibnamehash}{38c7cdd85513e21f5d0fce450dcf8f4c}
       \strng{authorbibnamehash}{38c7cdd85513e21f5d0fce450dcf8f4c}
       \strng{authornamehash}{38c7cdd85513e21f5d0fce450dcf8f4c}
       \strng{authorfullhash}{38c7cdd85513e21f5d0fce450dcf8f4c}
+      \strng{authorfullhashraw}{38c7cdd85513e21f5d0fce450dcf8f4c}
       \field{sortinit}{S}
       \field{sortinithash}{b164b07b29984b41daf1e85279fbc5ab}
       \field{labelnamesource}{author}
@@ -1574,7 +1629,7 @@
       \verb https://zenodo.org/record/5146375
       \endverb
     \endentry
-    \entry{thurow_how_2023}{misc}{}
+    \entry{thurow_how_2023}{misc}{}{}
       \name{author}{5}{}{%
         {{hash=96095392054739ce95e6e647f96fe64b}{%
            family={Thurow},
@@ -1607,10 +1662,12 @@
       }
       \strng{namehash}{c6414c24ca4b3a6b808ff032ab500a9c}
       \strng{fullhash}{ffa773268c84c6413728b394cd47a7b3}
+      \strng{fullhashraw}{ffa773268c84c6413728b394cd47a7b3}
       \strng{bibnamehash}{c6414c24ca4b3a6b808ff032ab500a9c}
       \strng{authorbibnamehash}{c6414c24ca4b3a6b808ff032ab500a9c}
       \strng{authornamehash}{c6414c24ca4b3a6b808ff032ab500a9c}
       \strng{authorfullhash}{ffa773268c84c6413728b394cd47a7b3}
+      \strng{authorfullhashraw}{ffa773268c84c6413728b394cd47a7b3}
       \field{sortinit}{T}
       \field{sortinithash}{9af77f0292593c26bde9a56e688eaee9}
       \field{labelnamesource}{author}
@@ -1636,7 +1693,7 @@
       \endverb
       \keyw{Statistics - Applications}
     \endentry
-    \entry{tibshirani_regression_1996}{article}{}
+    \entry{tibshirani_regression_1996}{article}{}{}
       \name{author}{1}{}{%
         {{hash=88eea600247d798f8b2ce0b2dc614492}{%
            family={Tibshirani},
@@ -1646,10 +1703,12 @@
       }
       \strng{namehash}{88eea600247d798f8b2ce0b2dc614492}
       \strng{fullhash}{88eea600247d798f8b2ce0b2dc614492}
+      \strng{fullhashraw}{88eea600247d798f8b2ce0b2dc614492}
       \strng{bibnamehash}{88eea600247d798f8b2ce0b2dc614492}
       \strng{authorbibnamehash}{88eea600247d798f8b2ce0b2dc614492}
       \strng{authornamehash}{88eea600247d798f8b2ce0b2dc614492}
       \strng{authorfullhash}{88eea600247d798f8b2ce0b2dc614492}
+      \strng{authorfullhashraw}{88eea600247d798f8b2ce0b2dc614492}
       \field{sortinit}{T}
       \field{sortinithash}{9af77f0292593c26bde9a56e688eaee9}
       \field{labelnamesource}{author}
@@ -1675,7 +1734,7 @@
       \verb http://www.jstor.org/stable/2346178
       \endverb
     \endentry
-    \entry{wilkinson_fair_2016}{article}{}
+    \entry{wilkinson_fair_2016}{article}{}{}
       \name{author}{53}{}{%
         {{hash=e88185c2eca4405ce11cb8920f485660}{%
            family={Wilkinson},
@@ -1948,10 +2007,12 @@
       }
       \strng{namehash}{f324cd0f485d0aaf63321d014f1f638f}
       \strng{fullhash}{f7b66cfc420fca59fcc1597d66da36f7}
+      \strng{fullhashraw}{f7b66cfc420fca59fcc1597d66da36f7}
       \strng{bibnamehash}{f324cd0f485d0aaf63321d014f1f638f}
       \strng{authorbibnamehash}{f324cd0f485d0aaf63321d014f1f638f}
       \strng{authornamehash}{f324cd0f485d0aaf63321d014f1f638f}
       \strng{authorfullhash}{f7b66cfc420fca59fcc1597d66da36f7}
+      \strng{authorfullhashraw}{f7b66cfc420fca59fcc1597d66da36f7}
       \field{sortinit}{W}
       \field{sortinithash}{4315d78024d0cea9b57a0c6f0e35ed0d}
       \field{labelnamesource}{author}
@@ -1983,7 +2044,7 @@
       \verb https://www.nature.com/articles/sdata201618
       \endverb
     \endentry
-    \entry{woo_time_2023}{article}{}
+    \entry{woo_time_2023}{article}{}{}
       \name{author}{3}{}{%
         {{hash=103562fa102d7baf81e193f29c9d48ef}{%
            family={Woo},
@@ -2006,10 +2067,12 @@
       }
       \strng{namehash}{e6d81c26cb2a765d9b0c2bc7056d7ba4}
       \strng{fullhash}{e6d81c26cb2a765d9b0c2bc7056d7ba4}
+      \strng{fullhashraw}{e6d81c26cb2a765d9b0c2bc7056d7ba4}
       \strng{bibnamehash}{e6d81c26cb2a765d9b0c2bc7056d7ba4}
       \strng{authorbibnamehash}{e6d81c26cb2a765d9b0c2bc7056d7ba4}
       \strng{authornamehash}{e6d81c26cb2a765d9b0c2bc7056d7ba4}
       \strng{authorfullhash}{e6d81c26cb2a765d9b0c2bc7056d7ba4}
+      \strng{authorfullhashraw}{e6d81c26cb2a765d9b0c2bc7056d7ba4}
       \field{sortinit}{W}
       \field{sortinithash}{4315d78024d0cea9b57a0c6f0e35ed0d}
       \field{labelnamesource}{author}
@@ -2037,7 +2100,7 @@
       \verb http://journals.sagepub.com/doi/10.1177/10944281231205027
       \endverb
     \endentry
-    \entry{yanagisawa_proper_2023}{misc}{}
+    \entry{yanagisawa_proper_2023}{misc}{}{}
       \name{author}{1}{}{%
         {{hash=4cff39bad1ce44fa4d451cfc43e94873}{%
            family={Yanagisawa},
@@ -2050,10 +2113,12 @@
       }
       \strng{namehash}{4cff39bad1ce44fa4d451cfc43e94873}
       \strng{fullhash}{4cff39bad1ce44fa4d451cfc43e94873}
+      \strng{fullhashraw}{4cff39bad1ce44fa4d451cfc43e94873}
       \strng{bibnamehash}{4cff39bad1ce44fa4d451cfc43e94873}
       \strng{authorbibnamehash}{4cff39bad1ce44fa4d451cfc43e94873}
       \strng{authornamehash}{4cff39bad1ce44fa4d451cfc43e94873}
       \strng{authorfullhash}{4cff39bad1ce44fa4d451cfc43e94873}
+      \strng{authorfullhashraw}{4cff39bad1ce44fa4d451cfc43e94873}
       \field{sortinit}{Y}
       \field{sortinithash}{fd67ad5a9ef0f7456bdd9aab10fe1495}
       \field{labelnamesource}{author}
@@ -2079,7 +2144,7 @@
       \endverb
       \keyw{Statistics - Methodology,Computer Science - Machine Learning}
     \endentry
-    \entry{yao_ensemble_2022}{misc}{}
+    \entry{yao_ensemble_2022}{misc}{}{}
       \name{author}{4}{}{%
         {{hash=ed835e372f48c6b7c18e05163cd02a05}{%
            family={Yao},
@@ -2107,10 +2172,12 @@
       }
       \strng{namehash}{6387bf1a1f0d17446b7d82c733361eb7}
       \strng{fullhash}{35ae52a563ed1763f4ab114b7a4ef5ad}
+      \strng{fullhashraw}{35ae52a563ed1763f4ab114b7a4ef5ad}
       \strng{bibnamehash}{6387bf1a1f0d17446b7d82c733361eb7}
       \strng{authorbibnamehash}{6387bf1a1f0d17446b7d82c733361eb7}
       \strng{authornamehash}{6387bf1a1f0d17446b7d82c733361eb7}
       \strng{authorfullhash}{35ae52a563ed1763f4ab114b7a4ef5ad}
+      \strng{authorfullhashraw}{35ae52a563ed1763f4ab114b7a4ef5ad}
       \field{sortinit}{Y}
       \field{sortinithash}{fd67ad5a9ef0f7456bdd9aab10fe1495}
       \field{labelnamesource}{author}
@@ -2135,7 +2202,7 @@
       \endverb
       \keyw{Statistics - Methodology,Statistics - Machine Learning,Statistics - Applications}
     \endentry
-    \entry{zhang_adaptive_2007}{article}{}
+    \entry{zhang_adaptive_2007}{article}{}{}
       \name{author}{2}{}{%
         {{hash=f51f47aa985aebe882c62b77214d8f2a}{%
            family={Zhang},
@@ -2150,10 +2217,12 @@
       }
       \strng{namehash}{033358a523891142f1fff904f2162ccb}
       \strng{fullhash}{033358a523891142f1fff904f2162ccb}
+      \strng{fullhashraw}{033358a523891142f1fff904f2162ccb}
       \strng{bibnamehash}{033358a523891142f1fff904f2162ccb}
       \strng{authorbibnamehash}{033358a523891142f1fff904f2162ccb}
       \strng{authornamehash}{033358a523891142f1fff904f2162ccb}
       \strng{authorfullhash}{033358a523891142f1fff904f2162ccb}
+      \strng{authorfullhashraw}{033358a523891142f1fff904f2162ccb}
       \field{sortinit}{Z}
       \field{sortinithash}{96892c0b0a36bb8557c40c49813d48b3}
       \field{labelnamesource}{author}

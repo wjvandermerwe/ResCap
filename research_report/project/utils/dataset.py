@@ -13,7 +13,7 @@ from sklearndf.pipeline import PipelineDF
 from sklearndf.transformation import OneHotEncoderDF, ColumnTransformerDF, SimpleImputerDF, StandardScalerDF
 import pickle
 
-from config import save_dataset
+from utils.config import save_dataset
 
 
 class SurvivalDataset(Dataset):
@@ -67,25 +67,6 @@ def load_datasets() -> None:
         save_dataset(df_train, train_filename, "datasets")
         save_dataset(df_test, test_filename, "datasets")
 
-def get_column_transformer(df: DataFrame) -> ColumnTransformerDF:
-    enc_fac = PipelineDF(steps=[('ohe', OneHotEncoderDF(sparse=False, drop=None, handle_unknown='ignore'))])
-    enc_num = PipelineDF(steps=[('impute', SimpleImputerDF(strategy='median')), ('scale', StandardScalerDF())])
-    sel_fac = make_column_selector(pattern='^fac\\_')
-    sel_num = make_column_selector(pattern='^num\\_')
-    sel_ohe = make_column_selector(pattern='^ohe\\_')
-
-    if any(df.columns.str.startswith('fac_')) and any(df.columns.str.startswith('num_')):
-        enc_df = ColumnTransformerDF(transformers=[('ohe', enc_fac, sel_fac), ('s', enc_num, sel_num)])
-    elif any(df.columns.str.startswith('fac_')):
-        enc_df = ColumnTransformerDF(transformers=[('ohe', enc_fac, sel_fac)])
-    elif any(df.columns.str.startswith('num_')):
-        enc_df = ColumnTransformerDF(transformers=[('s', enc_num, sel_num)])
-    elif any(df.columns.str.startswith('ohe_')):
-        enc_df = ColumnTransformerDF(transformers=[('ohe', enc_fac, sel_ohe)])
-    else:
-        raise ValueError("Dataset does not contain the expected 'fac_', 'num_', or 'ohe_' columns.")
-
-    return enc_df
 def get_torch_loaders(train, test, enc_df) -> (DataLoader, DataLoader):
     train_dataset = SurvivalDataset(train, enc_df)
     test_dataset = SurvivalDataset(test, enc_df)
