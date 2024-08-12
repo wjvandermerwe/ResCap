@@ -1,0 +1,21 @@
+name: research_project_simulation_env
+channels:
+  - bcg_gamma
+  - conda-forge
+  - pytorch
+  - nvidia
+  - defaults
+dependencies:
+  - python=3.10
+  - scikit-learn
+  - sklearndf
+  - torchvision
+  - torchaudio
+  - pytorch
+  - pytorch-cuda=12.4
+  - scipy=1.12.0
+  - pip=24.0
+  - pip:
+    - synthcity
+    - SurvSet
+

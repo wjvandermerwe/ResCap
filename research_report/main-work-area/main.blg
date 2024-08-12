@@ -1,0 +1,18 @@
+[0] Config.pm:308> INFO - This is Biber 2.20
+[0] Config.pm:311> INFO - Logfile is 'main.blg'
+[81] biber-MSWIN64:340> INFO - === 
+[108] Biber.pm:420> INFO - Reading 'main.bcf'
+[251] Biber.pm:994> INFO - Found 34 citekeys in bib section 0
+[264] Biber.pm:4463> INFO - Processing section 0
+[273] Biber.pm:4654> INFO - Looking for bibtex file 'main.bib' for section 0
+[303] bibtex.pm:1713> INFO - LaTeX decoding ...
+[342] bibtex.pm:1519> INFO - Found BibTeX data source 'main.bib'
+[572] UCollate.pm:68> INFO - Overriding locale 'en-US' defaults 'normalization = NFD' with 'normalization = prenormalized'
+[572] UCollate.pm:68> INFO - Overriding locale 'en-US' defaults 'variable = shifted' with 'variable = non-ignorable'
+[572] Biber.pm:4283> INFO - Sorting list 'nty/global//global/global/global' of type 'entry' with template 'nty' and locale 'en-US'
+[572] Biber.pm:4289> INFO - No sort tailoring available for locale 'en-US'
+[599] bbl.pm:676> INFO - Writing 'main.bbl' with encoding 'UTF-8'
+[628] bbl.pm:779> INFO - Output to main.bbl
+[629] Biber.pm:131> WARN - ISBN '978-1-4471-7502-5 978-1-4471-7503-2' in entry 'pham_springer_2023' is invalid - run biber with '--validate_datamodel' for details.
+[629] Biber.pm:131> WARN - ISBN '978-1-4842-1847-1 978-1-4842-1848-8' in entry 'joshi_beginning_2016' is invalid - run biber with '--validate_datamodel' for details.
+[629] Biber.pm:133> INFO - WARNINGS: 2

@@ -1,26 +1,21 @@
-name: reseach_project
+name: reseach_project_models_env
 channels:
-  - bcg_gamma
   - conda-forge
-  - pytorch
   - nvidia
+  - pytorch
   - defaults
 dependencies:
   - python=3.12
-  - numpy
-  - pandas
-  - scikit-learn=1.3.2
-  - sklearndf
+  - lifelines
   - scikit-survival
+  - plotnine
+  - statsmodels
   - torchvision
   - torchaudio
-  - plotnine
   - pytorch
-  - statsmodels
-  - seaborn
   - pytorch-cuda=12.4
+  - seaborn
   - pip
   - pip:
-    - synthcity
-    - SurvSet
+      - SurvivalEVAL
 

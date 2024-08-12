@@ -3,7 +3,6 @@ from pathlib import Path
 from pandas import DataFrame
 import pickle
 from typing import List, Dict
-import pandas as pd
 
 def get_config():
     return {
@@ -21,7 +20,7 @@ def save_dataset(df: DataFrame, name: str, folder: str) -> None:
     with open(file, 'wb') as f:
         pickle.dump(df, f)
 
-def load_datasets(folder: str, names: List[str]) -> Dict[str, pd.DataFrame]:
+def load_datasets(folder: str, names: List[str]) -> Dict[str, DataFrame]:
     datasets = {}
     for name in names:
         file = Path(folder) / f"{name}.pkl"
@@ -41,17 +40,17 @@ def get_train_dataset_indexes(folder: str) -> List[str]:
     folder_path = Path(folder)
     return [file.stem for file in folder_path.glob("*_train.pkl")]
 
-def get_generated_gan_dataset_indexes(folder: str) -> List[str]:
+def get_test_dataset_indexes(folder: str) -> List[str]:
+    folder_path = Path(folder)
+    return [file.stem for file in folder_path.glob("*_test.pkl")]
+
+def get_generated_gan_train_dataset_indexes(folder: str) -> List[str]:
     folder_path = Path(folder)
     return [file.stem for file in folder_path.glob("*_train_gan.pkl")]
 
 def get_generated_vae_dataset_indexes(folder: str) -> List[str]:
     folder_path = Path(folder)
     return [file.stem for file in folder_path.glob("*_train_vae.pkl")]
-
-def get_test_dataset_indexes(folder: str) -> List[str]:
-    folder_path = Path(folder)
-    return [file.stem[:-5] for file in folder_path.glob("*_test.pkl")]
 
 
 checkpoint_file = 'checkpoint.txt'
