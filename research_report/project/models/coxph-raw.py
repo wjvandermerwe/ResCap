@@ -15,7 +15,6 @@ class CoxPHModel:
             linear_predictor = np.dot(X, self.beta)
             exp_lp = np.exp(linear_predictor)
             risk_set = np.cumsum(exp_lp[::-1])[::-1]
-
             gradient = np.dot(E, X) - np.dot((exp_lp / risk_set), X)
             self.beta += self.lr * gradient
 
@@ -28,18 +27,15 @@ class CoxPHModel:
             linear_predictor = np.dot(X, self.beta)
             exp_lp = np.exp(linear_predictor)
             risk_set = np.cumsum(exp_lp[::-1])[::-1]
-
             gradient = np.dot(E, X) - np.dot((exp_lp / risk_set), X)
             lasso_term = self.lasso_penalty * np.sign(self.beta)
             self.beta += self.lr * (gradient - lasso_term)
-
         return self.beta
 
     def fit_lasso_sklearn(self, X, T, E):
         linear_predictor = np.dot(X, self.beta)
         exp_lp = np.exp(linear_predictor)
         risk_set = np.cumsum(exp_lp[::-1])[::-1]
-
         gradient = np.dot(E, X) - np.dot((exp_lp / risk_set), X)
 
         lasso = Lasso(alpha=self.lasso_penalty)
