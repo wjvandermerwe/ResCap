@@ -1,4 +1,2 @@
-outputs/datasets/
-workspace/
-outputs/generated_datasets/
-outputs/model_outputs/
+*.pkl
+*.bkp

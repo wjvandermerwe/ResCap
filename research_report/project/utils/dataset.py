@@ -1,41 +1,9 @@
-import os
 import numpy as np
 import pandas as pd
-import torch
 from pandas import DataFrame
-from torch.utils.data import Dataset, DataLoader
-import plotnine as pn
 from SurvSet.data import SurvLoader
-from sksurv.util import Surv
 from sklearn.model_selection import train_test_split
-from sklearn.compose import make_column_selector
-from sklearndf.pipeline import PipelineDF
-from sklearndf.transformation import OneHotEncoderDF, ColumnTransformerDF, SimpleImputerDF, StandardScalerDF
-import pickle
-
 from utils.config import save_dataset
-
-
-class SurvivalDataset(Dataset):
-    def __init__(self, data: DataFrame, enc_df: ColumnTransformerDF, event_col: str = 'event', time_col: str = 'time'):
-        self.data = data
-        self.enc_df = enc_df
-        self.event_col = event_col
-        self.time_col = time_col
-
-    def __len__(self) -> int:
-        return len(self.data)
-
-    def __getitem__(self, idx: int) -> dict:
-        row = self.data.iloc[idx]
-        features = self.enc_df.transform(row.to_frame().T).astype(np.float32)
-        event = row[self.event_col]
-        time = row[self.time_col]
-        return {
-            'features': torch.tensor(features.values),
-            'event': torch.tensor(event),
-            'time': torch.tensor(time)
-        }
 
 
 def summarize_dataset(df: DataFrame, ds_name: str, sel_fac: callable, sel_num: callable, sel_ohe: callable) -> dict:
@@ -51,43 +19,74 @@ def summarize_dataset(df: DataFrame, ds_name: str, sel_fac: callable, sel_num: c
 
 
 def load_datasets() -> None:
-    # Set up feature transformer pipeline
     loader = SurvLoader()
-    ds_lst = loader.df_ds[~loader.df_ds['is_td']]['ds'].to_list()
+    ds_lst = loader.df_ds['ds'].to_list()
+    is_td_lst = loader.df_ds['is_td'].to_list()
     n_ds = len(ds_lst)
 
     for i, ds in enumerate(ds_lst):
-        print('Dataset %s (%i of %i)' % (ds, i + 1, n_ds))
+        print(f'Dataset {ds} ({i + 1} of {n_ds})')
+
         df, ref = loader.load_dataset(ds).values()
-        df_train, df_test = train_test_split(df, stratify=df['event'], random_state=1, test_size=0.3)
 
-        train_filename = f"{ds}_train"
-        test_filename = f"{ds}_test"
+        # Handle time binning
+        try:
+            df['time_bin'] = pd.qcut(df['time'], q=10, labels=False, duplicates='drop')
+        except ValueError as e:
+            print(f"Warning: {e}. Adjusting binning.")
+            df['time_bin'] = pd.qcut(df['time'], q=5, labels=False, duplicates='drop')
 
-        save_dataset(df_train, train_filename, "datasets")
-        save_dataset(df_test, test_filename, "datasets")
+        # Check for time-varying features
+        if is_td_lst[i]:
+            df['censor'] = np.where(df['time2'].isna(), 0, 1)
+            df['stratify_label'] = (df['event'].astype(str) + '_' +
+                                    df['censor'].astype(str) + '_' +
+                                    df['time_bin'].astype(str))
+        else:
+            df['stratify_label'] = df['event'].astype(str) + '_' + df['time_bin'].astype(str)
 
-def get_torch_loaders(train, test, enc_df) -> (DataLoader, DataLoader):
-    train_dataset = SurvivalDataset(train, enc_df)
-    test_dataset = SurvivalDataset(test, enc_df)
+        # Check stratification label distribution
+        label_counts = df['stratify_label'].value_counts()
 
-    # Create DataLoader
-    train_loader = DataLoader(train_dataset, batch_size=4, shuffle=True)
-    test_loader = DataLoader(test_dataset, batch_size=4, shuffle=False)
+        # Remove sparse labels if necessary
+        if any(label_counts < 2):
+            print('Warning: Some stratification labels have fewer than 2 instances.')
+            df = df[df['stratify_label'].isin(label_counts[label_counts >= 2].index)]
+            # Recalculate stratification labels
+            if is_td_lst[i]:
+                df['stratify_label'] = (df['event'].astype(str) + '_' +
+                                        df['censor'].astype(str) + '_' +
+                                        df['time_bin'].astype(str))
+            else:
+                df['stratify_label'] = df['event'].astype(str) + '_' + df['time_bin'].astype(str)
 
-    return (train_loader, test_loader)
+        # Ensure there are enough samples for stratified split
+        n_classes = len(df['stratify_label'].unique())
+        total_samples = len(df)
 
-def show_dataset_metrics(holder_cindex: np.ndarray, ds_lst: list) -> None:
-    df_cindex = pd.DataFrame(holder_cindex, columns=['cindex', 'lb', 'ub'])
-    df_cindex.insert(0, 'ds', ds_lst)
-    ds_ord = df_cindex.sort_values('cindex')['ds'].values
-    df_cindex['ds'] = pd.Categorical(df_cindex['ds'], ds_ord)
+        if total_samples < n_classes:
+            print(f"Warning: Not enough samples for stratified split in dataset {ds}. Using random split.")
+            df_train, df_test = train_test_split(df, random_state=1, test_size=0.3)
+        else:
+            # Adjust test size based on number of classes
+            min_test_size = max(n_classes, 2)  # Ensure at least 2 samples per class in the test set
+            test_size = min(0.3, (total_samples - min_test_size) / (2 * min_test_size))
+            test_size = max(test_size, 0.3)  # Ensure test size is not too small
 
-    gg_cindex = (pn.ggplot(df_cindex, pn.aes(y='cindex', x='ds')) +
-                 pn.theme_bw() + pn.coord_flip() +
-                 pn.geom_point(size=2) +
-                 pn.geom_linerange(pn.aes(ymin='lb', ymax='ub')) +
-                 pn.labs(y='Concordance') +
-                 pn.geom_hline(yintercept=0.5, linetype='--', color='red') +
-                 pn.theme(axis_title_y=pn.element_blank()))
-    print(gg_cindex)
+            try:
+                df_train, df_test = train_test_split(df, stratify=df['stratify_label'], random_state=1,
+                                                     test_size=test_size)
+            except ValueError as e:
+                print(f"Error in stratified split: {e}. Using random split.")
+                df_train, df_test = train_test_split(df, random_state=1, test_size=0.3)  # Fallback
+
+        # Drop the splitting columns
+        if is_td_lst[i]:
+            df_train = df_train.drop(['time_bin', 'stratify_label', 'censor'], axis=1)
+            df_test = df_test.drop(['time_bin', 'stratify_label', 'censor'], axis=1)
+        else:
+            df_train = df_train.drop(['time_bin', 'stratify_label'], axis=1)
+            df_test = df_test.drop(['time_bin', 'stratify_label'], axis=1)
+
+        save_dataset(df_train, ds, "../outputs/datasets")
+        save_dataset(df_test, ds, "../outputs/test_sets")

@@ -17,5 +17,4 @@ dependencies:
   - pip=24.0
   - pip:
     - synthcity
-    - SurvSet
 
