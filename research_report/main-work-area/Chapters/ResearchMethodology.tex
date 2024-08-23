@@ -206,8 +206,21 @@ The Logarithmic Score \parencite{yanagisawa_proper_2023} is used for models that
 \begin{equation} \label{eq:logscore}S_{\text{Log}}(\hat{F}, y; \{\zeta_i\}) = -\sum_{i=0}^{B-1} 1(\zeta_i < y \leq \zeta_{i+1}) \log(\hat{F}(\zeta_{i+1}) - \hat{F}(\zeta_i))\end{equation}
 
 \section{Data}
+the role of simulation
+explain the use of the data to feed simulation (evaluation) ground truth
 \subsection{Data Application and Modeling}
+\noindent
+1. Library used
+2. data set context (Description)
+3. dataset model
+
 \subsection{Simulation}
+1. Library used 
+1. out of the methods what to use
+2. evaluations
+3. methods chosen proven?
+
+
 \noindent The process of finding a dataset suitable for the study forms part of research execution. I will focus on sourcing data from reputable, well-established libraries such as UCI Machine Learning Repository, Kaggle, and available software libraries examples being, \parencite{nagpal_auton-survival_2022} \parencite{davidson-pilon_lifelines_2024} \parencite{sebastian_polsterl_scikit-survival_2023}. This approach guarantees access to a diverse array of well-documented datasets, ensuring both reliability and reproducibility of the results. It is important to note that the selection of data generation mechanisms (DGM), is indirectly dependent on the dataset chosen, so it is important to incorporate and accommodate the selection process toward ease of implementation of the DGM. Furthermore, when selecting the dataset censoring levels, FAIR principles \parencite{wilkinson_fair_2016}, reproducibility by assessing data simulation accuracy similar to the KM-Divergence metric used by \parencite{norcliffe_survivalgan_2023} are all important considerations. Utilizing this approach voids the need to carefully assess the ethical implications of using the datasets as these datasets should be under public licensed availability. Lastly, I don't foresee data preprocessing steps, being necessary, as DGM for simulation are commonly categorized as postprocessing \parencite{jin_imputation_2024}. 
 
 \section{Methods} \label{methods}

@@ -1,12 +1,12 @@
 # Fdb version 4
-["biber main"] 1724175371.56517 "main.bcf" "main.bbl" "main" 1724267630.17605 0
-  "main.bcf" 1724267629 121114 91cec21c1fb30e1849dce1734b752f44 "pdflatex"
+["biber main"] 1724175371.56517 "main.bcf" "main.bbl" "main" 1724431657.70481 0
+  "main.bcf" 1724431657 121114 91cec21c1fb30e1849dce1734b752f44 "pdflatex"
   "main.bib" 1722062977 62224 12bbd87b3cfdce06be14d8ccf44a23d6 ""
   (generated)
   "main.bbl"
   "main.blg"
   (rewritten before read)
-["pdflatex"] 1724267627.11619 "c:/Users/johan/PycharmProjects/ResCap/research_report/main-work-area/main.tex" "main.pdf" "main" 1724267630.17673 0
+["pdflatex"] 1724431651.58563 "c:/Users/johan/PycharmProjects/ResCap/research_report/main-work-area/main.tex" "main.pdf" "main" 1724431657.7055 0
   "C:/Users/johan/AppData/Local/MiKTeX/fonts/map/pdftex/pdftex.map" 1723121911 82507 a9eef8696c92627b87e9975edea03b2a ""
   "C:/Users/johan/AppData/Local/MiKTeX/fonts/pk/ljfour/jknappen/ec/dpi600/ectt1200.pk" 1723121921 24152 d533ed1456bd16ed847f5faeb02e3c15 ""
   "C:/Users/johan/AppData/Local/MiKTeX/miktex/data/le/pdftex/pdflatex.fmt" 1723120577 24265332 a44f1c99e5fc010044e9975fd6d69c37 ""
@@ -249,15 +249,15 @@
   "C:/Users/johan/AppData/Local/Programs/MiKTeX/tex/latex/url/url.sty" 1388490452 12796 8edb7d69a20b857904dd0ea757c14ec9 ""
   "C:/Users/johan/AppData/Local/Programs/MiKTeX/tex/latex/xcolor/xcolor.sty" 1700127522 55487 80a65caedd3722f4c20a14a69e785d8f ""
   "C:/Users/johan/AppData/Local/Programs/MiKTeX/tex/latex/xpatch/xpatch.sty" 1585221260 8510 7803f78066c4f9d008405191a4b43073 ""
-  "Chapters/Conclusion.aux" 1724267629 4468 a2035aee6ace516985c0df981ddd31fa "pdflatex"
+  "Chapters/Conclusion.aux" 1724431657 4468 3641d8a5bc9b986f4f9d130a1c6d9d4c "pdflatex"
   "Chapters/Conclusion.tex" 1724174416 40 9d3699ff96e0784e9acab3cedd258020 ""
-  "Chapters/Introduction.aux" 1724267628 6005 8145cbd60c04869e01efd3c6f8704916 "pdflatex"
+  "Chapters/Introduction.aux" 1724431656 6005 8145cbd60c04869e01efd3c6f8704916 "pdflatex"
   "Chapters/Introduction.tex" 1724175339 9549 0bd3308b594c5ac1a13e7a3d115f434d ""
-  "Chapters/LiteratureReview.aux" 1724267629 8705 67e32513d94a5ad6b8fa8564075d8be1 "pdflatex"
+  "Chapters/LiteratureReview.aux" 1724431656 8705 67e32513d94a5ad6b8fa8564075d8be1 "pdflatex"
   "Chapters/LiteratureReview.tex" 1724175478 44285 19cc07373357e3518e38f567dcedbe69 ""
-  "Chapters/ResearchMethodology.aux" 1724267629 9384 27dd896f7979bad34ca34e7caf5899b7 "pdflatex"
-  "Chapters/ResearchMethodology.tex" 1724267623 30360 70fd02d20b31e281918f5a3b5ede7946 ""
-  "Chapters/ResultsAndDiscussion.aux" 1724267629 4893 874f1f7379f1292d0f4fe6db700c8942 "pdflatex"
+  "Chapters/ResearchMethodology.aux" 1724431657 9384 51ca470e331f479e9d3269193b1d175b "pdflatex"
+  "Chapters/ResearchMethodology.tex" 1724431647 30641 973dbb2fd0e7a7100effc99787812aef ""
+  "Chapters/ResultsAndDiscussion.aux" 1724431657 4893 ae92b823eeb15863b0b3434c64977de9 "pdflatex"
   "Chapters/ResultsAndDiscussion.tex" 1724267443 181 1a18bb47246480b6ad005ac4f5cd3723 ""
   "Figures/COMPETING1.png" 1722062977 94270 60416f2fa5bf5a7b1db1c00276b448ef ""
   "Figures/FAIR_PRINCIPLES.png" 1722062977 58524 4547c35ce3285460633f90b9aa2acc02 ""
@@ -269,14 +269,14 @@
   "Figures/sign.png" 1722062977 11601 b286fd3dafacf0f593dc2543c1084293 ""
   "ProposalAndThesis.cls" 1722062977 18377 c6a0b6eddfdc71be7c9a8b87228073e2 ""
   "c:/Users/johan/PycharmProjects/ResCap/research_report/main-work-area/main.tex" 1724175364 18105 2eaaa1f3996bdedea50e1e36e4f87340 ""
-  "main.aux" 1724267629 17604 ca87a0d8ea8328311d77027cbc7fb8db "pdflatex"
+  "main.aux" 1724431657 17604 6318d891e06a802f0fe1e5061fe964dd "pdflatex"
   "main.bbl" 1724175373 122114 efae4b046c9d8a1e5e48f6e34a674a95 "biber main"
-  "main.lof" 1724267629 1420 d542a46237c5542012a431bc81a70788 "pdflatex"
-  "main.lot" 1724267629 470 da526582c0e43e2e443c362f7635d872 "pdflatex"
-  "main.out" 1724267629 8819 2d996308f68a74dbf3ed88849507785c "pdflatex"
-  "main.run.xml" 1724267629 2333 269acff7b90ffdeba4ebcc0628505b74 "pdflatex"
+  "main.lof" 1724431657 1420 d542a46237c5542012a431bc81a70788 "pdflatex"
+  "main.lot" 1724431657 470 da526582c0e43e2e443c362f7635d872 "pdflatex"
+  "main.out" 1724431657 8819 2d996308f68a74dbf3ed88849507785c "pdflatex"
+  "main.run.xml" 1724431657 2333 269acff7b90ffdeba4ebcc0628505b74 "pdflatex"
   "main.tex" 1724175364 18105 2eaaa1f3996bdedea50e1e36e4f87340 ""
-  "main.toc" 1724267629 4484 bf545047934cb2b3dd367bed4669516f "pdflatex"
+  "main.toc" 1724431657 4484 132673b9d2770eef6adee103185acbb3 "pdflatex"
   (generated)
   "Chapters/Conclusion.aux"
   "Chapters/Introduction.aux"

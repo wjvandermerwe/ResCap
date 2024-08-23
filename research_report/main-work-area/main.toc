@@ -39,17 +39,17 @@
 \contentsline {subsection}{\numberline {3.1.5}Performance measures}{36}{subsection.89}%
 \contentsline {section}{\numberline {3.2}Data}{39}{section.106}%
 \contentsline {subsection}{\numberline {3.2.1}Data Application and Modeling}{39}{subsection.107}%
-\contentsline {subsection}{\numberline {3.2.2}Simulation}{39}{subsection.108}%
+\contentsline {subsection}{\numberline {3.2.2}Simulation}{40}{subsection.108}%
 \contentsline {section}{\numberline {3.3}Methods}{40}{section.109}%
 \contentsline {subsection}{\numberline {3.3.1}Exploratory Analysis}{40}{subsection.110}%
 \contentsline {subsection}{\numberline {3.3.2}Data Processing and Simulation}{40}{subsection.111}%
 \contentsline {subsection}{\numberline {3.3.3}Survival Analysis: Model Application and Evaluation}{40}{subsection.112}%
 \contentsline {subsection}{\numberline {3.3.4}Research Practice Evaluation}{40}{subsection.113}%
-\contentsline {section}{\numberline {3.4}Limitations}{40}{section.116}%
+\contentsline {section}{\numberline {3.4}Limitations}{41}{section.116}%
 \contentsline {section}{\numberline {3.5}Ethical Considerations}{41}{section.117}%
-\contentsline {chapter}{\numberline {4}Results And Discussion}{42}{chapter.118}%
-\contentsline {section}{\numberline {4.1}Case Study Results}{42}{section.119}%
-\contentsline {section}{\numberline {4.2}Full Pipeline Outputs and Results}{42}{section.120}%
-\contentsline {section}{\numberline {4.3}Research Practice Analysis Results}{42}{section.121}%
-\contentsline {chapter}{\numberline {5}Conclusion}{43}{chapter.122}%
-\contentsline {chapter}{Bibliography}{44}{chapter*.123}%
+\contentsline {chapter}{\numberline {4}Results And Discussion}{43}{chapter.118}%
+\contentsline {section}{\numberline {4.1}Case Study Results}{43}{section.119}%
+\contentsline {section}{\numberline {4.2}Full Pipeline Outputs and Results}{43}{section.120}%
+\contentsline {section}{\numberline {4.3}Research Practice Analysis Results}{43}{section.121}%
+\contentsline {chapter}{\numberline {5}Conclusion}{44}{chapter.122}%
+\contentsline {chapter}{Bibliography}{45}{chapter*.123}%

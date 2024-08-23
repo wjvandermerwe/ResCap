@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.26 (MiKTeX 24.4) (preloaded format=pdflatex 2024.8.8)  21 AUG 2024 21:13
+This is pdfTeX, Version 3.141592653-2.6-1.40.26 (MiKTeX 24.4) (preloaded format=pdflatex 2024.8.8)  23 AUG 2024 18:47
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -1616,17 +1616,17 @@ Underfull \hbox (badness 10000) in paragraph at lines 192--196
 [38]
 
 [39]
-Underfull \hbox (badness 1540) in paragraph at lines 234--234
+Underfull \hbox (badness 1540) in paragraph at lines 247--247
 \T1/ppl/m/n/12 that in-cludes Kaplan-Meier, Nelson-
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 234--234
+Underfull \hbox (badness 10000) in paragraph at lines 247--247
 []|\T1/ppl/m/n/12 Implements pe-nal-ized Cox mod-
  []
 
 
-Underfull \hbox (badness 3068) in paragraph at lines 234--234
+Underfull \hbox (badness 3068) in paragraph at lines 247--247
 \T1/ppl/m/n/12 els with time-varying co-vari-ates in
  []
 
@@ -1638,6 +1638,8 @@ LaTeX Warning: `h' float specifier changed to `ht'.
 [40])
 
 [41]
+
+[42]
 \openout2 = `Chapters/ResultsAndDiscussion.aux'.
 
  (Chapters/ResultsAndDiscussion.tex
@@ -1645,7 +1647,7 @@ Chapter 4.
 )
 
 1: section
-[42
+[43
 
 
 
@@ -1658,7 +1660,7 @@ Chapter 5.
 )
 
 1: section
-[43
+[44
 
 
 
@@ -1675,13 +1677,13 @@ Overfull \hbox (5.339pt too wide) in paragraph at lines 368--368
 
 
 1: section
-[44
+[45
 
 
 
 ]
 
-[45]
+[46]
 Overfull \hbox (2.77766pt too wide) in paragraph at lines 368--368
 []\T1/ppl/m/n/12 Chirag Nag-pal, Willa Po-to-snak, and Ar-tur Dubrawski. \T1/ppl/m/it/12 auton-survival: an Open-
  []
@@ -1698,7 +1700,7 @@ Overfull \hbox (26.94223pt too wide) in paragraph at lines 368--368
 
 
 
-[46]
+[47]
 Overfull \hbox (54.43378pt too wide) in paragraph at lines 368--368
 []\T1/ppl/m/n/12 Shi-ang Qi et al. \T1/ppl/m/it/12 An Ef-fec-tive Mean-ing-ful Way to Eval-u-ate Sur-vival Mod-els\T1/ppl/m/n/12 . arXiv:2306.01196
  []
@@ -1710,7 +1712,7 @@ Overfull \hbox (8.1833pt too wide) in paragraph at lines 368--368
 
 
 
-[47]
+[48]
 Overfull \hbox (4.548pt too wide) in paragraph at lines 368--368
 \T1/ppl/m/n/12 man-age-ment and stew-ard-ship^^Q. en. In: \T1/ppl/m/it/12 Sci-en-tific Data \T1/ppl/m/n/12 3.1 (Mar. 2016), p. 160018.
  []
@@ -1727,7 +1729,7 @@ Overfull \hbox (7.80981pt too wide) in paragraph at lines 368--368
 
 
 
-[48] (main.aux (Chapters/Introduction.aux) (Chapters/LiteratureReview.aux) (Chapters/ResearchMethodology.aux) (Chapters/ResultsAndDiscussion.aux) (Chapters/Conclusion.aux))
+[49] (main.aux (Chapters/Introduction.aux) (Chapters/LiteratureReview.aux) (Chapters/ResearchMethodology.aux) (Chapters/ResultsAndDiscussion.aux) (Chapters/Conclusion.aux))
  ***********
 LaTeX2e <2024-06-01> patch level 2
 L3 programming layer <2020/03/25>
@@ -1746,17 +1748,17 @@ Package logreq Info: Writing requests to 'main.run.xml'.
 
  ) 
 Here is how much of TeX's memory you used:
- 42413 strings out of 473899
- 943051 string characters out of 5726501
+ 42414 strings out of 473899
+ 943058 string characters out of 5726501
  1944960 words of memory out of 5000000
  64422 multiletter control sequences out of 15000+600000
  599291 words of font info for 111 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
  100i,20n,101p,2927b,3023s stack positions out of 10000i,1000n,20000p,200000b,200000s
  <C:\Users\johan\AppData\Local\MiKTeX\fonts/pk/ljfour/jknappen/ec/dpi600\ectt1200.pk><C:/Users/johan/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmex10.pfb><C:/Users/johan/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmmi10.pfb><C:/Users/johan/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmr10.pfb><C:/Users/johan/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmsy10.pfb><C:/Users/johan/AppData/Local/Programs/MiKTeX/fonts/type1/public/mathpazo/fplmr.pfb><C:/Users/johan/AppData/Local/Programs/MiKTeX/fonts/type1/public/mathpazo/fplmri.pfb><C:/Users/johan/AppData/Local/Programs/MiKTeX/fonts/type1/urw/palatino/uplb8a.pfb><C:/Users/johan/AppData/Local/Programs/MiKTeX/fonts/type1/urw/palatino/uplr8a.pfb><C:/Users/johan/AppData/Local/Programs/MiKTeX/fonts/type1/urw/palatino/uplri8a.pfb>
-Output written on main.pdf (55 pages, 1478158 bytes).
+Output written on main.pdf (56 pages, 1479141 bytes).
 PDF statistics:
- 1044 PDF objects out of 1200 (max. 8388607)
- 213 named destinations out of 1000 (max. 500000)
+ 1048 PDF objects out of 1200 (max. 8388607)
+ 214 named destinations out of 1000 (max. 500000)
  477 words of extra memory for PDF output out of 10000 (max. 10000000)
 
