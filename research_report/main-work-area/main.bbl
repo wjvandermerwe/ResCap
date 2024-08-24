@@ -110,61 +110,6 @@
       \verb http://www.jstor.org/stable/2985181
       \endverb
     \endentry
-    \entry{cygu_pcoxtime_2021}{misc}{}{}
-      \name{author}{3}{}{%
-        {{hash=513d80ef441a3486fe780543c6b6875e}{%
-           family={Cygu},
-           familyi={C\bibinitperiod},
-           given={Steve},
-           giveni={S\bibinitperiod}}}%
-        {{hash=c2a8e631a88f3202dac9537521758960}{%
-           family={Dushoff},
-           familyi={D\bibinitperiod},
-           given={Jonathan},
-           giveni={J\bibinitperiod}}}%
-        {{hash=40205f70df6ea0642144adebc2fe5ccb}{%
-           family={Bolker},
-           familyi={B\bibinitperiod},
-           given={Benjamin\bibnamedelima M.},
-           giveni={B\bibinitperiod\bibinitdelim M\bibinitperiod}}}%
-      }
-      \list{publisher}{1}{%
-        {arXiv}%
-      }
-      \strng{namehash}{6377feb888a0ff60cb7f2b2160886ced}
-      \strng{fullhash}{6377feb888a0ff60cb7f2b2160886ced}
-      \strng{fullhashraw}{6377feb888a0ff60cb7f2b2160886ced}
-      \strng{bibnamehash}{6377feb888a0ff60cb7f2b2160886ced}
-      \strng{authorbibnamehash}{6377feb888a0ff60cb7f2b2160886ced}
-      \strng{authornamehash}{6377feb888a0ff60cb7f2b2160886ced}
-      \strng{authorfullhash}{6377feb888a0ff60cb7f2b2160886ced}
-      \strng{authorfullhashraw}{6377feb888a0ff60cb7f2b2160886ced}
-      \field{sortinit}{C}
-      \field{sortinithash}{4d103a86280481745c9c897c925753c0}
-      \field{labelnamesource}{author}
-      \field{labeltitlesource}{shorttitle}
-      \field{abstract}{The penalized Cox proportional hazard model is a popular analytical approach for survival data with a large number of covariates. Such problems are especially challenging when covariates vary over follow-up time (i.e., the covariates are time-dependent). The standard R packages for fully penalized Cox models cannot currently incorporate time-dependent covariates. To address this gap, we implement a variant of gradient descent algorithm (proximal gradient descent) for fitting penalized Cox models. We apply our implementation to real and simulated data sets.}
-      \field{annotation}{Comment: Submitted to Journal of Statistical Software}
-      \field{month}{6}
-      \field{note}{arXiv:2102.02297 [stat]}
-      \field{shorttitle}{pcoxtime}
-      \field{title}{pcoxtime: {Penalized} {Cox} {Proportional} {Hazard} {Model} for {Time}-dependent {Covariates}}
-      \field{urlday}{16}
-      \field{urlmonth}{4}
-      \field{urlyear}{2024}
-      \field{year}{2021}
-      \field{urldateera}{ce}
-      \verb{file}
-      \verb arXiv Fulltext PDF:/Users/johan/Zotero/storage/DEGX7LEL/Cygu et al. - 2021 - pcoxtime Penalized Cox Proportional Hazard Model .pdf:application/pdf;arXiv.org Snapshot:/Users/johan/Zotero/storage/6M5XGNTM/2102.html:text/html
-      \endverb
-      \verb{urlraw}
-      \verb http://arxiv.org/abs/2102.02297
-      \endverb
-      \verb{url}
-      \verb http://arxiv.org/abs/2102.02297
-      \endverb
-      \keyw{Statistics - Computation,Statistics - Methodology,14J60}
-    \endentry
     \entry{davidson-pilon_lifelines_2024}{misc}{}{}
       \name{author}{1}{}{%
         {{hash=ddd01661d7160cb48e55f66fe978576e}{%
@@ -325,6 +270,53 @@
       \verb http://arxiv.org/abs/1811.11347
       \endverb
       \keyw{Statistics - Machine Learning,Computer Science - Machine Learning}
+    \endentry
+    \entry{harrell__regression_2015}{book}{}{}
+      \name{author}{1}{}{%
+        {{hash=4b505a35a79c3e526645c69858d71f5f}{%
+           family={Harrell},
+           familyi={H\bibinitperiod},
+           given={Frank\bibnamedelima E.},
+           giveni={F\bibinitperiod\bibinitdelim E\bibinitperiod}}}%
+      }
+      \list{location}{1}{%
+        {Cham}%
+      }
+      \list{publisher}{1}{%
+        {Springer International Publishing}%
+      }
+      \strng{namehash}{4b505a35a79c3e526645c69858d71f5f}
+      \strng{fullhash}{4b505a35a79c3e526645c69858d71f5f}
+      \strng{fullhashraw}{4b505a35a79c3e526645c69858d71f5f}
+      \strng{bibnamehash}{4b505a35a79c3e526645c69858d71f5f}
+      \strng{authorbibnamehash}{4b505a35a79c3e526645c69858d71f5f}
+      \strng{authornamehash}{4b505a35a79c3e526645c69858d71f5f}
+      \strng{authorfullhash}{4b505a35a79c3e526645c69858d71f5f}
+      \strng{authorfullhashraw}{4b505a35a79c3e526645c69858d71f5f}
+      \field{sortinit}{H}
+      \field{sortinithash}{23a3aa7c24e56cfa16945d55545109b5}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{shorttitle}
+      \field{isbn}{978-3-319-19424-0 978-3-319-19425-7}
+      \field{langid}{english}
+      \field{series}{Springer Series in Statistics}
+      \field{shorttitle}{Regression Modeling Strategies}
+      \field{title}{Regression Modeling Strategies: With Applications to Linear Models, Logistic and Ordinal Regression, and Survival Analysis}
+      \field{urlday}{22}
+      \field{urlmonth}{8}
+      \field{urlyear}{2024}
+      \field{year}{2015}
+      \field{dateera}{ce}
+      \field{urldateera}{ce}
+      \verb{doi}
+      \verb 10.1007/978-3-319-19425-7
+      \endverb
+      \verb{urlraw}
+      \verb https://link.springer.com/10.1007/978-3-319-19425-7
+      \endverb
+      \verb{url}
+      \verb https://link.springer.com/10.1007/978-3-319-19425-7
+      \endverb
     \endentry
     \entry{ishwaran_random_2008}{article}{}{}
       \name{author}{4}{}{%
@@ -1392,6 +1384,68 @@
       \endverb
       \keyw{Statistics - Machine Learning,Computer Science - Machine Learning,Computer Science - Artificial Intelligence}
     \endentry
+    \entry{qian_synthcity_2023}{misc}{}{}
+      \name{author}{3}{}{%
+        {{hash=7dfc43d0eaa1627f3c07c79898f4d2ad}{%
+           family={Qian},
+           familyi={Q\bibinitperiod},
+           given={Zhaozhi},
+           giveni={Z\bibinitperiod}}}%
+        {{hash=6c60ff757c2cd1d489afb4bc202d9349}{%
+           family={Cebere},
+           familyi={C\bibinitperiod},
+           given={Bogdan-Constantin},
+           giveni={B\bibinithyphendelim C\bibinitperiod}}}%
+        {{hash=44c5ebc1d90d166c1418c35650bdd2ef}{%
+           family={Schaar},
+           familyi={S\bibinitperiod},
+           given={Mihaela},
+           giveni={M\bibinitperiod},
+           prefix={van\bibnamedelima der},
+           prefixi={v\bibinitperiod\bibinitdelim d\bibinitperiod}}}%
+      }
+      \list{publisher}{1}{%
+        {arXiv}%
+      }
+      \strng{namehash}{0900d3e0ac9865608cd97783e0a8379d}
+      \strng{fullhash}{0900d3e0ac9865608cd97783e0a8379d}
+      \strng{fullhashraw}{0900d3e0ac9865608cd97783e0a8379d}
+      \strng{bibnamehash}{0900d3e0ac9865608cd97783e0a8379d}
+      \strng{authorbibnamehash}{0900d3e0ac9865608cd97783e0a8379d}
+      \strng{authornamehash}{0900d3e0ac9865608cd97783e0a8379d}
+      \strng{authorfullhash}{0900d3e0ac9865608cd97783e0a8379d}
+      \strng{authorfullhashraw}{0900d3e0ac9865608cd97783e0a8379d}
+      \field{sortinit}{Q}
+      \field{sortinithash}{ce69a400a872ddd02ee7fdb3b38c6abd}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{shorttitle}
+      \field{abstract}{Synthcity is an open-source software package for innovative use cases of synthetic data in {ML} fairness, privacy and augmentation across diverse tabular data modalities, including static data, regular and irregular time series, data with censoring, multi-source data, composite data, and more. Synthcity provides the practitioners with a single access point to cutting edge research and tools in synthetic data. It also offers the community a playground for rapid experimentation and prototyping, a one-stop-shop for {SOTA} benchmarks, and an opportunity for extending research impact. The library can be accessed on {GitHub} (https://github.com/vanderschaarlab/synthcity) and pip (https://pypi.org/project/synthcity/). We warmly invite the community to join the development effort by providing feedback, reporting bugs, and contributing code.}
+      \field{day}{18}
+      \field{eprinttype}{arxiv}
+      \field{month}{1}
+      \field{number}{{arXiv}:2301.07573}
+      \field{shorttitle}{Synthcity}
+      \field{title}{Synthcity: facilitating innovative use cases of synthetic data in different data modalities}
+      \field{urlday}{22}
+      \field{urlmonth}{8}
+      \field{urlyear}{2024}
+      \field{year}{2023}
+      \field{dateera}{ce}
+      \field{urldateera}{ce}
+      \verb{eprint}
+      \verb 2301.07573 [cs]
+      \endverb
+      \verb{file}
+      \verb arXiv Fulltext PDF:C\:\\Users\\johan\\Zotero\\storage\\SQPNH5VJ\\Qian et al. - 2023 - Synthcity facilitating innovative use cases of synthetic data in different data modalities.pdf:application/pdf;arXiv.org Snapshot:C\:\\Users\\johan\\Zotero\\storage\\PP5JGMNN\\2301.html:text/html
+      \endverb
+      \verb{urlraw}
+      \verb http://arxiv.org/abs/2301.07573
+      \endverb
+      \verb{url}
+      \verb http://arxiv.org/abs/2301.07573
+      \endverb
+      \keyw{Computer Science - Artificial Intelligence,Computer Science - Machine Learning}
+    \endentry
     \entry{shortreed_outcome-adaptive_2017}{article}{}{}
       \name{author}{2}{}{%
         {{hash=b81601cda81fdff22aa9bf749391491b}{%
@@ -1586,48 +1640,6 @@
       \verb http://arxiv.org/abs/2206.03256
       \endverb
       \keyw{Statistics - Methodology,Statistics - Applications,Computer Science - Machine Learning,Computer Science - Computers and Society}
-    \endentry
-    \entry{spath_julianspaethrandom-survival-forest_2021}{misc}{}{}
-      \name{author}{1}{}{%
-        {{hash=38c7cdd85513e21f5d0fce450dcf8f4c}{%
-           family={Späth},
-           familyi={S\bibinitperiod},
-           given={Julian},
-           giveni={J\bibinitperiod}}}%
-      }
-      \list{publisher}{1}{%
-        {[object Object]}%
-      }
-      \strng{namehash}{38c7cdd85513e21f5d0fce450dcf8f4c}
-      \strng{fullhash}{38c7cdd85513e21f5d0fce450dcf8f4c}
-      \strng{fullhashraw}{38c7cdd85513e21f5d0fce450dcf8f4c}
-      \strng{bibnamehash}{38c7cdd85513e21f5d0fce450dcf8f4c}
-      \strng{authorbibnamehash}{38c7cdd85513e21f5d0fce450dcf8f4c}
-      \strng{authornamehash}{38c7cdd85513e21f5d0fce450dcf8f4c}
-      \strng{authorfullhash}{38c7cdd85513e21f5d0fce450dcf8f4c}
-      \strng{authorfullhashraw}{38c7cdd85513e21f5d0fce450dcf8f4c}
-      \field{sortinit}{S}
-      \field{sortinithash}{b164b07b29984b41daf1e85279fbc5ab}
-      \field{labelnamesource}{author}
-      \field{labeltitlesource}{shorttitle}
-      \field{abstract}{A Random Survival Forest implementation for python inspired by Ishwaran et al. - Easily understandable, adaptable and extendable.}
-      \field{month}{7}
-      \field{shorttitle}{julianspaeth/random-survival-forest}
-      \field{title}{julianspaeth/random-survival-forest: {Create} doi}
-      \field{urlday}{21}
-      \field{urlmonth}{4}
-      \field{urlyear}{2024}
-      \field{year}{2021}
-      \field{urldateera}{ce}
-      \verb{doi}
-      \verb 10.5281/ZENODO.5146375
-      \endverb
-      \verb{urlraw}
-      \verb https://zenodo.org/record/5146375
-      \endverb
-      \verb{url}
-      \verb https://zenodo.org/record/5146375
-      \endverb
     \endentry
     \entry{thurow_how_2023}{misc}{}{}
       \name{author}{5}{}{%

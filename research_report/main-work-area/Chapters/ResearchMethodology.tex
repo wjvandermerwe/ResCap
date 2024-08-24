@@ -2,15 +2,18 @@
 \label{Chapter2} % For referencing this chapter elsewhere, use \ref{Chapter3}
 
 \section{Research design} \label{design}
-For the proposed research, a rigorous framework has been formalized by \parencite{morris_using_2019} and will be referred to as (ADMEP). As \parencite{morris_using_2019} states, "Simulation studies are used to obtain empirical results about the behavior of statistical methods in certain scenarios, as opposed to analytic results", which is at the foundation of the objectives of this research. In essence, this study aims to produce results that "accurately" represent the efficacy of the Random Survival Forest \parencite{ishwaran_random_2008} and the Cox proportional hazards model \parencite{cox_regression_1972}. 
+
+\noindent In this I look at the structural foundation for running the comparative study of the Random Survival Forest \parencite{ishwaran_random_2008} and the Cox proportional hazards model \parencite{cox_regression_1972}. Central to this design is the use of \textbf{simulation studies}, to gain empirical insights into the behavior of the statistical methods across various scenarios. As \parencite{morris_using_2019} aptly puts it, "Simulation studies are used to obtain empirical results about the behavior of statistical methods in certain scenarios, as opposed to analytic results."
+\\\\
+\noindent This section focuses on the application of the (ADMEP) framework, formalized by \parencite{morris_using_2019}. This framework is the building block of most of the methodical parts later on in the methodology. It served as the backbone of my methodology, allowing me to produce results that "accurately" reflect the performance and effectiveness of these models.
 
 \begin{figure}[h]
  \centering
- \includegraphics[scale=0.48]{Figures/METHOD_GRAPH.png}
+ \includegraphics[scale=0.25]{Figures/METHOD_GRAPH.png}
  \caption{\parencite{pawel_pitfalls_2024} Shows a common example of a simulation study plan.}
 \end{figure}
 
-\noindent Taking inspiration from the the application of ADMEP by \parencite{pawel_pitfalls_2024}, the following sections define the research broadly:
+\noindent Taking inspiration from the the application of ADMEP by \parencite{pawel_pitfalls_2024}, the following sections define methods relevant in each section of the framework for later use in the methodology:
 
 \subsection{Aims}
 \begin{itemize} 
@@ -206,29 +209,62 @@ The Logarithmic Score \parencite{yanagisawa_proper_2023} is used for models that
 \begin{equation} \label{eq:logscore}S_{\text{Log}}(\hat{F}, y; \{\zeta_i\}) = -\sum_{i=0}^{B-1} 1(\zeta_i < y \leq \zeta_{i+1}) \log(\hat{F}(\zeta_{i+1}) - \hat{F}(\zeta_i))\end{equation}
 
 \section{Data}
-the role of simulation
-explain the use of the data to feed simulation (evaluation) ground truth
-\subsection{Data Application and Modeling}
-\noindent
-1. Library used
-2. data set context (Description)
-3. dataset model
+\noindent For my research, I utilized SurvSet, an open-source repository specifically designed for time-to-event (T2E) analysis. SurvSet provides a standardized collection of 76 datasets, primarily focused on biomedicine, that are formatted consistently for easy preprocessing and analysis. This makes it an ideal source for benchmarking machine learning (ML) algorithms in survival analysis.
+\\\\
+\noindent To understand the specifics of each dataset within SurvSet, the repository provides a clear and consistent structure. Each dataset is accompanied by a unique ds\_name and metadata that detail its characteristics, such as whether it includes time-dependent covariates, the number of features, and the types of variables (numerical or categorical). The SurvLoader class allows users to easily load any dataset and access this metadata, along with a reference URL that offers additional context and explanations for the columns. This structure ensures that researchers can quickly grasp what each dataset is used for and how it can be applied in survival analysis or machine learning benchmarking.
+\\\\
+\noindent SurvSet organizes datasets using a SurvLoader class, which simplifies loading and accessing data. Each dataset includes core columns like \texttt{pid} (unique ID), \texttt{event} (whether the event occurred), and \texttt{time} (time to event or censoring). Features are clearly marked as either numerical (num\_\{\}) or categorical (fac\_\{\}), ensuring a smooth integration with various ML algorithms. This consistent structure across all datasets in SurvSet made it my go-to source for accurate and reliable survival analysis in my project.
+\\\\
+\noindent Furthermore, when selecting the dataset censoring levels, FAIR principles \parencite{wilkinson_fair_2016}, reproducibility by assessing data simulation accuracy similar to the KM-Divergence metric used by \parencite{norcliffe_survivalgan_2023} are all important considerations. Utilizing this approach voids the need to carefully assess the ethical implications of using the datasets as these datasets should be under public licensed availability. Lastly, I don't foresee data preprocessing steps, being necessary, as DGM for simulation are commonly categorized as postprocessing \parencite{jin_imputation_2024}.
 
-\subsection{Simulation}
-1. Library used 
-1. out of the methods what to use
-2. evaluations
-3. methods chosen proven?
-
-
-\noindent The process of finding a dataset suitable for the study forms part of research execution. I will focus on sourcing data from reputable, well-established libraries such as UCI Machine Learning Repository, Kaggle, and available software libraries examples being, \parencite{nagpal_auton-survival_2022} \parencite{davidson-pilon_lifelines_2024} \parencite{sebastian_polsterl_scikit-survival_2023}. This approach guarantees access to a diverse array of well-documented datasets, ensuring both reliability and reproducibility of the results. It is important to note that the selection of data generation mechanisms (DGM), is indirectly dependent on the dataset chosen, so it is important to incorporate and accommodate the selection process toward ease of implementation of the DGM. Furthermore, when selecting the dataset censoring levels, FAIR principles \parencite{wilkinson_fair_2016}, reproducibility by assessing data simulation accuracy similar to the KM-Divergence metric used by \parencite{norcliffe_survivalgan_2023} are all important considerations. Utilizing this approach voids the need to carefully assess the ethical implications of using the datasets as these datasets should be under public licensed availability. Lastly, I don't foresee data preprocessing steps, being necessary, as DGM for simulation are commonly categorized as postprocessing \parencite{jin_imputation_2024}. 
 
 \section{Methods} \label{methods}
 \subsection{Exploratory Analysis}
+Exploratory Data Analysis (EDA) is a crucial first step to discover key considerations for contributing covariates and potential implications. In line with the principles outlined in \parencite{harrell__regression_2015}, this EDA focuses on a detailed examination of the survival data's structure, distribution, and key features such as outliers, missing values, and multicollinearity, that could impact the performance and validity of our regression models.
+\\\\
+\noindent \textit{Data Overview} The dataset's dimensions, including the number of rows and columns, are first examined to understand its size. Next, we verify the data types of each column (such as time, event, and covariates) to ensure they are appropriate for analysis. Additionally, we identify and assess missing values across the dataset, visualizing these patterns using a heatmap or matrix plot to uncover any systematic issues.
+\\\\
+\noindent \textit{Target Variable Analysis (Survival Time and Event Status)} For the survival time (time), summary statistics such as mean, median, range, and standard deviation are calculated. We then plot the distribution of survival times using a histogram or density plot to visualize these statistics. For the event status (event), the proportion of events versus censored cases is determined and visualized through a bar chart to understand the distribution of event occurrences.
+\\\\
+\noindent \textit{Univariate Analysis of Covariates} In the univariate analysis, summary statistics for each numerical covariate are calculated, including the mean, median, minimum, and maximum values. These statistics are further visualized through histograms or density plots to assess their distributions. For categorical covariates, we count the frequency of each category and visualize the distribution using bar charts.
+\\\\
+\noindent \textit{Bivariate Analysis} To explore relationships between survival time and covariates, scatter plots are created for numerical covariates, while box plots are used to compare survival times across different levels of categorical covariates. For the event status versus covariates, bar charts or stacked bar charts are used to visualize the distribution of event status across categorical covariates. Violin plots or box plots are also employed to assess the distribution of numerical covariates within each event status, such as comparing values for censored versus event occurred.
+\\\\
+\noindent \textit{Censoring Analysis} Censoring is analyzed by calculating and visualizing the overall censoring level in the dataset, expressed as the percentage of censored observations. Additionally, we explore how censoring is distributed across different covariates by creating grouped bar charts or box plots.
+\\\\
+\noindent \textit{Correlation Analysis} For numerical covariates, a correlation matrix is calculated and visualized using a heatmap to identify relationships between variables. For categorical covariates, relationships with numerical covariates are explored using point-biserial correlations, while Chi-square tests are used where appropriate to examine relationships between categorical variables.
+
 \subsection{Data Processing and Simulation}
+
+\subsubsection*{Data Processing}
+\subsubsection*{Simulation}
+For the simulation, I utilized the Synthcity library \parencite{qian_synthcity_2023}. Synthcity is an open-source package designed for generating and evaluating synthetic data across various data modalities, including static data, regular and irregular time series, and censored data. It provides a unified platform for innovative use cases in machine learning fairness, privacy, and data augmentation. The library was chosen for its comprehensive support of survival analysis and synthetic data generation, making it an ideal tool for this study.
+\begin{figure}[h]
+    \centering
+    \includegraphics[scale=0.68]{Figures/SynthCity.png}
+    \caption{\parencite{qian_synthcity_2023} Simulation Pipeline.}
+\end{figure}
+
+\noindent Among the various generative models available in Synthcity, I focused on the use of Survival GAN and Survival VAE. These methods were selected based on previous explorations and their proven ability to handle the complexities of survival data. Survival GAN is particularly effective in generating high-fidelity data with the capability to preserve the underlying distribution, while Survival VAE offers a robust framework for capturing the latent structure of the data, making it suitable for the simulation of censored survival datasets.
+The simulation pipeline is designed to effectively generate synthetic survival data that mirrors real-world datasets, following the structured process provided by Synthcity. The design integrates several key components and classes from Synthcity, ensuring a comprehensive approach to data generation and evaluation.
+\\\\
+\noindent \textit{Data Loading.} The first step in the pipeline involves loading the real survival datasets using the \texttt{DataLoader} class from Synthcity. The \texttt{DataLoader} processes the survival times, censoring indicators, and covariates. Furthermore The \texttt{DataLoader} provides validation for censored observations, ensuring that the survival times and event indicators are correctly aligned for downstream modeling. Metadata, such as identifying sensitive features or specifying outcome variables, can be included.
+\\\\
+\noindent \textit{Model Training.} The \texttt{Plugin} class is used to instantiate these models, allowing for straightforward training and application. The training is conducted using the \texttt{fit()} method of the \texttt{Plugin} class.
+\\\\
+\noindent \textit{Synthetic Data Generation.} Once the models are trained, the \texttt{generate()} method of the \texttt{Plugin} class is used to produce synthetic datasets. The design considerations at this stage include:
+\\\\
+\noindent \textit{Evaluation of Synthetic Data.} The final component of the pipeline involves evaluating the synthetic data using the \texttt{Metrics} class provided by Synthcity. The design focuses on several key evaluation aspects:
+\begin{itemize}
+    \item Fidelity Metrics: The \texttt{Metrics} class is utilized to assess how closely the synthetic data resembles the original data. Metrics such as distributional similarity and survival curve alignment are critical for determining data fidelity. 
+    \item Utility Evaluation: The utility of the synthetic data for downstream tasks is tested by applying standard machine learning models to the generated data and comparing performance against models trained on real data. 
+    \item Privacy Considerations: Privacy is a major concern in synthetic data generation. The \texttt{Metrics} class includes tools to evaluate the privacy of the synthetic data, such as assessing the risk of re-identification or leakage of sensitive information. 
+\end{itemize}
+
 \subsection{Survival Analysis: Model Application and Evaluation}
-\subsection{Research Practice Evaluation}
-\subsubsection*{Labeling Strategy}
+
+\noindent For this section I outline the steps For running the models on the loaded and preperad data. The libraries utilized in the study consist of:
+
 \begin{table}[h]
 \begin{tabularx}{\textwidth}{|X|X|}
 \hline
@@ -240,16 +276,139 @@ scikit-survival \parencite{sebastian_polsterl_scikit-survival_2023} & Extends sc
 \hline
 lifelines \parencite{davidson-pilon_lifelines_2024} & Popular library for survival analysis that includes Kaplan-Meier, Nelson-Aalen, and Cox models, among others. \\
 \hline
-pcoxtime \parencite{cygu_pcoxtime_2021} & Implements penalized Cox models with time-varying covariates in Python. \\
-\hline
-random-survival-forest \parencite{spath_julianspaethrandom-survival-forest_2021} & Implementation of Random Survival Forests that allows for detailed configuration and robust analysis. \\
-\hline
 \end{tabularx}
 \caption{Libraries to be used during research}
 \label{tab:libs}
 \end{table}
 
-\noindent I plan to use the above packages, to perform the comparative study between a random survival forest implementation and the lasso regularized Cox proportional hazards model, using simulated data according to the ADMEP research design proposal in \ref{design}.
+\subsubsection*{Cox Proportional Hazards (CoxPH) Model}
+
+\paragraph*{Data Preparation}
+\begin{itemize}
+    \item Ensure dataset has \texttt{time}, \texttt{event}, and covariate columns.
+    \item Handle censoring properly in \texttt{time} and \texttt{event} columns.
+\end{itemize}
+
+\paragraph*{Model Fitting}
+\begin{itemize}
+    \item Fit the CoxPH model using the \texttt{lifelines} library.
+    \item Check the proportional hazards assumption with \texttt{lifelines.check\_assumptions()}.
+\end{itemize}
+
+\paragraph*{Lasso Regularization}
+\begin{itemize}
+    \item Apply Lasso regularization (L1 penalty) during the fitting process to perform feature selection by shrinking coefficients of less important covariates to zero.
+    \item Use the \texttt{lifelines.CoxPHFitter(penalizer=penalty)} with a chosen penalty term to control the amount of regularization applied.
+\end{itemize}
+
+\paragraph*{Effect of Lasso on Model Performance}
+\begin{itemize}
+    \item Lasso regularization can help reduce model complexity by selecting a subset of relevant covariates, which may improve the interpretability and generalization of the CoxPH model.
+    \item Evaluate the impact of Lasso on model performance by comparing the concordance index (C-index) and analyzing the selected covariates.
+\end{itemize}
+
+
+\paragraph*{Survival Curve Prediction}
+\begin{itemize}
+    \item Predict survival function using \texttt{predict\_survival\_function()}.
+    \item Plot survival curves for different covariate profiles.
+\end{itemize}
+
+
+\paragraph*{Covariate Contribution Analysis}
+\begin{itemize}
+    \item Use \texttt{lifelines.plot\_covariate\_groups()} to visualize covariate impact.
+    \item Create boxplots to analyze covariate effects on the hazard ratio.
+\end{itemize}
+
+\paragraph*{Model Evaluation}
+\begin{itemize}
+    \item Compute concordance index (C-index) for model performance.
+    \item Evaluate model performance across different levels of censoring.
+    \item Perform stratified analysis based on different censoring levels.
+    \item Validate model with cross-validation or bootstrap methods.
+\end{itemize}
+
+\paragraph*{Assumption Checking}
+\begin{itemize}
+    \item Validate proportional hazards assumption with Schoenfeld residuals.
+    \item Explore any violations and consider adjustments like stratified models.
+\end{itemize}
+
+\subsubsection*{Random Survival Forest (RSF) Model}
+\paragraph*{Data Preparation}
+\begin{itemize}
+    \item Ensure dataset includes \texttt{time}, \texttt{event}, and properly encoded covariates.
+\end{itemize}
+
+\paragraph*{Model Fitting}
+\begin{itemize}
+    \item Fit the RSF model using a suitable library (\texttt{scikit-survival}, \texttt{lifelines}).
+    \item Tune model parameters (e.g., number of trees, max depth).
+\end{itemize}
+
+\paragraph*{Survival Curve Prediction}
+\begin{itemize}
+    \item Predict survival curves for each observation.
+    \item Aggregate and plot survival probabilities across different covariate profiles.
+\end{itemize}
+
+\paragraph*{Variable Importance}
+\begin{itemize}
+    \item Analyze covariate importance using the \texttt{variable\_importance\_} attribute.
+    \item Visualize importance scores to identify key predictors.
+\end{itemize}
+
+\paragraph*{Model Evaluation}
+\begin{itemize}
+    \item Evaluate model using out-of-bag (OOB) score or concordance index.
+    \item Evaluate model performance across different levels of censoring.
+    \item Analyze performance under different levels of censoring.
+    \item Validate model with cross-validation or bootstrap methods.
+\end{itemize}
+
+\paragraph*{Comparison with CoxPH}
+\begin{itemize}
+    \item Compare survival curves from both models for specific covariate profiles.
+    \item Analyze differences, especially in cases with high censoring or non-proportional hazards.
+\end{itemize}
+
+\subsection{Research Practice Evaluation}
+
+The core focus of this evaluation is not to interpret the effects or outcomes of the models in detail, but rather to ensure that the research practices applied throughout the simulation study are rigorous and well-documented. By concentrating on the methodological aspects, we aim to establish a reliable foundation for the simulation without delving into the specific interpretations of model results. This approach allows us to maintain objectivity and consistency in evaluating the effectiveness and validity of the simulation pipeline.
+
+To achieve this, a clear labeling strategy is employed, using abstract descriptions for each subprocess within the full simulation study. This labeling strategy helps in systematically categorizing and tracking the various steps, ensuring that every component of the simulation is transparently documented. The use of abstract labels also facilitates a higher-level understanding of the simulation process, making it easier to identify potential areas for refinement and ensuring that the entire workflow remains coherent and aligned with the study’s objectives.
+
+\begin{table}[h!]
+    \centering
+    \begin{tabular}{|l|l|p{10cm}|}
+    \hline
+    \textbf{Label} & \textbf{Category} & \textbf{Description} \\ \hline
+    DP   & Data Preparation (General)   & General label for all data preparation tasks, including cleaning, transformation, and preprocessing. \\ \hline
+    MDH  & Missing Data Handling        & Specific tasks related to identifying, handling, and imputing missing data. \\ \hline
+    ENC  & Data Encoding                & Tasks related to encoding categorical variables, feature scaling, and other data transformations. \\ \hline
+    DS   & Data Splitting               & Splitting the data into training, validation, and testing sets. \\ \hline
+    MI   & Model Initialization         & Initializing models with chosen parameters, including setting up cross-validation schemes. \\ \hline
+    MT   & Model Training (General)     & General label for tasks related to model training, including fitting the model to training data. \\ \hline
+    HT   & Hyperparameter Tuning        & Tasks focused on optimizing model parameters, such as grid search or random search. \\ \hline
+    REG  & Regularization Application   & Applying regularization techniques like Lasso, Ridge, or Elastic Net during model fitting. \\ \hline
+    SA   & Survival Analysis (General)  & General label for survival analysis tasks, including survival function estimation and survival curve plotting. \\ \hline
+    CIA  & Covariate Impact Analysis    & Analyzing the impact of individual covariates on the outcome, including statistical tests and visualizations. \\ \hline
+    ME   & Model Evaluation (General)   & General label for evaluating model performance across various metrics. \\ \hline
+    CV   & Cross-Validation             & Performing cross-validation to assess model performance stability. \\ \hline
+    AC   & Assumption Checking (General) & General label for checking model assumptions, including proportional hazards or other key assumptions. \\ \hline
+    BVT  & Bias-Variance Tradeoff       & Analyzing the tradeoff between bias and variance in model performance. \\ \hline
+    SS   & Simulation Setup             & Setting up the simulation environment, including configuring parameters and preparing input data. \\ \hline
+    SDG  & Synthetic Data Generation (General) & General label for generating synthetic datasets using trained models. \\ \hline
+    SDE  & Synthetic Data Evaluation (General) & General label for evaluating the quality and utility of generated synthetic data. \\ \hline
+    RC   & Results Compilation          & Compiling and summarizing results from various stages of the study for reporting. \\ \hline
+    DR   & Documentation and Reporting  & Documenting processes, decisions, and findings throughout the study for transparency and reproducibility. \\ \hline
+    CM   & Comparison of Models         & Comparing results from different models or approaches, such as CoxPH vs. RSF. \\ \hline
+    \end{tabular}
+    \caption{Labeling Strategy for Simulation Study}
+    \label{tab:labeling_strategy}
+    \end{table}
+    
 
 \section{Limitations} \label{methlim}
 A massive limitation is that the research is tightly coupled, meaning the phases are strictly dependent on each other. This is an antipattern, \parencite{joshi_beginning_2016}, which should be planned to accommodate any failures during any of the research phases. In cases where results do not converge, or the interpretation is wrong, the tightly coupled nature of the research will also affect the preceding stages. Lastly the computation time, within the modern setting should not be a hindrance but the combination of multiple computational components like the DGM and the model execution and results evaluation, is important to take caution. 
