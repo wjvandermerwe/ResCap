@@ -1,10 +1,10 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.26 (TeX Live 2024) (preloaded format=pdflatex 2024.3.29)  8 MAY 2024 19:40
+This is pdfTeX, Version 3.141592653-2.6-1.40.26 (TeX Live 2024) (preloaded format=pdflatex 2024.3.29)  26 AUG 2024 22:53
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
  %&-line parsing enabled.
-**/Users/johan/Documents/personal/studies/Templates/full_latex_proj/main.tex
-(/Users/johan/Documents/personal/studies/Templates/full_latex_proj/main.tex
+**/Users/johan/Documents/personal/studies/ResCap/templates/full_latex_proj/main.tex
+(/Users/johan/Documents/personal/studies/ResCap/templates/full_latex_proj/main.tex
 LaTeX2e <2023-11-01> patch level 1
 L3 programming layer <2024-02-20>
 (./ProposalAndThesis.cls
@@ -1385,14 +1385,14 @@ Package logreq Info: Writing requests to 'main.run.xml'.
  ) 
 Here is how much of TeX's memory you used:
  41690 strings out of 474116
- 924612 string characters out of 5743682
+ 924633 string characters out of 5743682
  1958187 words of memory out of 5000000
  63359 multiletter control sequences out of 15000+600000
  603262 words of font info for 113 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 100i,20n,101p,1916b,2707s stack positions out of 10000i,1000n,20000p,200000b,200000s
+ 100i,20n,101p,1923b,2707s stack positions out of 10000i,1000n,20000p,200000b,200000s
 </usr/local/texlive/2024/texmf-dist/fonts/type1/public/amsfonts/cm/cmr10.pfb></usr/local/texlive/2024/texmf-dist/fonts/type1/public/cm-super/sfit1200.pfb></usr/local/texlive/2024/texmf-dist/fonts/type1/public/cm-super/sftt1095.pfb></usr/local/texlive/2024/texmf-dist/fonts/type1/public/cm-super/sftt1200.pfb></usr/local/texlive/2024/texmf-dist/fonts/type1/public/cm-super/sftt1728.pfb></usr/local/texlive/2024/texmf-dist/fonts/type1/urw/palatino/uplb8a.pfb></usr/local/texlive/2024/texmf-dist/fonts/type1/urw/palatino/uplr8a.pfb></usr/local/texlive/2024/texmf-dist/fonts/type1/urw/palatino/uplri8a.pfb>
-Output written on main.pdf (31 pages, 775243 bytes).
+Output written on main.pdf (31 pages, 775250 bytes).
 PDF statistics:
  487 PDF objects out of 1000 (max. 8388607)
  420 compressed objects within 5 object streams

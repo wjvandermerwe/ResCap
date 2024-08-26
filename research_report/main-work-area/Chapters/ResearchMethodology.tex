@@ -16,7 +16,7 @@
 \noindent Taking inspiration from the the application of ADMEP by \parencite{pawel_pitfalls_2024}, the following sections define methods relevant in each section of the framework for later use in the methodology:
 
 \subsection{Aims}
-\begin{itemize} 
+\begin{itemize}
 \item To evaluate how effectively the Random Survival Forest and Lasso-Cox models predict survival outcomes.
 \item To understand model behavior under varying conditions of data complexity and censoring rates.
 \item Document research practices when conducting this study.
@@ -200,13 +200,16 @@ RMAE (\hat{t}_i, t_i, \delta_i = 1) = |t_i - \hat{t}_i|
 \begin{equation} \label{eq:maepsuedo}e_{pseudo-obs}(t_i, D) = N \cdot \hat{\theta} - (N - 1) \cdot \hat{\theta}_{-i}\end{equation}
 \par \noindent \(\theta\) and \(\hat{\theta}\) are unbiased survival time estimators with and without the ii-th subject. The pseudo-observation is treated as an observed event time for MAE calculations.
 
-\subsubsection*{Ranked Probability Score}
-Ranked probability score \parencite{yanagisawa_proper_2023} extends the concept of the Brier Score to multi-class problems by considering the cumulative probability distributions. It evaluates the accuracy of predictions across all possible categorical outcomes, making it highly useful for discrete classification tasks in survival analysis.
-\begin{equation} \label{eq:ranked}S_{\text{RPS}}(\hat{F}, y) = \sum_{i=1}^{B-1} S_{\text{Binary-Brier}}(\hat{F}, y; \zeta_i)\end{equation}
+% \subsubsection*{Ranked Probability Score}
+% Ranked probability score \parencite{yanagisawa_proper_2023} extends the concept of the Brier Score to multi-class problems by considering the cumulative probability distributions. It evaluates the accuracy of predictions across all possible categorical outcomes, making it highly useful for discrete classification tasks in survival analysis.
+% \begin{equation} \label{eq:ranked}S_{\text{RPS}}(\hat{F}, y) = \sum_{i=1}^{B-1} S_{\text{Binary-Brier}}(\hat{F}, y; \zeta_i)\end{equation}
 
 \subsubsection*{Logarithmic Score}
 The Logarithmic Score \parencite{yanagisawa_proper_2023} is used for models that predict the entire probability distribution of the event times. It rewards models that assign higher probabilities to the events that occur. It assesses the logarithm of the predicted probabilities assigned to the true outcome intervals, promoting models that are confident and correct about their predictions.
 \begin{equation} \label{eq:logscore}S_{\text{Log}}(\hat{F}, y; \{\zeta_i\}) = -\sum_{i=0}^{B-1} 1(\zeta_i < y \leq \zeta_{i+1}) \log(\hat{F}(\zeta_{i+1}) - \hat{F}(\zeta_i))\end{equation}
+
+\subsubsection*{Cross-Validation}
+\parencite{harrell__regression_2015} Cross-validation is a resampling technique used to evaluate the generalizability of a statistical model by systematically partitioning the dataset into training and validation subsets. The most granular form, leave-one-out cross-validation (LOOCV), omits one observation at a time from the dataset of size $n$, fits the model on the remaining $n-1$ observations, and uses the excluded observation to test the model's performance. The process is repeated $n$ times, yielding an average accuracy metric, typically denoted by $\hat{\theta} = \frac{1}{n} \sum_{i=1}^{n} \theta_i$, where $\theta_i$ is the performance metric for the $i$-th iteration. Grouped cross-validation, a more practical alternative, divides the data into $k$ subsets, using $k-1$ subsets for model training and the remaining subset for validation, iterating this process $k$ times. Although cross-validation mitigates some issues of data-splitting, it is computationally expensive, often requiring numerous repetitions (e.g., 200+ iterations) to stabilize accuracy estimates. Moreover, the method may not fully capture the variability of variable selection, as subsets tend to produce similar feature sets. Additionally, cross-validation does not validate the model on the full dataset, which can lead to an underestimation of the model's overall predictive power. To address potential overfitting, a randomization method can be employed, where the response variable $Y$ is randomly permuted, and the model's predictive accuracy on this randomized data is compared to its performance on the original data, with significant deviations indicating possible overfitting.
 
 \section{Data}
 \noindent For my research, I utilized SurvSet, an open-source repository specifically designed for time-to-event (T2E) analysis. SurvSet provides a standardized collection of 76 datasets, primarily focused on biomedicine, that are formatted consistently for easy preprocessing and analysis. This makes it an ideal source for benchmarking machine learning (ML) algorithms in survival analysis.
@@ -248,7 +251,7 @@ For the simulation, I utilized the Synthcity library \parencite{qian_synthcity_2
 \noindent Among the various generative models available in Synthcity, I focused on the use of Survival GAN and Survival VAE. These methods were selected based on previous explorations and their proven ability to handle the complexities of survival data. Survival GAN is particularly effective in generating high-fidelity data with the capability to preserve the underlying distribution, while Survival VAE offers a robust framework for capturing the latent structure of the data, making it suitable for the simulation of censored survival datasets.
 The simulation pipeline is designed to effectively generate synthetic survival data that mirrors real-world datasets, following the structured process provided by Synthcity. The design integrates several key components and classes from Synthcity, ensuring a comprehensive approach to data generation and evaluation.
 \\\\
-\noindent \textit{Data Loading.} The first step in the pipeline involves loading the real survival datasets using the \texttt{DataLoader} class from Synthcity. The \texttt{DataLoader} processes the survival times, censoring indicators, and covariates. Furthermore The \texttt{DataLoader} provides validation for censored observations, ensuring that the survival times and event indicators are correctly aligned for downstream modeling. Metadata, such as identifying sensitive features or specifying outcome variables, can be included.
+\noindent \textit{Data Loading.} \parencite{qian_synthcity_2023} The first step in the pipeline involves loading the real survival datasets using the \texttt{DataLoader} class from Synthcity. The \texttt{DataLoader} processes the survival times, censoring indicators, and covariates. Furthermore The \texttt{DataLoader} provides validation for censored observations, ensuring that the survival times and event indicators are correctly aligned for downstream modeling. Metadata, such as identifying sensitive features or specifying outcome variables, can be included.
 \\\\
 \noindent \textit{Model Training.} The \texttt{Plugin} class is used to instantiate these models, allowing for straightforward training and application. The training is conducted using the \texttt{fit()} method of the \texttt{Plugin} class.
 \\\\
@@ -283,12 +286,6 @@ lifelines \parencite{davidson-pilon_lifelines_2024} & Popular library for surviv
 
 \subsubsection*{Cox Proportional Hazards (CoxPH) Model}
 
-\paragraph*{Data Preparation}
-\begin{itemize}
-    \item Ensure dataset has \texttt{time}, \texttt{event}, and covariate columns.
-    \item Handle censoring properly in \texttt{time} and \texttt{event} columns.
-\end{itemize}
-
 \paragraph*{Model Fitting}
 \begin{itemize}
     \item Fit the CoxPH model using the \texttt{lifelines} library.
@@ -298,7 +295,8 @@ lifelines \parencite{davidson-pilon_lifelines_2024} & Popular library for surviv
 \paragraph*{Lasso Regularization}
 \begin{itemize}
     \item Apply Lasso regularization (L1 penalty) during the fitting process to perform feature selection by shrinking coefficients of less important covariates to zero.
-    \item Use the \texttt{lifelines.CoxPHFitter(penalizer=penalty)} with a chosen penalty term to control the amount of regularization applied.
+    \item Use the \texttt{lifelines.CoxPHFitter(penalizer=penalty)} with a chosen penalty term to control the amount of regularization applied. 
+    \item Use metrics like the cross-validation score
 \end{itemize}
 
 \paragraph*{Effect of Lasso on Model Performance}
@@ -336,14 +334,10 @@ lifelines \parencite{davidson-pilon_lifelines_2024} & Popular library for surviv
 \end{itemize}
 
 \subsubsection*{Random Survival Forest (RSF) Model}
-\paragraph*{Data Preparation}
-\begin{itemize}
-    \item Ensure dataset includes \texttt{time}, \texttt{event}, and properly encoded covariates.
-\end{itemize}
 
 \paragraph*{Model Fitting}
 \begin{itemize}
-    \item Fit the RSF model using a suitable library (\texttt{scikit-survival}, \texttt{lifelines}).
+    \item Fit the RSF model using a the library \texttt{scikit-survival}.
     \item Tune model parameters (e.g., number of trees, max depth).
 \end{itemize}
 
@@ -356,7 +350,7 @@ lifelines \parencite{davidson-pilon_lifelines_2024} & Popular library for surviv
 \paragraph*{Variable Importance}
 \begin{itemize}
     \item Analyze covariate importance using the \texttt{variable\_importance\_} attribute.
-    \item Visualize importance scores to identify key predictors.
+    \item Visualize importance scores using Logarithmic plot for identifing contributers.
 \end{itemize}
 
 \paragraph*{Model Evaluation}
@@ -376,38 +370,8 @@ lifelines \parencite{davidson-pilon_lifelines_2024} & Popular library for surviv
 \subsection{Research Practice Evaluation}
 
 The core focus of this evaluation is not to interpret the effects or outcomes of the models in detail, but rather to ensure that the research practices applied throughout the simulation study are rigorous and well-documented. By concentrating on the methodological aspects, we aim to establish a reliable foundation for the simulation without delving into the specific interpretations of model results. This approach allows us to maintain objectivity and consistency in evaluating the effectiveness and validity of the simulation pipeline.
-
-To achieve this, a clear labeling strategy is employed, using abstract descriptions for each subprocess within the full simulation study. This labeling strategy helps in systematically categorizing and tracking the various steps, ensuring that every component of the simulation is transparently documented. The use of abstract labels also facilitates a higher-level understanding of the simulation process, making it easier to identify potential areas for refinement and ensuring that the entire workflow remains coherent and aligned with the study’s objectives.
-
-\begin{table}[h!]
-    \centering
-    \begin{tabular}{|l|l|p{10cm}|}
-    \hline
-    \textbf{Label} & \textbf{Category} & \textbf{Description} \\ \hline
-    DP   & Data Preparation (General)   & General label for all data preparation tasks, including cleaning, transformation, and preprocessing. \\ \hline
-    MDH  & Missing Data Handling        & Specific tasks related to identifying, handling, and imputing missing data. \\ \hline
-    ENC  & Data Encoding                & Tasks related to encoding categorical variables, feature scaling, and other data transformations. \\ \hline
-    DS   & Data Splitting               & Splitting the data into training, validation, and testing sets. \\ \hline
-    MI   & Model Initialization         & Initializing models with chosen parameters, including setting up cross-validation schemes. \\ \hline
-    MT   & Model Training (General)     & General label for tasks related to model training, including fitting the model to training data. \\ \hline
-    HT   & Hyperparameter Tuning        & Tasks focused on optimizing model parameters, such as grid search or random search. \\ \hline
-    REG  & Regularization Application   & Applying regularization techniques like Lasso, Ridge, or Elastic Net during model fitting. \\ \hline
-    SA   & Survival Analysis (General)  & General label for survival analysis tasks, including survival function estimation and survival curve plotting. \\ \hline
-    CIA  & Covariate Impact Analysis    & Analyzing the impact of individual covariates on the outcome, including statistical tests and visualizations. \\ \hline
-    ME   & Model Evaluation (General)   & General label for evaluating model performance across various metrics. \\ \hline
-    CV   & Cross-Validation             & Performing cross-validation to assess model performance stability. \\ \hline
-    AC   & Assumption Checking (General) & General label for checking model assumptions, including proportional hazards or other key assumptions. \\ \hline
-    BVT  & Bias-Variance Tradeoff       & Analyzing the tradeoff between bias and variance in model performance. \\ \hline
-    SS   & Simulation Setup             & Setting up the simulation environment, including configuring parameters and preparing input data. \\ \hline
-    SDG  & Synthetic Data Generation (General) & General label for generating synthetic datasets using trained models. \\ \hline
-    SDE  & Synthetic Data Evaluation (General) & General label for evaluating the quality and utility of generated synthetic data. \\ \hline
-    RC   & Results Compilation          & Compiling and summarizing results from various stages of the study for reporting. \\ \hline
-    DR   & Documentation and Reporting  & Documenting processes, decisions, and findings throughout the study for transparency and reproducibility. \\ \hline
-    CM   & Comparison of Models         & Comparing results from different models or approaches, such as CoxPH vs. RSF. \\ \hline
-    \end{tabular}
-    \caption{Labeling Strategy for Simulation Study}
-    \label{tab:labeling_strategy}
-    \end{table}
+\\\\
+\noindent To achieve this, a clear labeling strategy is employed, using abstract descriptions for each subprocess within the full simulation study. This labeling strategy helps in systematically categorizing and tracking the various steps, ensuring that every component of the simulation is transparently documented. The use of abstract labels also facilitates a higher-level understanding of the simulation process, making it easier to identify potential areas for refinement and ensuring that the entire workflow remains coherent and aligned with the study’s objectives.
     
 
 \section{Limitations} \label{methlim}

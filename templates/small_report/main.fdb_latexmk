@@ -1,15 +1,15 @@
 # Fdb version 4
-["bibtex main"] 1715189988.40553 "main.aux" "main.bbl" "main" 1715189990.44305 0
-  "./example.bib" 1715189861.07031 2571 468bb707c293fcdecb60455ea84cd4af ""
-  "./main-blx.bib" 1715189990.08783 342 5ba7332ec7ecc2dc9c6b1bd96e3d9aad ""
+["bibtex main"] 1715189988.40553 "main.aux" "main.bbl" "main" 1724705792.53038 0
+  "./example.bib" 1724705401.68672 2571 468bb707c293fcdecb60455ea84cd4af ""
+  "./main-blx.bib" 1724705792.17206 342 5ba7332ec7ecc2dc9c6b1bd96e3d9aad ""
   "/usr/local/texlive/2024/texmf-dist/bibtex/bst/biblatex/biblatex.bst" 1678141846 65484 b7949c47a88ed6dca66ebc7a04577312 ""
-  "main.aux" 1715189990.0848 934 918cb93e805ce75232bba4ab7f1081d9 "pdflatex"
+  "main.aux" 1724705792.16932 934 918cb93e805ce75232bba4ab7f1081d9 "pdflatex"
   (generated)
   "main.bbl"
   "main.blg"
   (rewritten before read)
-["pdflatex"] 1715189988.50944 "/Users/johan/Documents/personal/studies/Templates/small_report/main.tex" "main.pdf" "main" 1715189990.44323 0
-  "/Users/johan/Documents/personal/studies/Templates/small_report/main.tex" 1715189986.1617 16441 a178a1740f9ed39dd465f49771120b1c ""
+["pdflatex"] 1724705790.53231 "/Users/johan/Documents/personal/studies/ResCap/templates/small_report/main.tex" "main.pdf" "main" 1724705792.53053 0
+  "/Users/johan/Documents/personal/studies/ResCap/templates/small_report/main.tex" 1724705401.69291 16441 a178a1740f9ed39dd465f49771120b1c ""
   "/usr/local/texlive/2024/texmf-dist/fonts/enc/dvips/base/8r.enc" 1165713224 4850 80dc9bab7f31fb78a000ccfed0e27cab ""
   "/usr/local/texlive/2024/texmf-dist/fonts/map/fontname/texfonts.map" 1577235249 3524 cb3e574dea2d1052e39280babc910dc8 ""
   "/usr/local/texlive/2024/texmf-dist/fonts/tfm/adobe/palatino/pplb8r.tfm" 1136768653 2532 9ad73cf4dd2173a847f2a5f5608e0b9a ""
@@ -220,17 +220,17 @@
   "/usr/local/texlive/2024/texmf-var/fonts/map/pdftex/updmap/pdftex.map" 1711718467.09352 5467645 128b85b7cde5f5edc5cb7f1dd7ff8736 ""
   "/usr/local/texlive/2024/texmf-var/web2c/pdftex/pdflatex.fmt" 1711718428 8221427 4940e6e1000f9b02bdbc702679f13cfd ""
   "/usr/local/texlive/2024/texmf.cnf" 1710266656 577 e590dabc9e28c5b61546e15f63eebcdf ""
-  "Figures/logoWitsstackedcolourtransparent.png" 1715189934.946 611396 193e7f548b93c2eab3dfd6f1d948afd2 ""
-  "Figures/sign.png" 1715189976.64689 11601 d3de8ac180e1c2b565c7fecc6c2c2ed1 ""
-  "ProposalAndThesis.cls" 1715189861.11609 17874 c6a0b6eddfdc71be7c9a8b87228073e2 ""
-  "main.aux" 1715189990.0848 934 918cb93e805ce75232bba4ab7f1081d9 "pdflatex"
-  "main.bbl" 1715189988.50608 512 242e9db92557ac81f6b30ce4f9334513 "bibtex main"
-  "main.lof" 1715189990.08852 60 082c6d988034146bd6548090246e5839 "pdflatex"
-  "main.lot" 1715189990.08854 60 082c6d988034146bd6548090246e5839 "pdflatex"
-  "main.out" 1715189990.08685 552 3057628c0c2955c18b49bd84d0d1afc5 "pdflatex"
-  "main.run.xml" 1715189990.08845 2553 1689e1e457107e1ba9de7449f066f039 "pdflatex"
-  "main.tex" 1715189986.1617 16441 a178a1740f9ed39dd465f49771120b1c ""
-  "main.toc" 1715189990.0885 341 6ad49206d6b9203a543e12ae2fd7c2c1 "pdflatex"
+  "Figures/logoWitsstackedcolourtransparent.png" 1724705401.68625 611396 193e7f548b93c2eab3dfd6f1d948afd2 ""
+  "Figures/sign.png" 1724705401.68647 11601 d3de8ac180e1c2b565c7fecc6c2c2ed1 ""
+  "ProposalAndThesis.cls" 1724705401.6866 17874 c6a0b6eddfdc71be7c9a8b87228073e2 ""
+  "main.aux" 1724705792.16932 934 918cb93e805ce75232bba4ab7f1081d9 "pdflatex"
+  "main.bbl" 1724705401.68732 512 242e9db92557ac81f6b30ce4f9334513 "bibtex main"
+  "main.lof" 1724705792.17275 60 082c6d988034146bd6548090246e5839 "pdflatex"
+  "main.lot" 1724705792.17277 60 082c6d988034146bd6548090246e5839 "pdflatex"
+  "main.out" 1724705792.17109 552 3057628c0c2955c18b49bd84d0d1afc5 "pdflatex"
+  "main.run.xml" 1724705792.17268 2553 1689e1e457107e1ba9de7449f066f039 "pdflatex"
+  "main.tex" 1724705401.69291 16441 a178a1740f9ed39dd465f49771120b1c ""
+  "main.toc" 1724705792.17273 341 6ad49206d6b9203a543e12ae2fd7c2c1 "pdflatex"
   (generated)
   "main-blx.bib"
   "main.aux"

@@ -1,10 +1,10 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.26 (TeX Live 2024) (preloaded format=pdflatex 2024.3.29)  8 MAY 2024 19:39
+This is pdfTeX, Version 3.141592653-2.6-1.40.26 (TeX Live 2024) (preloaded format=pdflatex 2024.3.29)  26 AUG 2024 22:56
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
  %&-line parsing enabled.
-**/Users/johan/Documents/personal/studies/Templates/small_report/main.tex
-(/Users/johan/Documents/personal/studies/Templates/small_report/main.tex
+**/Users/johan/Documents/personal/studies/ResCap/templates/small_report/main.tex
+(/Users/johan/Documents/personal/studies/ResCap/templates/small_report/main.tex
 LaTeX2e <2023-11-01> patch level 1
 L3 programming layer <2024-02-20>
 (./ProposalAndThesis.cls
@@ -1142,14 +1142,14 @@ Package logreq Info: Writing requests to 'main.run.xml'.
  ) 
 Here is how much of TeX's memory you used:
  40643 strings out of 474116
- 900476 string characters out of 5743682
+ 900497 string characters out of 5743682
  1937187 words of memory out of 5000000
  62441 multiletter control sequences out of 15000+600000
  574860 words of font info for 67 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 100i,19n,101p,1913b,1958s stack positions out of 10000i,1000n,20000p,200000b,200000s
+ 100i,19n,101p,1920b,1958s stack positions out of 10000i,1000n,20000p,200000b,200000s
 </usr/local/texlive/2024/texmf-dist/fonts/type1/urw/palatino/uplb8a.pfb></usr/local/texlive/2024/texmf-dist/fonts/type1/urw/palatino/uplr8a.pfb></usr/local/texlive/2024/texmf-dist/fonts/type1/urw/palatino/uplri8a.pfb>
-Output written on main.pdf (8 pages, 581788 bytes).
+Output written on main.pdf (8 pages, 581296 bytes).
 PDF statistics:
  97 PDF objects out of 1000 (max. 8388607)
  76 compressed objects within 1 object stream

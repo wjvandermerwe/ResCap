@@ -1,8 +1,8 @@
-PWD /Users/johan/Documents/personal/studies/Templates/full_latex_proj
+PWD /Users/johan/Documents/personal/studies/ResCap/templates/full_latex_proj
 INPUT /usr/local/texlive/2024/texmf.cnf
 INPUT /usr/local/texlive/2024/texmf-dist/web2c/texmf.cnf
 INPUT /usr/local/texlive/2024/texmf-var/web2c/pdftex/pdflatex.fmt
-INPUT /Users/johan/Documents/personal/studies/Templates/full_latex_proj/main.tex
+INPUT /Users/johan/Documents/personal/studies/ResCap/templates/full_latex_proj/main.tex
 OUTPUT main.log
 INPUT ./ProposalAndThesis.cls
 INPUT ProposalAndThesis.cls
