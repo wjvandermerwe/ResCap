@@ -18,7 +18,7 @@ def summarize_dataset(df: DataFrame, ds_name: str, sel_fac: callable, sel_num: c
     return summary
 
 
-def load_datasets() -> None:
+def extract_datasets() -> None:
     loader = SurvLoader()
     ds_lst = loader.df_ds['ds'].to_list()
     is_td_lst = loader.df_ds['is_td'].to_list()

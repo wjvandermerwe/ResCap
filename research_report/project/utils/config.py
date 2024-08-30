@@ -38,20 +38,23 @@ def load_datasets(folder: str, names: List[str]) -> Dict[str, DataFrame]:
 
 def get_train_dataset_indexes(folder: str) -> List[str]:
     folder_path = Path(folder)
-    return [file.stem for file in folder_path.glob("*_train.pkl")]
+    return [file.stem for file in folder_path.glob("*.pkl")]
 
 def get_test_dataset_indexes(folder: str) -> List[str]:
     folder_path = Path(folder)
-    return [file.stem for file in folder_path.glob("*_test.pkl")]
+    return [file.stem for file in folder_path.glob("*.pkl")]
 
 def get_generated_gan_train_dataset_indexes(folder: str) -> List[str]:
     folder_path = Path(folder)
-    return [file.stem for file in folder_path.glob("*_train_gan.pkl")]
+    return [file.stem for file in folder_path.glob("*_gan.pkl")]
 
 def get_generated_vae_dataset_indexes(folder: str) -> List[str]:
     folder_path = Path(folder)
-    return [file.stem for file in folder_path.glob("*_train_vae.pkl")]
+    return [file.stem for file in folder_path.glob("*_vae.pkl")]
 
+def get_generated_timevary_dataset_indexes(folder: str) -> List[str]:
+    folder_path = Path(folder)
+    return [file.stem for file in folder_path.glob("*_timegan.pkl")]
 
 checkpoint_file = 'checkpoint.txt'
 

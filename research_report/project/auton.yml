@@ -1,6 +1,7 @@
 name: research_project_auton_env
 channels:
   - conda-forge
+  - bcg_gamma
   - defaults
   - pytorch
 dependencies:
@@ -8,6 +9,8 @@ dependencies:
   - scipy=1.12.0
   - seaborn
   - matplotlib
+  - scikit-learn
+  - sklearndf
   - pip
   - pip:
     - git+https://github.com/autonlab/auton-survival.git

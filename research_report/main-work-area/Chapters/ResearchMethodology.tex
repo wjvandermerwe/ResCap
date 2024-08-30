@@ -19,7 +19,7 @@
 \begin{itemize}
 \item To evaluate how effectively the Random Survival Forest and Lasso-Cox models predict survival outcomes.
 \item To understand model behavior under varying conditions of data complexity and censoring rates.
-\item Document research practices when conducting this study.
+\item To understand the effects of data and simulation methods. 
 \end{itemize}
 
 \subsection{Data-generating mechanisms}
@@ -366,13 +366,6 @@ lifelines \parencite{davidson-pilon_lifelines_2024} & Popular library for surviv
     \item Compare survival curves from both models for specific covariate profiles.
     \item Analyze differences, especially in cases with high censoring or non-proportional hazards.
 \end{itemize}
-
-\subsection{Research Practice Evaluation}
-
-The core focus of this evaluation is not to interpret the effects or outcomes of the models in detail, but rather to ensure that the research practices applied throughout the simulation study are rigorous and well-documented. By concentrating on the methodological aspects, we aim to establish a reliable foundation for the simulation without delving into the specific interpretations of model results. This approach allows us to maintain objectivity and consistency in evaluating the effectiveness and validity of the simulation pipeline.
-\\\\
-\noindent To achieve this, a clear labeling strategy is employed, using abstract descriptions for each subprocess within the full simulation study. This labeling strategy helps in systematically categorizing and tracking the various steps, ensuring that every component of the simulation is transparently documented. The use of abstract labels also facilitates a higher-level understanding of the simulation process, making it easier to identify potential areas for refinement and ensuring that the entire workflow remains coherent and aligned with the study’s objectives.
-    
 
 \section{Limitations} \label{methlim}
 A massive limitation is that the research is tightly coupled, meaning the phases are strictly dependent on each other. This is an antipattern, \parencite{joshi_beginning_2016}, which should be planned to accommodate any failures during any of the research phases. In cases where results do not converge, or the interpretation is wrong, the tightly coupled nature of the research will also affect the preceding stages. Lastly the computation time, within the modern setting should not be a hindrance but the combination of multiple computational components like the DGM and the model execution and results evaluation, is important to take caution. 

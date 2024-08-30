@@ -2518,7 +2518,7 @@
     <bcf:citekey order="152" intorder="1">qi_effective_2023</bcf:citekey>
     <bcf:citekey order="153" intorder="1">qi_effective_2023</bcf:citekey>
     <bcf:citekey order="154" intorder="1">yanagisawa_proper_2023</bcf:citekey>
-    <bcf:citekey order="155" intorder="1">yanagisawa_proper_2023</bcf:citekey>
+    <bcf:citekey order="155" intorder="1">harrell__regression_2015</bcf:citekey>
     <bcf:citekey order="156" intorder="1">wilkinson_fair_2016</bcf:citekey>
     <bcf:citekey order="157" intorder="1">norcliffe_survivalgan_2023</bcf:citekey>
     <bcf:citekey order="158" intorder="1">jin_imputation_2024</bcf:citekey>
@@ -2526,11 +2526,12 @@
     <bcf:citekey order="160" intorder="1">qian_synthcity_2023</bcf:citekey>
     <bcf:citekey order="161" intorder="1">qian_synthcity_2023</bcf:citekey>
     <bcf:citekey order="162" intorder="1">qian_synthcity_2023</bcf:citekey>
-    <bcf:citekey order="171" intorder="1">nagpal_auton-survival_2022</bcf:citekey>
-    <bcf:citekey order="172" intorder="1">sebastian_polsterl_scikit-survival_2023</bcf:citekey>
-    <bcf:citekey order="173" intorder="1">scikit-learn</bcf:citekey>
-    <bcf:citekey order="174" intorder="1">davidson-pilon_lifelines_2024</bcf:citekey>
-    <bcf:citekey order="175" intorder="1">joshi_beginning_2016</bcf:citekey>
+    <bcf:citekey order="163" intorder="1">qian_synthcity_2023</bcf:citekey>
+    <bcf:citekey order="172" intorder="1">nagpal_auton-survival_2022</bcf:citekey>
+    <bcf:citekey order="173" intorder="1">sebastian_polsterl_scikit-survival_2023</bcf:citekey>
+    <bcf:citekey order="174" intorder="1">scikit-learn</bcf:citekey>
+    <bcf:citekey order="175" intorder="1">davidson-pilon_lifelines_2024</bcf:citekey>
+    <bcf:citekey order="176" intorder="1">joshi_beginning_2016</bcf:citekey>
   </bcf:section>
   <!-- SORTING TEMPLATES -->
   <bcf:sortingtemplate name="nty">

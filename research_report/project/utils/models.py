@@ -1,3 +1,5 @@
+import os
+
 import pandas as pd
 from lifelines import CoxPHFitter
 from sklearn.inspection import permutation_importance
@@ -6,22 +8,25 @@ import numpy as np
 from SurvivalEVAL.Evaluator import  ScikitSurvivalEvaluator, LifelinesEvaluator
 from matplotlib import pyplot as plt
 from lifelines import KaplanMeierFitter
-
-
+import matplotlib.pyplot as plt
+from sklearn.model_selection import KFold
+from lifelines import CoxPHFitter
+from lifelines.utils import concordance_index
+import joblib
 
 def run_cox_model(data, test_data):
     # Extract training and test event times and indicators
-    train_event_times = data['remainder__time'].values
-    train_event_indicators = data['remainder__event'].values
+    train_event_times = data['time'].values
+    train_event_indicators = data['event'].values
     test_event_times = test_data['time'].values
     test_event_indicators = test_data['event'].values
 
     # Fit the Cox Proportional Hazards model
     model = CoxPHFitter()
-    model.fit(data, duration_col='remainder__time', event_col='remainder__event')
+    model.fit(data, duration_col='time', event_col='event')
 
     # Print model summary for review
-    summary = model.print_summary()
+    # summary = model.print_summary()
 
     # Compute survival function, median survival, and partial hazards
     cox_survival_function = model.predict_survival_function(data)
@@ -38,48 +43,68 @@ def run_cox_model(data, test_data):
             'residual_data': model.compute_residuals(data, 'martingale'),
             'residual_type': 'Martingale'
         },
-        {
-            'model_name': 'Cox Model',
-            'residual_data': model.compute_residuals(data, 'delta_beta'),
-            'residual_type': 'Delta Beta'
-        },
-        {
-            'model_name': 'Cox Model',
-            'residual_data': model.compute_residuals(data, 'deviance'),
-            'residual_type': 'Deviance'
-        }
     ]
     # Check model assumptions - proportional hazards
     assumptions = model.check_assumptions(data)
-    return cox_survival_function, median, hazard, assumptions, residuals_info
+    return model, (cox_survival_function,train_event_times,train_event_indicators,test_event_times,test_event_indicators), median, hazard, assumptions, residuals_info
 
 
+def save_rsf_model_output(rsf_survival_function, hazard, feature_importance, output_dir, dataset_name):
+    """
+    Save the RSF model outputs to the specified directory.
+
+    :param rsf_survival_function: List of survival functions
+    :param hazard: List of cumulative hazard functions
+    :param feature_importance: DataFrame of feature importance
+    :param output_dir: Directory to save the output files
+    :param dataset_name: Name of the dataset (used in file names)
+    """
+
+    # Create the output directory if it doesn't exist
+    os.makedirs(output_dir, exist_ok=True)
+
+    # Save the survival function
+    survival_file = f"{output_dir}/{dataset_name}_rsf_survival_function.pkl"
+    joblib.dump(rsf_survival_function, survival_file)
+
+    # Save the hazard function
+    hazard_file = f"{output_dir}/{dataset_name}_rsf_hazard_function.pkl"
+    joblib.dump(hazard, hazard_file)
+
+    # Save the feature importance as a CSV file
+    feature_importance_file = f"{output_dir}/{dataset_name}_feature_importance.csv"
+    feature_importance.to_csv(feature_importance_file, index=True)
+
+    print(f"Outputs saved to {output_dir}")
 
 
 def run_rsf_model(data, test_data, random_state=42):
     # Drop 'pid' column from test data if present
     test_pre = test_data.drop(columns=['pid'], errors='ignore')
-
+    data_pre = data.drop(columns=['pid'], errors='ignore')
     # Prepare training and testing event times and indicators
-    train_event_times = data['remainder__time'].values
-    train_event_indicators = data['remainder__event'].values.astype(bool)  # Ensure boolean type
+    train_event_times = data_pre['time'].values
+    train_event_indicators = data_pre['event'].values.astype(bool)  # Ensure boolean type
     test_event_times = test_pre['time'].values
     test_event_indicators = test_pre['event'].values.astype(bool)
 
     # Prepare the structured array needed for RSF model input
-    y = np.array(list(zip(train_event_indicators, train_event_times)), dtype=[('event', 'bool'), ('time', 'float')])
+    y_train = np.array(list(zip(train_event_indicators, train_event_times)),
+                       dtype=[('event', 'bool'), ('time', 'float')])
+    y_test = np.array(list(zip(test_event_indicators, test_event_times)), dtype=[('event', 'bool'), ('time', 'float')])
 
     # Initialize and fit the Random Survival Forest model
     rsf = RandomSurvivalForest(
         n_estimators=1000, min_samples_split=10, min_samples_leaf=15, n_jobs=-1, random_state=random_state
     )
-    rsf.fit(X=data, y=y)
+    rsf.fit(X=data_pre, y=y_train)
+
     # Predict survival function and cumulative hazard function
-    rsf_survival_function = rsf.predict_survival_function(data)
-    hazard = rsf.predict_cumulative_hazard_function(data)
+    rsf_survival_function = rsf.predict_survival_function(data_pre)
+    hazard = rsf.predict_cumulative_hazard_function(data_pre)
 
     # Compute permutation importance to assess feature importance
-    result = permutation_importance(rsf, test_pre, test_event_indicators, n_repeats=15, random_state=random_state)
+    result = permutation_importance(rsf, test_pre, y_test, n_repeats=15, random_state=random_state)
     feature_importance = pd.DataFrame(
         {
             k: result[k]
@@ -87,36 +112,54 @@ def run_rsf_model(data, test_data, random_state=42):
         },
         index=test_pre.columns,
     ).sort_values(by="importances_mean", ascending=False)
-    return rsf_survival_function, hazard, feature_importance
+
+    return rsf, rsf_survival_function, hazard, feature_importance
 
 
+def save_metrics(metrics, output_dir, dataset_name):
+    """
+    Save the metrics to a CSV file.
+
+    :param metrics: Dictionary containing the calculated metrics.
+    :param output_dir: Directory to save the output file.
+    :param dataset_name: Name of the dataset (used in file name).
+    """
+
+    # Create the output directory if it doesn't exist
+    os.makedirs(output_dir, exist_ok=True)
+
+    # Convert metrics dictionary to DataFrame for easy saving
+    metrics_df = pd.DataFrame([metrics])
+
+    # Save the metrics to a CSV file
+    metrics_file = f"{output_dir}/{dataset_name}_metrics.csv"
+    metrics_df.to_csv(metrics_file, index=False)
+
+    print(f"Metrics saved to {metrics_file}")
 
 
 def run_metrics(cox_survival_function, rsf_survival_function, train_event_times, train_event_indicators, test_event_times, test_event_indicators):
     cox_model_evals = LifelinesEvaluator(cox_survival_function, train_event_times, train_event_indicators, test_event_times, test_event_indicators)
     rsf_model_evals = ScikitSurvivalEvaluator(rsf_survival_function, train_event_times, train_event_indicators, test_event_times, test_event_indicators)
 
-    concordance_cox = cox_model_evals.concordance()[0]
-    concordance_rsf = rsf_model_evals.concordance()[0]
+    metrics = {
+        "concordance_cox": cox_model_evals.concordance()[0],
+        "concordance_rsf": rsf_model_evals.concordance()[0],
+        "brier_cox": cox_model_evals.brier()[0],
+        "brier_rsf": rsf_model_evals.brier()[0],
+        "ibs_cox": cox_model_evals.integrated_brier_score()[0],
+        "ibs_rsf": rsf_model_evals.integrated_brier_score()[0],
+        "cox_one_cal": cox_model_evals.one_calibration(np.median(test_event_times)),
+        "rsf_one_cal": rsf_model_evals.one_calibration(np.median(test_event_times)),
+        "cox_d_cal": cox_model_evals.d_calibration(),
+        "rsf_d_cal": rsf_model_evals.d_calibration(),
+        "mae_cox": cox_model_evals.mae(),
+        "mae_rsf": rsf_model_evals.mae(),
+        "rmse_cox": cox_model_evals.rmse(),
+        "rmse_rsf": rsf_model_evals.rmse(),
+    }
 
-    brier_cox = cox_model_evals.brier()[0]
-    brier_rsf = rsf_model_evals.brier()[0]
-
-    ibs_cox = cox_model_evals.integrated_brier_score()[0]
-    ibs_rsf = rsf_model_evals.integrated_brier_score()[0]
-
-    median_time = np.median(test_event_times)
-    cox_one_cal = cox_model_evals.one_calibration(median_time)
-    rsf_one_cal = rsf_model_evals.one_calibration(median_time)
-
-    cox_d_cal = cox_model_evals.d_calibration()
-    rsf_d_cal = rsf_model_evals.d_calibration()
-
-    mae_cox = cox_model_evals.mae()
-    mae_rsf = rsf_model_evals.mae()
-
-    rmse_cox = cox_model_evals.rmse()
-    rmse_rsf = rsf_model_evals.rmse()
+    return metrics
 
 
 def plot_calibration_curve(cox_1, cox_2, rsf_1, rsf_2):
@@ -236,14 +279,6 @@ def plot_model_residuals(residuals_info):
     plt.tight_layout()
     plt.show()
 
-import numpy as np
-import pandas as pd
-import matplotlib.pyplot as plt
-from sklearn.model_selection import KFold
-from lifelines import CoxPHFitter
-from sksurv.ensemble import RandomSurvivalForest
-from lifelines.utils import concordance_index
-
 def cross_validate_and_plot(models, X, y, n_splits=5):
     kf = KFold(n_splits=n_splits, shuffle=True, random_state=42)
     results = {name: [] for name in models.keys()}
@@ -277,20 +312,3 @@ def cross_validate_and_plot(models, X, y, n_splits=5):
     plt.legend()
     plt.grid(True)
     plt.show()
-
-# Example Usage
-X = pd.DataFrame({
-    'feature1': np.random.normal(size=100),
-    'feature2': np.random.normal(size=100),
-})
-y = pd.DataFrame({
-    'time': np.random.exponential(10, size=100),
-    'event': np.random.randint(0, 2, size=100),
-})
-
-models = {
-    'CoxPH': CoxPHFitter(),
-    'RSF': RandomSurvivalForest(n_estimators=100, min_samples_split=10)
-}
-
-cross_validate_and_plot(models, X, y)

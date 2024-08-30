@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.26 (MiKTeX 24.4) (preloaded format=pdflatex 2024.8.8)  24 AUG 2024 19:02
+This is pdfTeX, Version 3.141592653-2.6-1.40.26 (MiKTeX 24.4) (preloaded format=pdflatex 2024.8.8)  30 AUG 2024 21:21
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -1091,7 +1091,7 @@ Package hyperref Info: Link coloring ON on input line 131.
 
 
 1: section
-<Figures/logoWitsstackedcolourtransparent.png, id=206, 1581.91pt x 1648.1575pt>
+<Figures/logoWitsstackedcolourtransparent.png, id=198, 1581.91pt x 1648.1575pt>
 File: Figures/logoWitsstackedcolourtransparent.png Graphic file (type png)
 <use Figures/logoWitsstackedcolourtransparent.png>
 Package pdftex.def Info: Figures/logoWitsstackedcolourtransparent.png  used on input line 152.
@@ -1106,7 +1106,7 @@ Package pdftex.def Info: Figures/logoWitsstackedcolourtransparent.png  used on i
 --------------------
  Declaration
 --------------------
-<Figures/sign.png, id=217, 206.7725pt x 145.54375pt>
+<Figures/sign.png, id=209, 206.7725pt x 145.54375pt>
 File: Figures/sign.png Graphic file (type png)
 <use Figures/sign.png>
 Package pdftex.def Info: Figures/sign.png  used on input line 195.
@@ -1211,7 +1211,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 6--15
 
 
 ]
-<Figures/ML_STATS_MODELS.jpg, id=347, 1423.3175pt x 1746.525pt>
+<Figures/ML_STATS_MODELS.jpg, id=335, 1423.3175pt x 1746.525pt>
 File: Figures/ML_STATS_MODELS.jpg Graphic file (type jpg)
 <use Figures/ML_STATS_MODELS.jpg>
 Package pdftex.def Info: Figures/ML_STATS_MODELS.jpg  used on input line 18.
@@ -1232,9 +1232,9 @@ Underfull \hbox (badness 10000) in paragraph at lines 24--29
 
 
 
-[4]
+[4])
 
-[5])
+[5]
 
 [6]
 \openout2 = `Chapters/LiteratureReview.aux'.
@@ -1426,7 +1426,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 95--98
 [15]
 
 [16]
-<Figures/OBLIQUE_SUMMARY.png, id=501, 1027.84pt x 568.1225pt>
+<Figures/OBLIQUE_SUMMARY.png, id=488, 1027.84pt x 568.1225pt>
 File: Figures/OBLIQUE_SUMMARY.png Graphic file (type png)
 <use Figures/OBLIQUE_SUMMARY.png>
 Package pdftex.def Info: Figures/OBLIQUE_SUMMARY.png  used on input line 101.
@@ -1456,7 +1456,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 111--114
 
 
 [18]
-<Figures/FAIR_PRINCIPLES.png, id=521, 502.87875pt x 304.13625pt>
+<Figures/FAIR_PRINCIPLES.png, id=508, 502.87875pt x 304.13625pt>
 File: Figures/FAIR_PRINCIPLES.png Graphic file (type png)
 <use Figures/FAIR_PRINCIPLES.png>
 Package pdftex.def Info: Figures/FAIR_PRINCIPLES.png  used on input line 121.
@@ -1466,7 +1466,7 @@ Package pdftex.def Info: Figures/FAIR_PRINCIPLES.png  used on input line 121.
 [19 <./Figures/FAIR_PRINCIPLES.png>]
 
 [20]
-<Figures/GAN_ARCH.png, id=542, 835.12pt x 335.2525pt>
+<Figures/GAN_ARCH.png, id=529, 835.12pt x 335.2525pt>
 File: Figures/GAN_ARCH.png Graphic file (type png)
 <use Figures/GAN_ARCH.png>
 Package pdftex.def Info: Figures/GAN_ARCH.png  used on input line 133.
@@ -1478,7 +1478,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 138--141
 
  []
 
-<Figures/COMPETING1.png, id=554, 481.8pt x 810.02625pt>
+<Figures/COMPETING1.png, id=541, 481.8pt x 810.02625pt>
 File: Figures/COMPETING1.png Graphic file (type png)
 <use Figures/COMPETING1.png>
 Package pdftex.def Info: Figures/COMPETING1.png  used on input line 144.
@@ -1509,7 +1509,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 6--9
 
  []
 
-<Figures/METHOD_GRAPH.png, id=600, 759.83875pt x 371.3875pt>
+<Figures/METHOD_GRAPH.png, id=587, 759.83875pt x 371.3875pt>
 File: Figures/METHOD_GRAPH.png Graphic file (type png)
 <use Figures/METHOD_GRAPH.png>
 Package pdftex.def Info: Figures/METHOD_GRAPH.png  used on input line 12.
@@ -1618,159 +1618,128 @@ Underfull \hbox (badness 10000) in paragraph at lines 195--199
 
 
 [37]
-LaTeX Font Info:    Trying to load font information for T1+cmtt on input line 216.
+
+[38]
+LaTeX Font Info:    Trying to load font information for T1+cmtt on input line 219.
  (C:\Users\johan\AppData\Local\Programs\MiKTeX\tex/latex/base\t1cmtt.fd
 File: t1cmtt.fd 2023/04/13 v2.5m Standard LaTeX font definitions
 )
-Underfull \hbox (badness 10000) in paragraph at lines 212--219
+Underfull \hbox (badness 10000) in paragraph at lines 215--222
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 212--219
+Underfull \hbox (badness 10000) in paragraph at lines 215--222
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 212--219
-
- []
-
-
-
-[38]
-Underfull \hbox (badness 10000) in paragraph at lines 223--236
-
- []
-
-
-Overfull \hbox (4.14317pt too wide) in paragraph at lines 223--236
-\T1/ppl/m/it/12 Data Overview \T1/ppl/m/n/12 The dataset's di-men-sions, in-clud-ing the num-ber of rows and columns,
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 223--236
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 223--236
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 223--236
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 223--236
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 223--236
+Underfull \hbox (badness 10000) in paragraph at lines 215--222
 
  []
 
 
 
 [39]
+Underfull \hbox (badness 10000) in paragraph at lines 226--239
+
+ []
+
+
+Overfull \hbox (4.14317pt too wide) in paragraph at lines 226--239
+\T1/ppl/m/it/12 Data Overview \T1/ppl/m/n/12 The dataset's di-men-sions, in-clud-ing the num-ber of rows and columns,
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 226--239
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 226--239
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 226--239
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 226--239
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 226--239
+
+ []
+
+
 
 [40]
-<Figures/SynthCity.png, id=757, 485.56406pt x 155.07938pt>
+<Figures/SynthCity.png, id=743, 485.56406pt x 155.07938pt>
 File: Figures/SynthCity.png Graphic file (type png)
 <use Figures/SynthCity.png>
-Package pdftex.def Info: Figures/SynthCity.png  used on input line 244.
+Package pdftex.def Info: Figures/SynthCity.png  used on input line 247.
 (pdftex.def)             Requested size: 330.17918pt x 105.45256pt.
 
-Underfull \hbox (badness 10000) in paragraph at lines 248--258
+
+LaTeX Warning: `h' float specifier changed to `ht'.
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 251--261
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 248--258
+Underfull \hbox (badness 10000) in paragraph at lines 251--261
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 248--258
+Underfull \hbox (badness 10000) in paragraph at lines 251--261
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 248--258
+Underfull \hbox (badness 10000) in paragraph at lines 251--261
 
  []
 
 
 
-[41 <./Figures/SynthCity.png>]
+[41]
 
-[42]
-Overfull \hbox (7.5982pt too wide) in paragraph at lines 266--267
+[42 <./Figures/SynthCity.png>]
+Overfull \hbox (7.5982pt too wide) in paragraph at lines 269--270
 \T1/ppl/m/n/12 For this sec-tion I out-line the steps For run-ning the mod-els on the loaded and preperad
  []
 
 
-Underfull \hbox (badness 1540) in paragraph at lines 279--279
+Underfull \hbox (badness 1540) in paragraph at lines 282--282
 \T1/ppl/m/n/12 that in-cludes Kaplan-Meier, Nelson-
- []
-
-
-Overfull \hbox (32.50308pt too wide) in paragraph at lines 295--296
-[]\T1/ppl/m/n/12 Check the pro-por-tional haz-ards as-sump-tion with \T1/cmtt/m/n/12 lifelines.check_assumptions()\T1/ppl/m/n/12 . 
  []
 
 
 
 [43]
+Overfull \hbox (32.50308pt too wide) in paragraph at lines 292--293
+[]\T1/ppl/m/n/12 Check the pro-por-tional haz-ards as-sump-tion with \T1/cmtt/m/n/12 lifelines.check_assumptions()\T1/ppl/m/n/12 . 
+ []
+
+
 
 [44]
-Overfull \hbox (10.00974pt too wide) in paragraph at lines 373--374
-[]\T1/ppl/m/n/12 Analyze dif-fer-ences, es-pe-cially in cases with high cen-sor-ing or non-proportional
- []
-
-
 
 [45]
-Underfull \hbox (badness 3449) in paragraph at lines 397--397
-[]|\T1/ppl/m/n/12 General la-bel for eval-u-at-ing model per-for-mance
+Overfull \hbox (10.00974pt too wide) in paragraph at lines 367--368
+[]\T1/ppl/m/n/12 Analyze dif-fer-ences, es-pe-cially in cases with high cen-sor-ing or non-proportional
  []
-
-
-Underfull \hbox (badness 1210) in paragraph at lines 404--404
-[]|\T1/ppl/m/n/12 Compiling and sum-ma-riz-ing re-sults from var-i-ous
- []
-
-
-Underfull \hbox (badness 5133) in paragraph at lines 405--405
-[]|\T1/ppl/m/n/12 Documenting pro-cesses, de-ci-sions, and find-ings
- []
-
-
-Underfull \hbox (badness 2644) in paragraph at lines 406--406
-[]|\T1/ppl/m/n/12 Comparing re-sults from dif-fer-ent mod-els or ap-
- []
-
-
-Overfull \hbox (107.32077pt too wide) in paragraph at lines 384--408
- [][] 
- []
-
-
-LaTeX Warning: Float too large for page by 55.22371pt on input line 410.
-
-
-LaTeX Warning: `!h' float specifier changed to `!ht'.
 
 )
 
 [46]
-
-[47]
-
-[48]
 \openout2 = `Chapters/ResultsAndDiscussion.aux'.
 
  (Chapters/ResultsAndDiscussion.tex
@@ -1778,7 +1747,7 @@ Chapter 4.
 )
 
 1: section
-[49
+[47
 
 
 
@@ -1791,7 +1760,7 @@ Chapter 5.
 )
 
 1: section
-[50
+[48
 
 
 
@@ -1804,13 +1773,13 @@ Overfull \hbox (5.339pt too wide) in paragraph at lines 368--368
 
 
 1: section
-[51
+[49
 
 
 
 ]
 
-[52]
+[50]
 Overfull \hbox (2.77766pt too wide) in paragraph at lines 368--368
 []\T1/ppl/m/n/12 Chirag Nag-pal, Willa Po-to-snak, and Ar-tur Dubrawski. \T1/ppl/m/it/12 auton-survival: an Open-
  []
@@ -1827,7 +1796,7 @@ Overfull \hbox (26.94223pt too wide) in paragraph at lines 368--368
 
 
 
-[53]
+[51]
 Overfull \hbox (54.43378pt too wide) in paragraph at lines 368--368
 []\T1/ppl/m/n/12 Shi-ang Qi et al. \T1/ppl/m/it/12 An Ef-fec-tive Mean-ing-ful Way to Eval-u-ate Sur-vival Mod-els\T1/ppl/m/n/12 . arXiv:2306.01196
  []
@@ -1839,7 +1808,7 @@ Overfull \hbox (8.1833pt too wide) in paragraph at lines 368--368
 
 
 
-[54]
+[52]
 Overfull \hbox (4.548pt too wide) in paragraph at lines 368--368
 \T1/ppl/m/n/12 man-age-ment and stew-ard-ship^^Q. en. In: \T1/ppl/m/it/12 Sci-en-tific Data \T1/ppl/m/n/12 3.1 (Mar. 2016), p. 160018.
  []
@@ -1856,7 +1825,7 @@ Overfull \hbox (7.80981pt too wide) in paragraph at lines 368--368
 
 
 
-[55] (main.aux (Chapters/Introduction.aux) (Chapters/LiteratureReview.aux) (Chapters/ResearchMethodology.aux) (Chapters/ResultsAndDiscussion.aux) (Chapters/Conclusion.aux))
+[53] (main.aux (Chapters/Introduction.aux) (Chapters/LiteratureReview.aux) (Chapters/ResearchMethodology.aux) (Chapters/ResultsAndDiscussion.aux) (Chapters/Conclusion.aux))
  ***********
 LaTeX2e <2024-06-01> patch level 2
 L3 programming layer <2020/03/25>
@@ -1869,23 +1838,23 @@ LaTeX Warning: There were undefined references.
 LaTeX Warning: There were multiply-defined labels.
 
 Package rerunfilecheck Info: File `main.out' has not changed.
-(rerunfilecheck)             Checksum: F98324538AA76FC8AED1CFD427829E47;8370.
+(rerunfilecheck)             Checksum: 2B18DA4DE985A3A90F503428544B4A5B;7971.
 Package logreq Info: Writing requests to 'main.run.xml'.
 \openout1 = `main.run.xml'.
 
  ) 
 Here is how much of TeX's memory you used:
- 42440 strings out of 473899
- 943399 string characters out of 5726501
- 1945960 words of memory out of 5000000
- 64427 multiletter control sequences out of 15000+600000
+ 42425 strings out of 473899
+ 943178 string characters out of 5726501
+ 1944960 words of memory out of 5000000
+ 64421 multiletter control sequences out of 15000+600000
  599291 words of font info for 111 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
  100i,20n,101p,2927b,3023s stack positions out of 10000i,1000n,20000p,200000b,200000s
  <C:\Users\johan\AppData\Local\MiKTeX\fonts/pk/ljfour/jknappen/ec/dpi600\ectt1200.pk><C:/Users/johan/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmex10.pfb><C:/Users/johan/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmmi10.pfb><C:/Users/johan/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmr10.pfb><C:/Users/johan/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmsy10.pfb><C:/Users/johan/AppData/Local/Programs/MiKTeX/fonts/type1/public/mathpazo/fplmr.pfb><C:/Users/johan/AppData/Local/Programs/MiKTeX/fonts/type1/public/mathpazo/fplmri.pfb><C:/Users/johan/AppData/Local/Programs/MiKTeX/fonts/type1/urw/palatino/uplb8a.pfb><C:/Users/johan/AppData/Local/Programs/MiKTeX/fonts/type1/urw/palatino/uplr8a.pfb><C:/Users/johan/AppData/Local/Programs/MiKTeX/fonts/type1/urw/palatino/uplri8a.pfb>
-Output written on main.pdf (62 pages, 1521436 bytes).
+Output written on main.pdf (60 pages, 1515525 bytes).
 PDF statistics:
- 1094 PDF objects out of 1200 (max. 8388607)
- 235 named destinations out of 1000 (max. 500000)
- 458 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 1068 PDF objects out of 1200 (max. 8388607)
+ 226 named destinations out of 1000 (max. 500000)
+ 442 words of extra memory for PDF output out of 10000 (max. 10000000)
 
