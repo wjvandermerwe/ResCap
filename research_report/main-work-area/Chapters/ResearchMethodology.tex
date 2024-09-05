@@ -1,5 +1,5 @@
 \chapter{Research Methodology}
-\label{Chapter2} % For referencing this chapter elsewhere, use \ref{Chapter3}
+\label{Chapter3} % For referencing this chapter elsewhere, use \ref{Chapter3}
 
 \section{Research design} \label{design}
 
@@ -218,33 +218,22 @@ The Logarithmic Score \parencite{yanagisawa_proper_2023} is used for models that
 \\\\
 \noindent SurvSet organizes datasets using a SurvLoader class, which simplifies loading and accessing data. Each dataset includes core columns like \texttt{pid} (unique ID), \texttt{event} (whether the event occurred), and \texttt{time} (time to event or censoring). Features are clearly marked as either numerical (num\_\{\}) or categorical (fac\_\{\}), ensuring a smooth integration with various ML algorithms. This consistent structure across all datasets in SurvSet made it my go-to source for accurate and reliable survival analysis in my project.
 \\\\
-\noindent Furthermore, when selecting the dataset censoring levels, FAIR principles \parencite{wilkinson_fair_2016}, reproducibility by assessing data simulation accuracy similar to the KM-Divergence metric used by \parencite{norcliffe_survivalgan_2023} are all important considerations. Utilizing this approach voids the need to carefully assess the ethical implications of using the datasets as these datasets should be under public licensed availability. Lastly, I don't foresee data preprocessing steps, being necessary, as DGM for simulation are commonly categorized as postprocessing \parencite{jin_imputation_2024}.
+\noindent Furthermore, when selecting the dataset censoring levels, FAIR principles \parencite{wilkinson_fair_2016}, reproducibility by assessing data simulation accuracy similar to the KM-Divergence metric used by \parencite{norcliffe_survivalgan_2023} are all important considerations. Utilizing this approach voids the need to carefully assess the ethical implications of using the datasets as these datasets should be under public licensed availability. Lastly, I don't foresee data pre-processing steps, being necessary, as DGM for simulation are commonly categorized as postprocessing \parencite{jin_imputation_2024}.
 
 
 \section{Methods} \label{methods}
-\subsection{Exploratory Analysis}
-Exploratory Data Analysis (EDA) is a crucial first step to discover key considerations for contributing covariates and potential implications. In line with the principles outlined in \parencite{harrell__regression_2015}, this EDA focuses on a detailed examination of the survival data's structure, distribution, and key features such as outliers, missing values, and multicollinearity, that could impact the performance and validity of our regression models.
-\\\\
-\noindent \textit{Data Overview} The dataset's dimensions, including the number of rows and columns, are first examined to understand its size. Next, we verify the data types of each column (such as time, event, and covariates) to ensure they are appropriate for analysis. Additionally, we identify and assess missing values across the dataset, visualizing these patterns using a heatmap or matrix plot to uncover any systematic issues.
-\\\\
-\noindent \textit{Target Variable Analysis (Survival Time and Event Status)} For the survival time (time), summary statistics such as mean, median, range, and standard deviation are calculated. We then plot the distribution of survival times using a histogram or density plot to visualize these statistics. For the event status (event), the proportion of events versus censored cases is determined and visualized through a bar chart to understand the distribution of event occurrences.
-\\\\
-\noindent \textit{Univariate Analysis of Covariates} In the univariate analysis, summary statistics for each numerical covariate are calculated, including the mean, median, minimum, and maximum values. These statistics are further visualized through histograms or density plots to assess their distributions. For categorical covariates, we count the frequency of each category and visualize the distribution using bar charts.
-\\\\
-\noindent \textit{Bivariate Analysis} To explore relationships between survival time and covariates, scatter plots are created for numerical covariates, while box plots are used to compare survival times across different levels of categorical covariates. For the event status versus covariates, bar charts or stacked bar charts are used to visualize the distribution of event status across categorical covariates. Violin plots or box plots are also employed to assess the distribution of numerical covariates within each event status, such as comparing values for censored versus event occurred.
-\\\\
-\noindent \textit{Censoring Analysis} Censoring is analyzed by calculating and visualizing the overall censoring level in the dataset, expressed as the percentage of censored observations. Additionally, we explore how censoring is distributed across different covariates by creating grouped bar charts or box plots.
-\\\\
-\noindent \textit{Correlation Analysis} For numerical covariates, a correlation matrix is calculated and visualized using a heatmap to identify relationships between variables. For categorical covariates, relationships with numerical covariates are explored using point-biserial correlations, while Chi-square tests are used where appropriate to examine relationships between categorical variables.
+\subsection{Data Pre-Processing and Simulation}
+\subsubsection*{Data formatting for simulation models}
 
-\subsection{Data Processing and Simulation}
+\noindent The preprocessing stage is a critical component of the data pipeline, ensuring that the data is clean, consistent, and ready for the simulation models. The \texttt{preprocess} step uses built-in transformations from the scikit-learn library a foundational component for most of the softwares used in the study. Specific processing steps tailored to categorical and numerical columns are:
+\\\\
+\noindent There are Column-Specific Pipelines for categorical and numerical columns. Categorical features, identified by the prefix \texttt{fac\_}, are one-hot encoded using the \texttt{OneHotEncoder}, while numerical features, identified by the prefix \texttt{num\_}, are imputed using the median value and then standardized with \texttt{StandardScaler}. The preprocessing is implemented using \texttt{ColumnTransformer}, which allows for the application of different preprocessing steps to different subsets of the columns, while also allowing passthrough of untransformed columns.
 
-\subsubsection*{Data Processing}
 \subsubsection*{Simulation}
-For the simulation, I utilized the Synthcity library \parencite{qian_synthcity_2023}. Synthcity is an open-source package designed for generating and evaluating synthetic data across various data modalities, including static data, regular and irregular time series, and censored data. It provides a unified platform for innovative use cases in machine learning fairness, privacy, and data augmentation. The library was chosen for its comprehensive support of survival analysis and synthetic data generation, making it an ideal tool for this study.
+For the simulation, I utilized the Synthcity library \parencite{qian_synthcity_2023}. Synthcity is an open-source package designed for generating and evaluating synthetic data across various data modalities, including static data, regular and irregular time series, and censored data. It provides a unified platform for innovative use cases in machine learning fairness, privacy, and data augmentation. The library was chosen for its comprehensive support of survival data and synthetic data generation, making it an ideal tool for this study.
 \begin{figure}[h]
     \centering
-    \includegraphics[scale=0.68]{Figures/SynthCity.png}
+    \includegraphics[width=\linewidth]{Figures/SynthCity.png}
     \caption{\parencite{qian_synthcity_2023} Simulation Pipeline.}
 \end{figure}
 
@@ -260,9 +249,57 @@ The simulation pipeline is designed to effectively generate synthetic survival d
 \noindent \textit{Evaluation of Synthetic Data.} The final component of the pipeline involves evaluating the synthetic data using the \texttt{Metrics} class provided by Synthcity. The design focuses on several key evaluation aspects:
 \begin{itemize}
     \item Fidelity Metrics: The \texttt{Metrics} class is utilized to assess how closely the synthetic data resembles the original data. Metrics such as distributional similarity and survival curve alignment are critical for determining data fidelity. 
-    \item Utility Evaluation: The utility of the synthetic data for downstream tasks is tested by applying standard machine learning models to the generated data and comparing performance against models trained on real data. 
+    \item Statistical Evaluation: The utility of the synthetic data for downstream tasks is tested by applying standard statistical models to the generated data and test performance. 
     \item Privacy Considerations: Privacy is a major concern in synthetic data generation. The \texttt{Metrics} class includes tools to evaluate the privacy of the synthetic data, such as assessing the risk of re-identification or leakage of sensitive information. 
 \end{itemize}
+\subsubsection*{Data processing}
+\noindent \textit{Stratified Train-Test Split.} The process of splitting the data into training and testing sets is crucial for ensuring the validity and reliability of the model evaluation. 
+\begin{itemize}
+    \item Stratification Based on Event and Time Binning: The function creates a temporary stratification label that combines the event indicator with a discretized version of the time variable. This ensures that the train and test sets maintain similar distributions with respect to the key features, particularly in datasets where time-dependent covariates are present.
+    \item Handling Time-Dependent Features: For datasets with time-dependent features, the function includes an additional layer of stratification by incorporating a censoring indicator. This stratification approach ensures that the complex relationships between time, event occurrence, and censoring are preserved across the split.
+    \item Robust Splitting Strategy: The function first attempts a stratified split, preserving the distribution of the stratification label across the training and testing sets. If the stratified split is not feasible (e.g., due to insufficient data points in some strata), the function falls back to a random split to ensure the process is completed without errors.
+    \item Clean-Up and Return: After performing the split, the temporary stratification labels are removed from the resulting datasets to prevent any unintended impact on subsequent analyses. The function returns the training and testing datasets, ready for further processing or model training.
+\end{itemize}
+
+
+
+\subsection{Exploratory Data Analysis (EDA)}
+
+Exploratory Data Analysis (EDA) is a crucial first step to discover key considerations for contributing covariates and potential implications. In line with the principles outlined in \parencite{harrell__regression_2015}, this EDA focuses on a detailed examination of the survival data's structure, distribution, and key features such as outliers, missing values, and multicollinearity, that could impact the performance and validity of our regression models.
+
+\subsubsection*{Phenotyping and Cluster Analysis}
+
+Numerical features within the dataset are identified, and clustering is performed using the \texttt{ClusteringPhenotyper} from the Auton\_survival \parencite{nagpal_auton-survival_2022} library. The dataset is clustered using the k-means algorithm with PCA for dimensionality reduction. Cluster labels are then added to the dataset, allowing for subsequent analysis of cluster distribution and cluster profile analysis. The distribution of clusters is visualized using count plots, and the mean values of numerical features within each cluster are analyzed and visualized through bar plots.
+
+\subsubsection*{Cluster Survival Analysis Plots}
+
+Survival analysis algorithm are then performed by plotting Kaplan-Meier survival curves and Nelson-Aalen cumulative hazard functions from the Auton\_survival Library \parencite{nagpal_auton-survival_2022}. The Kaplan-Meier estimator provides a non-parametric estimate of the survival function, and is plotted for different covariate groups. The Nelson-Aalen estimator, which estimates the cumulative hazard function, is similarly plotted across different groups. These plots allow for comparison of survival probabilities and hazard rates across different covariate profiles, providing insights into how different factors influence survival outcomes.
+
+
+\subsubsection*{Target Variable Analysis (Survival Time and Event Status)}
+
+For the survival time (\texttt{time}), summary statistics such as mean, median, range, and standard deviation are calculated. The distribution of survival times is visualized through histograms or density plots to provide insights into the time-to-event data. For the event status (\texttt{event}), the proportion of events versus censored cases is determined and visualized with boxplots, providing an understanding of the distribution of event occurrences.
+
+\subsubsection*{Univariate Analysis of Covariates}
+
+In the univariate analysis, summary statistics for each numerical covariate are calculated, including measures such as mean, median, minimum, and maximum values. The distributions of these numerical covariates are visualized using histograms or density plots. 
+
+\subsubsection*{Bivariate Analysis}
+
+Bivariate analysis explores the relationships between survival time and covariates \parencite{harrell__regression_2015}. For numerical covariates, scatter plots are created to visualize the relationship between survival time and each covariate. 
+
+\subsubsection*{Censoring Analysis}
+
+Censoring is analyzed by calculating and visualizing the overall censoring level in the dataset, expressed as the percentage of censored observations. The distribution of censoring across different covariates is explored.
+\subsubsection*{Correlation Analysis}
+For all covariates, a correlation matrix is calculated and visualized using a heatmap to identify relationships between variables \parencite{harrell__regression_2015}. A correlation matrix is a square matrix that displays the Pearson correlation coefficients between pairs of variables. Each element in the matrix, denoted as \( r_{xy} \), represents the correlation between variables \( x \) and \( y \) \parencite{harrell__regression_2015}. The Pearson correlation coefficient is calculated using the formula:
+
+\[
+r_{xy} = \frac{\sum (x_i - \bar{x})(y_i - \bar{y})}{\sqrt{\sum (x_i - \bar{x})^2 \sum (y_i - \bar{y})^2}}
+\]
+
+\noindent where \( x_i \) and \( y_i \) are individual data points, and \( \bar{x} \) and \( \bar{y} \) are the means of the variables \( x \) and \( y \), respectively. The resulting matrix helps in identifying potential multicollinearity issues and understanding the relationships between different features in a dataset.
+
 
 \subsection{Survival Analysis: Model Application and Evaluation}
 
@@ -286,89 +323,30 @@ lifelines \parencite{davidson-pilon_lifelines_2024} & Popular library for surviv
 
 \subsubsection*{Cox Proportional Hazards (CoxPH) Model}
 
-\paragraph*{Model Fitting}
-\begin{itemize}
-    \item Fit the CoxPH model using the \texttt{lifelines} library.
-    \item Check the proportional hazards assumption with \texttt{lifelines.check\_assumptions()}.
-\end{itemize}
+\textit{Model Fitting} The Cox Proportional Hazards (CoxPH) model will be fitted using the \texttt{lifelines} library in Python, which is a well-established tool for survival analysis. The primary goal of fitting the CoxPH model is to explore the relationship between covariates and the hazard function, which represents the risk of an event occurring over time.
+\\\\
+\noindent \textit{Lasso Regularization} To enhance the interpretability of the CoxPH model and prevent overfitting, Lasso regularization (L1 penalty) will be applied during the model fitting process. By incorporating Lasso, less important covariates' coefficients are shrunk to zero, effectively performing feature selection \parencite{tibshirani_regression_1996}
+\\\\
+\noindent \textit{Effect of Lasso on Model Performance} Applying Lasso regularization is expected to reduce model complexity by selecting a subset of relevant covariates, potentially improving both interpretability and generalizability. To assess the impact of Lasso on the CoxPH model's performance, the concordance index (C-index) will be computed and compared before and after regularization. Additionally, the selected covariates will be analyzed to understand their influence on the model, providing insights into which factors are most critical in predicting survival outcomes.
+\\\\
+\noindent \textit{Survival Curve} After fitting the CoxPH model, the survival function will be predicted for various covariate profiles using the \texttt{lifelines.plot\_covariate\_groups()} method. Survival curves, which depict the probability of survival over time, will be plotted for different covariate configurations. These curves offer a visual interpretation of the model's predictions and allow for comparisons across different subgroups. This step is crucial for understanding how specific covariates impact the survival probability and for identifying any significant differences in survival outcomes across different populations.
+\\\\
+\noindent \textit{Assumption Checking} The proportional hazards assumption, a critical assumption of the CoxPH model, will be validated using Schoenfeld residuals. This validation is essential to ensure that the model's assumptions hold true across the dataset. In cases where violations of this assumption are detected, adjustments, such as stratified models, may be considered to address these issues. This step is vital for ensuring the reliability and validity of the CoxPH model's predictions.
 
-\paragraph*{Lasso Regularization}
-\begin{itemize}
-    \item Apply Lasso regularization (L1 penalty) during the fitting process to perform feature selection by shrinking coefficients of less important covariates to zero.
-    \item Use the \texttt{lifelines.CoxPHFitter(penalizer=penalty)} with a chosen penalty term to control the amount of regularization applied. 
-    \item Use metrics like the cross-validation score
-\end{itemize}
-
-\paragraph*{Effect of Lasso on Model Performance}
-\begin{itemize}
-    \item Lasso regularization can help reduce model complexity by selecting a subset of relevant covariates, which may improve the interpretability and generalization of the CoxPH model.
-    \item Evaluate the impact of Lasso on model performance by comparing the concordance index (C-index) and analyzing the selected covariates.
-\end{itemize}
-
-
-\paragraph*{Survival Curve Prediction}
-\begin{itemize}
-    \item Predict survival function using \texttt{predict\_survival\_function()}.
-    \item Plot survival curves for different covariate profiles.
-\end{itemize}
-
-
-\paragraph*{Covariate Contribution Analysis}
-\begin{itemize}
-    \item Use \texttt{lifelines.plot\_covariate\_groups()} to visualize covariate impact.
-    \item Create boxplots to analyze covariate effects on the hazard ratio.
-\end{itemize}
-
-\paragraph*{Model Evaluation}
-\begin{itemize}
-    \item Compute concordance index (C-index) for model performance.
-    \item Evaluate model performance across different levels of censoring.
-    \item Perform stratified analysis based on different censoring levels.
-    \item Validate model with cross-validation or bootstrap methods.
-\end{itemize}
-
-\paragraph*{Assumption Checking}
-\begin{itemize}
-    \item Validate proportional hazards assumption with Schoenfeld residuals.
-    \item Explore any violations and consider adjustments like stratified models.
-\end{itemize}
 
 \subsubsection*{Random Survival Forest (RSF) Model}
+\noindent \textit{Model Fitting} The Random Survival Forest (RSF) model will be fitted using the \texttt{scikit-survival} library, which is designed for survival analysis with decision trees. The RSF model is a non-parametric alternative to the CoxPH model, capable of handling complex relationships between covariates and the survival outcome without assuming proportional hazards. Model parameters, such as the number of trees and maximum depth, will be tuned to optimize the model's performance. This tuning process is critical for building a robust RSF model that accurately captures the underlying survival patterns in the data.
+\\\\
+\noindent \textit{Survival Curve Prediction} Once the RSF model is fitted, survival curves will be predicted for each observation, providing a detailed view of the survival probability over time. These survival probabilities will be aggregated and plotted across different covariate profiles to visualize how the RSF model's predictions vary across the population. This step is crucial for comparing the RSF model's performance with that of the CoxPH model and for identifying any significant differences in survival predictions.
+\\\\
+\noindent \textit{Variable Importance} To understand which covariates contribute most significantly to the RSF model's predictions, the \texttt{variable\_importance\_} attribute will be analyzed. This analysis will provide insights into the relative importance of each covariate in predicting survival outcomes. Visualization of importance scores using plots will help identify the most influential covariates and assess their impact on the model's predictions. This analysis is essential for interpreting the RSF model and understanding the factors that drive survival predictions.
+\\\\
 
-\paragraph*{Model Fitting}
-\begin{itemize}
-    \item Fit the RSF model using a the library \texttt{scikit-survival}.
-    \item Tune model parameters (e.g., number of trees, max depth).
-\end{itemize}
-
-\paragraph*{Survival Curve Prediction}
-\begin{itemize}
-    \item Predict survival curves for each observation.
-    \item Aggregate and plot survival probabilities across different covariate profiles.
-\end{itemize}
-
-\paragraph*{Variable Importance}
-\begin{itemize}
-    \item Analyze covariate importance using the \texttt{variable\_importance\_} attribute.
-    \item Visualize importance scores using Logarithmic plot for identifing contributers.
-\end{itemize}
-
-\paragraph*{Model Evaluation}
-\begin{itemize}
-    \item Evaluate model using out-of-bag (OOB) score or concordance index.
-    \item Evaluate model performance across different levels of censoring.
-    \item Analyze performance under different levels of censoring.
-    \item Validate model with cross-validation or bootstrap methods.
-\end{itemize}
-
-\paragraph*{Comparison with CoxPH}
-\begin{itemize}
-    \item Compare survival curves from both models for specific covariate profiles.
-    \item Analyze differences, especially in cases with high censoring or non-proportional hazards.
-\end{itemize}
+\subsection*{Model Comparison}
+The package SurvivalEval \parencite{qi_survivaleval_2024} provides library integrations for the models to preform all the metrics talked about in the research design \ref{design}. The Survival curves predicted by the RSF model will be compared with those generated by the CoxPH model for specific covariate profiles. This comparison will help identify any differences between the models, particularly in cases with high censoring or non-proportional hazards. Understanding these differences is crucial for selecting the most appropriate model for a given dataset and for interpreting the survival predictions in a meaningful way.
 
 \section{Limitations} \label{methlim}
 A massive limitation is that the research is tightly coupled, meaning the phases are strictly dependent on each other. This is an antipattern, \parencite{joshi_beginning_2016}, which should be planned to accommodate any failures during any of the research phases. In cases where results do not converge, or the interpretation is wrong, the tightly coupled nature of the research will also affect the preceding stages. Lastly the computation time, within the modern setting should not be a hindrance but the combination of multiple computational components like the DGM and the model execution and results evaluation, is important to take caution. 
 
 \section{Ethical Considerations}
-Ethical clearance would not be a component of this study, as the only real data that would be used, will only be selected from open source, or publicly available (public licensing) sources. Due to the nature of the topic, being closely related to sensitive information, it will be an important point of order to note in the case that results indicate or underscore ethical implications.
+Ethical clearance would not be a component of this study, as the only real data that would be used, will only be selected from open source, or publicly available (public licensing) sources and then further fed into a simulation model which changes the nature of the data in its entirty and effectivly anonimizes the data. Due to the nature of the topic. 

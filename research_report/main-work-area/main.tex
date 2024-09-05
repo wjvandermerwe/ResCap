@@ -53,6 +53,7 @@ headsepline, % Uncomment to get a line under the header
 \usepackage[backend=biber,style=numeric,natbib=true]{biblatex} % Use the bibtex backend with the numeric citation style
 \hfuzz=2pt % Ignores all overfull hbox warnings less than 2pt long
 \usepackage{pdflscape}
+\usepackage{float}
 \usepackage{multirow}
 \addbibresource{main.bib} % The filename of the bibliography
 
@@ -61,7 +62,7 @@ headsepline, % Uncomment to get a line under the header
 \usepackage[cleanlook, english]{isodate} % Required for UK date formatting
 \usepackage{fancybox} % Required for boxed text sections
 \usepackage{xcolor} % Required for coloured text
-
+\usepackage{geometry}
 \usepackage{pgfgantt}
 
 \definecolor{ShadowColor}{RGB}{0,103,165} % Required for coloured shadow in boxed text sections
@@ -152,7 +153,7 @@ headsepline, % Uncomment to get a line under the header
 \includegraphics[width=80mm]{Figures/logoWitsstackedcolourtransparent.png} % University crest
 \vfill
 
-A research proposal submitted in partial fulfillment of the requirements for the degree of \degreename\par\vspace{0.3cm}
+A research report submitted in partial fulfillment of the requirements for the degree of \degreename\par\vspace{0.3cm}
 in the\par\vspace{0.4cm}
 \deptname\par\vspace{0.1cm} % Name of department
 \univname\par\vspace{0.4cm} % Name of university
@@ -188,7 +189,7 @@ in the\par\vspace{0.4cm}
 \begin{declaration}
 \addchaptertocentry{\authorshipname} % Add the declaration to the table of contents
 \vspace{0.5cm}
-\noindent I, \authorname, declare that this proposal is my own, unaided work. It is being submitted for the degree of {\degreename} at the \univname. It has not been submitted for any degree or examination at any other university.
+\noindent I, \authorname, declare that this report is my own, unaided work. It is being submitted for the degree of {\degreename} at the \univname. It has not been submitted for any degree or examination at any other university.
 
 \par\vspace{2cm}
 \begin{flushright}
@@ -228,7 +229,7 @@ in the\par\vspace{0.4cm}
 \begin{abstract}
 \addchaptertocentry{\abstractname} % Add the abstract to the table of contents
 \begin{quote}
-This proposal aims to study critical gaps in comparative simulation studies within survival analysis, highlighting the need for rigorous methodological frameworks and improved replicatable standards. Despite the widespread application of survival models within traditional and machine learning contexts for predicting event times, discrepancies in method implementation and evaluation can lead to biased outcomes and limit the generalizability of findings. This study aims to conduct a comprehensive comparative analysis of established survival models, specifically Random Survival Forest and Lasso-Cox models, using both simulated and real datasets. By adhering to the ADMEP framework and employing advanced data-generating mechanisms, this research seeks to provide empirical insights into the models' behavior and effectiveness under varied conditions. I aim to enhance the reliability of survival predictions and contribute to methodological standards in survival analysis, addressing the prevalent issues of inadequate design, reporting, and the need for methodological rigor in simulation studies.
+This report provides a simulation study between the Random Survival Forest and the Cox Proportional Hazards Model using proven frameworks in the field. Despite the widespread application of survival models within traditional and machine learning contexts for predicting event times, discrepancies in method implementation and evaluation can lead to biased outcomes and limit the generalizability of findings. By adhering to the ADMEP framework and employing advanced data-generating mechanisms, this research seeks to provide empirical insights into the models' behavior and effectiveness under varied conditions. I aim to enhance the reliability of survival predictions and contribute to methodological standards in survival analysis, addressing the prevalent issues of inadequate design, reporting, and the need for methodological rigor in simulation studies.
 \end{quote}
 
 % \par\vspace{0.5cm}

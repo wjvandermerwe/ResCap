@@ -152,6 +152,155 @@
       \verb https://zenodo.org/doi/10.5281/zenodo.805993
       \endverb
     \endentry
+    \entry{dispenzieri_use_2012}{article}{}{}
+      \name{author}{11}{}{%
+        {{hash=c2c12a6234fc98b7c542634923bb217f}{%
+           family={Dispenzieri},
+           familyi={D\bibinitperiod},
+           given={Angela},
+           giveni={A\bibinitperiod}}}%
+        {{hash=d783fc5e35c71a74d2d918390d7ed73d}{%
+           family={Katzmann},
+           familyi={K\bibinitperiod},
+           given={Jerry\bibnamedelima A.},
+           giveni={J\bibinitperiod\bibinitdelim A\bibinitperiod}}}%
+        {{hash=ff5a54f74776ba0f635dda336241c727}{%
+           family={Kyle},
+           familyi={K\bibinitperiod},
+           given={Robert\bibnamedelima A.},
+           giveni={R\bibinitperiod\bibinitdelim A\bibinitperiod}}}%
+        {{hash=1aea8b05b90f09f02842e38a430c45e5}{%
+           family={Larson},
+           familyi={L\bibinitperiod},
+           given={Dirk\bibnamedelima R.},
+           giveni={D\bibinitperiod\bibinitdelim R\bibinitperiod}}}%
+        {{hash=7ccfa93a89f17f6cd5c6b386f0c40c88}{%
+           family={Therneau},
+           familyi={T\bibinitperiod},
+           given={Terry\bibnamedelima M.},
+           giveni={T\bibinitperiod\bibinitdelim M\bibinitperiod}}}%
+        {{hash=ae7252c47fb540b0ec89c7141aaf6df4}{%
+           family={Colby},
+           familyi={C\bibinitperiod},
+           given={Colin\bibnamedelima L.},
+           giveni={C\bibinitperiod\bibinitdelim L\bibinitperiod}}}%
+        {{hash=917920642b6f92175b34590b33dced72}{%
+           family={Clark},
+           familyi={C\bibinitperiod},
+           given={Raynell\bibnamedelima J.},
+           giveni={R\bibinitperiod\bibinitdelim J\bibinitperiod}}}%
+        {{hash=90bca000dd5e4e6b302d9199c9a41a51}{%
+           family={Mead},
+           familyi={M\bibinitperiod},
+           given={Graham\bibnamedelima P.},
+           giveni={G\bibinitperiod\bibinitdelim P\bibinitperiod}}}%
+        {{hash=b3182d52f00187fbf27a191603afdbda}{%
+           family={Kumar},
+           familyi={K\bibinitperiod},
+           given={Shaji},
+           giveni={S\bibinitperiod}}}%
+        {{hash=127686b01f14d07ba00d6a46a0612fce}{%
+           family={Melton},
+           familyi={M\bibinitperiod},
+           given={L.\bibnamedelimi Joseph},
+           giveni={L\bibinitperiod\bibinitdelim J\bibinitperiod}}}%
+        {{hash=b2f98c39fb2bc42b7e7e8fbbe300d8a6}{%
+           family={Rajkumar},
+           familyi={R\bibinitperiod},
+           given={S.\bibnamedelimi Vincent},
+           giveni={S\bibinitperiod\bibinitdelim V\bibinitperiod}}}%
+      }
+      \strng{namehash}{408c429d0e242b6e7b474b58327d1a2c}
+      \strng{fullhash}{20ee3712346fe9eb2165860e3ecebf50}
+      \strng{fullhashraw}{20ee3712346fe9eb2165860e3ecebf50}
+      \strng{bibnamehash}{408c429d0e242b6e7b474b58327d1a2c}
+      \strng{authorbibnamehash}{408c429d0e242b6e7b474b58327d1a2c}
+      \strng{authornamehash}{408c429d0e242b6e7b474b58327d1a2c}
+      \strng{authorfullhash}{20ee3712346fe9eb2165860e3ecebf50}
+      \strng{authorfullhashraw}{20ee3712346fe9eb2165860e3ecebf50}
+      \field{sortinit}{D}
+      \field{sortinithash}{6f385f66841fb5e82009dc833c761848}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{issn}{00256196}
+      \field{journaltitle}{Mayo Clinic Proceedings}
+      \field{langid}{english}
+      \field{month}{6}
+      \field{number}{6}
+      \field{shortjournal}{Mayo Clinic Proceedings}
+      \field{title}{Use of Nonclonal Serum Immunoglobulin Free Light Chains to Predict Overall Survival in the General Population}
+      \field{urlday}{1}
+      \field{urlmonth}{9}
+      \field{urlyear}{2024}
+      \field{volume}{87}
+      \field{year}{2012}
+      \field{dateera}{ce}
+      \field{urldateera}{ce}
+      \field{pages}{517\bibrangedash 523}
+      \range{pages}{7}
+      \verb{doi}
+      \verb 10.1016/j.mayocp.2012.03.009
+      \endverb
+      \verb{file}
+      \verb Full Text:C\:\\Users\\johan\\Zotero\\storage\\AQJ4EYAF\\Dispenzieri et al. - 2012 - Use of Nonclonal Serum Immunoglobulin Free Light Chains to Predict Overall Survival in the General P.pdf:application/pdf
+      \endverb
+      \verb{urlraw}
+      \verb https://linkinghub.elsevier.com/retrieve/pii/S0025619612003886
+      \endverb
+      \verb{url}
+      \verb https://linkinghub.elsevier.com/retrieve/pii/S0025619612003886
+      \endverb
+    \endentry
+    \entry{drysdale_survset_2022}{misc}{}{}
+      \name{author}{1}{}{%
+        {{hash=2d5600af9f11e6020aa5ec8b9416e5c6}{%
+           family={Drysdale},
+           familyi={D\bibinitperiod},
+           given={Erik},
+           giveni={E\bibinitperiod}}}%
+      }
+      \list{publisher}{1}{%
+        {arXiv}%
+      }
+      \strng{namehash}{2d5600af9f11e6020aa5ec8b9416e5c6}
+      \strng{fullhash}{2d5600af9f11e6020aa5ec8b9416e5c6}
+      \strng{fullhashraw}{2d5600af9f11e6020aa5ec8b9416e5c6}
+      \strng{bibnamehash}{2d5600af9f11e6020aa5ec8b9416e5c6}
+      \strng{authorbibnamehash}{2d5600af9f11e6020aa5ec8b9416e5c6}
+      \strng{authornamehash}{2d5600af9f11e6020aa5ec8b9416e5c6}
+      \strng{authorfullhash}{2d5600af9f11e6020aa5ec8b9416e5c6}
+      \strng{authorfullhashraw}{2d5600af9f11e6020aa5ec8b9416e5c6}
+      \field{sortinit}{D}
+      \field{sortinithash}{6f385f66841fb5e82009dc833c761848}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{shorttitle}
+      \field{abstract}{Time-to-event (T2E) analysis is a branch of statistics that models the duration of time it takes for an event to occur. Such events can include outcomes like death, unemployment, or product failure. Most modern machine learning ({ML}) algorithms, like decision trees and kernel methods, are supported for T2E modelling with data science software (python and R). To complement these developments, {SurvSet} is the first open-source T2E dataset repository designed for a rapid benchmarking of {ML} algorithms and statistical methods. The data in {SurvSet} have been consistently formatted so that a single preprocessing method will work for all datasets. {SurvSet} currently has 76 datasets which vary in dimensionality, time dependency, and background (the majority of which come from biomedicine). {SurvSet} is available on {PyPI} and can be installed with pip install {SurvSet}. R users can download the data directly from the corresponding git repository.}
+      \field{day}{6}
+      \field{eprinttype}{arxiv}
+      \field{month}{3}
+      \field{number}{{arXiv}:2203.03094}
+      \field{shorttitle}{{SurvSet}}
+      \field{title}{{SurvSet}: An open-source time-to-event dataset repository}
+      \field{urlday}{22}
+      \field{urlmonth}{8}
+      \field{urlyear}{2024}
+      \field{year}{2022}
+      \field{dateera}{ce}
+      \field{urldateera}{ce}
+      \verb{eprint}
+      \verb 2203.03094 [cs, stat]
+      \endverb
+      \verb{file}
+      \verb arXiv Fulltext PDF:C\:\\Users\\johan\\Zotero\\storage\\RG5W5SS9\\Drysdale - 2022 - SurvSet An open-source time-to-event dataset repository.pdf:application/pdf;arXiv.org Snapshot:C\:\\Users\\johan\\Zotero\\storage\\RPXXE6EM\\2203.html:text/html
+      \endverb
+      \verb{urlraw}
+      \verb http://arxiv.org/abs/2203.03094
+      \endverb
+      \verb{url}
+      \verb http://arxiv.org/abs/2203.03094
+      \endverb
+      \keyw{Computer Science - Machine Learning,Statistics - Machine Learning}
+    \endentry
     \entry{freijeirogonzalez_critical_2022}{article}{}{}
       \name{author}{3}{}{%
         {{hash=f9ccd2567d3ae010354b69a014b0ecd2}{%
@@ -1305,6 +1454,64 @@
       \endverb
       \keyw{machine-learning,python,scikit-learn,survival-analysis}
     \endentry
+    \entry{qi_survivaleval_2024}{article}{}{}
+      \name{author}{3}{}{%
+        {{hash=8d4b0586a1d9fe56dd2c06392fc36ad4}{%
+           family={Qi},
+           familyi={Q\bibinitperiod},
+           given={Shi-ang},
+           giveni={S\bibinithyphendelim a\bibinitperiod}}}%
+        {{hash=52be7dfbaba24373003f2d2c11a0bdc9}{%
+           family={Sun},
+           familyi={S\bibinitperiod},
+           given={Weijie},
+           giveni={W\bibinitperiod}}}%
+        {{hash=4a770d3fea9e460171ec3bbb23b8fceb}{%
+           family={Greiner},
+           familyi={G\bibinitperiod},
+           given={Russell},
+           giveni={R\bibinitperiod}}}%
+      }
+      \strng{namehash}{0f281fd8c007a7f598c339803e30ed7f}
+      \strng{fullhash}{0f281fd8c007a7f598c339803e30ed7f}
+      \strng{fullhashraw}{0f281fd8c007a7f598c339803e30ed7f}
+      \strng{bibnamehash}{0f281fd8c007a7f598c339803e30ed7f}
+      \strng{authorbibnamehash}{0f281fd8c007a7f598c339803e30ed7f}
+      \strng{authornamehash}{0f281fd8c007a7f598c339803e30ed7f}
+      \strng{authorfullhash}{0f281fd8c007a7f598c339803e30ed7f}
+      \strng{authorfullhashraw}{0f281fd8c007a7f598c339803e30ed7f}
+      \field{sortinit}{Q}
+      \field{sortinithash}{ce69a400a872ddd02ee7fdb3b38c6abd}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{shorttitle}
+      \field{abstract}{Survival analysis is widely employed across medicine, business, and the social sciences. However, the absence of a unified and standardized software solution for evaluating survival analysis models impedes its broader application by researchers. In this research, we fill this gap by providing a comprehensive Python package, {SurvivalEVAL}, which implements seven evaluation metrics specific to survival analysis. The {SurvivalEVAL} package is designed to serve as a convenient and straightforward toolkit for individual survival distribution models. The package is publicly available on {GitHub} at https://github.com/shi-ang/{SurvivalEVAL}.}
+      \field{day}{22}
+      \field{issn}{2994-4317}
+      \field{journaltitle}{Proceedings of the {AAAI} Symposium Series}
+      \field{month}{1}
+      \field{number}{1}
+      \field{shortjournal}{{AAAI}-{SS}}
+      \field{shorttitle}{{SurvivalEVAL}}
+      \field{title}{{SurvivalEVAL}: A Comprehensive Open-Source Python Package for Evaluating Individual Survival Distributions}
+      \field{urlday}{4}
+      \field{urlmonth}{9}
+      \field{urlyear}{2024}
+      \field{volume}{2}
+      \field{year}{2024}
+      \field{dateera}{ce}
+      \field{urldateera}{ce}
+      \field{pages}{453\bibrangedash 457}
+      \range{pages}{5}
+      \verb{doi}
+      \verb 10.1609/aaaiss.v2i1.27713
+      \endverb
+      \verb{urlraw}
+      \verb https://ojs.aaai.org/index.php/AAAI-SS/article/view/27713
+      \endverb
+      \verb{url}
+      \verb https://ojs.aaai.org/index.php/AAAI-SS/article/view/27713
+      \endverb
+    \endentry
     \entry{qi_effective_2023}{misc}{}{}
       \name{author}{8}{}{%
         {{hash=8d4b0586a1d9fe56dd2c06392fc36ad4}{%
@@ -1746,6 +1953,57 @@
       \verb http://www.jstor.org/stable/2346178
       \endverb
     \endentry
+    \entry{hong_wang_selective_2017}{article}{}{}
+      \name{author}{2}{}{%
+        {{hash=6b170f4c37010a14987a849eab01fe7b}{%
+           family={Wang},
+           familyi={W\bibinitperiod},
+           given={Hong},
+           giveni={H\bibinitperiod}}}%
+        {{hash=56ba559f18e74cf681fe113aba3fa9af}{%
+           family={Li},
+           familyi={L\bibinitperiod},
+           given={Gang},
+           giveni={G\bibinitperiod}}}%
+      }
+      \strng{namehash}{9400ee2714181cccd1bfd20eadd70c5d}
+      \strng{fullhash}{9400ee2714181cccd1bfd20eadd70c5d}
+      \strng{fullhashraw}{9400ee2714181cccd1bfd20eadd70c5d}
+      \strng{bibnamehash}{9400ee2714181cccd1bfd20eadd70c5d}
+      \strng{authorbibnamehash}{9400ee2714181cccd1bfd20eadd70c5d}
+      \strng{authornamehash}{9400ee2714181cccd1bfd20eadd70c5d}
+      \strng{authorfullhash}{9400ee2714181cccd1bfd20eadd70c5d}
+      \strng{authorfullhashraw}{9400ee2714181cccd1bfd20eadd70c5d}
+      \field{sortinit}{W}
+      \field{sortinithash}{4315d78024d0cea9b57a0c6f0e35ed0d}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{Quantitative Bio-Science}
+      \field{month}{11}
+      \field{number}{2}
+      \field{title}{A Selective Review on Random Survival Forests for High Dimensional Data}
+      \field{urlday}{24}
+      \field{urlmonth}{8}
+      \field{urlyear}{2024}
+      \field{volume}{36}
+      \field{year}{2017}
+      \field{dateera}{ce}
+      \field{urldateera}{ce}
+      \field{pages}{85\bibrangedash 96}
+      \range{pages}{12}
+      \verb{doi}
+      \verb 10.22283/QBS.2017.36.2.85
+      \endverb
+      \verb{file}
+      \verb Accepted Version:C\:\\Users\\johan\\Zotero\\storage\\V47H8PQK\\Hong Wang and Gang Li - 2017 - A Selective Review on Random Survival Forests for High Dimensional Data.pdf:application/pdf
+      \endverb
+      \verb{urlraw}
+      \verb https://doi.org/10.22283/QBS.2017.36.2.85
+      \endverb
+      \verb{url}
+      \verb https://doi.org/10.22283/QBS.2017.36.2.85
+      \endverb
+    \endentry
     \entry{wilkinson_fair_2016}{article}{}{}
       \name{author}{53}{}{%
         {{hash=e88185c2eca4405ce11cb8920f485660}{%
@@ -2155,64 +2413,6 @@
       \verb http://arxiv.org/abs/2305.00621
       \endverb
       \keyw{Statistics - Methodology,Computer Science - Machine Learning}
-    \endentry
-    \entry{yao_ensemble_2022}{misc}{}{}
-      \name{author}{4}{}{%
-        {{hash=ed835e372f48c6b7c18e05163cd02a05}{%
-           family={Yao},
-           familyi={Y\bibinitperiod},
-           given={Weichi},
-           giveni={W\bibinitperiod}}}%
-        {{hash=5d42f016d8806496f48703c4051ad9df}{%
-           family={Frydman},
-           familyi={F\bibinitperiod},
-           given={Halina},
-           giveni={H\bibinitperiod}}}%
-        {{hash=88982a5043d546df81aba8e560afcb29}{%
-           family={Larocque},
-           familyi={L\bibinitperiod},
-           given={Denis},
-           giveni={D\bibinitperiod}}}%
-        {{hash=9e21165ed60edc482fca410a83054165}{%
-           family={Simonoff},
-           familyi={S\bibinitperiod},
-           given={Jeffrey\bibnamedelima S.},
-           giveni={J\bibinitperiod\bibinitdelim S\bibinitperiod}}}%
-      }
-      \list{publisher}{1}{%
-        {arXiv}%
-      }
-      \strng{namehash}{6387bf1a1f0d17446b7d82c733361eb7}
-      \strng{fullhash}{35ae52a563ed1763f4ab114b7a4ef5ad}
-      \strng{fullhashraw}{35ae52a563ed1763f4ab114b7a4ef5ad}
-      \strng{bibnamehash}{6387bf1a1f0d17446b7d82c733361eb7}
-      \strng{authorbibnamehash}{6387bf1a1f0d17446b7d82c733361eb7}
-      \strng{authornamehash}{6387bf1a1f0d17446b7d82c733361eb7}
-      \strng{authorfullhash}{35ae52a563ed1763f4ab114b7a4ef5ad}
-      \strng{authorfullhashraw}{35ae52a563ed1763f4ab114b7a4ef5ad}
-      \field{sortinit}{Y}
-      \field{sortinithash}{fd67ad5a9ef0f7456bdd9aab10fe1495}
-      \field{labelnamesource}{author}
-      \field{labeltitlesource}{title}
-      \field{abstract}{Survival data with time-varying covariates are common in practice. If relevant, they can improve on the estimation of survival function. However, the traditional survival forests - conditional inference forest, relative risk forest and random survival forest - have accommodated only time-invariant covariates. We generalize the conditional inference and relative risk forests to allow time-varying covariates. We also propose a general framework for estimation of a survival function in the presence of time-varying covariates. We compare their performance with that of the Cox model and transformation forest, adapted here to accommodate time-varying covariates, through a comprehensive simulation study in which the Kaplan-Meier estimate serves as a benchmark, and performance is compared using the integrated L2 difference between the true and estimated survival functions. In general, the performance of the two proposed forests substantially improves over the Kaplan-Meier estimate. Taking into account all other factors, under the proportional hazard (PH) setting, the best method is always one of the two proposed forests, while under the non-PH setting, it is the adapted transformation forest. K-fold cross-validation is used as an effective tool to choose between the methods in practice.}
-      \field{month}{6}
-      \field{note}{arXiv:2006.00567 [stat]}
-      \field{title}{Ensemble methods for survival function estimation with time-varying covariates}
-      \field{urlday}{16}
-      \field{urlmonth}{4}
-      \field{urlyear}{2024}
-      \field{year}{2022}
-      \field{urldateera}{ce}
-      \verb{file}
-      \verb arXiv Fulltext PDF:/Users/johan/Zotero/storage/VMYVSKR9/Yao et al. - 2022 - Ensemble methods for survival function estimation .pdf:application/pdf;arXiv.org Snapshot:/Users/johan/Zotero/storage/TPULP75U/2006.html:text/html
-      \endverb
-      \verb{urlraw}
-      \verb http://arxiv.org/abs/2006.00567
-      \endverb
-      \verb{url}
-      \verb http://arxiv.org/abs/2006.00567
-      \endverb
-      \keyw{Statistics - Methodology,Statistics - Machine Learning,Statistics - Applications}
     \endentry
     \entry{zhang_adaptive_2007}{article}{}{}
       \name{author}{2}{}{%

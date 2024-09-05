@@ -13,95 +13,264 @@ from sklearn.model_selection import KFold
 from lifelines import CoxPHFitter
 from lifelines.utils import concordance_index
 import joblib
+from statsmodels.stats.outliers_influence import variance_inflation_factor
+from statsmodels.tools import add_constant
 
-def run_cox_model(data, test_data):
-    # Extract training and test event times and indicators
+
+def get_data_splits(data, test_data):
     train_event_times = data['time'].values
-    train_event_indicators = data['event'].values
+    train_event_indicators = data['event'].values.astype(bool)  # Ensure boolean type
     test_event_times = test_data['time'].values
-    test_event_indicators = test_data['event'].values
+    test_event_indicators = test_data['event'].values.astype(bool)
+    return train_event_times, train_event_indicators, test_event_times, test_event_indicators
 
-    # Fit the Cox Proportional Hazards model
-    model = CoxPHFitter()
-    model.fit(data, duration_col='time', event_col='event')
-
-    # Print model summary for review
-    # summary = model.print_summary()
-
-    # Compute survival function, median survival, and partial hazards
-    cox_survival_function = model.predict_survival_function(data)
-    median = model.predict_median(data)
-    hazard = model.predict_partial_hazard(data)
-    residuals_info = [
-        {
-            'model_name': 'Cox Model',
-            'residual_data': model.compute_residuals(data, 'schoenfeld'),
-            'residual_type': 'Schoenfeld'
-        },
-        {
-            'model_name': 'Cox Model',
-            'residual_data': model.compute_residuals(data, 'martingale'),
-            'residual_type': 'Martingale'
-        },
-    ]
-    # Check model assumptions - proportional hazards
-    assumptions = model.check_assumptions(data)
-    return model, (cox_survival_function,train_event_times,train_event_indicators,test_event_times,test_event_indicators), median, hazard, assumptions, residuals_info
-
-
-def save_rsf_model_output(rsf_survival_function, hazard, feature_importance, output_dir, dataset_name):
+def run_cox_model_varying_penalizer(data, test_data, lasso_penalizers):
     """
-    Save the RSF model outputs to the specified directory.
+    Fit a Cox Proportional Hazards model with varying Lasso regularization strengths and return various outputs.
 
-    :param rsf_survival_function: List of survival functions
-    :param hazard: List of cumulative hazard functions
-    :param feature_importance: DataFrame of feature importance
-    :param output_dir: Directory to save the output files
-    :param dataset_name: Name of the dataset (used in file names)
+    Args:
+    - data (DataFrame): The training dataset.
+    - test_data (DataFrame): The test dataset.
+    - lasso_penalizers (list): A list of L1 regularization strengths to test.
+
+    Returns:
+    - dict: A dictionary where each key is a penalizer value and each value is a tuple containing:
+        - model (CoxPHFitter): The fitted Cox model.
+        - median (Series): Predicted median survival times.
+        - hazard (Series): Partial hazard predictions.
+        - coefficients (DataFrame): The model coefficients.
     """
-
-    # Create the output directory if it doesn't exist
-    os.makedirs(output_dir, exist_ok=True)
-
-    # Save the survival function
-    survival_file = f"{output_dir}/{dataset_name}_rsf_survival_function.pkl"
-    joblib.dump(rsf_survival_function, survival_file)
-
-    # Save the hazard function
-    hazard_file = f"{output_dir}/{dataset_name}_rsf_hazard_function.pkl"
-    joblib.dump(hazard, hazard_file)
-
-    # Save the feature importance as a CSV file
-    feature_importance_file = f"{output_dir}/{dataset_name}_feature_importance.csv"
-    feature_importance.to_csv(feature_importance_file, index=True)
-
-    print(f"Outputs saved to {output_dir}")
-
-
-def run_rsf_model(data, test_data, random_state=42):
-    # Drop 'pid' column from test data if present
-    test_pre = test_data.drop(columns=['pid'], errors='ignore')
     data_pre = data.drop(columns=['pid'], errors='ignore')
-    # Prepare training and testing event times and indicators
-    train_event_times = data_pre['time'].values
-    train_event_indicators = data_pre['event'].values.astype(bool)  # Ensure boolean type
-    test_event_times = test_pre['time'].values
-    test_event_indicators = test_pre['event'].values.astype(bool)
+    results = {}
+
+    for penalizer in lasso_penalizers:
+        # Fit the Cox Proportional Hazards model with Lasso regularization
+        model = CoxPHFitter(penalizer=penalizer)
+        model.fit(data_pre, duration_col='time', event_col='event')
+
+        # Compute survival function, median survival, and partial hazards
+        median = model.predict_median(data_pre)
+        hazard = model.predict_partial_hazard(data_pre)
+        coefficients = model.params_
+
+        # Store the results
+        results[penalizer] = (model, median, hazard, coefficients)
+
+    return results
+
+
+def run_rsf_model_varying_estimators(data, test_data, n_estimators_list, random_state=42):
+    """
+    Fit a Random Survival Forest model with varying numbers of trees and return various outputs.
+
+    Args:
+    - data (DataFrame): The training dataset.
+    - test_data (DataFrame): The test dataset.
+    - n_estimators_list (list): A list of values for `n_estimators` (number of trees).
+    - random_state (int): Random state for reproducibility.
+
+    Returns:
+    - dict: A dictionary where each key is a number of trees and each value is a tuple containing:
+        - rsf (RandomSurvivalForest): The fitted RSF model.
+        - hazard (list of Series): Cumulative hazard predictions.
+        - feature_importance (DataFrame): Feature importances.
+    """
+    test_pre = test_data.drop(columns=['pid', 'event', 'time'], errors='ignore')
+    data_pre = data.drop(columns=['pid', 'event', 'time'], errors='ignore')
+
+    train_event_times, train_event_indicators, test_event_times, test_event_indicators = get_data_splits(data,
+                                                                                                         test_data)
 
     # Prepare the structured array needed for RSF model input
     y_train = np.array(list(zip(train_event_indicators, train_event_times)),
                        dtype=[('event', 'bool'), ('time', 'float')])
     y_test = np.array(list(zip(test_event_indicators, test_event_times)), dtype=[('event', 'bool'), ('time', 'float')])
 
+    results = {}
+
+    for n_estimators in n_estimators_list:
+        # Initialize and fit the Random Survival Forest model
+        rsf = RandomSurvivalForest(
+            n_estimators=n_estimators, min_samples_split=10, min_samples_leaf=15, n_jobs=-1, random_state=random_state,
+
+        )
+        rsf.fit(X=data_pre, y=y_train)
+
+        # Predict cumulative hazard function
+        hazard = rsf.predict_cumulative_hazard_function(data_pre)
+
+        # Compute permutation importance to assess feature importance
+        result = permutation_importance(rsf, test_pre, y_test, n_repeats=15, random_state=random_state)
+        feature_importance = pd.DataFrame(
+            {
+                k: result[k]
+                for k in ("importances_mean", "importances_std")
+            },
+            index=test_pre.columns,
+        ).sort_values(by="importances_mean", ascending=False)
+
+        # Store the results
+        results[n_estimators] = (rsf, hazard, feature_importance)
+
+    return results
+
+
+def plot_rsf_varying_estimators(results):
+    """
+    Plot the results from varying the number of trees in the Random Survival Forest model.
+
+    Args:
+    - results (dict): A dictionary where each key is a number of trees and each value is a tuple containing:
+                      - rsf (RandomSurvivalForest): The fitted RSF model.
+                      - hazard (list of Series): Cumulative hazard predictions.
+                      - feature_importance (DataFrame): Feature importances.
+
+    Returns:
+    - None: Displays the plots for performance metrics and feature importances.
+    """
+    n_estimators_list = list(results.keys())
+
+    # Placeholder for collecting metrics and feature importances
+    mean_importances = pd.DataFrame(index=results[n_estimators_list[0]][2].index)
+    std_importances = pd.DataFrame(index=results[n_estimators_list[0]][2].index)
+
+    for n_estimators, (_, _, feature_importance) in results.items():
+        mean_importances[n_estimators] = feature_importance['importances_mean']
+        std_importances[n_estimators] = feature_importance['importances_std']
+
+    # Plot feature importances for the top features
+    plot_top_feature_importances(mean_importances, std_importances)
+
+
+def plot_top_feature_importances(mean_importances, std_importances, n_highlight=10):
+    """
+    Plot the top feature importances across different numbers of trees.
+
+    Args:
+    - mean_importances (DataFrame): DataFrame with mean importances across different numbers of trees.
+    - std_importances (DataFrame): DataFrame with standard deviations of importances.
+    - n_highlight (int): Number of top features to highlight in the plot.
+
+    Returns:
+    - None: Displays the plot.
+    """
+    # Identify the top features based on the maximum number of trees
+    top_features = mean_importances.iloc[:, -1].sort_values(ascending=False).head(n_highlight).index
+
+    plt.figure(figsize=(10, 6))
+
+    # Plot each top feature's importance across the different numbers of trees
+    for feature in top_features:
+        plt.errorbar(mean_importances.columns, mean_importances.loc[feature], yerr=std_importances.loc[feature],
+                     label=feature, marker='o', linestyle='-')
+
+    plt.xscale('log')
+    plt.xlabel("Number of Trees (Log Scale)")
+    plt.ylabel("Feature Importance")
+    plt.title("Top Feature Importances vs. Number of Trees")
+    plt.legend(loc='best')
+    plt.grid(True, which="both", ls="--")
+    plt.show()
+
+def run_cox_model(data, test_data, lasso_penalizer=0.1):
+    data_pre = data.drop(columns=['pid'], errors='ignore')
+    # Extract training and test event times and indicators
+
+    # Fit the Cox Proportional Hazards model with Lasso regularization
+    model = CoxPHFitter(penalizer=lasso_penalizer)
+    model.fit(data_pre, duration_col='time', event_col='event')
+
+    # Compute survival function, median survival, and partial hazards
+    cox_survival_function = model.predict_survival_function(data_pre)
+    median = model.predict_median(data_pre)
+    hazard = model.predict_partial_hazard(data_pre)
+    return model, cox_survival_function, median, hazard
+
+
+def preprocess_and_fit_cox_model(df: pd.DataFrame, df_test: pd.DataFrame, duration_col: str, event_col: str, penalizer: float = 0.1, step_size: float = 0.5):
+    # 1. Check and Drop Low Variance Columns
+    low_variance_threshold = 1e-4
+    low_variance_columns = [col for col in df.columns if col.startswith('fac_') and df[col].var() < low_variance_threshold]
+    if low_variance_columns:
+        print(f"Dropping low variance columns: {low_variance_columns}")
+        df = df.drop(columns=low_variance_columns)
+        df_test = df_test.drop(columns=low_variance_columns)
+
+    # 2. Check for Complete Separation
+    events = df[event_col].astype(bool)
+    separation_columns = []
+    for col in df.columns:
+        if col.startswith('fac_'):
+            var_event = df.loc[events, col].var()
+            var_no_event = df.loc[~events, col].var()
+            if var_event < low_variance_threshold or var_no_event < low_variance_threshold:
+                separation_columns.append(col)
+                print(f"Column {col} may cause complete separation. Variance when event is present: {var_event}, when not present: {var_no_event}")
+
+    if separation_columns:
+        print(f"Dropping columns with potential complete separation: {separation_columns}")
+        df = df.drop(columns=separation_columns)
+        df_test = df_test.drop(columns=separation_columns)
+
+
+    # 3. Check for High Collinearity using VIF
+    numerical_columns = df.select_dtypes(include=[np.number]).columns.tolist()
+    if numerical_columns:
+        X = add_constant(df[numerical_columns])
+        vif_data = pd.DataFrame()
+        vif_data["feature"] = X.columns
+        vif_data["VIF"] = [variance_inflation_factor(X.values, i) for i in range(X.shape[1])]
+
+        # Drop high VIF columns, but exclude 'const' and 'event'
+        high_vif_columns = [feature for feature in vif_data[vif_data["VIF"] > 10]["feature"].tolist() if feature not in ['const', event_col]]
+        if high_vif_columns:
+            print(f"Dropping high VIF columns: {high_vif_columns}")
+            df = df.drop(columns=high_vif_columns)
+            df_test = df_test.drop(columns=high_vif_columns)
+
+
+    # 4. Fit the Cox Proportional Hazards Model with Penalizer and Step Size
+    model = CoxPHFitter(penalizer=penalizer)
+    try:
+        model.fit(df, duration_col=duration_col, event_col=event_col)
+        cox_survival_function = model.predict_survival_function(df_test)
+        median = model.predict_median(df_test)
+        hazard = model.predict_partial_hazard(df_test)
+        return model, cox_survival_function, median, hazard, df, df_test
+        print("Model fit successfully.")
+    except Exception as e:
+        print(f"Model fitting failed: {e}")
+
+
+def run_rsf_model(data, test_data, random_state=42):
+    # Drop 'pid' column from test data if present
+    test_pre = test_data.drop(columns=['pid', 'event', 'time'], errors='ignore')
+    data_pre = data.drop(columns=['pid', 'event', 'time'], errors='ignore')
+
+    # Prepare training and testing event times and indicators
+    train_event_times, train_event_indicators, test_event_times, test_event_indicators = get_data_splits(data,
+                                                                                                         test_data)
+
+    # Ensure consistency in data
+    assert len(test_pre) == len(test_event_times) == len(test_event_indicators), \
+        "Mismatch between test data and event times/indicators!"
+
+    # Prepare the structured array needed for RSF model input
+    y_train = np.array(list(zip(train_event_indicators, train_event_times)),
+                       dtype=[('event', 'bool'), ('time', 'float')])
+    y_test = np.array(list(zip(test_event_indicators, test_event_times)),
+                      dtype=[('event', 'bool'), ('time', 'float')])
+
     # Initialize and fit the Random Survival Forest model
     rsf = RandomSurvivalForest(
-        n_estimators=1000, min_samples_split=10, min_samples_leaf=15, n_jobs=-1, random_state=random_state
+        n_estimators=100, min_samples_split=20, min_samples_leaf=20, n_jobs=-1, random_state=random_state, verbose=True
     )
     rsf.fit(X=data_pre, y=y_train)
 
     # Predict survival function and cumulative hazard function
-    rsf_survival_function = rsf.predict_survival_function(data_pre)
-    hazard = rsf.predict_cumulative_hazard_function(data_pre)
+    rsf_survival_function = rsf.predict_survival_function(test_pre, return_array=True)
+    clean_rsf_survival_function = rsf.predict_survival_function(test_pre)
+    hazard = rsf.predict_cumulative_hazard_function(test_pre, return_array=True)
 
     # Compute permutation importance to assess feature importance
     result = permutation_importance(rsf, test_pre, y_test, n_repeats=15, random_state=random_state)
@@ -113,7 +282,64 @@ def run_rsf_model(data, test_data, random_state=42):
         index=test_pre.columns,
     ).sort_values(by="importances_mean", ascending=False)
 
-    return rsf, rsf_survival_function, hazard, feature_importance
+    return rsf, rsf_survival_function, hazard, feature_importance, clean_rsf_survival_function
+
+
+from sksurv.ensemble import RandomSurvivalForest
+from sklearn.model_selection import GridSearchCV
+from sksurv.metrics import concordance_index_censored
+import numpy as np
+import pandas as pd
+
+def run_rsf_model_param_tuning(data, test_data, random_state=42):
+    # Drop 'pid' column from test data if present
+    test_pre = test_data.drop(columns=['pid','event', 'time'], errors='ignore')
+    data_pre = data.drop(columns=['pid', 'event', 'time'], errors='ignore')
+
+    # Prepare training and testing event times and indicators
+    train_event_times, train_event_indicators, test_event_times, test_event_indicators = get_data_splits(data, test_data)
+
+    # Prepare the structured array needed for RSF model input
+    y_train = np.array(list(zip(train_event_indicators, train_event_times)),
+                       dtype=[('event', 'bool'), ('time', 'float')])
+    y_test = np.array(list(zip(test_event_indicators, test_event_times)), dtype=[('event', 'bool'), ('time', 'float')])
+
+    # Set up the Random Survival Forest model
+    rsf = RandomSurvivalForest(random_state=random_state)
+
+    # Define the parameter grid for GridSearchCV
+    param_grid = {
+        'n_estimators': [100, 500, 1000],
+        'min_samples_split': [5, 10, 20],
+        'min_samples_leaf': [5, 10, 15],
+        'max_features': ['sqrt', 'log2', 0.5]
+    }
+
+    # Initialize GridSearchCV
+    grid_search = GridSearchCV(estimator=rsf, param_grid=param_grid, cv=5, n_jobs=-1, scoring='accuracy')
+    grid_search.fit(X=data_pre, y=y_train)
+
+    # Extract the best model and fit on the full training data
+    best_rsf = grid_search.best_estimator_
+    best_rsf.fit(X=data_pre, y=y_train)
+
+    # Predict survival function and cumulative hazard function
+    rsf_survival_function = best_rsf.predict_survival_function(test_pre, return_array=True)
+    hazard = best_rsf.predict_cumulative_hazard_function(test_pre, return_array=True)
+    clean_rsf_survival_function = best_rsf.predict_survival_function(test_pre)
+
+    # Compute permutation importance to assess feature importance
+    result = permutation_importance(best_rsf, test_pre, y_test, n_repeats=15, random_state=random_state)
+    feature_importance = pd.DataFrame(
+        {
+            k: result[k]
+            for k in ("importances_mean", "importances_std")
+        },
+        index=test_pre.columns,
+    ).sort_values(by="importances_mean", ascending=False)
+
+    return best_rsf, rsf_survival_function, hazard, feature_importance, clean_rsf_survival_function
+
 
 
 def save_metrics(metrics, output_dir, dataset_name):
@@ -139,16 +365,17 @@ def save_metrics(metrics, output_dir, dataset_name):
 
 
 def run_metrics(cox_survival_function, rsf_survival_function, train_event_times, train_event_indicators, test_event_times, test_event_indicators):
-    cox_model_evals = LifelinesEvaluator(cox_survival_function, train_event_times, train_event_indicators, test_event_times, test_event_indicators)
-    rsf_model_evals = ScikitSurvivalEvaluator(rsf_survival_function, train_event_times, train_event_indicators, test_event_times, test_event_indicators)
+
+    cox_model_evals = LifelinesEvaluator(cox_survival_function,test_event_times, test_event_indicators, train_event_times, train_event_indicators)
+    rsf_model_evals = ScikitSurvivalEvaluator(rsf_survival_function,test_event_times, test_event_indicators, train_event_times, train_event_indicators)
 
     metrics = {
         "concordance_cox": cox_model_evals.concordance()[0],
         "concordance_rsf": rsf_model_evals.concordance()[0],
-        "brier_cox": cox_model_evals.brier()[0],
-        "brier_rsf": rsf_model_evals.brier()[0],
-        "ibs_cox": cox_model_evals.integrated_brier_score()[0],
-        "ibs_rsf": rsf_model_evals.integrated_brier_score()[0],
+        "brier_cox": cox_model_evals.brier_score(),
+        "brier_rsf": rsf_model_evals.brier_score(),
+        "ibs_cox": cox_model_evals.integrated_brier_score(),
+        "ibs_rsf": rsf_model_evals.integrated_brier_score(),
         "cox_one_cal": cox_model_evals.one_calibration(np.median(test_event_times)),
         "rsf_one_cal": rsf_model_evals.one_calibration(np.median(test_event_times)),
         "cox_d_cal": cox_model_evals.d_calibration(),
@@ -216,36 +443,27 @@ def plot_d_calibration(cox_counts, rsf_counts, num_bins=10):
     plt.tight_layout()
     plt.show()
 
-def plot_coefficients_rsf(coefs, n_highlight):
-    _, ax = plt.subplots(figsize=(9, 6))
-    n_features = coefs.shape[0]
-    alphas = coefs.columns
-    for row in coefs.itertuples():
-        ax.semilogx(alphas, row[1:], ".-", label=row.Index)
-
-    alpha_min = alphas.min()
-    top_coefs = coefs.loc[:, alpha_min].map(abs).sort_values().tail(n_highlight)
-    for name in top_coefs.index:
-        coef = coefs.loc[name, alpha_min]
-        plt.text(alpha_min, coef, name + "   ", horizontalalignment="right", verticalalignment="center")
-
-    ax.yaxis.set_label_position("right")
-    ax.yaxis.tick_right()
-    ax.grid(True)
-    ax.set_xlabel("alpha")
-    ax.set_ylabel("coefficient")
-
-
-def plot_cox_coefficients(cox_model):
+def plot_rsf_feature_importances(feature_importance):
     """
-    Plot the coefficients from a Cox Proportional Hazards model, focusing on the effect after Lasso regularization.
+    Plot the feature importances from a Random Survival Forest model.
 
     Args:
-    - cox_model (CoxPHFitter): A fitted CoxPHFitter model from lifelines.
+    - feature_importance (pd.DataFrame): A DataFrame containing feature importances and their standard deviations.
 
     Returns:
-    - None: Displays a plot of the coefficients.
+    - None: Displays a plot of the feature importances.
     """
+    # Ensure the DataFrame contains 'importances_mean' and 'importances_std'
+    importances = feature_importance['importances_mean']
+    std_errors = feature_importance['importances_std']
+
+    fig, ax = plt.subplots(figsize=(8, len(importances) / 2))
+    importances.plot(kind='barh', ax=ax, xerr=std_errors, color='green', ecolor='black', capsize=4)
+    ax.set_xlabel('Feature Importance')
+    ax.set_title('Feature Importances from Random Survival Forest Model')
+    plt.show()
+
+def plot_cox_box_coefficients(cox_model):
     coefs = cox_model.params_
     std_errors = cox_model.standard_errors_
 
@@ -255,45 +473,220 @@ def plot_cox_coefficients(cox_model):
     ax.set_title('Coefficients from Cox Proportional Hazards Model')
     plt.show()
 
-def plot_model_residuals(residuals_info):
-    # Number of models to plot for
-    num_models = len(residuals_info)
 
-    # Setup the figure layout
-    fig, axes = plt.subplots(num_models, 1, figsize=(10, 6 * num_models), squeeze=False)
+def log_plot_cox(coefs, n_highlight=10):
+    """
+    Plot the coefficients from the Cox model with Lasso regularization on a logarithmic scale.
 
-    # Iterate over each model's residuals information
-    for i, info in enumerate(residuals_info):
-        ax = axes[i][0]
-        for covariate, values in info['residual_data'].items():
-            ax.plot(values.index, values, marker='o', linestyle='-', label=f'{covariate} ({info["residual_type"]})')
+    Args:
+    - coefs (pd.DataFrame): A DataFrame where rows are features and columns are Lasso penalizer values.
+    - n_highlight (int): Number of top features to highlight in the plot.
 
-        # Customize plot
-        ax.set_title(f'{info["model_name"]} Residuals')
-        ax.set_xlabel('Time')
-        ax.set_ylabel('Residuals')
-        ax.axhline(y=0, linestyle='--', color='grey', alpha=0.7)
-        ax.grid(True)
-        ax.legend()
+    Returns:
+    - None: Displays a plot of the coefficients on a logarithmic scale.
+    """
+    _, ax = plt.subplots(figsize=(9, 6))
+    alphas = coefs.columns
 
-    plt.tight_layout()
+    # Plot the coefficients for each feature across alphas
+    for row in coefs.itertuples():
+        ax.semilogx(alphas, row[1:], ".-", label=row.Index)
+
+    # Highlight the top n_highlight coefficients at the minimum alpha
+    alpha_min = alphas.min()
+    top_coefs = coefs.loc[:, alpha_min].map(abs).sort_values().tail(n_highlight)
+    for name in top_coefs.index:
+        coef = coefs.loc[name, alpha_min]
+        plt.text(alpha_min, coef, name + "   ", horizontalalignment="right", verticalalignment="center")
+
+    ax.yaxis.set_label_position("right")
+    ax.yaxis.tick_right()
+    ax.grid(True)
+    ax.set_xlabel("Lasso Penalizer (Log Scale)")
+    ax.set_ylabel("Coefficient")
+    ax.set_title("Cox Model Coefficients with Lasso Regularization")
+    plt.show()
+
+def log_plot_rsf(feature_importances, n_highlight=10):
+    """
+    Plot the feature importances from the RSF model on a logarithmic scale.
+
+    Args:
+    - feature_importances (pd.DataFrame): A DataFrame where rows are features and columns are n_estimators values.
+    - n_highlight (int): Number of top features to highlight in the plot.
+
+    Returns:
+    - None: Displays a plot of the feature importances on a logarithmic scale.
+    """
+    _, ax = plt.subplots(figsize=(9, 6))
+    n_estimators_list = feature_importances.columns
+
+    # Plot the feature importances for each feature across different numbers of trees
+    for row in feature_importances.itertuples():
+        ax.semilogx(n_estimators_list, row[1:], ".-", label=row.Index)
+
+    # Highlight the top n_highlight feature importances at the maximum number of trees
+    n_estimators_max = n_estimators_list.max()
+    top_importances = feature_importances.loc[:, n_estimators_max].sort_values(ascending=False).head(n_highlight)
+    for name in top_importances.index:
+        importance = feature_importances.loc[name, n_estimators_max]
+        plt.text(n_estimators_max, importance, name + "   ", horizontalalignment="left", verticalalignment="center")
+
+    ax.yaxis.set_label_position("right")
+    ax.yaxis.tick_right()
+    ax.grid(True)
+    ax.set_xlabel("Number of Trees (Log Scale)")
+    ax.set_ylabel("Feature Importance")
+    ax.set_title("RSF Model Feature Importances Across Different Trees")
+    plt.show()
+
+def plot_importance_log_line(importances, n_highlight=10, title='Feature Importance (Log Scale)'):
+    """
+    Plot the feature importance scores on a logarithmic scale as a line plot.
+
+    Args:
+    - importances (pd.DataFrame): A DataFrame where rows are features and the column is the mean importance score.
+    - n_highlight (int): Number of top features to highlight in the plot.
+    - title (str): Title of the plot.
+
+    Returns:
+    - None: Displays a line plot of the importance scores on a logarithmic scale.
+    """
+    # Sort by importance and select the top n_highlight features
+    sorted_importances = importances.sort_values(by='importances_mean', ascending=False).head(n_highlight)
+
+    # Plotting the importance scores as a line plot with a log scale on the y-axis
+    plt.figure(figsize=(10, 6))
+
+    # Iterate over each feature and plot its importance score
+    for feature in sorted_importances.index:
+        plt.plot(sorted_importances.columns, sorted_importances.loc[feature], label=feature, marker='o', linestyle='-')
+
+    plt.yscale('log')
+    plt.xlabel("Features")
+    plt.ylabel("Feature Importance (Log Scale)")
+    plt.title(title)
+    plt.grid(True, which="both", ls="--")
+    plt.legend(loc='best')
+    plt.show()
+
+def plot_importance_log_scale(importances, n_highlight=10, title='Feature Importance (Log Scale)'):
+    """
+    Plot the feature importance scores on a logarithmic scale.
+
+    Args:
+    - importances (pd.DataFrame or pd.Series): A DataFrame or Series where rows are features and columns are
+                                               importance scores (e.g., mean and std for RSF).
+    - n_highlight (int): Number of top features to highlight in the plot.
+    - title (str): Title of the plot.
+
+    Returns:
+    - None: Displays a plot of the importance scores on a logarithmic scale.
+    """
+    # Ensure importances is a DataFrame
+    if isinstance(importances, pd.Series):
+        importances = importances.to_frame(name='importance')
+
+    # Sort by importance
+    sorted_importances = importances.sort_values(by='importances_mean', ascending=False).head(n_highlight)
+
+    # Plotting the importance scores with a log scale on the y-axis
+    plt.figure(figsize=(10, 6))
+    sorted_importances['importances_mean'].plot(kind='barh',
+                                                xerr=sorted_importances['importances_std'],
+                                                color='blue', ecolor='black', capsize=4)
+
+    plt.xscale('log')
+    plt.xlabel("Feature Importance (Log Scale)")
+    plt.ylabel("Feature")
+    plt.title(title)
+    plt.grid(True, which="both", ls="--")
+    plt.gca().invert_yaxis()  # To display the highest importance at the top
+    plt.show()
+
+def plot_lasso_effects(df, feature_columns, duration_col='time', event_col='event', alphas=None):
+    """
+    Plot the effect of Lasso regularization on the coefficients of a Cox Proportional Hazards model.
+
+    Args:
+    - df (pd.DataFrame): The dataset containing the features, duration, and event columns.
+    - feature_columns (list): List of feature column names to include in the model.
+    - duration_col (str): The name of the column that contains the duration data.
+    - event_col (str): The name of the column that contains the event data.
+    - alphas (array-like): A list or array of alpha (regularization strength) values to use.
+
+    Returns:
+    - None: Displays a plot showing the effect of Lasso regularization on the coefficients.
+    """
+    if alphas is None:
+        alphas = np.logspace(-4, 0, 50)  # Default alpha values
+
+    coefficients = pd.DataFrame(index=feature_columns)
+
+    # Fit the model for each alpha and store the coefficients
+    for alpha in alphas:
+        cph = CoxPHFitter(penalizer=alpha)
+        cph.fit(df[feature_columns + [duration_col, event_col]], duration_col=duration_col, event_col=event_col)
+        coefficients[alpha] = cph.params_
+
+    # Transpose for plotting (alphas as columns)
+    coefficients = coefficients.T
+
+    # Plot the coefficients to see the effect of Lasso regularization
+    plt.figure(figsize=(10, 6))
+    for column in coefficients.columns:
+        plt.plot(coefficients.index, coefficients[column], label=column)
+
+    plt.xscale('log')
+    plt.xlabel('Alpha (Regularization Strength)')
+    plt.ylabel('Coefficient Value')
+    plt.title('Effect of Lasso Regularization on Coefficients')
+    plt.legend(loc='best')
+    plt.grid(True)
     plt.show()
 
 def cross_validate_and_plot(models, X, y, n_splits=5):
     kf = KFold(n_splits=n_splits, shuffle=True, random_state=42)
     results = {name: [] for name in models.keys()}
 
-    for train_index, val_index in kf.split(X):
-        X_train, X_val = X.iloc[train_index], X.iloc[val_index]
-        y_train, y_val = y.iloc[train_index], y.iloc[val_index]
+    # Concatenate X and y to ensure that they are split together correctly
+    data = pd.concat([X, y], axis=1)
 
-        for name, model in models.items():
+    for train_index, val_index in kf.split(data):
+        # Split the data into training and validation sets
+        train_data, val_data = data.iloc[train_index], data.iloc[val_index]
+
+        # Separate X and y for train and validation sets
+        X_train, y_train = train_data.drop(columns=['time', 'event']), train_data[['time', 'event']]
+        X_val, y_val = val_data.drop(columns=['time', 'event']), val_data[['time', 'event']]
+
+        for name, model_func in models.items():
             if name == 'CoxPH':
-                model.fit(pd.concat([X_train, y_train], axis=1), 'time', 'event')
-                preds = model.predict_partial_hazard(X_val)
+                # Prepare data for the CoxPH model
+                train_data_cox = pd.concat([X_train, y_train], axis=1)
+                val_data_cox = pd.concat([X_val, y_val], axis=1)
+
+                # Run the Cox model
+                cox_model, _, _, hazard, _, _ = model_func(train_data_cox, val_data_cox)
+
+                # Ensure hazard predictions have the correct index
+                preds = pd.Series(hazard.values.flatten(), index=X_val.index)
+
             elif name == 'RSF':
-                model.fit(X_train, y_train)
-                preds = -model.predict(X_val)  # Negative for concordance_index
+                # Prepare y_train and y_val as structured arrays for RSF model
+                y_train_structured = np.array(list(zip(y_train['event'], y_train['time'])),
+                                              dtype=[('event', 'bool'), ('time', 'float')])
+                y_val_structured = np.array(list(zip(y_val['event'], y_val['time'])),
+                                            dtype=[('event', 'bool'), ('time', 'float')])
+
+                # Run the RSF model
+                rsf_model, rsf_survival_function, _, _ = model_func(pd.concat([X_train, y_train], axis=1), pd.concat([X_val, y_val], axis=1))
+
+                # Predict cumulative hazard for the validation set
+                rsf_hazard = rsf_model.predict_cumulative_hazard_function(X_val, return_array=True)
+                preds = -pd.Series(rsf_hazard.mean(axis=1), index=X_val.index)  # Negative for concordance_index
+
+            # Calculate the concordance index
             c_index = concordance_index(y_val['time'], preds, y_val['event'])
             results[name].append(c_index)
 

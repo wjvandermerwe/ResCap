@@ -47,4 +47,3 @@ def preprocess(df: pd.DataFrame) -> pd.DataFrame:
     transformed_df.columns = [name.split('__')[-1] if '__' in name else name for name in transformed_df.columns]
 
     return transformed_df
-

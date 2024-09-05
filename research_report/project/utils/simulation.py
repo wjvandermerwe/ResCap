@@ -1,6 +1,9 @@
 import pandas as pd
+from SurvSet.data import SurvLoader
 from synthcity.plugins import Plugins
 from synthcity.metrics.eval_sanity import CloseValuesProbability, DataMismatchScore, CommonRowsProportion, NearestSyntheticNeighborDistance, DistantValuesProbability
+from synthcity.metrics.eval_statistical import PRDCScore, InverseKLDivergence, ChiSquaredTest
+from synthcity.metrics.eval_privacy import IdentifiabilityScore, kAnonymization, lDiversityDistinct
 from synthcity.utils.serialization import save_to_file
 from config import save_dataset, save_checkpoint, load_checkpoint, get_train_dataset_indexes, load_datasets
 from synthcity.plugins.core.dataloader import SurvivalAnalysisDataLoader, TimeSeriesSurvivalDataLoader
@@ -83,6 +86,16 @@ def evaluate_simulated_model_data(data_loader, generated_data):
     nn_distance = NearestSyntheticNeighborDistance()
     distant = DistantValuesProbability()
 
+    # statistical
+    prdc = PRDCScore()
+    invKL = InverseKLDivergence()
+    chi = ChiSquaredTest()
+
+    # privacy
+    iden = IdentifiabilityScore()
+    kanon = kAnonymization()
+    ldiv = lDiversityDistinct()
+
     # Evaluate metrics
     close_val = close.evaluate(data_loader, generated_data)['score']
     mis = data_mismatch.evaluate(data_loader, generated_data)['score']
@@ -90,20 +103,13 @@ def evaluate_simulated_model_data(data_loader, generated_data):
     nn_dist = nn_distance.evaluate(data_loader, generated_data)['mean']
     dist = distant.evaluate(data_loader, generated_data)['score']
 
-    # Determine if metrics are within expected values
-    correct = True
+    prdc_score = prdc.evaluate(data_loader, generated_data)
+    invKL_score = invKL.evaluate(data_loader, generated_data)
+    chi_score = chi.evaluate(data_loader, generated_data)
 
-    # Define correctness based on descriptions
-    if not (0 <= close_val <= 1):
-        correct = False
-    if not (0 <= mis <= 1):
-        correct = False
-    if not (0 <= prop <= 1):
-        correct = False
-    if nn_dist < 0:
-        correct = False
-    if not (0 <= dist <= 1):
-        correct = False
+    iden_score = iden.evaluate(data_loader, generated_data)
+    kanon_score = kanon.evaluate(data_loader, generated_data)
+    ldiv_score = ldiv.evaluate(data_loader, generated_data)
 
     # Prepare results
     results = {
@@ -121,10 +127,28 @@ def evaluate_simulated_model_data(data_loader, generated_data):
         },
         'distant_values': {
             "value": dist,
+        },
+        'prdc_score': {
+            "value": prdc_score,
+        },
+        'invKL_score': {
+            "value": invKL_score,
+        },
+        'chi_score': {
+            "value": chi_score,
+        },
+        'iden_score': {
+            "value": iden_score,
+        },
+        'kanon_score': {
+            "value": kanon_score,
+        },
+        'ldiv_score': {
+            "value": ldiv_score,
         }
     }
 
-    return results, correct
+    return results
 
 def check_for_time_varying_features(df: pd.DataFrame) -> bool:
     # Implement your logic to determine if TimeGAN should be used.
@@ -134,19 +158,23 @@ def check_for_time_varying_features(df: pd.DataFrame) -> bool:
     return 'time2' in df.columns and df['time2'].notna().any()
 
 
-def run_datasets_simulation(dataset_indexes, datasets):
-    start_index = load_checkpoint()
+def run_datasets_simulation(dataset_indexes, datasets, use_checkpoint=True):
+    start_index = 0
+    if use_checkpoint:
+        start_index = load_checkpoint()
+
     device = torch.device('cuda')
-    print(torch.cuda.is_available());
+    print(f"CUDA available: {torch.cuda.is_available()}")
+
     for index, dataset_index in enumerate(dataset_indexes):
         if index < start_index:
             continue
-        print(f"training model on {dataset_index}")
+        print(f"Training model on dataset {dataset_index}")
+
         ds_train = datasets[dataset_index]
         ds_train = preprocess(ds_train)
-        # for simulation remove 0
+        # For simulation, remove entries where 'time' is 0
         ds_train = ds_train[ds_train['time'] > 0]
-        # print(ds_train.head())
 
         # Check for time-varying features or other criteria to decide on using TimeGAN
         use_timegan = check_for_time_varying_features(ds_train)  # Implement this function based on your criteria
@@ -171,10 +199,10 @@ def run_datasets_simulation(dataset_indexes, datasets):
             generated_data_gan = surv_gan_model.generate(5000)
             generated_data_vae = surv_vae_model.generate(5000)
 
-            _, eval_gan = evaluate_simulated_model_data(data_loader, generated_data_gan)
-            _, eval_vae = evaluate_simulated_model_data(data_loader, generated_data_vae)
+            eval_gan = evaluate_simulated_model_data(data_loader, generated_data_gan)
+            eval_vae = evaluate_simulated_model_data(data_loader, generated_data_vae)
 
-            print(f"training completed, eval: gan:{eval_gan} vae:{eval_vae}")
+            print(f"Training completed, eval: GAN: {eval_gan}, VAE: {eval_vae}")
 
             # Save generated datasets
             generated_data_gan = generated_data_gan.dataframe()
@@ -183,12 +211,28 @@ def run_datasets_simulation(dataset_indexes, datasets):
             save_dataset(generated_data_gan, f"{dataset_index}_gan", "../outputs/generated_datasets")
             save_dataset(generated_data_vae, f"{dataset_index}_vae", "../outputs/generated_datasets")
 
-        save_checkpoint(index)
+        if use_checkpoint:
+            save_checkpoint(index)
+
+loader = SurvLoader()
+dataset = loader.load_dataset("flchain")['df']
+# run_datasets_simulation(['flchain'], dataset, False)
 
 
-folder = "../outputs/datasets" # load saved data
-dataset_indexes = get_train_dataset_indexes(folder)
-print(dataset_indexes)
-datasets = load_datasets(folder=folder, names=dataset_indexes)
-run_datasets_simulation(dataset_indexes, datasets)
+ds_train = preprocess(dataset)
+ds_train = ds_train[ds_train['time'] > 0]
+data_loader = SurvivalAnalysisDataLoader(ds_train, target_column="event", time_to_event_column="time")
 
+datasets = load_datasets("../outputs/generated_datasets",['flchain_gan', 'flchain_vae'])
+print(datasets)
+
+gan_generated = SurvivalAnalysisDataLoader(datasets['flchain_gan'], target_column="event", time_to_event_column="time")
+vae_generated = SurvivalAnalysisDataLoader(datasets['flchain_vae'], target_column="event", time_to_event_column="time")
+
+
+eval_gan = evaluate_simulated_model_data(data_loader, gan_generated)
+eval_vae = evaluate_simulated_model_data(data_loader, vae_generated)
+
+print(eval_gan)
+
+print(eval_vae)

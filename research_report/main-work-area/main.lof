@@ -3,12 +3,38 @@
 \addvspace {10\p@ }
 \contentsline {figure}{\numberline {1.1}{\ignorespaces Shows the breakdown of methods analysis preformed by \blx@tocontentsinit {0}\parencite {smith_scoping_2022} during a method review. The Study ran a literature selection process based on qualitative and quantitative metrics of methodology used in studies.}}{3}{figure.caption.8}%
 \addvspace {10\p@ }
-\contentsline {figure}{\numberline {2.1}{\ignorespaces \blx@tocontentsinit {0}\parencite {jaeger_accelerated_2022} Shows available packages based on model types for random survival forests.}}{17}{figure.caption.33}%
-\contentsline {figure}{\numberline {2.2}{\ignorespaces \blx@tocontentsinit {0}\parencite {wilkinson_fair_2016} Fair principles summary}}{19}{figure.caption.37}%
-\contentsline {figure}{\numberline {2.3}{\ignorespaces \blx@tocontentsinit {0}\parencite {norcliffe_survivalgan_2023} Survival GAN architecture}}{21}{figure.caption.40}%
-\contentsline {figure}{\numberline {2.4}{\ignorespaces \blx@tocontentsinit {0}\parencite {meng_simulating_2023} Shows simulation formulas under spesific conditions.}}{23}{figure.caption.41}%
+\contentsline {figure}{\numberline {2.1}{\ignorespaces QRP Summary \blx@tocontentsinit {0}\parencite {pawel_pitfalls_2024}}}{9}{figure.caption.25}%
+\contentsline {figure}{\numberline {2.2}{\ignorespaces \blx@tocontentsinit {0}\parencite {jaeger_accelerated_2022} Shows available packages based on model types for random survival forests.}}{19}{figure.caption.38}%
+\contentsline {figure}{\numberline {2.3}{\ignorespaces \blx@tocontentsinit {0}\parencite {wilkinson_fair_2016} Fair principles summary}}{21}{figure.caption.42}%
+\contentsline {figure}{\numberline {2.4}{\ignorespaces \blx@tocontentsinit {0}\parencite {norcliffe_survivalgan_2023} Survival GAN architecture}}{23}{figure.caption.45}%
+\contentsline {figure}{\numberline {2.5}{\ignorespaces \blx@tocontentsinit {0}\parencite {meng_simulating_2023} Shows simulation formulas under spesific conditions.}}{25}{figure.caption.46}%
 \addvspace {10\p@ }
-\contentsline {figure}{\numberline {3.1}{\ignorespaces \blx@tocontentsinit {0}\parencite {pawel_pitfalls_2024} Shows a common example of a simulation study plan.}}{26}{figure.caption.52}%
-\contentsline {figure}{\numberline {3.2}{\ignorespaces \blx@tocontentsinit {0}\parencite {qian_synthcity_2023} Simulation Pipeline.}}{42}{figure.caption.108}%
+\contentsline {figure}{\numberline {3.1}{\ignorespaces \blx@tocontentsinit {0}\parencite {pawel_pitfalls_2024} Shows a common example of a simulation study plan.}}{28}{figure.caption.57}%
+\contentsline {figure}{\numberline {3.2}{\ignorespaces \blx@tocontentsinit {0}\parencite {qian_synthcity_2023} Simulation Pipeline.}}{43}{figure.caption.112}%
 \addvspace {10\p@ }
+\contentsline {figure}{\numberline {4.1}{\ignorespaces Correlation Matrix For Variables}}{54}{figure.caption.135}%
+\contentsline {figure}{\numberline {4.2}{\ignorespaces Univariate Analysis Plots}}{55}{figure.caption.136}%
+\contentsline {figure}{\numberline {4.3}{\ignorespaces Univariate Analysis Plots}}{55}{figure.caption.137}%
+\contentsline {figure}{\numberline {4.4}{\ignorespaces Bivariate Scatter Plots}}{56}{figure.caption.138}%
+\contentsline {figure}{\numberline {4.5}{\ignorespaces Bivariate Scatter Plots}}{57}{figure.caption.139}%
+\contentsline {figure}{\numberline {4.6}{\ignorespaces Bivariate Violin Plots}}{57}{figure.caption.140}%
+\contentsline {figure}{\numberline {4.7}{\ignorespaces Bivariate Violin Plots}}{58}{figure.caption.141}%
+\contentsline {figure}{\numberline {4.8}{\ignorespaces Per Variable Censoring}}{59}{figure.caption.142}%
+\contentsline {figure}{\numberline {4.9}{\ignorespaces Numerical Censoring}}{59}{figure.caption.143}%
+\contentsline {figure}{\numberline {4.10}{\ignorespaces Auton-Survival Phentotying Along with the cluster compositions}}{60}{figure.caption.144}%
+\contentsline {figure}{\numberline {4.11}{\ignorespaces Kaplan-Meier Plot of the clusters}}{61}{figure.caption.145}%
+\contentsline {figure}{\numberline {4.12}{\ignorespaces Neelson-Aalen plot of the clusters}}{61}{figure.caption.146}%
+\contentsline {figure}{\numberline {4.13}{\ignorespaces Convergance Output}}{62}{figure.caption.149}%
+\contentsline {figure}{\numberline {4.14}{\ignorespaces coefficient values}}{63}{figure.caption.150}%
+\contentsline {figure}{\numberline {4.15}{\ignorespaces Boxplots of coefficients}}{64}{figure.caption.151}%
+\contentsline {figure}{\numberline {4.16}{\ignorespaces Lasso regularized coefficient panning closer to zero}}{65}{figure.caption.152}%
+\contentsline {figure}{\numberline {4.17}{\ignorespaces Survival curves for covariates}}{66}{figure.caption.153}%
+\contentsline {figure}{\numberline {4.18}{\ignorespaces Mean Hazard Visualisation}}{67}{figure.caption.154}%
+\contentsline {figure}{\numberline {4.19}{\ignorespaces Schoenfeld Residuals for num\_creatinine}}{69}{figure.caption.157}%
+\contentsline {figure}{\numberline {4.20}{\ignorespaces Descision Tree Matrix Visualisation}}{71}{figure.caption.159}%
+\contentsline {figure}{\numberline {4.21}{\ignorespaces Variable Importance Boxplots}}{72}{figure.caption.160}%
+\contentsline {figure}{\numberline {4.22}{\ignorespaces RSF Surival Curves}}{73}{figure.caption.161}%
+\contentsline {figure}{\numberline {4.23}{\ignorespaces RSF Hazard Curves}}{73}{figure.caption.162}%
+\contentsline {figure}{\numberline {4.24}{\ignorespaces One Calibration Errors}}{74}{figure.caption.165}%
+\contentsline {figure}{\numberline {4.25}{\ignorespaces Binned D-calibration Errors}}{75}{figure.caption.166}%
 \addvspace {10\p@ }
