@@ -2,8 +2,8 @@
 \babel@toc {english}{}\relax 
 \contentsline {chapter}{Declaration}{i}{section*.1}%
 \contentsline {chapter}{Abstract}{ii}{section*.2}%
-\contentsline {chapter}{List of Figures}{v}{chapter*.4}%
-\contentsline {chapter}{List of Tables}{vii}{chapter*.5}%
+\contentsline {chapter}{List of Figures}{iv}{chapter*.4}%
+\contentsline {chapter}{List of Tables}{v}{chapter*.5}%
 \contentsline {chapter}{\numberline {1}Introduction}{1}{chapter.6}%
 \contentsline {section}{\numberline {1.1}Background}{1}{section.7}%
 \contentsline {section}{\numberline {1.2}Problem Statement}{4}{section.9}%
@@ -49,7 +49,7 @@
 \contentsline {section}{\numberline {4.2}Exploratory Analysis}{54}{section.134}%
 \contentsline {section}{\numberline {4.3}Survival Analysis Case Study}{62}{section.147}%
 \contentsline {subsection}{\numberline {4.3.1}Cox Proportional Hazards}{62}{subsection.148}%
-\contentsline {subsection}{\numberline {4.3.2}Random Survival Forest}{71}{subsection.158}%
-\contentsline {subsection}{\numberline {4.3.3}Models comparison}{74}{subsection.163}%
-\contentsline {chapter}{\numberline {5}Conclusion}{76}{chapter.167}%
-\contentsline {chapter}{Bibliography}{78}{chapter*.168}%
+\contentsline {subsection}{\numberline {4.3.2}Random Survival Forest}{72}{subsection.158}%
+\contentsline {subsection}{\numberline {4.3.3}Models comparison}{75}{subsection.163}%
+\contentsline {chapter}{\numberline {5}Conclusion}{77}{chapter.167}%
+\contentsline {chapter}{Bibliography}{79}{chapter*.168}%

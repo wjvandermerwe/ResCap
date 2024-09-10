@@ -467,6 +467,68 @@
       \verb https://link.springer.com/10.1007/978-3-319-19425-7
       \endverb
     \endentry
+    \entry{ichida_evaluation_1993}{article}{}{}
+      \name{author}{4}{}{%
+        {{hash=6af1486768b77550556b9ea20176a197}{%
+           family={Ichida},
+           familyi={I\bibinitperiod},
+           given={J.\bibnamedelimi M.},
+           giveni={J\bibinitperiod\bibinitdelim M\bibinitperiod}}}%
+        {{hash=b2ae90c50941fdbe70d0c4787384c0ed}{%
+           family={Wassell},
+           familyi={W\bibinitperiod},
+           given={J.\bibnamedelimi T.},
+           giveni={J\bibinitperiod\bibinitdelim T\bibinitperiod}}}%
+        {{hash=c92beeefbbfb53c8ef6f14bb64495d94}{%
+           family={Keller},
+           familyi={K\bibinitperiod},
+           given={M.\bibnamedelimi D.},
+           giveni={M\bibinitperiod\bibinitdelim D\bibinitperiod}}}%
+        {{hash=adb6cef502a5675ddd9d67031fa630b4}{%
+           family={Ayers},
+           familyi={A\bibinitperiod},
+           given={L.\bibnamedelimi W.},
+           giveni={L\bibinitperiod\bibinitdelim W\bibinitperiod}}}%
+      }
+      \strng{namehash}{1f4388dcb4a05de251438ad392550b3a}
+      \strng{fullhash}{12bdac0be907bf019d823a6b044e506b}
+      \strng{fullhashraw}{12bdac0be907bf019d823a6b044e506b}
+      \strng{bibnamehash}{1f4388dcb4a05de251438ad392550b3a}
+      \strng{authorbibnamehash}{1f4388dcb4a05de251438ad392550b3a}
+      \strng{authornamehash}{1f4388dcb4a05de251438ad392550b3a}
+      \strng{authorfullhash}{12bdac0be907bf019d823a6b044e506b}
+      \strng{authorfullhashraw}{12bdac0be907bf019d823a6b044e506b}
+      \field{sortinit}{I}
+      \field{sortinithash}{8d291c51ee89b6cd86bf5379f0b151d8}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{abstract}{Abstract Survival analysis methods are valuable for detecting intervention effects because detailed information from patient records and sensitive outcome measures are used. The burn unit at a large university hospital replaced routine bathing with total body bathing using chlorhexidine gluconate for antimicrobial effect. A Cox proportional hazards model was used to analyse time from admission until either infection with Staphylococcus aureus or discharge for 155 patients, controlling for burn severity and two time‐dependent covariates: days until first wound excision and days until first administration of prophylactic antibiotics. The risk of infection was 55 per cent higher in the historical control group, although not statistically significant. There was also some indication that early wound excision may be important as an infection‐control measure for burn patients.}
+      \field{issn}{0277-6715, 1097-0258}
+      \field{journaltitle}{Statistics in Medicine}
+      \field{langid}{english}
+      \field{month}{2}
+      \field{number}{3}
+      \field{shortjournal}{Statistics in Medicine}
+      \field{title}{Evaluation of protocol change in burn‐care management using the Cox proportional hazards model with time‐dependent covariates}
+      \field{urlday}{30}
+      \field{urlmonth}{8}
+      \field{urlyear}{2024}
+      \field{volume}{12}
+      \field{year}{1993}
+      \field{dateera}{ce}
+      \field{urldateera}{ce}
+      \field{pages}{301\bibrangedash 310}
+      \range{pages}{10}
+      \verb{doi}
+      \verb 10.1002/sim.4780120313
+      \endverb
+      \verb{urlraw}
+      \verb https://onlinelibrary.wiley.com/doi/10.1002/sim.4780120313
+      \endverb
+      \verb{url}
+      \verb https://onlinelibrary.wiley.com/doi/10.1002/sim.4780120313
+      \endverb
+    \endentry
     \entry{ishwaran_random_2008}{article}{}{}
       \name{author}{4}{}{%
         {{hash=87b2e79f8f2ab0a4040e84b52fbe2710}{%
@@ -2461,6 +2523,7 @@
       \endverb
     \endentry
   \enddatalist
+  \missing{pedregosa_etal_2011_scikit_learn}
 \endrefsection
 \endinput
 

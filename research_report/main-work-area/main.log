@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.26 (MiKTeX 24.4) (preloaded format=pdflatex 2024.8.8)  5 SEP 2024 08:54
+This is pdfTeX, Version 3.141592653-2.6-1.40.26 (MiKTeX 24.4) (preloaded format=pdflatex 2024.8.8)  10 SEP 2024 19:08
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -1276,55 +1276,7 @@ LaTeX Font Info:    Trying to load font information for T1+ppl on input line 13
 (C:\Users\johan\AppData\Local\Programs\MiKTeX\tex/latex/psnfss\t1ppl.fd
 File: t1ppl.fd 2001/06/04 font definitions for T1/ppl.
 )
-(main.aux (Chapters/Introduction.aux) (Chapters/LiteratureReview.aux)
-(Chapters/ResearchMethodology.aux) (Chapters/ResultsAndDiscussion.aux
-
-LaTeX Warning: Label `fig:your_label' multiply defined.
-
-
-LaTeX Warning: Label `fig:your_label' multiply defined.
-
-
-LaTeX Warning: Label `fig:your_label' multiply defined.
-
-
-LaTeX Warning: Label `fig:your_label' multiply defined.
-
-
-LaTeX Warning: Label `fig:your_label' multiply defined.
-
-
-LaTeX Warning: Label `fig:your_label' multiply defined.
-
-
-LaTeX Warning: Label `fig:your_label' multiply defined.
-
-
-LaTeX Warning: Label `fig:your_label' multiply defined.
-
-
-LaTeX Warning: Label `fig:your_label' multiply defined.
-
-
-LaTeX Warning: Label `fig:your_label' multiply defined.
-
-
-LaTeX Warning: Label `fig:your_label' multiply defined.
-
-
-LaTeX Warning: Label `fig:your_label' multiply defined.
-
-
-LaTeX Warning: Label `fig:your_label' multiply defined.
-
-
-LaTeX Warning: Label `fig:your_label' multiply defined.
-
-) (Chapters/Conclusion.aux
-
-LaTeX Warning: Label `Chapter4' multiply defined.
-
-))
+(main.aux)
 \openout1 = `main.aux'.
 
 LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 132.
@@ -1438,20 +1390,25 @@ Package biblatex Info: Automatic encoding selection.
 
 Package biblatex Info: Trying to load bibliographic data...
 Package biblatex Info: ... file 'main.bbl' found.
- (main.bbl)
+ (main.bbl
+
+Package biblatex Warning: The following entry could not be found
+(biblatex)                in the database:
+(biblatex)                pedregosa_etal_2011_scikit_learn
+(biblatex)                Please verify the spelling and rerun
+(biblatex)                LaTeX afterwards.
+
+)
 Package biblatex Info: Reference section=0 on input line 132.
 Package biblatex Info: Reference segment=0 on input line 132.
 
 isodate: babel.sty has been loaded
 Package hyperref Info: Link coloring ON on input line 132.
-(main.out) (main.out)
 \@outlinefile=\write6
 \openout6 = `main.out'.
 
-
 1: section
-<Figures/logoWitsstackedcolourtransparent.png, id=218, 1581.91pt x 1648.1575pt>
-
+<Figures/logoWitsstackedcolourtransparent.png, id=6, 1581.91pt x 1648.1575pt>
 File: Figures/logoWitsstackedcolourtransparent.png Graphic file (type png)
 <use Figures/logoWitsstackedcolourtransparent.png>
 Package pdftex.def Info: Figures/logoWitsstackedcolourtransparent.png  used on 
@@ -1469,7 +1426,7 @@ sstackedcolourtransparent.png>]
 --------------------
  Declaration
 --------------------
-<Figures/sign.png, id=229, 206.7725pt x 145.54375pt>
+<Figures/sign.png, id=17, 206.7725pt x 145.54375pt>
 File: Figures/sign.png Graphic file (type png)
 <use Figures/sign.png>
 Package pdftex.def Info: Figures/sign.png  used on input line 196.
@@ -1517,48 +1474,45 @@ File: ot1zplm.fd 2002/09/08 Fontinst v1.914 font definitions for OT1/zplm.
 1: section
 [2
 
-] (main.toc
-
-1: section
-[3
-
-])
+]
+No file main.toc.
 \tf@toc=\write7
 \openout7 = `main.toc'.
 
 
 
-[4] (main.lof
-
 1: section
-[5
+[3
 
-])
+]
+No file main.lof.
 \tf@lof=\write8
 \openout8 = `main.lof'.
 
 
 
-[6] (main.lot
-LaTeX Font Info:    Trying to load font information for T1+cmtt on input line 9
-.
+1: section
+[4
 
-(C:\Users\johan\AppData\Local\Programs\MiKTeX\tex/latex/base\t1cmtt.fd
-File: t1cmtt.fd 2023/04/13 v2.5m Standard LaTeX font definitions
-))
+]
+No file main.lot.
 \tf@lot=\write9
 \openout9 = `main.lot'.
 
 
 
 1: section
-[7
+[5
 
 ]
 \openout2 = `Chapters/Introduction.aux'.
 
  (Chapters/Introduction.tex
 Chapter 1.
+
+LaTeX Warning: Reference `fig:statsmodels' on page 1 undefined on input line 14
+.
+
 
 Underfull \hbox (badness 10000) in paragraph at lines 6--15
 
@@ -1587,7 +1541,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 6--15
 
 
 ]
-<Figures/ML_STATS_MODELS.jpg, id=426, 1423.3175pt x 1746.525pt>
+<Figures/ML_STATS_MODELS.jpg, id=59, 1423.3175pt x 1746.525pt>
 File: Figures/ML_STATS_MODELS.jpg Graphic file (type jpg)
 <use Figures/ML_STATS_MODELS.jpg>
 Package pdftex.def Info: Figures/ML_STATS_MODELS.jpg  used on input line 18.
@@ -1618,6 +1572,9 @@ Underfull \hbox (badness 10000) in paragraph at lines 24--29
  (Chapters/LiteratureReview.tex
 Chapter 2.
 
+LaTeX Warning: Reference `fig:qrp' on page 7 undefined on input line 10.
+
+
 Underfull \hbox (badness 10000) in paragraph at lines 4--11
 
  []
@@ -1641,7 +1598,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 4--11
 
 
 ]
-<Figures/QRPSUMMARY.png, id=488, 765.86125pt x 713.66624pt>
+<Figures/QRPSUMMARY.png, id=132, 765.86125pt x 713.66624pt>
 File: Figures/QRPSUMMARY.png Graphic file (type png)
 <use Figures/QRPSUMMARY.png>
 Package pdftex.def Info: Figures/QRPSUMMARY.png  used on input line 14.
@@ -1682,6 +1639,10 @@ Underfull \hbox (badness 10000) in paragraph at lines 30--33
 Underfull \hbox (badness 10000) in paragraph at lines 30--33
 
  []
+
+
+LaTeX Warning: Reference `tab:methlasso' on page 11 undefined on input line 45.
+
 
 
 
@@ -1853,7 +1814,7 @@ Overfull \hbox (37.42995pt too wide) in paragraph at lines 123--128
 a-tions in-volv-ing high-dimensional,
  []
 
-<Figures/OBLIQUE_SUMMARY.png, id=587, 1027.84pt x 568.1225pt>
+<Figures/OBLIQUE_SUMMARY.png, id=236, 1027.84pt x 568.1225pt>
 File: Figures/OBLIQUE_SUMMARY.png Graphic file (type png)
 <use Figures/OBLIQUE_SUMMARY.png>
 Package pdftex.def Info: Figures/OBLIQUE_SUMMARY.png  used on input line 130.
@@ -1885,7 +1846,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 140--143
 
 
 [20]
-<Figures/FAIR_PRINCIPLES.png, id=611, 502.87875pt x 304.13625pt>
+<Figures/FAIR_PRINCIPLES.png, id=265, 502.87875pt x 304.13625pt>
 File: Figures/FAIR_PRINCIPLES.png Graphic file (type png)
 <use Figures/FAIR_PRINCIPLES.png>
 Package pdftex.def Info: Figures/FAIR_PRINCIPLES.png  used on input line 150.
@@ -1900,7 +1861,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 155--158
 [21 <./Figures/FAIR_PRINCIPLES.png>]
 
 [22]
-<Figures/GAN_ARCH.png, id=632, 835.12pt x 335.2525pt>
+<Figures/GAN_ARCH.png, id=289, 835.12pt x 335.2525pt>
 File: Figures/GAN_ARCH.png Graphic file (type png)
 <use Figures/GAN_ARCH.png>
 Package pdftex.def Info: Figures/GAN_ARCH.png  used on input line 164.
@@ -1912,7 +1873,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 169--172
 
  []
 
-<Figures/COMPETING1.png, id=645, 481.8pt x 810.02625pt>
+<Figures/COMPETING1.png, id=304, 481.8pt x 810.02625pt>
 File: Figures/COMPETING1.png Graphic file (type png)
 <use Figures/COMPETING1.png>
 Package pdftex.def Info: Figures/COMPETING1.png  used on input line 175.
@@ -1943,7 +1904,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 6--9
 
  []
 
-<Figures/METHOD_GRAPH.png, id=690, 759.83875pt x 371.3875pt>
+<Figures/METHOD_GRAPH.png, id=358, 759.83875pt x 371.3875pt>
 File: Figures/METHOD_GRAPH.png Graphic file (type png)
 <use Figures/METHOD_GRAPH.png>
 Package pdftex.def Info: Figures/METHOD_GRAPH.png  used on input line 12.
@@ -1961,6 +1922,10 @@ File: ts1ppl.fd 2001/06/04 font definitions for TS1/ppl.
 
 
  <./Figures/METHOD_GRAPH.png>]
+
+LaTeX Warning: Reference `impute' on page 29 undefined on input line 33.
+
+
 Underfull \hbox (badness 10000) in paragraph at lines 33--36
 
  []
@@ -2010,6 +1975,13 @@ Underfull \hbox (badness 10000) in paragraph at lines 69--72
 
 [32]
 
+LaTeX Warning: Reference `methods' on page 33 undefined on input line 84.
+
+
+LaTeX Warning: Reference `methods' on page 33 undefined on input line 85.
+
+
+
 [33]
 Underfull \hbox (badness 10000) in paragraph at lines 106--115
 
@@ -2038,6 +2010,10 @@ Underfull \hbox (badness 10000) in paragraph at lines 106--115
 
 [36]
 
+LaTeX Warning: Reference `eq:viadapt' on page 37 undefined on input line 149.
+
+
+
 [37]
 Underfull \hbox (badness 10000) in paragraph at lines 165--169
 
@@ -2055,6 +2031,11 @@ Underfull \hbox (badness 10000) in paragraph at lines 195--199
 [39]
 
 [40]
+LaTeX Font Info:    Trying to load font information for T1+cmtt on input line 2
+19.
+ (C:\Users\johan\AppData\Local\Programs\MiKTeX\tex/latex/base\t1cmtt.fd
+File: t1cmtt.fd 2023/04/13 v2.5m Standard LaTeX font definitions
+)
 Underfull \hbox (badness 10000) in paragraph at lines 215--222
 
  []
@@ -2072,6 +2053,11 @@ Underfull \hbox (badness 10000) in paragraph at lines 215--222
 
 
 [41]
+
+LaTeX Warning: Citation 'pedregosa_etal_2011_scikit_learn' on page 42 undefined
+ on input line 230.
+
+
 Underfull \hbox (badness 10000) in paragraph at lines 228--231
 
  []
@@ -2083,37 +2069,34 @@ Overfull \hbox (42.27704pt too wide) in paragraph at lines 228--231
 oder\T1/ppl/m/n/12 ,
  []
 
-<Figures/SynthCity.png, id=841, 485.56406pt x 155.07938pt>
+<Figures/SynthCity.png, id=519, 485.56406pt x 155.07938pt>
 File: Figures/SynthCity.png Graphic file (type png)
 <use Figures/SynthCity.png>
 Package pdftex.def Info: Figures/SynthCity.png  used on input line 236.
 (pdftex.def)             Requested size: 438.17227pt x 139.94164pt.
 
-LaTeX Warning: `h' float specifier changed to `ht'.
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 240--250
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 240--250
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 240--250
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 240--250
-
- []
-
-
 
 [42]
+Underfull \hbox (badness 10000) in paragraph at lines 240--250
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 240--250
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 240--250
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 240--250
+
+ []
+
+
 
 [43 <./Figures/SynthCity.png>]
 
@@ -2122,73 +2105,79 @@ Underfull \hbox (badness 10000) in paragraph at lines 240--250
 [45]
 
 [46]
-Overfull \hbox (7.5982pt too wide) in paragraph at lines 306--307
+Overfull \hbox (7.5982pt too wide) in paragraph at lines 307--308
 \T1/ppl/m/n/12 For this sec-tion I out-line the steps For run-ning the mod-els 
 on the loaded and preperad
  []
 
 
-Underfull \hbox (badness 1540) in paragraph at lines 319--319
+Underfull \hbox (badness 1540) in paragraph at lines 320--320
 \T1/ppl/m/n/12 that in-cludes Kaplan-Meier, Nelson-
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 326--335
+LaTeX Warning: `h' float specifier changed to `ht'.
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 327--336
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 326--335
+Underfull \hbox (badness 10000) in paragraph at lines 327--336
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 326--335
+Underfull \hbox (badness 10000) in paragraph at lines 327--336
 
  []
 
 
-Overfull \hbox (4.37416pt too wide) in paragraph at lines 326--335
+Overfull \hbox (4.37416pt too wide) in paragraph at lines 327--336
 \T1/ppl/m/n/12 dicted for var-i-ous co-vari-ate pro-files us-ing the \T1/cmtt/m
 /n/12 lifelines.plot_covariate_groups()
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 326--335
+Underfull \hbox (badness 10000) in paragraph at lines 327--336
 
  []
 
 
 
 [47]
-Overfull \hbox (2.72627pt too wide) in paragraph at lines 338--344
+
+[48]
+Overfull \hbox (2.72627pt too wide) in paragraph at lines 339--345
 \T1/cmtt/m/n/12 scikit-survival \T1/ppl/m/n/12 li-brary, which is de-signed for
  sur-vival anal-y-sis with de-ci-sion trees.
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 338--344
+Underfull \hbox (badness 10000) in paragraph at lines 339--345
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 338--344
+Underfull \hbox (badness 10000) in paragraph at lines 339--345
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 338--344
+Underfull \hbox (badness 10000) in paragraph at lines 339--345
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 338--344
+Underfull \hbox (badness 10000) in paragraph at lines 339--345
 
  []
 
 
+LaTeX Warning: Reference `design' on page 49 undefined on input line 347.
 
-[48]
+
 
 [49])
 
@@ -2197,6 +2186,9 @@ Underfull \hbox (badness 10000) in paragraph at lines 338--344
 
  (Chapters/ResultsAndDiscussion.tex
 Chapter 4.
+
+LaTeX Warning: Reference `Chapter3' on page 51 undefined on input line 6.
+
 
 Underfull \hbox (badness 10000) in paragraph at lines 6--9
 
@@ -2215,7 +2207,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 6--9
 [52]
 
 [53]
-<Figures/EDA/corr.png, id=945, 1673.7732pt x 1015.3935pt>
+<Figures/EDA/corr.png, id=651, 1673.7732pt x 1015.3935pt>
 File: Figures/EDA/corr.png Graphic file (type png)
 <use Figures/EDA/corr.png>
 Package pdftex.def Info: Figures/EDA/corr.png  used on input line 73.
@@ -2230,12 +2222,12 @@ Overfull \hbox (30.48103pt too wide) in paragraph at lines 73--74
 [54
 
  <./Figures/EDA/corr.png>]
-<Figures/EDA/uni3.png, id=951, 1084.05pt x 1300.86pt>
+<Figures/EDA/uni3.png, id=659, 1084.05pt x 1300.86pt>
 File: Figures/EDA/uni3.png Graphic file (type png)
 <use Figures/EDA/uni3.png>
 Package pdftex.def Info: Figures/EDA/uni3.png  used on input line 84.
 (pdftex.def)             Requested size: 227.65721pt x 273.18866pt.
-<Figures/EDA/uni4.png, id=952, 1084.05pt x 433.62pt>
+<Figures/EDA/uni4.png, id=660, 1084.05pt x 433.62pt>
 File: Figures/EDA/uni4.png Graphic file (type png)
 <use Figures/EDA/uni4.png>
 Package pdftex.def Info: Figures/EDA/uni4.png  used on input line 92.
@@ -2245,12 +2237,12 @@ Package pdftex.def Info: Figures/EDA/uni4.png  used on input line 92.
 [55
 
  <./Figures/EDA/uni3.png> <./Figures/EDA/uni4.png>]
-<Figures/EDA/scatter3.png, id=959, 1084.05pt x 1300.86pt>
+<Figures/EDA/scatter3.png, id=670, 1084.05pt x 1300.86pt>
 File: Figures/EDA/scatter3.png Graphic file (type png)
 <use Figures/EDA/scatter3.png>
 Package pdftex.def Info: Figures/EDA/scatter3.png  used on input line 102.
 (pdftex.def)             Requested size: 357.73761pt x 429.28513pt.
-<Figures/EDA/scatter4.png, id=960, 1084.05pt x 867.24pt>
+<Figures/EDA/scatter4.png, id=671, 1084.05pt x 867.24pt>
 File: Figures/EDA/scatter4.png Graphic file (type png)
 <use Figures/EDA/scatter4.png>
 Package pdftex.def Info: Figures/EDA/scatter4.png  used on input line 109.
@@ -2259,7 +2251,7 @@ Package pdftex.def Info: Figures/EDA/scatter4.png  used on input line 109.
 
 LaTeX Warning: `h' float specifier changed to `ht'.
 
-<Figures/EDA/violin4.png, id=961, 1084.05pt x 867.24pt>
+<Figures/EDA/violin4.png, id=672, 1084.05pt x 867.24pt>
 File: Figures/EDA/violin4.png Graphic file (type png)
 <use Figures/EDA/violin4.png>
 Package pdftex.def Info: Figures/EDA/violin4.png  used on input line 116.
@@ -2274,7 +2266,7 @@ LaTeX Warning: `h' float specifier changed to `ht'.
  <./Figures/EDA/scatter3.png>]
 
 [57 <./Figures/EDA/scatter4.png> <./Figures/EDA/violin4.png>]
-<Figures/EDA/violin3.png, id=973, 1084.05pt x 1300.86pt>
+<Figures/EDA/violin3.png, id=687, 1084.05pt x 1300.86pt>
 File: Figures/EDA/violin3.png Graphic file (type png)
 <use Figures/EDA/violin3.png>
 Package pdftex.def Info: Figures/EDA/violin3.png  used on input line 125.
@@ -2284,12 +2276,12 @@ Package pdftex.def Info: Figures/EDA/violin3.png  used on input line 125.
 [58
 
  <./Figures/EDA/violin3.png>]
-<Figures/EDA/censor_over.png, id=979, 387.3672pt x 387.3672pt>
+<Figures/EDA/censor_over.png, id=694, 387.3672pt x 387.3672pt>
 File: Figures/EDA/censor_over.png Graphic file (type png)
 <use Figures/EDA/censor_over.png>
 Package pdftex.def Info: Figures/EDA/censor_over.png  used on input line 136.
 (pdftex.def)             Requested size: 127.83157pt x 127.83157pt.
-<Figures/EDA/censor.png, id=980, 1037.7972pt x 820.9872pt>
+<Figures/EDA/censor.png, id=695, 1037.7972pt x 820.9872pt>
 File: Figures/EDA/censor.png Graphic file (type png)
 <use Figures/EDA/censor.png>
 Package pdftex.def Info: Figures/EDA/censor.png  used on input line 143.
@@ -2299,7 +2291,7 @@ Package pdftex.def Info: Figures/EDA/censor.png  used on input line 143.
 [59
 
  <./Figures/EDA/censor_over.png> <./Figures/EDA/censor.png>]
-<Figures/EDA/clusters.png, id=988, 1293.633pt x 556.479pt>
+<Figures/EDA/clusters.png, id=704, 1293.633pt x 556.479pt>
 File: Figures/EDA/clusters.png Graphic file (type png)
 <use Figures/EDA/clusters.png>
 Package pdftex.def Info: Figures/EDA/clusters.png  used on input line 153.
@@ -2309,13 +2301,13 @@ Package pdftex.def Info: Figures/EDA/clusters.png  used on input line 153.
 [60
 
  <./Figures/EDA/clusters.png>]
-<Figures/EDA/cluster_kaplan.png, id=994, 723.4227pt x 393.8715pt>
+<Figures/EDA/cluster_kaplan.png, id=711, 723.4227pt x 393.8715pt>
 File: Figures/EDA/cluster_kaplan.png Graphic file (type png)
 <use Figures/EDA/cluster_kaplan.png>
 Package pdftex.def Info: Figures/EDA/cluster_kaplan.png  used on input line 161
 .
 (pdftex.def)             Requested size: 217.02847pt x 118.16235pt.
-<Figures/EDA/cluster_neelson.png, id=995, 714.0276pt x 393.8715pt>
+<Figures/EDA/cluster_neelson.png, id=712, 714.0276pt x 393.8715pt>
 File: Figures/EDA/cluster_neelson.png Graphic file (type png)
 <use Figures/EDA/cluster_neelson.png>
 Package pdftex.def Info: Figures/EDA/cluster_neelson.png  used on input line 16
@@ -2326,17 +2318,35 @@ Package pdftex.def Info: Figures/EDA/cluster_neelson.png  used on input line 16
 [61
 
  <./Figures/EDA/cluster_kaplan.png> <./Figures/EDA/cluster_neelson.png>]
+
+LaTeX Warning: Reference `methods' on page 62 undefined on input line 179.
+
+
 Underfull \hbox (badness 10000) in paragraph at lines 179--182
 
  []
 
-<Figures/SURV/convergance_chaek.png, id=1003, 1032.85875pt x 91.09032pt>
-File: Figures/SURV/convergance_chaek.png Graphic file (type png)
-<use Figures/SURV/convergance_chaek.png>
-Package pdftex.def Info: Figures/SURV/convergance_chaek.png  used on input line
- 185.
-(pdftex.def)             Requested size: 438.17227pt x 38.64267pt.
-<Figures/SURV/covariates.png, id=1004, 906.38625pt x 525.46312pt>
+
+LaTeX Warning: File `Figures/SURV/convergance_chaek.png' not found on input lin
+e 185.
+
+
+Chapters/ResultsAndDiscussion.tex:185: Package pdftex.def Error: File `Figures/
+SURV/convergance_chaek.png' not found: using draft setting.
+
+See the pdftex.def package documentation for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.185 ...idth]{Figures/SURV/convergance_chaek.png}
+                                                  
+Try typing  <return>  to proceed.
+If that doesn't work, type  X <return>  to quit.
+
+
+LaTeX Warning: `h' float specifier changed to `ht'.
+
+<Figures/SURV/covariates.png, id=722, 906.38625pt x 525.46312pt>
 File: Figures/SURV/covariates.png Graphic file (type png)
 <use Figures/SURV/covariates.png>
 Package pdftex.def Info: Figures/SURV/covariates.png  used on input line 193.
@@ -2344,7 +2354,7 @@ Package pdftex.def Info: Figures/SURV/covariates.png  used on input line 193.
 
 LaTeX Warning: `h' float specifier changed to `ht'.
 
-<Figures/SURV/cox_cov.png, id=1005, 636.6987pt x 755.9442pt>
+<Figures/SURV/cox_cov.png, id=723, 636.6987pt x 755.9442pt>
 File: Figures/SURV/cox_cov.png Graphic file (type png)
 <use Figures/SURV/cox_cov.png>
 Package pdftex.def Info: Figures/SURV/cox_cov.png  used on input line 200.
@@ -2352,7 +2362,7 @@ Package pdftex.def Info: Figures/SURV/cox_cov.png  used on input line 200.
 
 LaTeX Warning: `h' float specifier changed to `ht'.
 
-<Figures/SURV/lasso_reg.png, id=1006, 706.8006pt x 397.485pt>
+<Figures/SURV/lasso_reg.png, id=724, 706.8006pt x 397.485pt>
 File: Figures/SURV/lasso_reg.png Graphic file (type png)
 <use Figures/SURV/lasso_reg.png>
 Package pdftex.def Info: Figures/SURV/lasso_reg.png  used on input line 207.
@@ -2360,7 +2370,7 @@ Package pdftex.def Info: Figures/SURV/lasso_reg.png  used on input line 207.
 
 LaTeX Warning: `h' float specifier changed to `ht'.
 
-<Figures/SURV/cox_overlay.png, id=1007, 723.4227pt x 810.8694pt>
+<Figures/SURV/cox_overlay.png, id=725, 723.4227pt x 810.8694pt>
 File: Figures/SURV/cox_overlay.png Graphic file (type png)
 <use Figures/SURV/cox_overlay.png>
 Package pdftex.def Info: Figures/SURV/cox_overlay.png  used on input line 214.
@@ -2368,7 +2378,7 @@ Package pdftex.def Info: Figures/SURV/cox_overlay.png  used on input line 214.
 
 LaTeX Warning: `h' float specifier changed to `ht'.
 
-<Figures/SURV/cox_hazard.png, id=1008, 614.295pt x 393.8715pt>
+<Figures/SURV/cox_hazard.png, id=726, 614.295pt x 393.8715pt>
 File: Figures/SURV/cox_hazard.png Graphic file (type png)
 <use Figures/SURV/cox_hazard.png>
 Package pdftex.def Info: Figures/SURV/cox_hazard.png  used on input line 222.
@@ -2378,25 +2388,27 @@ LaTeX Warning: `h' float specifier changed to `ht'.
 
 
 
-[62 <./Figures/SURV/convergance_chaek.png>]
+[62]
 
-[63 <./Figures/SURV/covariates.png>]
+[63]
 
-[64 <./Figures/SURV/cox_cov.png>]
+[64 <./Figures/SURV/covariates.png>]
 
-[65 <./Figures/SURV/lasso_reg.png>]
+[65 <./Figures/SURV/cox_cov.png>]
 
-[66 <./Figures/SURV/cox_overlay.png>]
+[66 <./Figures/SURV/lasso_reg.png>]
 
-[67 <./Figures/SURV/cox_hazard.png>]
-<Figures/SURV/schoen1.png, id=1041, 453.8556pt x 343.2825pt>
+[67 <./Figures/SURV/cox_overlay.png>]
+
+[68 <./Figures/SURV/cox_hazard.png>]
+<Figures/SURV/schoen1.png, id=770, 453.8556pt x 343.2825pt>
 File: Figures/SURV/schoen1.png Graphic file (type png)
 <use Figures/SURV/schoen1.png>
 Package pdftex.def Info: Figures/SURV/schoen1.png  used on input line 291.
 (pdftex.def)             Requested size: 438.17227pt x 331.4279pt.
 
 
-[68
+[69
 
 ]
 Overfull \hbox (4.11282pt too wide) in paragraph at lines 299--300
@@ -2406,10 +2418,10 @@ m/n/12 num_creatinine \T1/ppl/m/n/12 on the haz-ard may change
 
 
 
-[69 <./Figures/SURV/schoen1.png>]
+[70 <./Figures/SURV/schoen1.png>]
 
-[70]
-<Figures/SURV/rsf_paths.png, id=1057, 502.2765pt x 393.8715pt>
+[71]
+<Figures/SURV/rsf_paths.png, id=788, 502.2765pt x 393.8715pt>
 File: Figures/SURV/rsf_paths.png Graphic file (type png)
 <use Figures/SURV/rsf_paths.png>
 Package pdftex.def Info: Figures/SURV/rsf_paths.png  used on input line 318.
@@ -2421,10 +2433,10 @@ Underfull \hbox (badness 10000) in paragraph at lines 313--322
 
 
 
-[71
+[72
 
  <./Figures/SURV/rsf_paths.png>]
-<Figures/SURV/rsf_imp.png, id=1064, 614.295pt x 727.7589pt>
+<Figures/SURV/rsf_imp.png, id=796, 614.295pt x 727.7589pt>
 File: Figures/SURV/rsf_imp.png Graphic file (type png)
 <use Figures/SURV/rsf_imp.png>
 Package pdftex.def Info: Figures/SURV/rsf_imp.png  used on input line 326.
@@ -2435,46 +2447,48 @@ LaTeX Warning: `h' float specifier changed to `ht'.
 
 
 
-[72 <./Figures/SURV/rsf_imp.png>]
-<Figures/SURV/rsf_survival.png, id=1070, 611.4042pt x 402.5439pt>
+[73 <./Figures/SURV/rsf_imp.png>]
+<Figures/SURV/rsf_survival.png, id=804, 611.4042pt x 402.5439pt>
 File: Figures/SURV/rsf_survival.png Graphic file (type png)
 <use Figures/SURV/rsf_survival.png>
 Package pdftex.def Info: Figures/SURV/rsf_survival.png  used on input line 337.
 
 (pdftex.def)             Requested size: 305.70134pt x 201.27145pt.
-<Figures/SURV/rsf_hazard.png, id=1071, 611.4042pt x 402.5439pt>
+<Figures/SURV/rsf_hazard.png, id=805, 611.4042pt x 402.5439pt>
 File: Figures/SURV/rsf_hazard.png Graphic file (type png)
 <use Figures/SURV/rsf_hazard.png>
 Package pdftex.def Info: Figures/SURV/rsf_hazard.png  used on input line 344.
 (pdftex.def)             Requested size: 305.70134pt x 201.27145pt.
 
 
-[73
+[74
 
 
  <./Figures/SURV/rsf_survival.png> <./Figures/SURV/rsf_hazard.png>]
-<Figures/SURV/calibration.png, id=1079, 611.4042pt x 393.8715pt>
+
+LaTeX Warning: Reference `design' on page 75 undefined on input line 352.
+
+<Figures/SURV/calibration.png, id=814, 611.4042pt x 393.8715pt>
 File: Figures/SURV/calibration.png Graphic file (type png)
 <use Figures/SURV/calibration.png>
 Package pdftex.def Info: Figures/SURV/calibration.png  used on input line 373.
 (pdftex.def)             Requested size: 366.84534pt x 236.3247pt.
-<Figures/SURV/binned_d_cal.png, id=1080, 1003.8303pt x 426.393pt>
+<Figures/SURV/binned_d_cal.png, id=815, 1003.8303pt x 426.393pt>
 File: Figures/SURV/binned_d_cal.png Graphic file (type png)
 <use Figures/SURV/binned_d_cal.png>
 Package pdftex.def Info: Figures/SURV/binned_d_cal.png  used on input line 380.
 
 (pdftex.def)             Requested size: 438.17227pt x 186.11707pt.
 
-
 LaTeX Warning: `h' float specifier changed to `ht'.
 
 )
 
-[74
+[75
 
  <./Figures/SURV/calibration.png>]
 
-[75 <./Figures/SURV/binned_d_cal.png>]
+[76 <./Figures/SURV/binned_d_cal.png>]
 \openout2 = `Chapters/Conclusion.aux'.
 
  (Chapters/Conclusion.tex
@@ -2497,14 +2511,14 @@ Underfull \hbox (badness 10000) in paragraph at lines 5--350
 
 
 1: section
-[76
+[77
 
 
 
 
 ]
 
-[77]
+[78]
 Overfull \hbox (5.339pt too wide) in paragraph at lines 369--369
 \T1/ppl/m/n/12 cen-sored ob-ser-va-tions^^Q. en. In: \T1/ppl/m/it/12 Sem-i-nars
  in Or-thodon-tics \T1/ppl/m/n/12 30.1 (Feb. 2024), pp. 29^^U
@@ -2520,13 +2534,13 @@ Overfull \hbox (2.24826pt too wide) in paragraph at lines 369--369
 
 
 1: section
-[78
+[79
 
 
 
 ]
 
-[79]
+[80]
 Overfull \hbox (2.77766pt too wide) in paragraph at lines 369--369
 []\T1/ppl/m/n/12 Chirag Nag-pal, Willa Po-to-snak, and Ar-tur Dubrawski. \T1/pp
 l/m/it/12 auton-survival: an Open-
@@ -2534,7 +2548,7 @@ l/m/it/12 auton-survival: an Open-
 
 
 
-[80]
+[81]
 Overfull \hbox (6.5241pt too wide) in paragraph at lines 369--369
 []\T1/ppl/m/n/12 Hoang Pham, ed. \T1/ppl/m/it/12 Springer Hand-book of En-gi-ne
 er-ing Statis-tics\T1/ppl/m/n/12 . en. Springer Hand-
@@ -2554,14 +2568,14 @@ Way to Eval-u-ate Sur-vival Mod-els\T1/ppl/m/n/12 . arXiv:2306.01196
  []
 
 
+
+[82]
 Overfull \hbox (8.1833pt too wide) in paragraph at lines 369--369
 \T1/ppl/m/n/12 able Se-lec-tion for Causal In-fer-ence^^Q. en. In: \T1/ppl/m/it
 /12 Bio-met-rics \T1/ppl/m/n/12 73.4 (Dec. 2017), pp. 1111^^U
  []
 
 
-
-[81]
 Overfull \hbox (11.85086pt too wide) in paragraph at lines 369--369
 \T1/ppl/m/n/12 for High Di-men-sional Data^^Q. In: \T1/ppl/m/it/12 Quan-ti-ta-t
 ive Bio-Science \T1/ppl/m/n/12 36.2 (Nov. 2017), pp. 85^^U
@@ -2574,6 +2588,8 @@ n-tific Data \T1/ppl/m/n/12 3.1 (Mar. 2016), p. 160018.
  []
 
 
+
+[83]
 Overfull \hbox (39.47758pt too wide) in paragraph at lines 369--369
 \T1/ppl/m/n/12 p. 10944281231205027. \T1/ppl/m/sc/12 issn\T1/ppl/m/n/12 : 1094-
 4281, 1552-7425. \T1/ppl/m/sc/12 doi\T1/ppl/m/n/12 : [][]$\T1/cmtt/m/n/12 10 . 
@@ -2581,8 +2597,6 @@ Overfull \hbox (39.47758pt too wide) in paragraph at lines 369--369
  []
 
 
-
-[82]
 Overfull \hbox (7.80981pt too wide) in paragraph at lines 369--369
 \T1/ppl/m/n/12 Haz-ards Model^^Q. In: \T1/ppl/m/it/12 Biometrika \T1/ppl/m/n/12
  94.3 (2007). Pub-lisher: [Ox-ford Uni-ver-sity Press,
@@ -2590,7 +2604,7 @@ Overfull \hbox (7.80981pt too wide) in paragraph at lines 369--369
 
 
 
-[83] (main.aux (Chapters/Introduction.aux) (Chapters/LiteratureReview.aux)
+[84] (main.aux (Chapters/Introduction.aux) (Chapters/LiteratureReview.aux)
 (Chapters/ResearchMethodology.aux) (Chapters/ResultsAndDiscussion.aux)
 (Chapters/Conclusion.aux))
  ***********
@@ -2599,22 +2613,36 @@ L3 programming layer <2020/03/25>
  ***********
 
 
-LaTeX Warning: There were multiply-defined labels.
+LaTeX Warning: There were undefined references.
 
-Package rerunfilecheck Info: File `main.out' has not changed.
-(rerunfilecheck)             Checksum: F4CB36BDA56EA268BDFD0C2B58D701C6;8833.
+
+LaTeX Warning: Label(s) may have changed. Rerun to get cross-references right.
+
+
+Package rerunfilecheck Warning: File `main.out' has changed.
+(rerunfilecheck)                Rerun to get outlines right
+(rerunfilecheck)                or use package `bookmark'.
+
+Package rerunfilecheck Info: Checksums for `main.out':
+(rerunfilecheck)             Before: <no file>
+(rerunfilecheck)             After:  F4CB36BDA56EA268BDFD0C2B58D701C6;8833.
+
+Package biblatex Warning: Please (re)run Biber on the file:
+(biblatex)                main
+(biblatex)                and rerun LaTeX afterwards.
+
 Package logreq Info: Writing requests to 'main.run.xml'.
 \openout1 = `main.run.xml'.
 
  ) 
 Here is how much of TeX's memory you used:
- 43035 strings out of 473899
- 957772 string characters out of 5726501
+ 42978 strings out of 473899
+ 956991 string characters out of 5726501
  1960960 words of memory out of 5000000
- 64948 multiletter control sequences out of 15000+600000
+ 64911 multiletter control sequences out of 15000+600000
  607212 words of font info for 128 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 100i,20n,101p,2927b,3023s stack positions out of 10000i,1000n,20000p,200000b,200000s
+ 100i,20n,101p,2927b,2043s stack positions out of 10000i,1000n,20000p,200000b,200000s
  <C:\Users\johan\AppData\Local\MiKTeX\fonts/pk/ljfour/jknappen/ec/dpi600\ectt
 1095.pk> <C:\Users\johan\AppData\Local\MiKTeX\fonts/pk/ljfour/jknappen/ec/dpi60
 0\ectt1200.pk><C:/Users/johan/AppData/Local/Programs/MiKTeX/fonts/type1/public/
@@ -2627,9 +2655,9 @@ ocal/Programs/MiKTeX/fonts/type1/public/mathpazo/fplmri.pfb><C:/Users/johan/App
 Data/Local/Programs/MiKTeX/fonts/type1/urw/palatino/uplb8a.pfb><C:/Users/johan/
 AppData/Local/Programs/MiKTeX/fonts/type1/urw/palatino/uplr8a.pfb><C:/Users/joh
 an/AppData/Local/Programs/MiKTeX/fonts/type1/urw/palatino/uplri8a.pfb>
-Output written on main.pdf (91 pages, 3906871 bytes).
+Output written on main.pdf (90 pages, 3844143 bytes).
 PDF statistics:
- 1401 PDF objects out of 1440 (max. 8388607)
+ 1146 PDF objects out of 1200 (max. 8388607)
  297 named destinations out of 1000 (max. 500000)
- 612 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 183 words of extra memory for PDF output out of 10000 (max. 10000000)
 
