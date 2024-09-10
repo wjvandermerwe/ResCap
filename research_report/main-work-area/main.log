@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.26 (MiKTeX 24.4) (preloaded format=pdflatex 2024.8.8)  10 SEP 2024 19:17
+This is pdfTeX, Version 3.141592653-2.6-1.40.26 (MiKTeX 24.4) (preloaded format=pdflatex 2024.8.8)  10 SEP 2024 20:08
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -1595,7 +1595,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 6--15
 
 
 ]
-<Figures/ML_STATS_MODELS.jpg, id=424, 1423.3175pt x 1746.525pt>
+<Figures/ML_STATS_MODELS.jpg, id=425, 1423.3175pt x 1746.525pt>
 File: Figures/ML_STATS_MODELS.jpg Graphic file (type jpg)
 <use Figures/ML_STATS_MODELS.jpg>
 Package pdftex.def Info: Figures/ML_STATS_MODELS.jpg  used on input line 18.
@@ -1649,7 +1649,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 4--11
 
 
 ]
-<Figures/QRPSUMMARY.png, id=486, 765.86125pt x 713.66624pt>
+<Figures/QRPSUMMARY.png, id=487, 765.86125pt x 713.66624pt>
 File: Figures/QRPSUMMARY.png Graphic file (type png)
 <use Figures/QRPSUMMARY.png>
 Package pdftex.def Info: Figures/QRPSUMMARY.png  used on input line 14.
@@ -1861,7 +1861,7 @@ Overfull \hbox (37.42995pt too wide) in paragraph at lines 123--128
 a-tions in-volv-ing high-dimensional,
  []
 
-<Figures/OBLIQUE_SUMMARY.png, id=585, 1027.84pt x 568.1225pt>
+<Figures/OBLIQUE_SUMMARY.png, id=586, 1027.84pt x 568.1225pt>
 File: Figures/OBLIQUE_SUMMARY.png Graphic file (type png)
 <use Figures/OBLIQUE_SUMMARY.png>
 Package pdftex.def Info: Figures/OBLIQUE_SUMMARY.png  used on input line 130.
@@ -1893,7 +1893,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 140--143
 
 
 [20]
-<Figures/FAIR_PRINCIPLES.png, id=609, 502.87875pt x 304.13625pt>
+<Figures/FAIR_PRINCIPLES.png, id=610, 502.87875pt x 304.13625pt>
 File: Figures/FAIR_PRINCIPLES.png Graphic file (type png)
 <use Figures/FAIR_PRINCIPLES.png>
 Package pdftex.def Info: Figures/FAIR_PRINCIPLES.png  used on input line 150.
@@ -1908,7 +1908,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 155--158
 [21 <./Figures/FAIR_PRINCIPLES.png>]
 
 [22]
-<Figures/GAN_ARCH.png, id=630, 835.12pt x 335.2525pt>
+<Figures/GAN_ARCH.png, id=631, 835.12pt x 335.2525pt>
 File: Figures/GAN_ARCH.png Graphic file (type png)
 <use Figures/GAN_ARCH.png>
 Package pdftex.def Info: Figures/GAN_ARCH.png  used on input line 164.
@@ -1920,7 +1920,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 169--172
 
  []
 
-<Figures/COMPETING1.png, id=643, 481.8pt x 810.02625pt>
+<Figures/COMPETING1.png, id=644, 481.8pt x 810.02625pt>
 File: Figures/COMPETING1.png Graphic file (type png)
 <use Figures/COMPETING1.png>
 Package pdftex.def Info: Figures/COMPETING1.png  used on input line 175.
@@ -1951,7 +1951,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 6--9
 
  []
 
-<Figures/METHOD_GRAPH.png, id=688, 759.83875pt x 371.3875pt>
+<Figures/METHOD_GRAPH.png, id=689, 759.83875pt x 371.3875pt>
 File: Figures/METHOD_GRAPH.png Graphic file (type png)
 <use Figures/METHOD_GRAPH.png>
 Package pdftex.def Info: Figures/METHOD_GRAPH.png  used on input line 12.
@@ -2096,7 +2096,7 @@ Overfull \hbox (42.27704pt too wide) in paragraph at lines 228--231
 oder\T1/ppl/m/n/12 ,
  []
 
-<Figures/SynthCity.png, id=844, 485.56406pt x 155.07938pt>
+<Figures/SynthCity.png, id=845, 485.56406pt x 155.07938pt>
 File: Figures/SynthCity.png Graphic file (type png)
 <use Figures/SynthCity.png>
 Package pdftex.def Info: Figures/SynthCity.png  used on input line 236.
@@ -2138,20 +2138,13 @@ rd within each clus-ter. These
 
 
 [46]
-Overfull \hbox (7.5982pt too wide) in paragraph at lines 308--309
-\T1/ppl/m/n/12 For this sec-tion I out-line the steps For run-ning the mod-els 
-on the loaded and preperad
- []
 
-
+[47]
 Underfull \hbox (badness 1540) in paragraph at lines 321--321
 \T1/ppl/m/n/12 that in-cludes Kaplan-Meier, Nelson-
  []
 
 
-LaTeX Warning: `h' float specifier changed to `ht'.
-
-
 Underfull \hbox (badness 10000) in paragraph at lines 328--337
 
  []
@@ -2167,43 +2160,25 @@ Underfull \hbox (badness 10000) in paragraph at lines 328--337
  []
 
 
-Overfull \hbox (4.37416pt too wide) in paragraph at lines 328--337
-\T1/ppl/m/n/12 dicted for var-i-ous co-vari-ate pro-files us-ing the \T1/cmtt/m
-/n/12 lifelines.plot_covariate_groups()
- []
-
-
 Underfull \hbox (badness 10000) in paragraph at lines 328--337
 
  []
 
 
-
-[47]
 
 [48]
-Overfull \hbox (2.72627pt too wide) in paragraph at lines 340--346
-\T1/cmtt/m/n/12 scikit-survival \T1/ppl/m/n/12 li-brary, which is de-signed for
- sur-vival anal-y-sis with de-ci-sion trees.
+Overfull \hbox (51.49329pt too wide) in paragraph at lines 339--344
+\T1/ppl/m/it/12 Model Fit-ting: \T1/ppl/m/n/12 The Ran-dom Sur-vival For-est (R
+SF) model was fit-ted us-ing the \T1/cmtt/m/n/12 scikit-survival
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 340--346
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 340--346
+Underfull \hbox (badness 10000) in paragraph at lines 339--344
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 340--346
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 340--346
+Underfull \hbox (badness 10000) in paragraph at lines 339--344
 
  []
 
@@ -2234,15 +2209,23 @@ Underfull \hbox (badness 10000) in paragraph at lines 6--9
 ]
 
 [53]
+Overfull \hbox (25.75778pt too wide) in paragraph at lines 40--61
+ [][] 
+ []
 
-[54]
-<Figures/EDA/corr.png, id=971, 1673.7732pt x 1015.3935pt>
+
+
+[54
+
+
+]
+<Figures/EDA/corr.png, id=985, 1673.7732pt x 1015.3935pt>
 File: Figures/EDA/corr.png Graphic file (type png)
 <use Figures/EDA/corr.png>
-Package pdftex.def Info: Figures/EDA/corr.png  used on input line 73.
+Package pdftex.def Info: Figures/EDA/corr.png  used on input line 77.
 (pdftex.def)             Requested size: 468.6533pt x 284.30824pt.
 
-Overfull \hbox (30.48103pt too wide) in paragraph at lines 73--74
+Overfull \hbox (30.48103pt too wide) in paragraph at lines 77--78
  [][] 
  []
 
@@ -2250,40 +2233,41 @@ Overfull \hbox (30.48103pt too wide) in paragraph at lines 73--74
 
 [55
 
+
  <./Figures/EDA/corr.png>]
-<Figures/EDA/uni3.png, id=977, 1084.05pt x 1300.86pt>
+<Figures/EDA/uni3.png, id=991, 1084.05pt x 1300.86pt>
 File: Figures/EDA/uni3.png Graphic file (type png)
 <use Figures/EDA/uni3.png>
-Package pdftex.def Info: Figures/EDA/uni3.png  used on input line 84.
+Package pdftex.def Info: Figures/EDA/uni3.png  used on input line 88.
 (pdftex.def)             Requested size: 227.65721pt x 273.18866pt.
-<Figures/EDA/uni4.png, id=978, 1084.05pt x 433.62pt>
+<Figures/EDA/uni4.png, id=992, 1084.05pt x 433.62pt>
 File: Figures/EDA/uni4.png Graphic file (type png)
 <use Figures/EDA/uni4.png>
-Package pdftex.def Info: Figures/EDA/uni4.png  used on input line 92.
+Package pdftex.def Info: Figures/EDA/uni4.png  used on input line 96.
 (pdftex.def)             Requested size: 227.65721pt x 91.06288pt.
 
 
 [56
 
  <./Figures/EDA/uni3.png> <./Figures/EDA/uni4.png>]
-<Figures/EDA/scatter3.png, id=985, 1084.05pt x 1300.86pt>
+<Figures/EDA/scatter3.png, id=999, 1084.05pt x 1300.86pt>
 File: Figures/EDA/scatter3.png Graphic file (type png)
 <use Figures/EDA/scatter3.png>
-Package pdftex.def Info: Figures/EDA/scatter3.png  used on input line 102.
+Package pdftex.def Info: Figures/EDA/scatter3.png  used on input line 106.
 (pdftex.def)             Requested size: 357.73761pt x 429.28513pt.
-<Figures/EDA/scatter4.png, id=986, 1084.05pt x 867.24pt>
+<Figures/EDA/scatter4.png, id=1000, 1084.05pt x 867.24pt>
 File: Figures/EDA/scatter4.png Graphic file (type png)
 <use Figures/EDA/scatter4.png>
-Package pdftex.def Info: Figures/EDA/scatter4.png  used on input line 109.
+Package pdftex.def Info: Figures/EDA/scatter4.png  used on input line 113.
 (pdftex.def)             Requested size: 325.21751pt x 260.17401pt.
 
 
 LaTeX Warning: `h' float specifier changed to `ht'.
 
-<Figures/EDA/violin4.png, id=987, 1084.05pt x 867.24pt>
+<Figures/EDA/violin4.png, id=1001, 1084.05pt x 867.24pt>
 File: Figures/EDA/violin4.png Graphic file (type png)
 <use Figures/EDA/violin4.png>
-Package pdftex.def Info: Figures/EDA/violin4.png  used on input line 116.
+Package pdftex.def Info: Figures/EDA/violin4.png  used on input line 120.
 (pdftex.def)             Requested size: 325.21751pt x 260.17401pt.
 
 LaTeX Warning: `h' float specifier changed to `ht'.
@@ -2295,98 +2279,98 @@ LaTeX Warning: `h' float specifier changed to `ht'.
  <./Figures/EDA/scatter3.png>]
 
 [58 <./Figures/EDA/scatter4.png> <./Figures/EDA/violin4.png>]
-<Figures/EDA/violin3.png, id=999, 1084.05pt x 1300.86pt>
+<Figures/EDA/violin3.png, id=1013, 1084.05pt x 1300.86pt>
 File: Figures/EDA/violin3.png Graphic file (type png)
 <use Figures/EDA/violin3.png>
-Package pdftex.def Info: Figures/EDA/violin3.png  used on input line 125.
+Package pdftex.def Info: Figures/EDA/violin3.png  used on input line 129.
 (pdftex.def)             Requested size: 357.73761pt x 429.28513pt.
 
 
 [59
 
  <./Figures/EDA/violin3.png>]
-<Figures/EDA/censor_over.png, id=1006, 387.3672pt x 387.3672pt>
+<Figures/EDA/censor_over.png, id=1020, 387.3672pt x 387.3672pt>
 File: Figures/EDA/censor_over.png Graphic file (type png)
 <use Figures/EDA/censor_over.png>
-Package pdftex.def Info: Figures/EDA/censor_over.png  used on input line 136.
+Package pdftex.def Info: Figures/EDA/censor_over.png  used on input line 140.
 (pdftex.def)             Requested size: 127.83157pt x 127.83157pt.
-<Figures/EDA/censor.png, id=1007, 1037.7972pt x 820.9872pt>
+<Figures/EDA/censor.png, id=1021, 1037.7972pt x 820.9872pt>
 File: Figures/EDA/censor.png Graphic file (type png)
 <use Figures/EDA/censor.png>
-Package pdftex.def Info: Figures/EDA/censor.png  used on input line 143.
+Package pdftex.def Info: Figures/EDA/censor.png  used on input line 147.
 (pdftex.def)             Requested size: 332.10188pt x 262.72127pt.
 
 
 [60
 
  <./Figures/EDA/censor_over.png> <./Figures/EDA/censor.png>]
-<Figures/EDA/clusters.png, id=1014, 1293.633pt x 556.479pt>
+<Figures/EDA/clusters.png, id=1028, 1293.633pt x 556.479pt>
 File: Figures/EDA/clusters.png Graphic file (type png)
 <use Figures/EDA/clusters.png>
-Package pdftex.def Info: Figures/EDA/clusters.png  used on input line 153.
+Package pdftex.def Info: Figures/EDA/clusters.png  used on input line 157.
 (pdftex.def)             Requested size: 388.0929pt x 166.94498pt.
 
 
 [61
 
  <./Figures/EDA/clusters.png>]
-<Figures/EDA/cluster_kaplan.png, id=1020, 723.4227pt x 393.8715pt>
+<Figures/EDA/cluster_kaplan.png, id=1034, 723.4227pt x 393.8715pt>
 File: Figures/EDA/cluster_kaplan.png Graphic file (type png)
 <use Figures/EDA/cluster_kaplan.png>
-Package pdftex.def Info: Figures/EDA/cluster_kaplan.png  used on input line 161
+Package pdftex.def Info: Figures/EDA/cluster_kaplan.png  used on input line 165
 .
 (pdftex.def)             Requested size: 217.02847pt x 118.16235pt.
-<Figures/EDA/cluster_neelson.png, id=1021, 714.0276pt x 393.8715pt>
+<Figures/EDA/cluster_neelson.png, id=1035, 714.0276pt x 393.8715pt>
 File: Figures/EDA/cluster_neelson.png Graphic file (type png)
 <use Figures/EDA/cluster_neelson.png>
-Package pdftex.def Info: Figures/EDA/cluster_neelson.png  used on input line 16
-9.
+Package pdftex.def Info: Figures/EDA/cluster_neelson.png  used on input line 17
+3.
 (pdftex.def)             Requested size: 285.60597pt x 157.5458pt.
 
 
 [62
 
  <./Figures/EDA/cluster_kaplan.png> <./Figures/EDA/cluster_neelson.png>]
-Underfull \hbox (badness 10000) in paragraph at lines 179--182
+Underfull \hbox (badness 10000) in paragraph at lines 183--186
 
  []
 
-<Figures/SURV/covariates.png, id=1029, 906.38625pt x 525.46312pt>
+<Figures/SURV/covariates.png, id=1043, 906.38625pt x 525.46312pt>
 File: Figures/SURV/covariates.png Graphic file (type png)
 <use Figures/SURV/covariates.png>
-Package pdftex.def Info: Figures/SURV/covariates.png  used on input line 193.
+Package pdftex.def Info: Figures/SURV/covariates.png  used on input line 197.
 (pdftex.def)             Requested size: 438.17227pt x 254.02345pt.
 
 LaTeX Warning: `h' float specifier changed to `ht'.
 
-<Figures/SURV/cox_cov.png, id=1030, 636.6987pt x 755.9442pt>
+<Figures/SURV/cox_cov.png, id=1044, 636.6987pt x 755.9442pt>
 File: Figures/SURV/cox_cov.png Graphic file (type png)
 <use Figures/SURV/cox_cov.png>
-Package pdftex.def Info: Figures/SURV/cox_cov.png  used on input line 200.
+Package pdftex.def Info: Figures/SURV/cox_cov.png  used on input line 204.
 (pdftex.def)             Requested size: 438.17227pt x 520.24095pt.
 
 LaTeX Warning: `h' float specifier changed to `ht'.
 
-<Figures/SURV/lasso_reg.png, id=1031, 706.8006pt x 397.485pt>
+<Figures/SURV/lasso_reg.png, id=1045, 706.8006pt x 397.485pt>
 File: Figures/SURV/lasso_reg.png Graphic file (type png)
 <use Figures/SURV/lasso_reg.png>
-Package pdftex.def Info: Figures/SURV/lasso_reg.png  used on input line 207.
+Package pdftex.def Info: Figures/SURV/lasso_reg.png  used on input line 211.
 (pdftex.def)             Requested size: 438.17227pt x 246.41995pt.
 
 LaTeX Warning: `h' float specifier changed to `ht'.
 
-<Figures/SURV/cox_overlay.png, id=1032, 723.4227pt x 810.8694pt>
+<Figures/SURV/cox_overlay.png, id=1046, 723.4227pt x 810.8694pt>
 File: Figures/SURV/cox_overlay.png Graphic file (type png)
 <use Figures/SURV/cox_overlay.png>
-Package pdftex.def Info: Figures/SURV/cox_overlay.png  used on input line 214.
+Package pdftex.def Info: Figures/SURV/cox_overlay.png  used on input line 218.
 (pdftex.def)             Requested size: 438.17227pt x 491.14047pt.
 
 LaTeX Warning: `h' float specifier changed to `ht'.
 
-<Figures/SURV/cox_hazard.png, id=1033, 614.295pt x 393.8715pt>
+<Figures/SURV/cox_hazard.png, id=1047, 614.295pt x 393.8715pt>
 File: Figures/SURV/cox_hazard.png Graphic file (type png)
 <use Figures/SURV/cox_hazard.png>
-Package pdftex.def Info: Figures/SURV/cox_hazard.png  used on input line 222.
+Package pdftex.def Info: Figures/SURV/cox_hazard.png  used on input line 226.
 (pdftex.def)             Requested size: 438.17227pt x 280.94887pt.
 
 LaTeX Warning: `h' float specifier changed to `ht'.
@@ -2404,17 +2388,17 @@ LaTeX Warning: `h' float specifier changed to `ht'.
 [67 <./Figures/SURV/cox_overlay.png>]
 
 [68 <./Figures/SURV/cox_hazard.png>]
-<Figures/SURV/schoen1.png, id=1065, 453.8556pt x 343.2825pt>
+<Figures/SURV/schoen1.png, id=1079, 453.8556pt x 343.2825pt>
 File: Figures/SURV/schoen1.png Graphic file (type png)
 <use Figures/SURV/schoen1.png>
-Package pdftex.def Info: Figures/SURV/schoen1.png  used on input line 291.
+Package pdftex.def Info: Figures/SURV/schoen1.png  used on input line 295.
 (pdftex.def)             Requested size: 438.17227pt x 331.4279pt.
 
 
 [69
 
 ]
-Overfull \hbox (4.11282pt too wide) in paragraph at lines 299--300
+Overfull \hbox (4.11282pt too wide) in paragraph at lines 303--304
 []\T1/ppl/b/n/12 Time-Varying Ef-fects: \T1/ppl/m/n/12 The ef-fect of \T1/cmtt/
 m/n/12 num_creatinine \T1/ppl/m/n/12 on the haz-ard may change
  []
@@ -2424,13 +2408,13 @@ m/n/12 num_creatinine \T1/ppl/m/n/12 on the haz-ard may change
 [70 <./Figures/SURV/schoen1.png>]
 
 [71]
-<Figures/SURV/rsf_paths.png, id=1082, 502.2765pt x 393.8715pt>
+<Figures/SURV/rsf_paths.png, id=1096, 502.2765pt x 393.8715pt>
 File: Figures/SURV/rsf_paths.png Graphic file (type png)
 <use Figures/SURV/rsf_paths.png>
-Package pdftex.def Info: Figures/SURV/rsf_paths.png  used on input line 318.
+Package pdftex.def Info: Figures/SURV/rsf_paths.png  used on input line 322.
 (pdftex.def)             Requested size: 301.36823pt x 236.3247pt.
 
-Underfull \hbox (badness 10000) in paragraph at lines 313--322
+Underfull \hbox (badness 10000) in paragraph at lines 317--326
 
  []
 
@@ -2439,10 +2423,10 @@ Underfull \hbox (badness 10000) in paragraph at lines 313--322
 [72
 
  <./Figures/SURV/rsf_paths.png>]
-<Figures/SURV/rsf_imp.png, id=1088, 614.295pt x 727.7589pt>
+<Figures/SURV/rsf_imp.png, id=1102, 614.295pt x 727.7589pt>
 File: Figures/SURV/rsf_imp.png Graphic file (type png)
 <use Figures/SURV/rsf_imp.png>
-Package pdftex.def Info: Figures/SURV/rsf_imp.png  used on input line 326.
+Package pdftex.def Info: Figures/SURV/rsf_imp.png  used on input line 330.
 (pdftex.def)             Requested size: 438.17227pt x 519.11105pt.
 
 
@@ -2451,16 +2435,16 @@ LaTeX Warning: `h' float specifier changed to `ht'.
 
 
 [73 <./Figures/SURV/rsf_imp.png>]
-<Figures/SURV/rsf_survival.png, id=1094, 611.4042pt x 402.5439pt>
+<Figures/SURV/rsf_survival.png, id=1108, 611.4042pt x 402.5439pt>
 File: Figures/SURV/rsf_survival.png Graphic file (type png)
 <use Figures/SURV/rsf_survival.png>
-Package pdftex.def Info: Figures/SURV/rsf_survival.png  used on input line 337.
+Package pdftex.def Info: Figures/SURV/rsf_survival.png  used on input line 341.
 
 (pdftex.def)             Requested size: 305.70134pt x 201.27145pt.
-<Figures/SURV/rsf_hazard.png, id=1095, 611.4042pt x 402.5439pt>
+<Figures/SURV/rsf_hazard.png, id=1109, 611.4042pt x 402.5439pt>
 File: Figures/SURV/rsf_hazard.png Graphic file (type png)
 <use Figures/SURV/rsf_hazard.png>
-Package pdftex.def Info: Figures/SURV/rsf_hazard.png  used on input line 344.
+Package pdftex.def Info: Figures/SURV/rsf_hazard.png  used on input line 348.
 (pdftex.def)             Requested size: 305.70134pt x 201.27145pt.
 
 
@@ -2468,15 +2452,15 @@ Package pdftex.def Info: Figures/SURV/rsf_hazard.png  used on input line 344.
 
 
  <./Figures/SURV/rsf_survival.png> <./Figures/SURV/rsf_hazard.png>]
-<Figures/SURV/calibration.png, id=1103, 611.4042pt x 393.8715pt>
+<Figures/SURV/calibration.png, id=1117, 611.4042pt x 393.8715pt>
 File: Figures/SURV/calibration.png Graphic file (type png)
 <use Figures/SURV/calibration.png>
-Package pdftex.def Info: Figures/SURV/calibration.png  used on input line 373.
+Package pdftex.def Info: Figures/SURV/calibration.png  used on input line 377.
 (pdftex.def)             Requested size: 366.84534pt x 236.3247pt.
-<Figures/SURV/binned_d_cal.png, id=1104, 1003.8303pt x 426.393pt>
+<Figures/SURV/binned_d_cal.png, id=1118, 1003.8303pt x 426.393pt>
 File: Figures/SURV/binned_d_cal.png Graphic file (type png)
 <use Figures/SURV/binned_d_cal.png>
-Package pdftex.def Info: Figures/SURV/binned_d_cal.png  used on input line 380.
+Package pdftex.def Info: Figures/SURV/binned_d_cal.png  used on input line 384.
 
 (pdftex.def)             Requested size: 438.17227pt x 186.11707pt.
 
@@ -2623,10 +2607,10 @@ Package logreq Info: Writing requests to 'main.run.xml'.
 
  ) 
 Here is how much of TeX's memory you used:
- 43032 strings out of 473899
- 957670 string characters out of 5726501
+ 43034 strings out of 473899
+ 957733 string characters out of 5726501
  1960960 words of memory out of 5000000
- 64944 multiletter control sequences out of 15000+600000
+ 64946 multiletter control sequences out of 15000+600000
  607212 words of font info for 128 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
  100i,20n,101p,2927b,3023s stack positions out of 10000i,1000n,20000p,200000b,200000s
@@ -2642,9 +2626,9 @@ ocal/Programs/MiKTeX/fonts/type1/public/mathpazo/fplmri.pfb><C:/Users/johan/App
 Data/Local/Programs/MiKTeX/fonts/type1/urw/palatino/uplb8a.pfb><C:/Users/johan/
 AppData/Local/Programs/MiKTeX/fonts/type1/urw/palatino/uplr8a.pfb><C:/Users/joh
 an/AppData/Local/Programs/MiKTeX/fonts/type1/urw/palatino/uplri8a.pfb>
-Output written on main.pdf (92 pages, 3889669 bytes).
+Output written on main.pdf (92 pages, 3893152 bytes).
 PDF statistics:
- 1428 PDF objects out of 1440 (max. 8388607)
+ 1442 PDF objects out of 1728 (max. 8388607)
  298 named destinations out of 1000 (max. 500000)
  607 words of extra memory for PDF output out of 10000 (max. 10000000)
 

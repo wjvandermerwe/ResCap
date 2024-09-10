@@ -1,17 +1,17 @@
 [0] Config.pm:308> INFO - This is Biber 2.20
 [0] Config.pm:311> INFO - Logfile is 'main.blg'
-[68] biber-MSWIN64:340> INFO - === 
-[91] Biber.pm:420> INFO - Reading 'main.bcf'
-[177] Biber.pm:994> INFO - Found 39 citekeys in bib section 0
-[187] Biber.pm:4463> INFO - Processing section 0
-[195] Biber.pm:4654> INFO - Looking for bibtex file 'main.bib' for section 0
-[231] bibtex.pm:1713> INFO - LaTeX decoding ...
-[281] bibtex.pm:1519> INFO - Found BibTeX data source 'main.bib'
-[471] UCollate.pm:68> INFO - Overriding locale 'en-US' defaults 'normalization = NFD' with 'normalization = prenormalized'
-[471] UCollate.pm:68> INFO - Overriding locale 'en-US' defaults 'variable = shifted' with 'variable = non-ignorable'
-[471] Biber.pm:4283> INFO - Sorting list 'nty/global//global/global/global' of type 'entry' with template 'nty' and locale 'en-US'
-[471] Biber.pm:4289> INFO - No sort tailoring available for locale 'en-US'
-[498] bbl.pm:676> INFO - Writing 'main.bbl' with encoding 'UTF-8'
+[67] biber-MSWIN64:340> INFO - === 
+[89] Biber.pm:420> INFO - Reading 'main.bcf'
+[179] Biber.pm:994> INFO - Found 39 citekeys in bib section 0
+[189] Biber.pm:4463> INFO - Processing section 0
+[198] Biber.pm:4654> INFO - Looking for bibtex file 'main.bib' for section 0
+[233] bibtex.pm:1713> INFO - LaTeX decoding ...
+[282] bibtex.pm:1519> INFO - Found BibTeX data source 'main.bib'
+[470] UCollate.pm:68> INFO - Overriding locale 'en-US' defaults 'variable = shifted' with 'variable = non-ignorable'
+[470] UCollate.pm:68> INFO - Overriding locale 'en-US' defaults 'normalization = NFD' with 'normalization = prenormalized'
+[470] Biber.pm:4283> INFO - Sorting list 'nty/global//global/global/global' of type 'entry' with template 'nty' and locale 'en-US'
+[470] Biber.pm:4289> INFO - No sort tailoring available for locale 'en-US'
+[497] bbl.pm:676> INFO - Writing 'main.bbl' with encoding 'UTF-8'
 [530] bbl.pm:779> INFO - Output to main.bbl
 [530] Biber.pm:131> WARN - ISBN '978-1-4471-7502-5 978-1-4471-7503-2' in entry 'pham_springer_2023' is invalid - run biber with '--validate_datamodel' for details.
 [530] Biber.pm:131> WARN - ISBN '978-3-319-19424-0 978-3-319-19425-7' in entry 'harrell__regression_2015' is invalid - run biber with '--validate_datamodel' for details.

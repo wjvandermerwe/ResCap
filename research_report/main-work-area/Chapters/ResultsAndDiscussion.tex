@@ -33,34 +33,38 @@ In preperation for running the models, as discussed in THE \ref{Chapter3}, I ran
 \subsection{Metrics for output data}
 As discussed the SynthCity \parencite{qian_synthcity_2023} library has metrics to evaluate synthetic data, the metrics used and their outputs are summarized in the table below. 
 
+\clearpage
+\begin{landscape}
 \begin{table}[H]
     \centering
-    \begin{tabular}{|l|c|c|c|}
+    \begin{tabular}{|l|>{\tiny}c|c|c|}
     \hline
     \textbf{Metric}                & \textbf{Metric Description} & \textbf{Survival GAN} & \textbf{Survival VAE} \\ \hline
-    \textbf{Close Values}          & & 0.8738           & 0.8454           \\ \hline
-    \textbf{Data Mismatch}         & & 0.0              & 0.0              \\ \hline
-    \textbf{Proportion}            & & 0.0              & 0.0              \\ \hline
-    \textbf{NN Distance}           & & 0.1061           & 0.1164           \\ \hline
-    \textbf{Distant Values}        & & 0.0005           & 0.0010           \\ \hline
-    \textbf{PRDC Score - Precision}&  & 0.9968           & 0.9944           \\ \hline
-    \textbf{PRDC Score - Recall}   &  & 0.9945           & 0.9933           \\ \hline
-    \textbf{PRDC Score - Density}  &  & 0.9782           & 0.9832           \\ \hline
-    \textbf{PRDC Score - Coverage} &  & 0.7366           & 0.7362           \\ \hline
-    \textbf{invKL Score - Marginal}&  & 0.9651           & 0.9601           \\ \hline
-    \textbf{Chi Score - Marginal}  &  & 0.8555           & 0.6883           \\ \hline
-    \textbf{Iden Score}            &  & 0.3141           & 0.3128           \\ \hline
-    \textbf{Iden Score OC}         &  & 0.3050           & 0.3026           \\ \hline
-    \textbf{Kanon Score - GT}      &  & 160              & 160              \\ \hline
-    \textbf{Kanon Score - SYN}     &  & 149.00000001     & 158.00000001     \\ \hline
-    \textbf{Ldiv Score - GT}       &  & 160              & 160              \\ \hline
-    \textbf{Ldiv Score - SYN}      &  & 149.00000001     & 158.00000001     \\ \hline
+    \textbf{Close Values}          & Measures how closely the generated values match the real data distribution. Higher values indicate better similarity. & 0.8738           & 0.8454           \\ \hline
+    \textbf{Data Mismatch}         & Quantifies the mismatch between the generated and real datasets. A value of 0 indicates no mismatch. & 0.0              & 0.0              \\ \hline
+    \textbf{Proportion}            & Assesses the proportion of generated data that matches the real data. A value of 0 indicates perfect alignment. & 0.0              & 0.0              \\ \hline
+    \textbf{NN Distance}           & Nearest neighbor distance between real and synthetic samples. Lower values indicate greater similarity. & 0.1061           & 0.1164           \\ \hline
+    \textbf{Distant Values}        & Measures the proportion of outlier values in the generated data. Lower values are preferred. & 0.0005           & 0.0010           \\ \hline
+    \textbf{PRDC Score - Precision}& Precision of the synthetic data when comparing the real and synthetic distributions. Higher values are better. & 0.9968           & 0.9944           \\ \hline
+    \textbf{PRDC Score - Recall}   & Recall score, indicating how much real data is captured by the synthetic model. Higher values show better coverage. & 0.9945           & 0.9933           \\ \hline
+    \textbf{PRDC Score - Density}  & Density metric to assess how well the synthetic data replicates the real data density. & 0.9782           & 0.9832           \\ \hline
+    \textbf{PRDC Score - Coverage} & Measures the coverage of the real data by the synthetic data. Higher values indicate better generalization. & 0.7366           & 0.7362           \\ \hline
+    \textbf{invKL Score - Marginal}& Inverse KL divergence between the marginal distributions of real and synthetic data. Lower values are better. & 0.9651           & 0.9601           \\ \hline
+    \textbf{Chi Score - Marginal}  & Chi-square statistic comparing the marginal distributions. Lower values indicate better alignment. & 0.8555           & 0.6883           \\ \hline
+    \textbf{Iden Score}            & Identification score reflecting the model's ability to distinguish real from synthetic data. Higher values are better. & 0.3141           & 0.3128           \\ \hline
+    \textbf{Iden Score OC}         & Outlier-corrected identification score, with higher values reflecting better alignment between real and synthetic data. & 0.3050           & 0.3026           \\ \hline
+    \textbf{Kanon Score - GT}      & K-anonymity score for ground truth data, indicating the degree of privacy maintained in real data. & 160              & 160              \\ \hline
+    \textbf{Kanon Score - SYN}     & K-anonymity score for synthetic data, assessing privacy in the generated data. & 149.00000001     & 158.00000001     \\ \hline
+    \textbf{Ldiv Score - GT}       & L-diversity score for real data, reflecting how well privacy is maintained in sensitive data attributes. & 160     & 160     \\ \hline
+    \textbf{Ldiv Score - SYN}      & L-diversity score for synthetic data, evaluating privacy-preserving properties in the synthetic dataset. & 149.00000001              & 158.00000001              \\ \hline
     \end{tabular}
-    \caption{Comparison of Metrics}
-    \label{tab:metrics_comparison}
+    \caption{Metric Descriptions used from \parencite{qian_synthcity_2023}}
+    \label{tab:metrics_description}
 \end{table}
-\noindent The models preform quite similar, however in the practical the Survival VAE training is alot more robust, in terms of training time and overall completeness, accross different datasets of the SurvSet Repo, and thus the \textbf{results from the Survival VAE is used in the simulation Study.}
+\end{landscape}
 \clearpage
+\noindent The models preform quite similar, however in the practical the Survival VAE training is alot more robust, in terms of training time and overall completeness, accross different datasets of the SurvSet Repo, and thus the \textbf{results from the Survival VAE is used in the simulation Study.}
+% \clearpage
 \section{Exploratory Analysis}
 For all the exploratory analysis plots I do not show the categorical plots, as it wont be as valueable insights as the numerical. The one hot encoded structure will show alot of the same variable during plots which results in two value / bar plots.
 

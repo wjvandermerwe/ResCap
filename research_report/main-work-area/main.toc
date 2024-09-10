@@ -40,9 +40,9 @@
 \contentsline {section}{\numberline {3.3}Methods}{42}{section.108}%
 \contentsline {subsection}{\numberline {3.3.1}Data Pre-Processing and Simulation}{42}{subsection.109}%
 \contentsline {subsection}{\numberline {3.3.2}Exploratory Data Analysis (EDA)}{45}{subsection.114}%
-\contentsline {subsection}{\numberline {3.3.3}Survival Analysis: Model Application and Evaluation}{47}{subsection.122}%
+\contentsline {subsection}{\numberline {3.3.3}Survival Analysis: Model Application and Evaluation}{48}{subsection.122}%
 \contentsline {section}{\numberline {3.4}Limitations}{50}{section.127}%
-\contentsline {section}{\numberline {3.5}Ethical Considerations}{51}{section.128}%
+\contentsline {section}{\numberline {3.5}Ethical Considerations}{50}{section.128}%
 \contentsline {chapter}{\numberline {4}Results And Discussion}{52}{chapter.129}%
 \contentsline {section}{\numberline {4.1}Simulation: Outputs and Results}{52}{section.130}%
 \contentsline {subsection}{\numberline {4.1.1}Metrics for output data}{53}{subsection.132}%
