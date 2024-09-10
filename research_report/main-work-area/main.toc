@@ -2,8 +2,8 @@
 \babel@toc {english}{}\relax 
 \contentsline {chapter}{Declaration}{i}{section*.1}%
 \contentsline {chapter}{Abstract}{ii}{section*.2}%
-\contentsline {chapter}{List of Figures}{iv}{chapter*.4}%
-\contentsline {chapter}{List of Tables}{v}{chapter*.5}%
+\contentsline {chapter}{List of Figures}{v}{chapter*.4}%
+\contentsline {chapter}{List of Tables}{vii}{chapter*.5}%
 \contentsline {chapter}{\numberline {1}Introduction}{1}{chapter.6}%
 \contentsline {section}{\numberline {1.1}Background}{1}{section.7}%
 \contentsline {section}{\numberline {1.2}Problem Statement}{4}{section.9}%
@@ -42,14 +42,14 @@
 \contentsline {subsection}{\numberline {3.3.2}Exploratory Data Analysis (EDA)}{45}{subsection.114}%
 \contentsline {subsection}{\numberline {3.3.3}Survival Analysis: Model Application and Evaluation}{47}{subsection.122}%
 \contentsline {section}{\numberline {3.4}Limitations}{50}{section.127}%
-\contentsline {section}{\numberline {3.5}Ethical Considerations}{50}{section.128}%
-\contentsline {chapter}{\numberline {4}Results And Discussion}{51}{chapter.129}%
-\contentsline {section}{\numberline {4.1}Simulation: Outputs and Results}{51}{section.130}%
-\contentsline {subsection}{\numberline {4.1.1}Metrics for output data}{52}{subsection.132}%
-\contentsline {section}{\numberline {4.2}Exploratory Analysis}{54}{section.134}%
-\contentsline {section}{\numberline {4.3}Survival Analysis Case Study}{62}{section.147}%
-\contentsline {subsection}{\numberline {4.3.1}Cox Proportional Hazards}{62}{subsection.148}%
-\contentsline {subsection}{\numberline {4.3.2}Random Survival Forest}{72}{subsection.158}%
-\contentsline {subsection}{\numberline {4.3.3}Models comparison}{75}{subsection.163}%
-\contentsline {chapter}{\numberline {5}Conclusion}{77}{chapter.167}%
-\contentsline {chapter}{Bibliography}{79}{chapter*.168}%
+\contentsline {section}{\numberline {3.5}Ethical Considerations}{51}{section.128}%
+\contentsline {chapter}{\numberline {4}Results And Discussion}{52}{chapter.129}%
+\contentsline {section}{\numberline {4.1}Simulation: Outputs and Results}{52}{section.130}%
+\contentsline {subsection}{\numberline {4.1.1}Metrics for output data}{53}{subsection.132}%
+\contentsline {section}{\numberline {4.2}Exploratory Analysis}{55}{section.134}%
+\contentsline {section}{\numberline {4.3}Survival Analysis Case Study}{63}{section.147}%
+\contentsline {subsection}{\numberline {4.3.1}Cox Proportional Hazards}{63}{subsection.148}%
+\contentsline {subsection}{\numberline {4.3.2}Random Survival Forest}{72}{subsection.157}%
+\contentsline {subsection}{\numberline {4.3.3}Models comparison}{75}{subsection.162}%
+\contentsline {chapter}{\numberline {5}Conclusion}{77}{chapter.166}%
+\contentsline {chapter}{Bibliography}{79}{chapter*.167}%

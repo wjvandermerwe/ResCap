@@ -266,40 +266,41 @@ The simulation pipeline is designed to effectively generate synthetic survival d
 
 \subsection{Exploratory Data Analysis (EDA)}
 
-Exploratory Data Analysis (EDA) is a crucial first step to discover key considerations for contributing covariates and potential implications. In line with the principles outlined in \parencite{harrell__regression_2015}, this EDA focuses on a detailed examination of the survival data's structure, distribution, and key features such as outliers, missing values, and multicollinearity, that could impact the performance and validity of our regression models.
+Exploratory Data Analysis (EDA) is a crucial first step in understanding the structure of survival data, identifying key features, and detecting potential issues like outliers or multicollinearity, which may affect model performance. In alignment with best practices outlined by \parencite{harrell__regression_2015}, the goal of EDA in this context is to ensure that the subsequent modeling steps are based on a thorough understanding of the data and to preemptively address any concerns that could distort model validity or prediction accuracy.
 
 \subsubsection*{Phenotyping and Cluster Analysis}
 
-Numerical features within the dataset are identified, and clustering is performed using the \texttt{ClusteringPhenotyper} from the Auton\_survival \parencite{nagpal_auton-survival_2022} library. The dataset is clustered using the k-means algorithm with PCA for dimensionality reduction. Cluster labels are then added to the dataset, allowing for subsequent analysis of cluster distribution and cluster profile analysis. The distribution of clusters is visualized using count plots, and the mean values of numerical features within each cluster are analyzed and visualized through bar plots.
+Numerical features within the dataset were selected for clustering, with k-means used for unsupervised learning, and PCA applied for dimensionality reduction. The rationale for this choice is based on its widespread use in survival studies for reducing dimensionality while retaining variance, thus preventing overfitting \parencite{polce_guide_2023}. By clustering the data, I aimed to identify phenotypes or natural groupings that could reveal inherent survival trends. The \texttt{ClusteringPhenotyper} from the \texttt{Auton\_Survival} library was employed due to its established robustness in handling high-dimensional survival datasets \parencite{nagpal_auton-survival_2022}. 
 
 \subsubsection*{Cluster Survival Analysis Plots}
 
-Survival analysis algorithm are then performed by plotting Kaplan-Meier survival curves and Nelson-Aalen cumulative hazard functions from the Auton\_survival Library \parencite{nagpal_auton-survival_2022}. The Kaplan-Meier estimator provides a non-parametric estimate of the survival function, and is plotted for different covariate groups. The Nelson-Aalen estimator, which estimates the cumulative hazard function, is similarly plotted across different groups. These plots allow for comparison of survival probabilities and hazard rates across different covariate profiles, providing insights into how different factors influence survival outcomes.
-
+Once clusters were identified, Kaplan-Meier and Nelson-Aalen estimators were used to assess survival probability and cumulative hazard within each cluster. These non-parametric estimators are foundational in survival analysis due to their capacity to deal with censored data, allowing for more accurate survival function estimates without assumptions about the underlying hazard function \parencite{ishwaran_random_2008}. The resulting plots provide clear visual comparisons of survival outcomes across clusters, enabling the identification of patterns that might otherwise be overlooked in raw data. Visualizing survival by cluster offers valuable insights into how specific groupings influence event rates, further validating our clustering approach.
 
 \subsubsection*{Target Variable Analysis (Survival Time and Event Status)}
 
-For the survival time (\texttt{time}), summary statistics such as mean, median, range, and standard deviation are calculated. The distribution of survival times is visualized through histograms or density plots to provide insights into the time-to-event data. For the event status (\texttt{event}), the proportion of events versus censored cases is determined and visualized with boxplots, providing an understanding of the distribution of event occurrences.
+The survival time (\texttt{time}) and event status (\texttt{event}) are critical to survival analysis, and thus their distributions must be explored in detail. Summary statistics provide insights into central tendencies and spread, while histograms and boxplots visualize the distribution and any potential skewness or outliers. As suggested by \parencite{morris_using_2019}, understanding these basic characteristics is essential for making informed decisions about the appropriate survival models and transformations.
 
 \subsubsection*{Univariate Analysis of Covariates}
 
-In the univariate analysis, summary statistics for each numerical covariate are calculated, including measures such as mean, median, minimum, and maximum values. The distributions of these numerical covariates are visualized using histograms or density plots. 
+Univariate analysis was conducted for each covariate to evaluate their distributions and basic summary statistics, such as mean and standard deviation. These steps are necessary to identify whether any features require transformation or imputation, especially when outliers or skewed distributions are present. This aligns with standard EDA practice in survival analysis \parencite{burzykowski_survival_2024}, ensuring that covariates contribute positively to the model's predictive power without introducing bias.
 
 \subsubsection*{Bivariate Analysis}
 
-Bivariate analysis explores the relationships between survival time and covariates \parencite{harrell__regression_2015}. For numerical covariates, scatter plots are created to visualize the relationship between survival time and each covariate. 
+Bivariate analysis evaluates the relationship between covariates and survival time, enabling the detection of any strong linear or non-linear associations that might warrant further exploration or transformation. For instance, scatter plots were used to observe trends between survival time and numerical covariates. This method was chosen based on \parencite{harrell__regression_2015}, where understanding bivariate relationships can guide model selection and reveal interactions that would affect the survival function.
 
 \subsubsection*{Censoring Analysis}
 
-Censoring is analyzed by calculating and visualizing the overall censoring level in the dataset, expressed as the percentage of censored observations. The distribution of censoring across different covariates is explored.
+Censoring is a common issue in survival datasets, and understanding its distribution is critical for accurate modeling. I followed best practices outlined by \parencite{kalbfleisch_fifty_2023} to quantify the proportion of censored observations and to ensure they are evenly distributed across covariates. Any imbalances could distort model estimates, so visualization of censoring distribution was deemed essential.
+
 \subsubsection*{Correlation Analysis}
-For all covariates, a correlation matrix is calculated and visualized using a heatmap to identify relationships between variables \parencite{harrell__regression_2015}. A correlation matrix is a square matrix that displays the Pearson correlation coefficients between pairs of variables. Each element in the matrix, denoted as \( r_{xy} \), represents the correlation between variables \( x \) and \( y \) \parencite{harrell__regression_2015}. The Pearson correlation coefficient is calculated using the formula:
+
+A correlation matrix was calculated to assess the degree of association between numerical covariates. Visualizing the matrix as a heatmap is a well-established technique for detecting multicollinearity, which could otherwise inflate the variance of coefficient estimates in a regression model. The Pearson correlation coefficient was calculated using the formula:
 
 \[
 r_{xy} = \frac{\sum (x_i - \bar{x})(y_i - \bar{y})}{\sqrt{\sum (x_i - \bar{x})^2 \sum (y_i - \bar{y})^2}}
 \]
 
-\noindent where \( x_i \) and \( y_i \) are individual data points, and \( \bar{x} \) and \( \bar{y} \) are the means of the variables \( x \) and \( y \), respectively. The resulting matrix helps in identifying potential multicollinearity issues and understanding the relationships between different features in a dataset.
+where \( x_i \) and \( y_i \) are individual data points, and \( \bar{x} \) and \( \bar{y} \) are the means of the variables \( x \) and \( y \), respectively \parencite{harrell__regression_2015}. This process aids in identifying collinearity, allowing us to manage covariates that might distort the model through overfitting or redundancy.
 
 
 \subsection{Survival Analysis: Model Application and Evaluation}
