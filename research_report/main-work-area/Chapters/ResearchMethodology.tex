@@ -8,12 +8,12 @@
 \noindent This section focuses on the application of the (ADMEP) framework, formalized by \parencite{morris_using_2019}. This framework is the building block of most of the methodical parts later on in the methodology. It served as the backbone of my methodology, allowing me to produce results that "accurately" reflect the performance and effectiveness of these models.
 
 \begin{figure}[h]
- \centering
- \includegraphics[scale=0.25]{Figures/METHOD_GRAPH.png}
- \caption{\parencite{pawel_pitfalls_2024} Shows a common example of a simulation study plan.}
+ \centering
+ \includegraphics[scale=0.25]{Figures/METHOD_GRAPH.png}
+ \caption{\parencite{pawel_pitfalls_2024} Shows a common example of a simulation study plan.}
 \end{figure}
 
-\noindent Taking inspiration from the the application of ADMEP by \parencite{pawel_pitfalls_2024}, the following sections define methods relevant in each section of the framework for later use in the methodology:
+\noindent Taking inspiration from the application of ADMEP by \parencite{pawel_pitfalls_2024}, the following sections define methods relevant in each section of the framework for later use in the methodology:
 
 \subsection{Aims}
 \begin{itemize}
@@ -170,7 +170,7 @@ VI(j) = \frac{1}{B}\sum_{b=1}^{B}(\frac{Err(j)_{b}}{Err_{b}}-1)
 \noindent Where, \(\tau\) is the biggest event period, \(BS_{t}\) is the brier score at time t.
 \subsubsection*{1-Calibration}
 \noindent 1-Calibration, also known as Hosmer-Lemeshow calibration, is a test used to evaluate model calibration at a specific time point \(t^{*}\) \parencite{haider_effective_2018}.
-It works by sorting all subjects for the predicted probabilities at time \(t^{*}\). These probabilities are then grouped into a predefined number of groups or bins (typically 10). For each bin, number of events is determined based on the predicted probabilities, and this is compared to the actual number of events that occurred \parencite{qi_effective_2023}.
+It works by sorting all subjects for the predicted probabilities at time \(t^{*}\). These probabilities are then grouped into a predefined number of groups or bins (typically 10). For each bin, the number of events is determined based on the predicted probabilities, and this is compared to the actual number of events that occurred \parencite{qi_effective_2023}.
 
 \begin{equation} \label{eq:c1}\text{HL}(VU, \hat{S}(t^* | \cdot)) = \sum_{j=1}^B \frac{(O_j - n_j \bar{p}_j)^2}{n_j \bar{p}_j (1 - \bar{p}_j)}\end{equation}
 \noindent Where, \(B\) is the number of bins, \(O_{j}\) is the observed number of events in bin j, \(\hat{p}_{j}\) is the average predicted probability in bin j. 
@@ -181,22 +181,22 @@ It works by sorting all subjects for the predicted probabilities at time \(t^{*}
 % \begin{equation} \label{eq:dc}D_{\Theta}([a, b]) = \{[x_i, d_i, \delta_i = 1] \in D | \hat{S}_{\Theta}(d_i) \in [a, b]\}\end{equation}
 
 \subsubsection*{Mean Absolute Error}
-\par \noindent \textit{Mean Absolute Error} (MAE) (Uncensored) is the simplest form of MAE variants indicated by \parencite{qi_effective_2023}, it is calculated by taking the non negative value difference between the predicted and actual event times for uncensored subjects only. It does not consider censored data, which may introduce bias when censoring rate is frequent.
+\par \noindent \textit{Mean Absolute Error} (MAE) (Uncensored) is the simplest form of MAE variants indicated by \parencite{qi_effective_2023}, it is calculated by taking the nonnegative value difference between the predicted and actual event times for uncensored subjects only. It does not consider censored data, which may introduce bias when the censoring rate is frequent.
 \begin{equation} \label{eq:rmae}
 RMAE (\hat{t}_i, t_i, \delta_i = 1) = |t_i - \hat{t}_i|
 \end{equation}
-\par \noindent \textit{MAE-Hinge} variant \parencite{qi_effective_2023} considers only the cases where the estimated time is sooner than the actual cesonsoring time. It is somewhat optimistic as it assigns zero error to predictions that are later than or equal to the censoring time. Applied when the actual event time is censored \(\delta (i =0)\)
+\par \noindent \textit{MAE-Hinge} variant \parencite{qi_effective_2023} considers only the cases where the estimated time is sooner than the actual censoring time. It is somewhat optimistic as it assigns zero error to predictions that are later than or equal to the censoring time. Applied when the actual event time is censored \(\delta (i =0)\)
 % \begin{equation} \label{eq:maehinge}
 % RMAE\text{-hinge}(\hat{t}_i, t_i, \delta_i = 0) = \max(t_i - \hat{t}_i, 0)
 % \end{equation}
-\par \noindent \textit{"MAE-Margin"} \parencite{qi_effective_2023} uses a "margin time" for induvivual censored units, estimated using a non-parametric method (Kaplan-Meier estimator). This "margin time" is treated as an adjusted event time, creating a more informed guess for censored individuals.
+\par \noindent \textit{"MAE-Margin"} \parencite{qi_effective_2023} uses a "margin time" for individual censored units, estimated using a non-parametric method (Kaplan-Meier estimator). This "margin time" is treated as an adjusted event time, creating a more informed guess for censored individuals.
 \begin{equation} \label{eq:maemargin}
 \text{Error for censored subjects:} \quad \omega_i[(1 - \delta_i) \cdot \text{emargin}(t_i) + \delta_i \cdot t_i] - \hat{t}_i
 \end{equation}
 \noindent \parencite{qi_effective_2023} shows that \(w_{i} = 1-S_{KM}(t_{i})\) confidence weight based on the Kaplan-Meier estimator \(emargin(t_{i})=t_{i}+\int_{t_{i}}^{\infty} S_{KM}(D)(t)/S_{KM}(D)(t_{i})\) margin time.
 \\\\
 \noindent \textit{"MAE-IPCW-D"} ("Inverse Probability Censoring Weight" - Difference) adapts the "IPCW" method to MAE by re-allocating the weights of censored subjects to those with known outcomes, using the estimated time of the event for calculations.
-\par \noindent Then, \textit{RMAE-IPCW-T} is calculated similarly to RMAE-IPCW-D, but using eIPCW  for censored subjects. MAE-PO (Pseudo-Observation) utilizes pseudo-observations that estimate the impact of each data point on the overall survival time estimate. 
+\par \noindent Then, \textit{RMAE-IPCW-T} is calculated similarly to RMAE-IPCW-D, but using eIPCW  for censored subjects. MAE-PO (Pseudo-Observation) utilizes pseudo-observations that estimate the impact of each data point on the overall survival time estimate. 
 \begin{equation} \label{eq:maepsuedo}e_{pseudo-obs}(t_i, D) = N \cdot \hat{\theta} - (N - 1) \cdot \hat{\theta}_{-i}\end{equation}
 \par \noindent \(\theta\) and \(\hat{\theta}\) are unbiased survival time estimators with and without the ii-th subject. The pseudo-observation is treated as an observed event time for MAE calculations.
 
@@ -218,7 +218,7 @@ The Logarithmic Score \parencite{yanagisawa_proper_2023} is used for models that
 \\\\
 \noindent SurvSet organizes datasets using a SurvLoader class, which simplifies loading and accessing data. Each dataset includes core columns like \texttt{pid} (unique ID), \texttt{event} (whether the event occurred), and \texttt{time} (time to event or censoring). Features are clearly marked as either numerical (num\_\{\}) or categorical (fac\_\{\}), ensuring a smooth integration with various ML algorithms. This consistent structure across all datasets in SurvSet made it my go-to source for accurate and reliable survival analysis in my project.
 \\\\
-\noindent Furthermore, when selecting the dataset censoring levels, FAIR principles \parencite{wilkinson_fair_2016}, reproducibility by assessing data simulation accuracy similar to the KM-Divergence metric used by \parencite{norcliffe_survivalgan_2023} are all important considerations. Utilizing this approach voids the need to carefully assess the ethical implications of using the datasets as these datasets should be under public licensed availability. Lastly, I don't foresee data pre-processing steps, being necessary, as DGM for simulation are commonly categorized as postprocessing \parencite{jin_imputation_2024}.
+\noindent Furthermore, when selecting the dataset censoring levels, FAIR principles \parencite{wilkinson_fair_2016}, reproducibility by assessing data simulation accuracy similar to the KM-Divergence metric used by \parencite{norcliffe_survivalgan_2023} are all important considerations. Utilizing this approach avoids the need to carefully assess the ethical implications of using the datasets as these datasets should be under public licensed availability. Lastly, I don't foresee data pre-processing steps, being necessary, as DGM for simulation is commonly categorized as postprocessing \parencite{jin_imputation_2024}.
 
 
 \section{Methods} \label{methods}
@@ -232,9 +232,9 @@ The Logarithmic Score \parencite{yanagisawa_proper_2023} is used for models that
 \subsubsection*{Simulation}
 For the simulation, I utilized the Synthcity library \parencite{qian_synthcity_2023}. Synthcity is an open-source package designed for generating and evaluating synthetic data across various data modalities, including static data, regular and irregular time series, and censored data. It provides a unified platform for innovative use cases in machine learning fairness, privacy, and data augmentation. The library was chosen for its comprehensive support of survival data and synthetic data generation, aligning with best practices in survival analysis simulation \parencite{norcliffe_survivalgan_2023, thurow_how_2023}.
 \begin{figure}[h]
-    \centering
-    \includegraphics[width=\linewidth]{Figures/SynthCity.png}
-    \caption{\parencite{qian_synthcity_2023} Simulation Pipeline.}
+    \centering
+    \includegraphics[width=\linewidth]{Figures/SynthCity.png}
+    \caption{\parencite{qian_synthcity_2023} Simulation Pipeline.}
 \end{figure}
 
 \noindent Among the various generative models available in Synthcity, I focused on the use of Survival GAN and Survival VAE. These methods were selected based on previous explorations and their proven ability to handle the complexities of survival data. Survival GAN is particularly effective in generating high-fidelity data with the capability to preserve the underlying distribution \parencite{norcliffe_survivalgan_2023}, while Survival VAE offers a robust framework for capturing the latent structure of the data, making it suitable for the simulation of censored survival datasets \parencite{qi_survivaleval_2024}.
@@ -256,10 +256,10 @@ The simulation pipeline is designed to effectively generate synthetic survival d
 \subsubsection*{Data processing}
 \noindent \textit{Stratified Train-Test Split.} The process of splitting the data into training and testing sets is crucial for ensuring the validity and reliability of the model evaluation. 
 \begin{itemize}
-    \item Stratification Based on Event and Time Binning: The function creates a temporary stratification label that combines the event indicator with a discretized version of the time variable. This ensures that the train and test sets maintain similar distributions with respect to the key features, particularly in datasets where time-dependent covariates are present \parencite{woo_time_2023}.
-    \item Handling Time-Dependent Features: For datasets with time-dependent features, the function includes an additional layer of stratification by incorporating a censoring indicator. This stratification approach ensures that the complex relationships between time, event occurrence, and censoring are preserved across the split \parencite{ichida_evaluation_1993}.
-    \item Robust Splitting Strategy: The function first attempts a stratified split, preserving the distribution of the stratification label across the training and testing sets. If the stratified split is not feasible (e.g., due to insufficient data points in some strata), the function falls back to a random split to ensure the process is completed without errors \parencite{scikit-learn}.
-    \item Clean-Up and Return: After performing the split, the temporary stratification labels are removed from the resulting datasets to prevent any unintended impact on subsequent analyses. The function returns the training and testing datasets, ready for further processing or model training \parencite{scikit-learn}.
+  \item Stratification Based on Event and Time Binning: The function creates a temporary stratification label that combines the event indicator with a discretized version of the time variable. This ensures that the train and test sets maintain similar distributions with respect to the key features, particularly in datasets where time-dependent covariates are present \parencite{woo_time_2023}.
+  \item Handling Time-Dependent Features: For datasets with time-dependent features, the function includes an additional layer of stratification by incorporating a censoring indicator. This stratification approach ensures that the complex relationships between time, event occurrence, and censoring are preserved across the split \parencite{ichida_evaluation_1993}.
+  \item Robust Splitting Strategy: The function first attempts a stratified split, preserving the distribution of the stratification label across the training and testing sets. If the stratified split is not feasible (e.g., due to insufficient data points in some strata), the function falls back to a random split to ensure the process is completed without errors \parencite{scikit-learn}.
+  \item Clean-Up and Return: After performing the split, the temporary stratification labels are removed from the resulting datasets to prevent any unintended impact on subsequent analyses. The function returns the training and testing datasets, ready for further processing or model training \parencite{scikit-learn}.
 \end{itemize}
 
 
@@ -290,7 +290,7 @@ Bivariate analysis evaluates the relationship between covariates and survival ti
 
 \subsubsection*{Censoring Analysis}
 
-Censoring is a common issue in survival datasets, and understanding its distribution is critical for accurate modeling. I followed best practices outlined by \parencite{kalbfleisch_fifty_2023} to quantify the proportion of censored observations and to ensure they are evenly distributed across covariates. Any imbalances could distort model estimates, so visualization of censoring distribution was deemed essential.
+Censoring is a common issue in survival datasets, and understanding its distribution is critical for accurate modeling. I followed the best practices outlined by \parencite{kalbfleisch_fifty_2023} to quantify the proportion of censored observations and to ensure they are evenly distributed across covariates. Any imbalances could distort model estimates, so visualization of censoring distribution was deemed essential.
 
 \subsubsection*{Correlation Analysis}
 
@@ -305,7 +305,7 @@ where \( x_i \) and \( y_i \) are individual data points, and \( \bar{x} \) and 
 
 \subsection{Survival Analysis: Model Application and Evaluation}
 
-\noindent This section outlines the steps for running the models on the preprocessed data. The chosen libraries and methods, as shown in Table \ref{tab:libs}, are widely recognized for survival analysis and machine learning, ensuring both robustness and reproducibility in this study.
+\noindent This section outlines the steps for running the models on the preprocessed data. The chosen libraries and methods, as shown in Table \ref{tab:libs}, are widely recognized for survival analysis and machine learning, ensuring robustness and reproducibility in this study.
 
 \begin{table}[h]
 \begin{tabularx}{\textwidth}{|X|X|}
@@ -327,26 +327,26 @@ lifelines \parencite{davidson-pilon_lifelines_2024} & Popular library for surviv
 
 \textit{Model Fitting:} The Cox Proportional Hazards (CoxPH) model is a widely used regression method in survival analysis due to its semi-parametric nature, which allows flexibility in handling the relationship between covariates and survival time without assuming a particular baseline hazard. In this study, the \texttt{lifelines} library \parencite{davidson-pilon_lifelines_2024} was used to fit the CoxPH model, which helps identify covariates that significantly affect the hazard function. This aligns with the established methodology in survival analysis research \parencite{cox_regression_1972}.
 \\\\
-\noindent \textit{Lasso Regularization:} To address overfitting and improve the interpretability of the CoxPH model, Lasso regularization was be applied during model fitting. This method adds an L1 penalty to the loss function, shrinking the coefficients of less important features to zero, effectively performing feature selection \parencite{tibshirani_regression_1996}. Lasso has been shown to be effective in high-dimensional survival data, allowing the model to focus on the most influential covariates while ignoring noise \parencite{zhang_adaptive_2007}.
+\noindent \textit{Lasso Regularization:} To address overfitting and improve the interpretability of the CoxPH model, Lasso regularization was applied during model fitting. This method adds an L1 penalty to the loss function, shrinking the coefficients of less important features to zero, effectively performing feature selection \parencite{tibshirani_regression_1996}. Lasso is effective in high-dimensional survival data, allowing the model to focus on the most influential covariates while ignoring noise \parencite{zhang_adaptive_2007}.
 \\\\
-\noindent \textit{Effect of Lasso on Model Performance:} The application of Lasso regularization is expected to enhance model generalizability by reducing complexity. To evaluate the impact of Lasso, performance metrics such as the concordance index (C-index) was computed before and after regularization. This approach ensures that we can assess the predictive power and identify the most critical covariates for survival outcomes, contributing to a more interpretable model \parencite{freijeirogonzalez_critical_2022}.
+\noindent \textit{Effect of Lasso on Model Performance:} The application of Lasso regularization is expected to enhance model generalizability by reducing complexity. To evaluate the impact of Lasso, performance metrics such as the concordance index (C-index) were computed before and after regularization. This approach ensures that we can assess the predictive power and identify the most critical covariates for survival outcomes, contributing to a more interpretable model \parencite{freijeirogonzalez_critical_2022}.
 \\\\
-\noindent \textit{Survival Curve:} Post-fitting, survival functions was predicted for different covariate profiles using \texttt{lifelines.plot\_covariate\_groups()}. Survival curves allow visual interpretation of how various covariates influence survival probabilities over time. Plotting these curves for different subgroups is essential for understanding the model's predictions and how different factors impact survival \parencite{harrell__regression_2015}.
+\noindent \textit{Survival Curve:} Post-fitting, survival functions were predicted for different covariate profiles using \texttt{lifelines.plot\_covariate\_groups()}. Survival curves allow visual interpretation of how various covariates influence survival probabilities over time. Plotting these curves for different subgroups is essential for understanding the model's predictions and how different factors impact survival \parencite{harrell__regression_2015}.
 \\\\
 \noindent \textit{Assumption Checking:} The proportional hazards assumption, a key condition of the CoxPH model, was validated using Schoenfeld residuals. Any detected violations of this assumption necessitate adjustments, such as using stratified Cox models, to ensure the validity of the model's predictions \parencite{woo_time_2023}. Checking model assumptions is crucial for avoiding incorrect conclusions in survival analysis.
 
 \subsubsection*{Random Survival Forest (RSF) Model}
 \noindent \textit{Model Fitting:} The Random Survival Forest (RSF) model was fitted using the \texttt{scikit-survival} library \parencite{sebastian_polsterl_scikit-survival_2023}, which is tailored for survival data with tree-based methods. RSF offers a non-parametric alternative to the CoxPH model and is particularly useful for datasets with non-linear relationships between covariates and survival outcomes. Tuning hyperparameters, such as the number of trees and maximum depth, was critical for optimizing the model's performance, as suggested by \parencite{ishwaran_random_2008}.
 \\\\
-\noindent \textit{Survival Curve Prediction:} After the RSF model is fitted, survival curves was be generated for each observation. These curves provide a visual understanding of survival probabilities over time for different groups. Comparing RSF-predicted curves to those from CoxPH offer insights into how the models differ, especially in datasets with non-proportional hazards \parencite{kurt_omurlu_comparisons_2009}.
+\noindent \textit{Survival Curve Prediction:} After the RSF model is fitted, survival curves are generated for each observation. These curves provide a visual understanding of survival probabilities over time for different groups. Comparing RSF-predicted curves to those from CoxPH offers insights into how the models differ, especially in datasets with non-proportional hazards \parencite{kurt_omurlu_comparisons_2009}.
 \\\\
 \noindent \textit{Variable Importance:} The RSF model provides variable importance scores, which help in identifying the most influential covariates for predicting survival outcomes. By analyzing these scores, we can interpret the model's decision-making process and understand which features are driving the predictions. This step is crucial for gaining actionable insights from the RSF model \parencite{ishwaran_random_2008}.
 
 \subsection*{Model Comparison}
-The \texttt{SurvivalEval} package \parencite{qi_survivaleval_2024} was utilized for a comprehensive comparison between the RSF and CoxPH models. The package provides metrics for evaluating survival models, including the concordance index, Brier score, and calibration plots. The comparison focus on differences in survival predictions across models, particularly in handling censoring and non-proportional hazards. Understanding these differences is key to selecting the most appropriate model for future survival predictions and accurately interpreting survival probabilities in various contexts \parencite{polce_guide_2023}.
-
+The \texttt{SurvivalEval} package \parencite{qi_survivaleval_2024} was utilized for a comprehensive comparison between the RSF and CoxPH models. The package provides metrics for evaluating survival models, including the concordance index, Brier score, and calibration plots. The comparison focuses on differences in survival predictions across models, particularly in handling censoring and non-proportional hazards. Understanding these differences is key to selecting the most appropriate model for future survival predictions and accurately interpreting survival probabilities in various contexts \parencite{polce_guide_2023}.
+\clearpage
 \section{Limitations} \label{methlim}
-A massive limitation is that the research is tightly coupled, meaning the phases are strictly dependent on each other. This is an antipattern, \parencite{joshi_beginning_2016}, which should be planned to accommodate any failures during any of the research phases. In cases where results do not converge, or the interpretation is wrong, the tightly coupled nature of the research was also affect the preceding stages. Lastly the computation time, within the modern setting should not be a hindrance but the combination of multiple computational components like the DGM and the model execution and results evaluation, is important to take caution. 
+A massive limitation is that the research is tightly coupled, meaning the phases are strictly dependent on each other. This is an antipattern, \parencite{joshi_beginning_2016}, which should be planned to accommodate any failures during any of the research phases. In cases where results do not converge, or the interpretation is wrong, the tightly coupled nature of the research also affects the preceding stages. Lastly the computation time, within the modern setting should not be a hindrance but the combination of multiple computational components like the DGM and the model execution and results evaluation, is important to take caution. 
 
 \section{Ethical Considerations}
-Ethical clearance would not be a component of this study, as the only real data that would be used, was only be selected from open source, or publicly available (public licensing) sources and then further fed into a simulation model which changes the nature of the data in its entirty and effectivly anonimizes the data. Due to the nature of the topic. 
+Ethical clearance was a component of this study, as the only real data that was used, was selected from open source, or publicly available (public licensing) sources and then further fed into a simulation model thereby never getting exposed or observed. The Simulation changes the nature of the data in its entirety and effectively anonymizes the data. 

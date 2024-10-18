@@ -8,6 +8,6 @@
 \addvspace {10\p@ }
 \contentsline {table}{\numberline {4.1}{\ignorespaces Description of the \texttt {flchain} Dataset Variables}}{53}{table.caption.131}%
 \contentsline {table}{\numberline {4.2}{\ignorespaces Metric Descriptions used from \blx@tocontentsinit {0}\parencite {qian_synthcity_2023}}}{54}{table.caption.133}%
-\contentsline {table}{\numberline {4.3}{\ignorespaces Test Statistics, p-values, and -log2(p) for Different Variables}}{69}{table.caption.155}%
-\contentsline {table}{\numberline {4.4}{\ignorespaces Comparison of Cox and RSF Models for Survival Analysis}}{75}{table.caption.163}%
+\contentsline {table}{\numberline {4.3}{\ignorespaces Test Statistics, p-values, and -log2(p) for Different Variables}}{72}{table.caption.156}%
+\contentsline {table}{\numberline {4.4}{\ignorespaces Comparison of Cox and RSF Models for Survival Analysis}}{81}{table.caption.164}%
 \addvspace {10\p@ }

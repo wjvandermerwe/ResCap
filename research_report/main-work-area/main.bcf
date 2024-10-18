@@ -2576,9 +2576,15 @@
     <bcf:citekey order="219" intorder="1">qian_synthcity_2023</bcf:citekey>
     <bcf:citekey order="220" intorder="1">qian_synthcity_2023</bcf:citekey>
     <bcf:citekey order="221" intorder="1">qian_synthcity_2023</bcf:citekey>
-    <bcf:citekey order="222" intorder="1">kalbfleisch_fifty_2023</bcf:citekey>
-    <bcf:citekey order="223" intorder="1">harrell__regression_2015</bcf:citekey>
-    <bcf:citekey order="224" intorder="1">morris_using_2019</bcf:citekey>
+    <bcf:citekey order="222" intorder="1">davidson-pilon_lifelines_2024</bcf:citekey>
+    <bcf:citekey order="223" intorder="1">kalbfleisch_fifty_2023</bcf:citekey>
+    <bcf:citekey order="224" intorder="1">harrell__regression_2015</bcf:citekey>
+    <bcf:citekey order="225" intorder="1">morris_using_2019</bcf:citekey>
+    <bcf:citekey order="226" intorder="1">harrell__regression_2015</bcf:citekey>
+    <bcf:citekey order="227" intorder="1">tibshirani_regression_1996</bcf:citekey>
+    <bcf:citekey order="228" intorder="1">qi_survivaleval_2024</bcf:citekey>
+    <bcf:citekey order="229" intorder="1">norcliffe_survivalgan_2023</bcf:citekey>
+    <bcf:citekey order="230" intorder="1">qian_synthcity_2023</bcf:citekey>
   </bcf:section>
   <!-- SORTING TEMPLATES -->
   <bcf:sortingtemplate name="nty">

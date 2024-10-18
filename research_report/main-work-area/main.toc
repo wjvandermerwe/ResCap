@@ -40,16 +40,16 @@
 \contentsline {section}{\numberline {3.3}Methods}{42}{section.108}%
 \contentsline {subsection}{\numberline {3.3.1}Data Pre-Processing and Simulation}{42}{subsection.109}%
 \contentsline {subsection}{\numberline {3.3.2}Exploratory Data Analysis (EDA)}{45}{subsection.114}%
-\contentsline {subsection}{\numberline {3.3.3}Survival Analysis: Model Application and Evaluation}{48}{subsection.122}%
-\contentsline {section}{\numberline {3.4}Limitations}{50}{section.127}%
-\contentsline {section}{\numberline {3.5}Ethical Considerations}{50}{section.128}%
+\contentsline {subsection}{\numberline {3.3.3}Survival Analysis: Model Application and Evaluation}{47}{subsection.122}%
+\contentsline {section}{\numberline {3.4}Limitations}{51}{section.127}%
+\contentsline {section}{\numberline {3.5}Ethical Considerations}{51}{section.128}%
 \contentsline {chapter}{\numberline {4}Results And Discussion}{52}{chapter.129}%
 \contentsline {section}{\numberline {4.1}Simulation: Outputs and Results}{52}{section.130}%
 \contentsline {subsection}{\numberline {4.1.1}Metrics for output data}{53}{subsection.132}%
 \contentsline {section}{\numberline {4.2}Exploratory Analysis}{55}{section.134}%
-\contentsline {section}{\numberline {4.3}Survival Analysis Case Study}{63}{section.147}%
-\contentsline {subsection}{\numberline {4.3.1}Cox Proportional Hazards}{63}{subsection.148}%
-\contentsline {subsection}{\numberline {4.3.2}Random Survival Forest}{72}{subsection.157}%
-\contentsline {subsection}{\numberline {4.3.3}Models comparison}{75}{subsection.162}%
-\contentsline {chapter}{\numberline {5}Conclusion}{77}{chapter.166}%
-\contentsline {chapter}{Bibliography}{79}{chapter*.167}%
+\contentsline {section}{\numberline {4.3}Survival Analysis Case Study}{65}{section.147}%
+\contentsline {subsection}{\numberline {4.3.1}Cox Proportional Hazards}{65}{subsection.148}%
+\contentsline {subsection}{\numberline {4.3.2}Random Survival Forest}{74}{subsection.158}%
+\contentsline {subsection}{\numberline {4.3.3}Models comparison}{81}{subsection.163}%
+\contentsline {chapter}{\numberline {5}Conclusion}{83}{chapter.167}%
+\contentsline {chapter}{Bibliography}{85}{chapter*.168}%
